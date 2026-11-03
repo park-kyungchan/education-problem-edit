@@ -1,0 +1,333 @@
+/**
+ * Per-question (문항단위) pipeline contracts and planning.
+ *
+ * The whole-exam pipeline in docs/workflow.md stays the assembly path.
+ * This module makes a single question the unit of intake, transcription,
+ * verification, invalidation and delivery, so work on one question never
+ * requires re-running or re-verifying the whole PDF.
+ *
+ * Stage IDs and dependency edges mirror the retained knowledge release
+ * (packages/knowledge/releases/2026-10-22.5/stages.json, flows.json) and
+ * rules R-source-order, R-uncertainty, R-question-container and
+ * R-selective-invalidation. This module is portable: it performs no I/O,
+ * no model calls and no document conversion.
+ */
+
+export type UnitStageId =
+  | "regions"
+  | "transcription"
+  | "semantics"
+  | "geometry"
+  | "assets"
+  | "equations"
+  | "question-layout";
+
+export type AssemblyStageId = "page-layout" | "package" | "native" | "delivery";
+
+export type StageState = "pending" | "ready" | "blocked" | "done" | "stale";
+
+export interface StageRecord {
+  stage: UnitStageId;
+  state: StageState;
+  inputRevision: string | null;
+  outputRevision: string | null;
+  unresolved: string[];
+}
+
+export interface SourceBinding {
+  sourceSha256: string;
+  physicalPage: number;
+  logicalOrder: number;
+  crop: { space: "normalized"; xyxy: [number, number, number, number] } | null;
+}
+
+export interface QuestionUnitManifest {
+  schema: "problem-edit.question-unit.v1";
+  questionId: string;
+  source: SourceBinding;
+  stages: StageRecord[];
+  contentRevision: string | null;
+}
+
+export interface UnitSelection {
+  kind: "single" | "subset" | "range" | "all";
+  questionIds: string[];
+}
+
+/** Stages that produce one question, in dependency (topological) order. */
+export const unitStages: readonly UnitStageId[] = [
+  "regions",
+  "transcription",
+  "semantics",
+  "geometry",
+  "assets",
+  "equations",
+  "question-layout",
+];
+
+/** Assembly stages run only when selected units are composed together. */
+export const assemblyStages: readonly AssemblyStageId[] = [
+  "page-layout",
+  "package",
+  "native",
+  "delivery",
+];
+
+/** Direct dependencies within one question (subset of flows.json). */
+export const unitDependencies: Readonly<Record<UnitStageId, readonly UnitStageId[]>> = {
+  regions: [],
+  transcription: ["regions"],
+  semantics: ["transcription"],
+  geometry: ["semantics"],
+  assets: ["geometry"],
+  equations: ["transcription"],
+  "question-layout": ["transcription", "assets", "equations"],
+};
+
+const SHA256_RE = /^[a-f0-9]{64}$/;
+
+/** Normalize "3", "q3", "Q03", "3번", "문항 3", "문제 3" to "Q3". */
+export function parseQuestionId(raw: string): string {
+  const cleaned = raw.trim().replace(/^(?:문항|문제)\s*/u, "").replace(/번$/u, "").trim();
+  const match = cleaned.match(/^[Qq]?0*(\d{1,3})$/);
+  if (!match) throw new Error(`Invalid question id: ${raw}`);
+  const n = Number(match[1]);
+  if (!Number.isInteger(n) || n < 1) throw new Error(`Invalid question id: ${raw}`);
+  return `Q${n}`;
+}
+
+function questionNumber(id: string): number {
+  return Number(id.slice(1));
+}
+
+/**
+ * Parse a unit selection such as "Q3", "Q3,Q7", "Q3-Q5" or "all".
+ * `available` bounds "all" and ranges; without it a range is still expanded
+ * but "all" is rejected because the exam inventory is unknown.
+ */
+export function parseUnitSelection(raw: string, available?: readonly string[]): UnitSelection {
+  const text = raw.trim().replace(/(문항|문제)\s+(?=\d)/gu, "$1");
+  if (!text) throw new Error("Empty unit selection");
+  const known = available?.map(parseQuestionId);
+
+  if (text === "all" || text === "전체" || text === "*") {
+    if (!known || known.length === 0) {
+      throw new Error("Selection 'all' requires the known question inventory");
+    }
+    return { kind: "all", questionIds: [...known].sort((a, b) => questionNumber(a) - questionNumber(b)) };
+  }
+
+  const range = text.match(/^(.+?)\s*[-~]\s*(.+)$/);
+  if (range && !text.includes(",")) {
+    const from = questionNumber(parseQuestionId(range[1]));
+    const to = questionNumber(parseQuestionId(range[2]));
+    if (to < from) throw new Error(`Invalid question range: ${raw}`);
+    const ids: string[] = [];
+    for (let n = from; n <= to; n += 1) ids.push(`Q${n}`);
+    if (known) {
+      const missing = ids.filter((id) => !known.includes(id));
+      if (missing.length) throw new Error(`Questions not in source inventory: ${missing.join(", ")}`);
+    }
+    return { kind: "range", questionIds: ids };
+  }
+
+  const ids = [...new Set(text.split(/[,\s]+/).filter(Boolean).map(parseQuestionId))].sort(
+    (a, b) => questionNumber(a) - questionNumber(b),
+  );
+  if (known) {
+    const missing = ids.filter((id) => !known.includes(id));
+    if (missing.length) throw new Error(`Questions not in source inventory: ${missing.join(", ")}`);
+  }
+  return { kind: ids.length === 1 ? "single" : "subset", questionIds: ids };
+}
+
+/** Create a fresh unit manifest; every stage starts pending. */
+export function createUnitManifest(input: {
+  sourceSha256: string;
+  questionId: string;
+  physicalPage: number;
+  logicalOrder?: number;
+  crop?: [number, number, number, number] | null;
+}): QuestionUnitManifest {
+  if (!SHA256_RE.test(input.sourceSha256)) {
+    throw new Error("sourceSha256 must be 64 lowercase hex characters");
+  }
+  if (!Number.isInteger(input.physicalPage) || input.physicalPage < 1) {
+    throw new Error("physicalPage must be a positive integer");
+  }
+  const logicalOrder = input.logicalOrder ?? input.physicalPage;
+  if (!Number.isInteger(logicalOrder) || logicalOrder < 1) {
+    throw new Error("logicalOrder must be a positive integer");
+  }
+  const crop = input.crop ?? null;
+  if (crop) {
+    const [x1, y1, x2, y2] = crop;
+    if (!(x1 >= 0 && y1 >= 0 && x2 > x1 && y2 > y1 && x2 <= 1 && y2 <= 1)) {
+      throw new Error("crop must satisfy 0 <= x1 < x2 <= 1 and 0 <= y1 < y2 <= 1 (normalized)");
+    }
+  }
+  return {
+    schema: "problem-edit.question-unit.v1",
+    questionId: parseQuestionId(input.questionId),
+    source: {
+      sourceSha256: input.sourceSha256,
+      physicalPage: input.physicalPage,
+      logicalOrder,
+      crop: crop ? { space: "normalized", xyxy: crop } : null,
+    },
+    stages: unitStages.map((stage) => ({
+      stage,
+      state: "pending" as const,
+      inputRevision: null,
+      outputRevision: null,
+      unresolved: [],
+    })),
+    contentRevision: null,
+  };
+}
+
+/** Structural validation; returns human-readable errors (empty = valid). */
+export function validateUnitManifest(m: QuestionUnitManifest): string[] {
+  const errors: string[] = [];
+  if (m.schema !== "problem-edit.question-unit.v1") errors.push(`Unknown schema: ${String(m.schema)}`);
+  try {
+    parseQuestionId(m.questionId);
+  } catch {
+    errors.push(`Invalid questionId: ${m.questionId}`);
+  }
+  if (!SHA256_RE.test(m.source?.sourceSha256 ?? "")) errors.push("source.sourceSha256 must be 64 lowercase hex characters");
+  if (!Number.isInteger(m.source?.physicalPage) || m.source.physicalPage < 1) errors.push("source.physicalPage must be a positive integer");
+  if (!Number.isInteger(m.source?.logicalOrder) || m.source.logicalOrder < 1) errors.push("source.logicalOrder must be a positive integer");
+  const seen = new Set<string>();
+  for (const rec of m.stages ?? []) {
+    if (!(unitStages as readonly string[]).includes(rec.stage)) errors.push(`Unknown stage: ${rec.stage}`);
+    if (seen.has(rec.stage)) errors.push(`Duplicate stage: ${rec.stage}`);
+    seen.add(rec.stage);
+    if (rec.state === "done" && !rec.outputRevision) errors.push(`Stage ${rec.stage} is done without outputRevision`);
+  }
+  for (const stage of unitStages) {
+    if (!seen.has(stage)) errors.push(`Missing stage: ${stage}`);
+  }
+  return errors;
+}
+
+/** Downstream stages (excluding `stage` itself) in topological order. */
+export function downstreamOf(stage: UnitStageId): UnitStageId[] {
+  const affected = new Set<UnitStageId>();
+  let grew = true;
+  while (grew) {
+    grew = false;
+    for (const s of unitStages) {
+      if (s === stage || affected.has(s)) continue;
+      if (unitDependencies[s].some((d) => d === stage || affected.has(d))) {
+        affected.add(s);
+        grew = true;
+      }
+    }
+  }
+  return unitStages.filter((s) => affected.has(s));
+}
+
+/**
+ * Return a new manifest where `stage` and everything downstream of it are
+ * marked stale (R-selective-invalidation). Upstream and sibling branches
+ * keep their state and revisions, so unchanged work is never rebuilt.
+ */
+export function invalidateFrom(m: QuestionUnitManifest, stage: UnitStageId): QuestionUnitManifest {
+  const stale = new Set<UnitStageId>([stage, ...downstreamOf(stage)]);
+  return {
+    ...m,
+    contentRevision: null,
+    stages: m.stages.map((rec) =>
+      stale.has(rec.stage) && rec.state !== "blocked"
+        ? { ...rec, state: "stale" as const, outputRevision: null }
+        : { ...rec },
+    ),
+  };
+}
+
+export interface UnitPlan {
+  questionId: string;
+  runnable: UnitStageId[];
+  blocked: { stage: UnitStageId; waitingOn: UnitStageId[] }[];
+  done: UnitStageId[];
+  deliverable: boolean;
+  blockers: string[];
+}
+
+/** Next work for one question: runnable stages in order, plus blockers. */
+export function planUnitWork(m: QuestionUnitManifest): UnitPlan {
+  const byStage = new Map(m.stages.map((r) => [r.stage, r]));
+  const done = unitStages.filter((s) => byStage.get(s)?.state === "done");
+  const doneSet = new Set(done);
+  const runnable: UnitStageId[] = [];
+  const blocked: UnitPlan["blocked"] = [];
+  for (const stage of unitStages) {
+    const rec = byStage.get(stage);
+    if (!rec || rec.state === "done") continue;
+    if (rec.state === "blocked") {
+      blocked.push({ stage, waitingOn: unitDependencies[stage].filter((d) => !doneSet.has(d)) });
+      continue;
+    }
+    const waitingOn = unitDependencies[stage].filter((d) => !doneSet.has(d));
+    if (waitingOn.length === 0) runnable.push(stage);
+    else blocked.push({ stage, waitingOn });
+  }
+  const blockers: string[] = [];
+  const layout = byStage.get("question-layout");
+  if (layout?.state !== "done") blockers.push("question-layout is not done");
+  for (const rec of m.stages) {
+    if (rec.state === "blocked") blockers.push(`${rec.stage} is blocked`);
+  }
+  return {
+    questionId: m.questionId,
+    runnable,
+    blocked,
+    done,
+    deliverable: blockers.length === 0,
+    blockers,
+  };
+}
+
+/** All unresolved items of a unit, grouped by stage (per-question ledger). */
+export function unitUnresolvedLedger(m: QuestionUnitManifest): { stage: UnitStageId; items: string[] }[] {
+  return m.stages
+    .filter((r) => r.unresolved.length > 0)
+    .map((r) => ({ stage: r.stage, items: [...r.unresolved] }));
+}
+
+export interface AssemblyPlan {
+  sourceSha256: string;
+  questionIds: string[];
+  ready: string[];
+  notReady: { questionId: string; blockers: string[] }[];
+  assemblyStages: readonly AssemblyStageId[];
+}
+
+/**
+ * Compose selected units into one document plan. Units must share one
+ * source hash and be unique; order follows logicalOrder, not request order.
+ * Assembly never mutates unit content (page-layout invariant).
+ */
+export function planAssembly(manifests: readonly QuestionUnitManifest[]): AssemblyPlan {
+  if (manifests.length === 0) throw new Error("planAssembly requires at least one unit");
+  const hashes = new Set(manifests.map((m) => m.source.sourceSha256));
+  if (hashes.size !== 1) throw new Error("All units in one assembly must share the same sourceSha256");
+  const ids = manifests.map((m) => m.questionId);
+  if (new Set(ids).size !== ids.length) throw new Error("Duplicate questionId in assembly");
+  const ordered = [...manifests].sort((a, b) => a.source.logicalOrder - b.source.logicalOrder);
+  const ready: string[] = [];
+  const notReady: AssemblyPlan["notReady"] = [];
+  for (const m of ordered) {
+    const plan = planUnitWork(m);
+    if (plan.deliverable) ready.push(m.questionId);
+    else notReady.push({ questionId: m.questionId, blockers: plan.blockers });
+  }
+  return {
+    sourceSha256: [...hashes][0],
+    questionIds: ordered.map((m) => m.questionId),
+    ready,
+    notReady,
+    assemblyStages,
+  };
+}

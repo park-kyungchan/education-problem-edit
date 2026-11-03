@@ -12,6 +12,7 @@ Requires Bun. From the repository root:
 bun test
 bun run check:context
 bun run layout resolve --profile reference-single-column --format hwpx
+bun run unit parse "문항 3"
 bun run knowledge route restore-exam --max-chars 6000
 ```
 
@@ -19,6 +20,6 @@ The next-document selection is a single-column reference layout and HWPX format.
 
 ## Structure
 
-`src/` owns the portable selector. `packages/` owns knowledge, the decision prototype, figure authoring and document composition. `context/` owns the current transfer state, the historical requirements/decisions/checks, and the import coverage manifest. `docs/` explains the workflow and boundaries. New per-source inputs and outputs belong in ignored `runs/`.
+`src/` owns the portable selector and the per-question pipeline core ([docs/question-unit-pipeline.md](docs/question-unit-pipeline.md)). `packages/` owns knowledge, the decision prototype, figure authoring and document composition. `context/` owns the current transfer state, the historical requirements/decisions/checks, and the import coverage manifest. `docs/` explains the workflow and boundaries. New per-source inputs and outputs belong in ignored `runs/`.
 
 The retained knowledge release includes 71 rule/procedure/case records, 76 source references and 75 distinct evidence snapshots. Another 21 selected operation documents describe past requirements, plans, completion decisions and held work. [coverage.json](context/coverage.json) records every imported file hash and all known exclusions. The historical broad file inventory, complete Hancom research corpus, original PDFs, native deliveries and native runtime state are not bundled. Historical source paths are provenance, not portable dependencies. Full local-context collection and end-to-end authoring verification are not claimed.
