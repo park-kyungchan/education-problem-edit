@@ -35,8 +35,9 @@ regions -> transcription -> semantics -> geometry -> assets -+
                     \-> equations ----------------------------+-> question-layout
 ```
 
-`page-layout`, `package`, `native`, `delivery` are assembly-only: they run
-when selected units are composed, and never mutate unit content.
+`page-layout`, `package`, `native`, `delivery` are assembly-only stage IDs:
+`assemble` lists them in its plan output but executes none of them, and
+assembly planning never mutates unit content.
 
 ## Operations
 
@@ -53,27 +54,50 @@ bun run unit assemble --file runs/q3.json,runs/q7.json         # one source, uni
 
 Rules enforced by the core and its tests:
 
-- `all`/ranges require the known question inventory; unknown questions fail.
-- A `done` stage must carry an `outputRevision`; missing/duplicate stages fail.
+- `all` requires the known question inventory. Ranges and explicit lists are
+  checked against the inventory when one is supplied, and expand freely
+  otherwise. Unknown questions fail whenever an inventory is supplied.
+  Empty selections fail. Inventory spellings are normalized and deduplicated.
+- Manifest admission is one boundary (`decodeUnitManifest`): every CLI
+  manifest consumer and every public planning/assembly function rejects an
+  invalid manifest. `validate` reports the same checks without throwing.
+- A manifest is valid only with: exact schema; canonical `questionId`
+  (`Q<n>`, 1–999); `sourceSha256` as 64 lowercase hex; `physicalPage` and
+  `logicalOrder` as positive safe integers; `crop` null or
+  `{space:"normalized", xyxy:[x1,y1,x2,y2]}` with finite numbers and
+  `0 <= x1 < x2 <= 1`, `0 <= y1 < y2 <= 1`; exactly one record per unit
+  stage; `state` in `pending|ready|blocked|done|stale`; `inputRevision`,
+  `outputRevision` and `contentRevision` present as string-or-null (a
+  `done` stage needs a non-empty `outputRevision`); `unresolved` an array
+  of strings. Strings must be well-formed Unicode (no lone UTF-16
+  surrogates) so a Rust `String` can hold them. Unknown fields are ignored
+  by validation and preserved by transformations.
+- A unit is deliverable only when every stage is `done`; a stale or pending
+  ancestor blocks delivery even if `question-layout` still says `done`.
+  Unresolved items are reported in the ledger and do not by themselves
+  block delivery.
 - Invalidation stales only the affected branch (fixing `geometry` leaves
   `equations` done); unchanged questions are never rebuilt.
-- Assembly requires one shared `sourceSha256`, unique questions, and orders
-  by `logicalOrder`, not request order.
+- Assembly requires one shared `sourceSha256`, unique canonical questions,
+  and orders by `logicalOrder`; equal `logicalOrder` values keep input
+  order. Errors: admission/argument/JSON failures print to stderr and exit
+  1; `validate` prints `{valid, errors}` JSON and exits 1 when invalid.
 
 ## Rust-migration readiness
 
 This repository has no Rust crate today and no migration slice allocates
 one; do not invent a slice number. The core is nevertheless shaped for the
-workspace Rust migration (pure functions, typed contracts, deterministic
-JSON, no I/O, no ambient state) so a future `crates/problem-edit-core`
-ports it mechanically:
+workspace Rust migration (pure functions, typed contracts, no I/O, no
+ambient state). A mechanical port still needs the contract above frozen as
+the selected callable boundary; the parity fixture below is a limited
+seed, not a qualified port oracle:
 
 | TypeScript (now) | Rust (future port) |
 | --- | --- |
 | `src/question.ts` pure functions | `crates/problem-edit-core/src/question.rs` |
 | `src/cli.ts unit …` JSON in/out | same subcommands, same JSON shapes |
 | `tests/question.test.ts` | `cargo test` with the same cases |
-| `tests/fixtures/question-parity.json` | frozen parity vectors; expected values come from this document, never from the port candidate |
+| `tests/fixtures/question-parity.json` | limited seed vectors (ID/selection/dependency only); a qualified oracle must freeze the full boundary incl. errors and CLI channels before any Rust parity claim |
 | `bun test` | `cargo fmt --check`, `cargo clippy -- -D warnings`, `cargo test` |
 
 Until a slice allocates the crate, `bun test` and `bun run check:context`

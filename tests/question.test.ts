@@ -97,6 +97,48 @@ test("frozen parity vectors match the portable core", () => {
   }
 });
 
+test("stale ancestor blocks delivery even when layout is done", () => {
+  const m = doneManifest();
+  const sem = m.stages.find((r) => r.stage === "semantics")!;
+  sem.state = "stale";
+  sem.outputRevision = null;
+  expect(validateUnitManifest(m)).toEqual([]);
+  const plan = planUnitWork(m);
+  expect(plan.deliverable).toBe(false);
+  expect(plan.blockers.join(" ")).toContain("semantics");
+  expect(planAssembly([m]).ready).toEqual([]);
+});
+
+test("invalid manifests are rejected by planning and assembly, not just validate", () => {
+  const missing = doneManifest();
+  missing.stages = missing.stages.filter((r) => r.stage === "question-layout");
+  expect(validateUnitManifest(missing).length).toBeGreaterThan(0);
+  expect(() => planUnitWork(missing)).toThrow("Invalid unit manifest");
+  expect(() => planAssembly([missing])).toThrow("Invalid unit manifest");
+  const badSchema = doneManifest();
+  (badSchema as { schema: string }).schema = "wrong";
+  expect(() => planUnitWork(badSchema)).toThrow("Invalid unit manifest");
+  const badCrop = doneManifest();
+  (badCrop.source as { crop: unknown }).crop = { space: "pixels", xyxy: [-1, 0, 2, 1] };
+  expect(validateUnitManifest(badCrop).join(" ")).toContain("crop");
+  const badState = doneManifest();
+  (badState.stages[0] as { state: string }).state = "BANANA";
+  expect(validateUnitManifest(badState).join(" ")).toContain("invalid state");
+  expect(validateUnitManifest(null as never)).toEqual(["manifest must be a JSON object"]);
+});
+
+test("canonical identity, safe integers and empty selections are enforced", () => {
+  const alias = doneManifest();
+  alias.questionId = "문항 3";
+  expect(validateUnitManifest(alias).join(" ")).toContain("canonical");
+  expect(parseUnitSelection("all", ["Q3", "q03"]).questionIds).toEqual(["Q3"]);
+  expect(() => parseUnitSelection(", ,")).toThrow("Empty unit selection");
+  expect(() => createUnitManifest({ sourceSha256: SHA, questionId: "Q1", physicalPage: 9007199254740993 })).toThrow("safe integer");
+  const unsafe = doneManifest();
+  unsafe.source.physicalPage = 9007199254740993;
+  expect(validateUnitManifest(unsafe).join(" ")).toContain("safe integer");
+});
+
 test("validation flags done-without-revision and missing stages", () => {
   const m = doneManifest();
   m.stages[0].outputRevision = null;

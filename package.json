@@ -8,5 +8,6 @@
     "unit": "bun run src/cli.ts unit",
     "knowledge": "bun run packages/knowledge/src/cli.ts",
     "check:context": "bun run scripts/check-context.ts"
-  }
+  },
+  "packageManager": "bun@1.4.3"
 }

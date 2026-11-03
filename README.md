@@ -6,7 +6,7 @@ Start with the [context map](context/README.md), [current selection](context/cur
 
 ## Run
 
-Requires Bun. From the repository root:
+Requires Bun 1.4.3 (pinned in package.json `packageManager`). From the repository root:
 
 ```sh
 bun test
