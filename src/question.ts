@@ -108,7 +108,7 @@ function questionNumber(id: string): number {
 export function parseUnitSelection(raw: string, available?: readonly string[]): UnitSelection {
   const text = raw.trim().replace(/(문항|문제)\s+(?=\d)/gu, "$1");
   if (!text) throw new Error("Empty unit selection");
-  const known = available?.map(parseQuestionId);
+  const known = available ? [...new Set(available.map(parseQuestionId))] : undefined;
 
   if (text === "all" || text === "전체" || text === "*") {
     if (!known || known.length === 0) {
@@ -134,6 +134,7 @@ export function parseUnitSelection(raw: string, available?: readonly string[]): 
   const ids = [...new Set(text.split(/[,\s]+/).filter(Boolean).map(parseQuestionId))].sort(
     (a, b) => questionNumber(a) - questionNumber(b),
   );
+  if (ids.length === 0) throw new Error("Empty unit selection");
   if (known) {
     const missing = ids.filter((id) => !known.includes(id));
     if (missing.length) throw new Error(`Questions not in source inventory: ${missing.join(", ")}`);
@@ -152,12 +153,12 @@ export function createUnitManifest(input: {
   if (!SHA256_RE.test(input.sourceSha256)) {
     throw new Error("sourceSha256 must be 64 lowercase hex characters");
   }
-  if (!Number.isInteger(input.physicalPage) || input.physicalPage < 1) {
-    throw new Error("physicalPage must be a positive integer");
+  if (!Number.isSafeInteger(input.physicalPage) || input.physicalPage < 1) {
+    throw new Error("physicalPage must be a positive safe integer");
   }
   const logicalOrder = input.logicalOrder ?? input.physicalPage;
-  if (!Number.isInteger(logicalOrder) || logicalOrder < 1) {
-    throw new Error("logicalOrder must be a positive integer");
+  if (!Number.isSafeInteger(logicalOrder) || logicalOrder < 1) {
+    throw new Error("logicalOrder must be a positive safe integer");
   }
   const crop = input.crop ?? null;
   if (crop) {
@@ -186,29 +187,127 @@ export function createUnitManifest(input: {
   };
 }
 
-/** Structural validation; returns human-readable errors (empty = valid). */
+const STAGE_STATES: readonly string[] = ["pending", "ready", "blocked", "done", "stale"];
+const LONE_SURROGATE = /[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/;
+
+function isRecord(v: unknown): v is Record<string, unknown> {
+  return typeof v === "object" && v !== null && !Array.isArray(v);
+}
+
+function checkText(value: unknown, label: string, errors: string[]): void {
+  // Strings must be well-formed Unicode so a Rust String can hold them.
+  if (typeof value === "string" && LONE_SURROGATE.test(value)) {
+    errors.push(`${label} contains a lone UTF-16 surrogate`);
+  }
+}
+
+function checkRevision(value: unknown, label: string, errors: string[]): void {
+  if (value !== null && typeof value !== "string") errors.push(`${label} must be a string or null`);
+  else checkText(value, label, errors);
+}
+
+/**
+ * Strict structural validation; returns errors (empty = valid).
+ * Never throws on malformed input. Contract (v1): schema exact; questionId
+ * canonical `Q<n>`; pages positive safe integers; crop null or a normalized
+ * 4-number box; exactly one record per unit stage; state in the enum;
+ * revisions string-or-null; unresolved an array of well-formed strings;
+ * contentRevision present as string-or-null. Unknown fields are ignored
+ * here and preserved by transformations (forward compatibility).
+ */
 export function validateUnitManifest(m: QuestionUnitManifest): string[] {
   const errors: string[] = [];
+  if (!isRecord(m)) return ["manifest must be a JSON object"];
   if (m.schema !== "problem-edit.question-unit.v1") errors.push(`Unknown schema: ${String(m.schema)}`);
-  try {
-    parseQuestionId(m.questionId);
-  } catch {
-    errors.push(`Invalid questionId: ${m.questionId}`);
+  if (typeof m.questionId !== "string") {
+    errors.push("questionId must be a string");
+  } else {
+    try {
+      if (parseQuestionId(m.questionId) !== m.questionId) {
+        errors.push(`questionId must be canonical (e.g. Q3): ${m.questionId}`);
+      }
+    } catch {
+      errors.push(`Invalid questionId: ${m.questionId}`);
+    }
   }
-  if (!SHA256_RE.test(m.source?.sourceSha256 ?? "")) errors.push("source.sourceSha256 must be 64 lowercase hex characters");
-  if (!Number.isInteger(m.source?.physicalPage) || m.source.physicalPage < 1) errors.push("source.physicalPage must be a positive integer");
-  if (!Number.isInteger(m.source?.logicalOrder) || m.source.logicalOrder < 1) errors.push("source.logicalOrder must be a positive integer");
+  if (!("contentRevision" in m)) errors.push("Missing contentRevision");
+  else checkRevision(m.contentRevision, "contentRevision", errors);
+
+  if (!isRecord(m.source)) {
+    errors.push("source must be an object");
+  } else {
+    if (typeof m.source.sourceSha256 !== "string" || !SHA256_RE.test(m.source.sourceSha256)) {
+      errors.push("source.sourceSha256 must be 64 lowercase hex characters");
+    }
+    if (!Number.isSafeInteger(m.source.physicalPage) || (m.source.physicalPage as number) < 1) {
+      errors.push("source.physicalPage must be a positive safe integer");
+    }
+    if (!Number.isSafeInteger(m.source.logicalOrder) || (m.source.logicalOrder as number) < 1) {
+      errors.push("source.logicalOrder must be a positive safe integer");
+    }
+    const crop = m.source.crop;
+    if (crop !== null && crop !== undefined) {
+      if (!isRecord(crop) || crop.space !== "normalized" || !Array.isArray(crop.xyxy) || crop.xyxy.length !== 4) {
+        errors.push("source.crop must be null or {space:\"normalized\", xyxy:[x1,y1,x2,y2]}");
+      } else {
+        const [x1, y1, x2, y2] = crop.xyxy as unknown[];
+        if (![x1, y1, x2, y2].every((n) => typeof n === "number" && Number.isFinite(n))) {
+          errors.push("source.crop.xyxy must be four finite numbers");
+        } else if (!((x1 as number) >= 0 && (y1 as number) >= 0 && (x2 as number) > (x1 as number) && (y2 as number) > (y1 as number) && (x2 as number) <= 1 && (y2 as number) <= 1)) {
+          errors.push("source.crop must satisfy 0 <= x1 < x2 <= 1 and 0 <= y1 < y2 <= 1 (normalized)");
+        }
+      }
+    }
+  }
+
+  if (!Array.isArray(m.stages)) {
+    errors.push("stages must be an array");
+    return errors;
+  }
   const seen = new Set<string>();
-  for (const rec of m.stages ?? []) {
-    if (!(unitStages as readonly string[]).includes(rec.stage)) errors.push(`Unknown stage: ${rec.stage}`);
+  for (const rec of m.stages as unknown[]) {
+    if (!isRecord(rec)) {
+      errors.push("each stage record must be an object");
+      continue;
+    }
+    if (typeof rec.stage !== "string" || !(unitStages as readonly string[]).includes(rec.stage)) {
+      errors.push(`Unknown stage: ${String(rec.stage)}`);
+      continue;
+    }
     if (seen.has(rec.stage)) errors.push(`Duplicate stage: ${rec.stage}`);
     seen.add(rec.stage);
-    if (rec.state === "done" && !rec.outputRevision) errors.push(`Stage ${rec.stage} is done without outputRevision`);
+    if (typeof rec.state !== "string" || !STAGE_STATES.includes(rec.state)) {
+      errors.push(`Stage ${rec.stage} has invalid state: ${String(rec.state)}`);
+    }
+    if (!("inputRevision" in rec)) errors.push(`Stage ${rec.stage} is missing inputRevision`);
+    else checkRevision(rec.inputRevision, `Stage ${rec.stage} inputRevision`, errors);
+    if (!("outputRevision" in rec)) errors.push(`Stage ${rec.stage} is missing outputRevision`);
+    else checkRevision(rec.outputRevision, `Stage ${rec.stage} outputRevision`, errors);
+    if (rec.state === "done" && (typeof rec.outputRevision !== "string" || rec.outputRevision.length === 0)) {
+      errors.push(`Stage ${rec.stage} is done without outputRevision`);
+    }
+    if (!Array.isArray(rec.unresolved) || !(rec.unresolved as unknown[]).every((u) => typeof u === "string")) {
+      errors.push(`Stage ${rec.stage} unresolved must be an array of strings`);
+    } else {
+      (rec.unresolved as string[]).forEach((u, i) => checkText(u, `Stage ${rec.stage} unresolved[${i}]`, errors));
+    }
   }
   for (const stage of unitStages) {
     if (!seen.has(stage)) errors.push(`Missing stage: ${stage}`);
   }
   return errors;
+}
+
+/** Admission boundary: decode unknown JSON into a checked manifest or throw. */
+export function decodeUnitManifest(raw: unknown): QuestionUnitManifest {
+  const errors = validateUnitManifest(raw as QuestionUnitManifest);
+  if (errors.length) throw new Error(`Invalid unit manifest: ${errors.join("; ")}`);
+  return raw as QuestionUnitManifest;
+}
+
+function assertValid(m: QuestionUnitManifest): void {
+  const errors = validateUnitManifest(m);
+  if (errors.length) throw new Error(`Invalid unit manifest: ${errors.join("; ")}`);
 }
 
 /** Downstream stages (excluding `stage` itself) in topological order. */
@@ -234,6 +333,7 @@ export function downstreamOf(stage: UnitStageId): UnitStageId[] {
  * keep their state and revisions, so unchanged work is never rebuilt.
  */
 export function invalidateFrom(m: QuestionUnitManifest, stage: UnitStageId): QuestionUnitManifest {
+  assertValid(m);
   const stale = new Set<UnitStageId>([stage, ...downstreamOf(stage)]);
   return {
     ...m,
@@ -257,6 +357,7 @@ export interface UnitPlan {
 
 /** Next work for one question: runnable stages in order, plus blockers. */
 export function planUnitWork(m: QuestionUnitManifest): UnitPlan {
+  assertValid(m);
   const byStage = new Map(m.stages.map((r) => [r.stage, r]));
   const done = unitStages.filter((s) => byStage.get(s)?.state === "done");
   const doneSet = new Set(done);
@@ -273,11 +374,15 @@ export function planUnitWork(m: QuestionUnitManifest): UnitPlan {
     if (waitingOn.length === 0) runnable.push(stage);
     else blocked.push({ stage, waitingOn });
   }
+  // Deliverable only when the whole dependency closure is current: every
+  // stage done. A stale/pending ancestor blocks delivery even if the layout
+  // record still says done; unresolved items alone do not block (residual
+  // uncertainty is reported, not silently resolved or treated as failure).
   const blockers: string[] = [];
-  const layout = byStage.get("question-layout");
-  if (layout?.state !== "done") blockers.push("question-layout is not done");
-  for (const rec of m.stages) {
-    if (rec.state === "blocked") blockers.push(`${rec.stage} is blocked`);
+  for (const stage of unitStages) {
+    const rec = byStage.get(stage);
+    if (rec?.state === "blocked") blockers.push(`${stage} is blocked`);
+    else if (rec?.state !== "done") blockers.push(`${stage} is not done (${rec?.state ?? "missing"})`);
   }
   return {
     questionId: m.questionId,
@@ -291,6 +396,7 @@ export function planUnitWork(m: QuestionUnitManifest): UnitPlan {
 
 /** All unresolved items of a unit, grouped by stage (per-question ledger). */
 export function unitUnresolvedLedger(m: QuestionUnitManifest): { stage: UnitStageId; items: string[] }[] {
+  assertValid(m);
   return m.stages
     .filter((r) => r.unresolved.length > 0)
     .map((r) => ({ stage: r.stage, items: [...r.unresolved] }));
@@ -311,6 +417,7 @@ export interface AssemblyPlan {
  */
 export function planAssembly(manifests: readonly QuestionUnitManifest[]): AssemblyPlan {
   if (manifests.length === 0) throw new Error("planAssembly requires at least one unit");
+  for (const m of manifests) assertValid(m);
   const hashes = new Set(manifests.map((m) => m.source.sourceSha256));
   if (hashes.size !== 1) throw new Error("All units in one assembly must share the same sourceSha256");
   const ids = manifests.map((m) => m.questionId);
