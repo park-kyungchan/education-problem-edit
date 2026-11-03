@@ -1,7 +1,7 @@
 /**
  * Per-question (문항단위) pipeline contracts and planning.
  *
- * The whole-exam pipeline in docs/workflow.md stays the assembly path.
+ * Whole-exam assembly consumes selected finished units.
  * This module makes a single question the unit of intake, transcription,
  * verification, invalidation and delivery, so work on one question never
  * requires re-running or re-verifying the whole PDF.

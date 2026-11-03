@@ -1,25 +1,15 @@
 # Problem Edit
 
-Math exam restoration code, curated knowledge and selected historical context in one repository.
+Math exam restoration and problem editing. Reusable domain knowledge is in Hindsight; [AGENTS.md](AGENTS.md) is the minimal agent entry route. Live schemas and behavior are defined by `src/` and tests.
 
-Start with the [context map](context/README.md), [current selection](context/current.json), [architecture and directory tree](docs/architecture.md), and [restoration workflow](docs/workflow.md). Repository agent guidance is in [AGENTS.md](AGENTS.md).
-
-## Run
-
-Requires Bun 1.4.3 (pinned in package.json `packageManager`). From the repository root:
+Use the Bun version in [package.json](package.json):
 
 ```sh
+bun install --frozen-lockfile
 bun test
+bun run typecheck
 bun run check:context
-bun run layout resolve --profile reference-single-column --format hwpx
-bun run unit parse "문항 3"
-bun run knowledge route restore-exam --max-chars 6000
+bun run review help
 ```
 
-The next-document selection is a single-column reference layout and HWPX format. The portable selector and knowledge retrieval are runnable. The historical decision, figure and composition packages need dependency and native-environment work before complete PDF-to-HWPX restoration can be claimed.
-
-## Structure
-
-`src/` owns the portable selector and the per-question pipeline core ([docs/question-unit-pipeline.md](docs/question-unit-pipeline.md)). `packages/` owns knowledge, the decision prototype, figure authoring and document composition. `context/` owns the current transfer state, the historical requirements/decisions/checks, and the import coverage manifest. `docs/` explains the workflow and boundaries. New per-source inputs and outputs belong in ignored `runs/`.
-
-The retained knowledge release includes 71 rule/procedure/case records, 76 source references and 75 distinct evidence snapshots. Another 21 selected operation documents describe past requirements, plans, completion decisions and held work. [coverage.json](context/coverage.json) records every imported file hash and all known exclusions. The historical broad file inventory, complete Hancom research corpus, original PDFs, native deliveries and native runtime state are not bundled. Historical source paths are provenance, not portable dependencies. Full local-context collection and end-to-end authoring verification are not claimed.
+The immutable local knowledge dataset and historical evidence remain available to code on demand. Portable checks do not qualify full PDF conversion or native Hancom behavior.

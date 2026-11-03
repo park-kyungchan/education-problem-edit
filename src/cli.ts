@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { layouts, resolveLayout } from "./layout";
+import { runReviewCli } from "./review-cli";
 import {
   createUnitManifest,
   decodeUnitManifest,
@@ -16,7 +17,7 @@ import {
 } from "./question";
 
 const USAGE =
-  "Usage: layout list | layout resolve [--profile ID] [--existing ID] [--format hwp|hwpx] | unit parse <selection> [--available Q1,Q2] | unit new --source-sha <64hex> --question <id> --physical-page <n> [--logical-order <n>] [--crop x1,y1,x2,y2] | unit validate --file <manifest.json> | unit plan --file <manifest.json> | unit invalidate --file <manifest.json> --stage <stage> | unit assemble --file <a.json,b.json>";
+  "Usage: layout list | layout resolve [--profile ID] [--existing ID] [--format hwp|hwpx] | unit parse <selection> [--available Q1,Q2] | unit new --source-sha <64hex> --question <id> --physical-page <n> [--logical-order <n>] [--crop x1,y1,x2,y2] | unit validate --file <manifest.json> | unit plan --file <manifest.json> | unit invalidate --file <manifest.json> --stage <stage> | unit assemble --file <a.json,b.json> | review help";
 
 function pairs(rest: string[], allowed: readonly string[]): Record<string, string> {
   const values: Record<string, string> = {};
@@ -44,6 +45,8 @@ try {
       const values = pairs(args.slice(2), ["--profile", "--existing", "--format"]);
       console.log(JSON.stringify(resolveLayout({ requested: values["--profile"], existing: values["--existing"], format: values["--format"] }), null, 2));
     } else throw new Error(USAGE);
+  } else if (args[0] === "review") {
+    console.log(JSON.stringify(runReviewCli(args.slice(1)), null, 2));
   } else if (args[0] === "unit") {
     const cmd = args[1];
     if (cmd === "parse") {
