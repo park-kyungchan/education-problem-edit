@@ -1,0 +1,40 @@
+{
+  "kind": "case",
+  "id": "C-d-q6-dash",
+  "title": "Daechi Q6: Length/dimension indication must follow the original dashed style.",
+  "stage": "assets",
+  "exam": "daechi-20261022",
+  "question": 6,
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "6-"
+    },
+    {
+      "sourceId": "S-optimizationF"
+    },
+    {
+      "sourceId": "S-finalF"
+    }
+  ],
+  "symptom": "Length/dimension indication must follow the original dashed style.",
+  "cause": null,
+  "expected": "Inventory dimension segment/leader/dash patterns globally; restore the source pattern.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-visual-semantics"
+  ],
+  "requiredChecks": [
+    "Pinned original/output region comparison.",
+    "Typed source-mark/semantic ownership coverage.",
+    "Only affected descendants invalidated."
+  ],
+  "limitation": "Source-specific user expectation and producer-reported v2 correction. This curator did not independently regrade the original image; causal attribution remains unproven.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

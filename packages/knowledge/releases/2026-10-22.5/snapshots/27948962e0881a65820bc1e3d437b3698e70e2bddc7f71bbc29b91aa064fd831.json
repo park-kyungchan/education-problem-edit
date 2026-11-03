@@ -1,0 +1,38 @@
+{
+  "schema": "daechi.page-template.v1",
+  "paper": "A4",
+  "columns": 2,
+  "questionsPerPage": 4,
+  "columnQuestionOrder": "top-to-bottom, then next column",
+  "firstPageBodyMm": 222,
+  "otherPageBodyMm": 247,
+  "questionWidth": 24500,
+  "frameWidth": 22600,
+  "firstSlotMinMm": {
+    "1": [
+      104,
+      112
+    ],
+    "2": [
+      117,
+      112
+    ],
+    "3": [
+      115,
+      119
+    ],
+    "4": [
+      110,
+      110
+    ],
+    "5": [
+      57,
+      128
+    ],
+    "6": [
+      119,
+      111
+    ]
+  },
+  "semantics": "Minimum first-question slot height. Content expands naturally; second question takes remaining column. Question content and local geometry do not encode page coordinates."
+}

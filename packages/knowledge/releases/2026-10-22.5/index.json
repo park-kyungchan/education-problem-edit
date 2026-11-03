@@ -1,0 +1,499 @@
+[
+  {
+    "id": "R-source-order",
+    "kind": "rule",
+    "title": "Pin physical pages and logical order separately",
+    "stage": "source",
+    "path": "records/R-source-order.json"
+  },
+  {
+    "id": "R-uncertainty",
+    "kind": "rule",
+    "title": "Keep unknowns separate from authorized approximation",
+    "stage": "semantics",
+    "path": "records/R-uncertainty.json"
+  },
+  {
+    "id": "R-mark-provenance",
+    "kind": "rule",
+    "title": "Classify marks by role and provenance before cleanup",
+    "stage": "regions",
+    "path": "records/R-mark-provenance.json"
+  },
+  {
+    "id": "R-visual-semantics",
+    "kind": "rule",
+    "title": "Represent printed decorative marks as semantic objects",
+    "stage": "assets",
+    "path": "records/R-visual-semantics.json"
+  },
+  {
+    "id": "R-geometry-topology",
+    "kind": "rule",
+    "title": "Construct dependent geometry from typed relationships",
+    "stage": "geometry",
+    "path": "records/R-geometry-topology.json"
+  },
+  {
+    "id": "R-parameter-ownership",
+    "kind": "rule",
+    "title": "Bind shared values by parameter ID",
+    "stage": "semantics",
+    "path": "records/R-parameter-ownership.json"
+  },
+  {
+    "id": "R-label-anchor",
+    "kind": "rule",
+    "title": "Anchor labels to owners and resolve collisions in presentation",
+    "stage": "assets",
+    "path": "records/R-label-anchor.json"
+  },
+  {
+    "id": "R-native-editability",
+    "kind": "rule",
+    "title": "Keep text, math and frames in native objects",
+    "stage": "question-layout",
+    "path": "records/R-native-editability.json"
+  },
+  {
+    "id": "R-equation-tokens",
+    "kind": "rule",
+    "title": "Use qualified token-aware EqEdit mappings",
+    "stage": "equations",
+    "path": "records/R-equation-tokens.json"
+  },
+  {
+    "id": "R-equation-metrics",
+    "kind": "rule",
+    "title": "Use native metrics instead of blanket width multipliers",
+    "stage": "equations",
+    "path": "records/R-equation-metrics.json"
+  },
+  {
+    "id": "R-equation-alignment",
+    "kind": "rule",
+    "title": "Reuse explicit alignment recipes",
+    "stage": "equations",
+    "path": "records/R-equation-alignment.json"
+  },
+  {
+    "id": "R-underline",
+    "kind": "rule",
+    "title": "Store underline as a source-bound text span",
+    "stage": "transcription",
+    "path": "records/R-underline.json"
+  },
+  {
+    "id": "R-question-container",
+    "kind": "rule",
+    "title": "Make a whole question the native copy unit",
+    "stage": "question-layout",
+    "path": "records/R-question-container.json"
+  },
+  {
+    "id": "R-layout-separation",
+    "kind": "rule",
+    "title": "Separate content, question layout and page template",
+    "stage": "page-layout",
+    "path": "records/R-layout-separation.json"
+  },
+  {
+    "id": "R-section-properties",
+    "kind": "rule",
+    "title": "Preserve section controls when replacing paragraph runs",
+    "stage": "package",
+    "path": "records/R-section-properties.json"
+  },
+  {
+    "id": "R-native-owner",
+    "kind": "rule",
+    "title": "Render through a fresh demonstrably owned Hancom instance",
+    "stage": "native",
+    "path": "records/R-native-owner.json"
+  },
+  {
+    "id": "R-proportionate-checks",
+    "kind": "rule",
+    "title": "Verify distinct claims with the smallest useful checks",
+    "stage": "native",
+    "path": "records/R-proportionate-checks.json"
+  },
+  {
+    "id": "R-selective-invalidation",
+    "kind": "rule",
+    "title": "Propagate changes by typed dependency edges",
+    "stage": "feedback",
+    "path": "records/R-selective-invalidation.json"
+  },
+  {
+    "id": "R-paid-recovery",
+    "kind": "rule",
+    "title": "Reuse transport evidence without replaying uncertain paid calls",
+    "stage": "routing",
+    "path": "records/R-paid-recovery.json"
+  },
+  {
+    "id": "R-research-reuse",
+    "kind": "rule",
+    "title": "Reuse dated research by role and refresh only the changed surface",
+    "stage": "routing",
+    "path": "records/R-research-reuse.json"
+  },
+  {
+    "id": "R-feedback-lineage",
+    "kind": "rule",
+    "title": "Capture feedback as typed upstream/downstream evidence",
+    "stage": "feedback",
+    "path": "records/R-feedback-lineage.json"
+  },
+  {
+    "id": "R-eval-boundary",
+    "kind": "rule",
+    "title": "Reference concurrent rubric ownership without adopting proposals",
+    "stage": "feedback",
+    "path": "records/R-eval-boundary.json"
+  },
+  {
+    "id": "R-asset-role",
+    "kind": "rule",
+    "title": "Validate assets by role and the actual export codec",
+    "stage": "assets",
+    "path": "records/R-asset-role.json"
+  },
+  {
+    "id": "R-raster-style",
+    "kind": "rule",
+    "title": "Check rasterization preserves line styles",
+    "stage": "assets",
+    "path": "records/R-raster-style.json"
+  },
+  {
+    "id": "P-source",
+    "kind": "procedure",
+    "title": "Ingest and order an exam",
+    "stage": "source",
+    "path": "records/P-source.json"
+  },
+  {
+    "id": "P-provenance",
+    "kind": "procedure",
+    "title": "Recover printed objects and remove student additions",
+    "stage": "regions",
+    "path": "records/P-provenance.json"
+  },
+  {
+    "id": "P-transcription",
+    "kind": "procedure",
+    "title": "Build editable question content",
+    "stage": "transcription",
+    "path": "records/P-transcription.json"
+  },
+  {
+    "id": "P-image-code",
+    "kind": "procedure",
+    "title": "Reconstruct image as semantic geometry and SVG",
+    "stage": "geometry",
+    "path": "records/P-image-code.json"
+  },
+  {
+    "id": "P-geometry-edit",
+    "kind": "procedure",
+    "title": "Apply a bounded geometry or label edit",
+    "stage": "geometry",
+    "path": "records/P-geometry-edit.json"
+  },
+  {
+    "id": "P-equations",
+    "kind": "procedure",
+    "title": "Normalize and size native equations",
+    "stage": "equations",
+    "path": "records/P-equations.json"
+  },
+  {
+    "id": "P-frames",
+    "kind": "procedure",
+    "title": "Align example lists and proof frames",
+    "stage": "question-layout",
+    "path": "records/P-frames.json"
+  },
+  {
+    "id": "P-copy",
+    "kind": "procedure",
+    "title": "Make whole questions copyable",
+    "stage": "question-layout",
+    "path": "records/P-copy.json"
+  },
+  {
+    "id": "P-page",
+    "kind": "procedure",
+    "title": "Compose the selected page layout independently of content",
+    "stage": "page-layout",
+    "path": "records/P-page.json"
+  },
+  {
+    "id": "P-package",
+    "kind": "procedure",
+    "title": "Check new HWPX bytes once",
+    "stage": "package",
+    "path": "records/P-package.json"
+  },
+  {
+    "id": "P-native",
+    "kind": "procedure",
+    "title": "Run the required native behavior check",
+    "stage": "native",
+    "path": "records/P-native.json"
+  },
+  {
+    "id": "P-routing",
+    "kind": "procedure",
+    "title": "Choose a known tool or bounded model contribution",
+    "stage": "routing",
+    "path": "records/P-routing.json"
+  },
+  {
+    "id": "P-feedback",
+    "kind": "procedure",
+    "title": "Turn a defect into traceable feedback and a regression case",
+    "stage": "feedback",
+    "path": "records/P-feedback.json"
+  },
+  {
+    "id": "P-maintenance",
+    "kind": "procedure",
+    "title": "Extend the knowledge space without rewriting history",
+    "stage": "feedback",
+    "path": "records/P-maintenance.json"
+  },
+  {
+    "id": "C-j20-proof-width",
+    "kind": "case",
+    "title": "Proof equality overlaps following Korean",
+    "stage": "equations",
+    "path": "records/C-j20-proof-width.json"
+  },
+  {
+    "id": "C-j20-body-width",
+    "kind": "case",
+    "title": "Ink measurement with no body-width edits",
+    "stage": "equations",
+    "path": "records/C-j20-body-width.json"
+  },
+  {
+    "id": "C-j20-q11",
+    "kind": "case",
+    "title": "Illustrative O/I geometry with unresolved source rays",
+    "stage": "geometry",
+    "path": "records/C-j20-q11.json"
+  },
+  {
+    "id": "C-j21-spacing",
+    "kind": "case",
+    "title": "Historical Jungdong width heuristic adds padding",
+    "stage": "equations",
+    "path": "records/C-j21-spacing.json"
+  },
+  {
+    "id": "C-j21-box-port",
+    "kind": "case",
+    "title": "Box result cannot apply through candidate-ID helper",
+    "stage": "routing",
+    "path": "records/C-j21-box-port.json"
+  },
+  {
+    "id": "C-d-source-order",
+    "kind": "case",
+    "title": "Daechi physical pages 3 and 4 are swapped",
+    "stage": "source",
+    "path": "records/C-d-source-order.json"
+  },
+  {
+    "id": "C-d-base-spacing",
+    "kind": "case",
+    "title": "Daechi base uses 25% width safeguard",
+    "stage": "equations",
+    "path": "records/C-d-base-spacing.json"
+  },
+  {
+    "id": "C-d-template",
+    "kind": "case",
+    "title": "Four questions per page with independent local layout",
+    "stage": "page-layout",
+    "path": "records/C-d-template.json"
+  },
+  {
+    "id": "C-d-q6-dash",
+    "kind": "case",
+    "title": "Daechi Q6: Length/dimension indication must follow the original dashed style.",
+    "stage": "assets",
+    "path": "records/C-d-q6-dash.json"
+  },
+  {
+    "id": "C-d-q8-pencil",
+    "kind": "case",
+    "title": "Daechi Q8: Extra angle marks near B/C are student pencil additions.",
+    "stage": "regions",
+    "path": "records/C-d-q8-pencil.json"
+  },
+  {
+    "id": "C-d-q9-angle",
+    "kind": "case",
+    "title": "Daechi Q9: Printed angle pointer is missing and the AIB 114-degree label overlaps AB.",
+    "stage": "assets",
+    "path": "records/C-d-q9-angle.json"
+  },
+  {
+    "id": "C-d-q10-fill",
+    "kind": "case",
+    "title": "Daechi Q10: Printed shading that indicates angle B must be restored.",
+    "stage": "assets",
+    "path": "records/C-d-q10-fill.json"
+  },
+  {
+    "id": "C-d-q11-arrow",
+    "kind": "case",
+    "title": "Daechi Q11: The 26-degree angle pointer is original.",
+    "stage": "assets",
+    "path": "records/C-d-q11-arrow.json"
+  },
+  {
+    "id": "C-d-q17-frame",
+    "kind": "case",
+    "title": "Daechi Q17: Items (ㄱ) through (ㅂ) in the example frame need alignment.",
+    "stage": "equations",
+    "path": "records/C-d-q17-frame.json"
+  },
+  {
+    "id": "C-d-q18-frame",
+    "kind": "case",
+    "title": "Daechi Q18: Proof/example frame content needs consistent alignment.",
+    "stage": "question-layout",
+    "path": "records/C-d-q18-frame.json"
+  },
+  {
+    "id": "C-d-q20-arrow",
+    "kind": "case",
+    "title": "Daechi Q20: An arrow requires restoration; feedback does not specify a complete semantic target.",
+    "stage": "assets",
+    "path": "records/C-d-q20-arrow.json"
+  },
+  {
+    "id": "C-d-q21-AP",
+    "kind": "case",
+    "title": "Daechi Q21: Segment AP is printed original content.",
+    "stage": "regions",
+    "path": "records/C-d-q21-AP.json"
+  },
+  {
+    "id": "C-d-q24-ticks",
+    "kind": "case",
+    "title": "Daechi Q24: Equal angle ECB/ECD have the same tick on the angle marks.",
+    "stage": "assets",
+    "path": "records/C-d-q24-ticks.json"
+  },
+  {
+    "id": "C-d-underline",
+    "kind": "case",
+    "title": "Printed underlines must remain native underlines",
+    "stage": "transcription",
+    "path": "records/C-d-underline.json"
+  },
+  {
+    "id": "C-d-raster-dash",
+    "kind": "case",
+    "title": "SVG dash arrays lost in initial raster trial",
+    "stage": "assets",
+    "path": "records/C-d-raster-dash.json"
+  },
+  {
+    "id": "C-d-q18-transfer",
+    "kind": "case",
+    "title": "Q18 whole-question native selected-block transfer",
+    "stage": "native",
+    "path": "records/C-d-q18-transfer.json"
+  },
+  {
+    "id": "C-d-uncertain-emphasis",
+    "kind": "case",
+    "title": "Q16/Q17 extra stem emphasis remains uncertain",
+    "stage": "regions",
+    "path": "records/C-d-uncertain-emphasis.json"
+  },
+  {
+    "id": "R-hancom-surface",
+    "kind": "rule",
+    "title": "Route Hancom features by control surface and exact evidence",
+    "stage": "routing",
+    "path": "records/R-hancom-surface.json"
+  },
+  {
+    "id": "R-selected-image-patch",
+    "kind": "rule",
+    "title": "Patch selected image payloads when the native layout envelope is unchanged",
+    "stage": "package",
+    "path": "records/R-selected-image-patch.json"
+  },
+  {
+    "id": "P-selected-image-patch",
+    "kind": "procedure",
+    "title": "Apply a bounded diagram payload update",
+    "stage": "package",
+    "path": "records/P-selected-image-patch.json"
+  },
+  {
+    "id": "C-d-v3-image-only",
+    "kind": "case",
+    "title": "Q1/Q5/Q10 image-only successor without document reauthoring",
+    "stage": "package",
+    "path": "records/C-d-v3-image-only.json"
+  },
+  {
+    "id": "P-native-transfer",
+    "kind": "procedure",
+    "title": "Transfer a complete selected question with explicit behavior states",
+    "stage": "native",
+    "path": "records/P-native-transfer.json"
+  },
+  {
+    "id": "R-layout-choice",
+    "kind": "rule",
+    "title": "Preserve selectable layouts independently of file format",
+    "stage": "routing",
+    "path": "records/R-layout-choice.json"
+  },
+  {
+    "id": "P-layout-selection",
+    "kind": "procedure",
+    "title": "Resolve the requested presentation before composing",
+    "stage": "routing",
+    "path": "records/P-layout-selection.json"
+  },
+  {
+    "id": "P-reference-layout",
+    "kind": "procedure",
+    "title": "Reflow preserved native question containers into a reference layout",
+    "stage": "page-layout",
+    "path": "records/P-reference-layout.json"
+  },
+  {
+    "id": "R-retrieval-candidate-integrity",
+    "kind": "rule",
+    "title": "Verify candidate occurrences and cover all requested evidence roles",
+    "stage": "routing",
+    "path": "records/R-retrieval-candidate-integrity.json"
+  },
+  {
+    "id": "P-retrieval-audit",
+    "kind": "procedure",
+    "title": "Diagnose retrieval quality before adding more semantic decisions",
+    "stage": "routing",
+    "path": "records/P-retrieval-audit.json"
+  },
+  {
+    "id": "C-d-reference-layout",
+    "kind": "case",
+    "title": "Single-column native HWP successor preserves all v3 question content",
+    "stage": "page-layout",
+    "path": "records/C-d-reference-layout.json"
+  }
+]

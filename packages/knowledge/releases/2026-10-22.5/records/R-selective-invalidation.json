@@ -1,0 +1,30 @@
+{
+  "kind": "rule",
+  "id": "R-selective-invalidation",
+  "title": "Propagate changes by typed dependency edges",
+  "stage": "feedback",
+  "evidenceClass": "proposal",
+  "applicability": "proposed-contract",
+  "evidence": [
+    {
+      "sourceId": "S-architecture20",
+      "pointer": "/editFlow"
+    },
+    {
+      "sourceId": "S-eval22",
+      "pointer": "/traceabilityRequired"
+    }
+  ],
+  "when": "A local correction risks expensive full regeneration.",
+  "do": [
+    "Trace ancestors to evidence and suspected producer stage.",
+    "Invalidate affected descendants by content/topology/style/metric/layout aspect.",
+    "Keep failed attempts and unchanged-node hashes; a source-byte change invalidates source-based caches."
+  ],
+  "avoid": [],
+  "check": [
+    "All affected outputs rebuilt; unaffected content remains identical."
+  ],
+  "invalidates": [],
+  "limitation": "The bundled stage graph gives a conservative planning envelope; actual node-level dependencies must come from the producer."
+}

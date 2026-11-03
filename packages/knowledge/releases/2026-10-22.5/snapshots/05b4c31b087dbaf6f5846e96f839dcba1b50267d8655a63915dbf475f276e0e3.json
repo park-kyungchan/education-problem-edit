@@ -1,0 +1,23 @@
+{
+  "schema": "jungdong.continuation-checkpoint.v1",
+  "updatedAt": "2026-10-22T05:41:21.568Z",
+  "state": "completed-by-actual-user-direction",
+  "finalReadback": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/final-readback.actual.json",
+  "handoff": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/handoff.json",
+  "productionAndExplanationComplete": true,
+  "pending": [],
+  "automaticContinuation": false,
+  "acceptanceDecision": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/acceptance/user-visual-review.actual.json",
+    "sha256": "39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128",
+    "decision": "complete-work-as-delivered",
+    "owner": "actual-user"
+  },
+  "currentCompletionRef": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/acceptance/user-visual-review.actual.json",
+    "sha256": "39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128",
+    "decision": "complete-work-as-delivered",
+    "owner": "actual-user"
+  },
+  "sourceAccuracyAcceptance": null
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "rule",
+  "id": "R-feedback-lineage",
+  "title": "Capture feedback as typed upstream/downstream evidence",
+  "stage": "feedback",
+  "evidenceClass": "proposal",
+  "applicability": "proposed-contract",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD"
+    },
+    {
+      "sourceId": "S-eval22",
+      "pointer": "/traceabilityRequired"
+    },
+    {
+      "sourceId": "S-evaluation20",
+      "pointer": "/metrics"
+    }
+  ],
+  "when": "A defect should teach later routing, perception, code or layout decisions.",
+  "do": [
+    "Bind observation to source region, question/node ID and exact artifact hash.",
+    "Store expected behavior, suspected/supported cause, rubric version, attempts, route/prompt, failed outputs and actual cost/time.",
+    "Map a regression case to the existing evaluator contract; use null for unknowns."
+  ],
+  "avoid": [],
+  "check": [
+    "No producer self-score becomes independent truth; no unmeasured savings or model training claim."
+  ],
+  "invalidates": [],
+  "limitation": "Backward propagation here is traceable error attribution and selective rebuild, not gradient training."
+}

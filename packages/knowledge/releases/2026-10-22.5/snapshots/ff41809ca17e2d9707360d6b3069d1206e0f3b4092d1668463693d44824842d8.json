@@ -1,0 +1,219 @@
+{
+  "schema": "math-editing.jev-treatment-measurements.v1",
+  "recordedAt": "2026-10-22T10:20:03.286Z",
+  "frozenRelease": "2026-10-22.2",
+  "model": "gpt-6-luna",
+  "effort": "high",
+  "nativeSessionPath": "/home/palantirkc/.codex/sessions/2026/10/22/rollout-2026-10-22T19-00-41-01a1630e-4416-7322-bdd1-e2286485f106.jsonl",
+  "nativeSessionId": "01a1630e-4416-7322-bdd1-e2286485f106",
+  "submittedAt": "2026-10-22T10:02:27.711Z",
+  "taskStartedAt": "2026-10-22T10:02:28.051Z",
+  "completedAt": "2026-10-22T10:10:36.270Z",
+  "taskWallMs": 488219,
+  "dispatchToCompletionWallMs": 488559,
+  "usage": {
+    "input_tokens": 2300434,
+    "cached_input_tokens": 2161920,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 46660,
+    "reasoning_output_tokens": 25566,
+    "total_tokens": 2347094,
+    "uncachedInputTokens": 138514
+  },
+  "actualToolInvocations": 28,
+  "knowledgeRetrievalInvocations": 8,
+  "nativeProtocolCommandInvocations": 59,
+  "nativeDecisionRequests": 3,
+  "nativeDecisionRecords": 30,
+  "primitiveAnswers": 68,
+  "sourceRecordApplications": 28,
+  "supersededApplications": 3,
+  "nonSupersededApplications": 25,
+  "familiesReviewed": 32,
+  "decisionFamilies": [
+    "intake-intent",
+    "task-split",
+    "context-selection",
+    "hierarchy-route",
+    "tool-choice",
+    "function-arguments",
+    "passage-role",
+    "semantic-find",
+    "citation-relation",
+    "document-rerank",
+    "entity-alignment",
+    "output-triage",
+    "failure-class",
+    "recovery-action",
+    "task-priority",
+    "work-state",
+    "dependency-relation",
+    "skill-choice",
+    "continuation-context"
+  ],
+  "observedProviderCostUsd": "0.001153530",
+  "providerUsage": {
+    "inputTokens": 27465,
+    "outputTokens": 1831
+  },
+  "outcomes": [
+    {
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "path": "/home/palantirkc/operations/herdr-jev-first-adoption-20261021/activation/receipts/8223ad23bdd7ae2f2796a8c1d62700e798f5586be253aa8fcf6bfc905770d669/outcome.json",
+      "sha256": "e16cac015aa1abd5f2d89ac4a231f4caad4a2910049a9a167342f7975ab4afd2",
+      "httpStatus": 200,
+      "model": "typesafe-ai/jev-1.14.0",
+      "usage": {
+        "input_tokens": 8188,
+        "output_tokens": 554
+      },
+      "primitiveAnswers": 20,
+      "cost": {
+        "generationId": "gen_01M5HH3844RTBT59SNFTVFZWEF",
+        "gatewayCostUsd": "0.000343896",
+        "costUsd": "0.000343896",
+        "marketCostUsd": "0.000343896",
+        "surchargeCostUsd": "0",
+        "upstreamInferenceCostUsd": null,
+        "byok": false,
+        "authoritativeTotalComplete": true,
+        "routeAndAttemptEnvelopeMatched": true
+      },
+      "providerAttempts": [
+        {
+          "provider": "typesafe-ai",
+          "statusCode": 200,
+          "elapsedMs": 214
+        }
+      ],
+      "retries": 0,
+      "fallbacks": []
+    },
+    {
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "path": "/home/palantirkc/operations/herdr-jev-first-adoption-20261021/activation/receipts/c6d95093d86f86e89165dfa47946c132ca98026d68065022c13f46c5d1c33a94/outcome.json",
+      "sha256": "155e127c4395db8070ae2e6300abe48453e57632de931b67a4297ecd523d217d",
+      "httpStatus": 200,
+      "model": "typesafe-ai/jev-1.14.0",
+      "usage": {
+        "input_tokens": 12628,
+        "output_tokens": 873
+      },
+      "primitiveAnswers": 33,
+      "cost": {
+        "generationId": "gen_01M5HH5A7PE6J20Y6T0GD92Z17",
+        "gatewayCostUsd": "0.000530376",
+        "costUsd": "0.000530376",
+        "marketCostUsd": "0.000530376",
+        "surchargeCostUsd": "0",
+        "upstreamInferenceCostUsd": null,
+        "byok": false,
+        "authoritativeTotalComplete": true,
+        "routeAndAttemptEnvelopeMatched": true
+      },
+      "providerAttempts": [
+        {
+          "provider": "typesafe-ai",
+          "statusCode": 200,
+          "elapsedMs": 245
+        }
+      ],
+      "retries": 0,
+      "fallbacks": []
+    },
+    {
+      "requestId": "jev-95af9ab6d4182c15bcad5c23522df4f2600b2b9ea4784c8eeeb80740e87e4bd6",
+      "path": "/home/palantirkc/operations/herdr-jev-first-adoption-20261021/activation/receipts/4364bb4e0cffd536a73bb0c0aef539d0d77935586f8f23e2b18b7c04b69a8853/outcome.json",
+      "sha256": "2facb1c2a1d6e14e979eec605458c235aad20210e7f37e0e72358b6a90012d69",
+      "httpStatus": 200,
+      "model": "typesafe-ai/jev-1.14.0",
+      "usage": {
+        "input_tokens": 6649,
+        "output_tokens": 404
+      },
+      "primitiveAnswers": 15,
+      "cost": {
+        "generationId": "gen_01M5HH7WTDV7P1VCWRCD8W1YV0",
+        "gatewayCostUsd": "0.000279258",
+        "costUsd": "0.000279258",
+        "marketCostUsd": "0.000279258",
+        "surchargeCostUsd": "0",
+        "upstreamInferenceCostUsd": null,
+        "byok": false,
+        "authoritativeTotalComplete": true,
+        "routeAndAttemptEnvelopeMatched": true
+      },
+      "providerAttempts": [
+        {
+          "provider": "typesafe-ai",
+          "statusCode": 200,
+          "elapsedMs": 220
+        }
+      ],
+      "retries": 0,
+      "fallbacks": []
+    }
+  ],
+  "binding": {
+    "consumerSessionId": "01a1630e-4416-7322-bdd1-e2286485f106",
+    "actualOwnerActorIds": [
+      "native-codex:01a1629f-4048-76a1-97e0-a00ef54f2a04"
+    ],
+    "actualOwnerSessionIds": [
+      "01a1629f-4048-76a1-97e0-a00ef54f2a04"
+    ],
+    "independentlyBoundLunaActor": false,
+    "meaning": "Root-owned native Jev decisions consumed by a separately observed Luna session. Inherited tool context retained the Root identity; no identity override or synthetic child actor was used."
+  },
+  "outputContract": {
+    "schemaMatched": true,
+    "caseCount": 4,
+    "missingFields": [
+      {
+        "id": "B1",
+        "fields": [
+          "recordIds",
+          "evidencePaths",
+          "limitations"
+        ]
+      },
+      {
+        "id": "B2",
+        "fields": [
+          "recordIds",
+          "evidencePaths",
+          "limitations"
+        ]
+      },
+      {
+        "id": "B3",
+        "fields": [
+          "recordIds",
+          "evidencePaths",
+          "limitations"
+        ]
+      },
+      {
+        "id": "B4",
+        "fields": [
+          "recordIds",
+          "evidencePaths",
+          "limitations"
+        ]
+      }
+    ],
+    "rawAnswerPreserved": true,
+    "normalizedAsContractPass": false
+  },
+  "answerSha256": "559adb5c14686ed4b677036dc7b0ed6d0bb7d3ab128aa3afd41fefb5c65e7ada",
+  "subscriptionUsd": null,
+  "activeMs": null,
+  "canonicalEvalRunId": null,
+  "acceptanceDecision": null,
+  "limitations": [
+    "One sequential diagnostic treatment with additional protocol/setup instructions; no causal model-quality or savings estimate.",
+    "Model input totals include repeated cached context. Reasoning is part of output, not additive.",
+    "Three source-occurrence selections used incorrect producer-authored candidate descriptions and were superseded.",
+    "One continuation decision was returned but failed native application; a fresh disposition request was denied STORAGE_INTEGRITY before provider submission. No paid replay or storage repair was attempted."
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "schema": "daechi.source-observations.v1",
+  "recordRole": "observation",
+  "source": {
+    "path": "/mnt/c/Users/packr/Downloads/중2 2026학년도 대치중 2학년 2학기 중간고사 (1).pdf",
+    "sha256": "2bfac149055818326290f4444f87f256b5063aa22518d0b79d386cb1f92e1006"
+  },
+  "userFeedback": {
+    "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+    "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+  },
+  "claims": [
+    {
+      "id": "claim.q2.dashed-dimensions",
+      "questionId": 2,
+      "objectIds": [
+        "entity.q2.dashed-dimensions"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q2.context",
+      "assertion": "External dashed dimension curves label AB=2x-1 and AC=x+1.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q6.dimensions",
+      "questionId": 6,
+      "objectIds": [
+        "entity.q6.dimensions"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q6.feature",
+      "assertion": "External AC=15cm and BD=4cm dimension curves are dashed; the geometric AC and BD segments stay solid.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q8.pencil-angles",
+      "questionId": 8,
+      "objectIds": [
+        "entity.q8.pencil-angles"
+      ],
+      "sourceRole": "student-annotation",
+      "regionId": "source.q8.feature",
+      "assertion": "The added angle arcs at B and C are pencil marks and are excluded; printed DE/BC parallel indicators and incenter spokes remain.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "exclude-from-restoration",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q9.114-leader",
+      "questionId": 9,
+      "objectIds": [
+        "entity.q9.114-leader"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q9.feature",
+      "assertion": "The 114-degree leader is printed and points to angle AIB. Its text is outside AB and separated from the leader.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q10.b-sector",
+      "questionId": 10,
+      "objectIds": [
+        "entity.q10.b-sector"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q10.feature",
+      "assertion": "The shaded angle at B is printed and is restored beneath the vertex rays.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q11.26-leader",
+      "questionId": 11,
+      "objectIds": [
+        "entity.q11.26-leader"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q11.feature",
+      "assertion": "The printed 26-degree leader points to angle ACI.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q17.aligned-options",
+      "questionId": 17,
+      "objectIds": [
+        "entity.q17.aligned-options"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q17.feature",
+      "assertion": "All six 보기 labels and shapes preserve row/column parentage and are aligned in a native equation MATRIX.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q18.proof-frame",
+      "questionId": 18,
+      "objectIds": [
+        "entity.q18.proof-frame"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q18.feature",
+      "assertion": "The proof frame contains its diagram, ten ordered text/math paragraphs, and five native rectangular blanks.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q20.15-leader",
+      "questionId": 20,
+      "objectIds": [
+        "entity.q20.15-leader"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q20.feature",
+      "assertion": "The printed 15-degree leader targets angle ECD.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q21.AP",
+      "questionId": 21,
+      "objectIds": [
+        "entity.q21.AP"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q21.feature",
+      "assertion": "Segment AP is original and is restored without the nearby pencil construction strokes.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q24.equal-angles",
+      "questionId": 24,
+      "objectIds": [
+        "entity.q24.equal-angles"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q24.feature",
+      "assertion": "Angles ECB and ECD have matching printed crossing ticks on their angle arcs.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q1.negative-underline",
+      "questionId": 1,
+      "objectIds": [
+        "entity.q1.negative-underline"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q1.context",
+      "assertion": "The source negative emphasis is retained as an editable native text underline.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q4.negative-underline",
+      "questionId": 4,
+      "objectIds": [
+        "entity.q4.negative-underline"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q4.context",
+      "assertion": "The source negative emphasis is retained as an editable native text underline.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q8.negative-underline",
+      "questionId": 8,
+      "objectIds": [
+        "entity.q8.negative-underline"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q8.feature",
+      "assertion": "The source negative emphasis is retained as an editable native text underline.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q13.negative-underline",
+      "questionId": 13,
+      "objectIds": [
+        "entity.q13.negative-underline"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q13.context",
+      "assertion": "The source negative emphasis is retained as an editable native text underline.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q14.negative-underline",
+      "questionId": 14,
+      "objectIds": [
+        "entity.q14.negative-underline"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q14.context",
+      "assertion": "The source negative emphasis is retained as an editable native text underline.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q18.negative-underline",
+      "questionId": 18,
+      "objectIds": [
+        "entity.q18.negative-underline"
+      ],
+      "sourceRole": "printed-original",
+      "regionId": "source.q18.feature",
+      "assertion": "The source negative emphasis is retained as an editable native text underline.",
+      "basis": [
+        "source-inspection",
+        "actual-user-direction"
+      ],
+      "disposition": "preserve",
+      "uncertainty": null
+    },
+    {
+      "id": "claim.q16.pencil-emphasis",
+      "questionId": 16,
+      "objectIds": [
+        "entity.q16.pencil-emphasis"
+      ],
+      "sourceRole": "uncertain",
+      "regionId": "source.q16.context",
+      "assertion": "Additional apparent emphasis around the area/different wording may be student strokes; it was not promoted to confirmed printed styling.",
+      "basis": [
+        "source-inspection"
+      ],
+      "disposition": "retain-uncertainty",
+      "uncertainty": "Source handwriting overlaps the stem; no clean original or item-specific adjudication was supplied. Core wording is preserved."
+    },
+    {
+      "id": "claim.q17.pencil-underline",
+      "questionId": 17,
+      "objectIds": [
+        "entity.q17.pencil-underline"
+      ],
+      "sourceRole": "uncertain",
+      "regionId": "source.q17.feature",
+      "assertion": "The irregular underline near the equal-diagonals phrase is not certified as printed styling and was not added to restored text.",
+      "basis": [
+        "source-inspection"
+      ],
+      "disposition": "retain-uncertainty",
+      "uncertainty": "Irregular line near the stem resembles pencil emphasis. The six 보기 entries themselves are legible."
+    }
+  ],
+  "sourceTruthCertified": false,
+  "notes": [
+    "Actual user classifications for the named numbered features are explicit evidence. Other observed features remain same-worker interpretations.",
+    "Original scans retain all marks. Restored assets are redraws, not destructive cleaned originals.",
+    "No answer solving was used to rewrite source content."
+  ]
+}

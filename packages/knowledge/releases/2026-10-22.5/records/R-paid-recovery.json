@@ -1,0 +1,30 @@
+{
+  "kind": "rule",
+  "id": "R-paid-recovery",
+  "title": "Reuse transport evidence without replaying uncertain paid calls",
+  "stage": "routing",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-recovery20",
+      "pointer": "/verification/qualification"
+    },
+    {
+      "sourceId": "S-source21",
+      "pointer": "/nativeProtocolGaps"
+    }
+  ],
+  "when": "Choosing a model/endpoint from historical routing records.",
+  "do": [
+    "Read exact endpoint/model/input-contract evidence and current native capability state.",
+    "Use deterministic code for hashes, schema, geometry and bookkeeping.",
+    "Treat absent original receipt/cost as unknown; preserve liabilities."
+  ],
+  "avoid": [],
+  "check": [
+    "Transport success is distinct from source interpretation quality or current authentication."
+  ],
+  "invalidates": [],
+  "limitation": "Historical Box response did not apply through the candidate-ID native port; offline qualification is not live admission."
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "case",
+  "id": "C-j20-body-width",
+  "title": "Ink measurement with no body-width edits",
+  "stage": "equations",
+  "exam": "jungdong-20261020",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-widthread20"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Concern about body square/equality glyph capacity.",
+  "cause": null,
+  "expected": "Use measured native ink and keep the finite approved mutation boundary.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-equation-metrics"
+  ],
+  "requiredChecks": [
+    "Read actual glyph bounds; distinguish capacity from unnecessary padding."
+  ],
+  "limitation": "The receipt says bodyWidthChanges=0; its numbers are fixture-specific.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

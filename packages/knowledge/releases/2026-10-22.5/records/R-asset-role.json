@@ -1,0 +1,36 @@
+{
+  "kind": "rule",
+  "id": "R-asset-role",
+  "title": "Validate assets by role and the actual export codec",
+  "stage": "assets",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-guide20",
+      "contains": "JPEG"
+    },
+    {
+      "sourceId": "S-imagecheck20"
+    }
+  ],
+  "when": "Comparing embedded PNGs with images extracted from native PDF.",
+  "do": [
+    "Use manifest hashes for original/restored HWPX assets.",
+    "Account for Hancom JPEG recompression when comparing PDF decoded pixels.",
+    "Keep original evidence and clean reconstruction as distinct roles."
+  ],
+  "avoid": [],
+  "check": [
+    "Role coverage, source bindings and dimensions match; codec effects do not become false semantic errors."
+  ],
+  "invalidates": [
+    "assets",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Historical tolerance values are fixture-specific, not a universal visual similarity threshold."
+}

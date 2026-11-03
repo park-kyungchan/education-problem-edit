@@ -1,0 +1,47 @@
+{
+  "kind": "procedure",
+  "id": "P-feedback",
+  "title": "Turn a defect into traceable feedback and a regression case",
+  "stage": "feedback",
+  "ruleIds": [
+    "R-feedback-lineage",
+    "R-selective-invalidation",
+    "R-eval-boundary"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD"
+    },
+    {
+      "sourceId": "S-eval22"
+    },
+    {
+      "sourceId": "S-evaluation20"
+    }
+  ],
+  "inputs": [
+    "source/output hashes",
+    "user or evaluator observation",
+    "node/region ID"
+  ],
+  "steps": [
+    "Capture FeedbackEvent with explicit expected behavior and cause status.",
+    "Trace backward through inputs to the smallest suspected stage.",
+    "Invalidate typed descendants; retain failed and corrected attempts.",
+    "Export frozen evidence/expectations to the existing evaluator owner; record actual quality/cost/time or null."
+  ],
+  "outputs": [
+    "feedback event",
+    "regression case proposal",
+    "minimal rebuild plan",
+    "comparison metrics"
+  ],
+  "implementationSourceIds": [
+    "S-eval22",
+    "S-ir-proposal20"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

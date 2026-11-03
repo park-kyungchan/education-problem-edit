@@ -1,0 +1,161 @@
+{
+  "schema": "math-editing.execution-policy.v1",
+  "authorityInputId": "input-021",
+  "currentDeliverable": "Two versioned HWPX comparison review documents with native editable printed boxes, targeted equation/underline feedback and embedded original/restored visual pairs.",
+  "documentConversionAllowed": false,
+  "parallelCompletionMonitoringAllowed": true,
+  "monitoringAuthorityInputId": "input-037",
+  "monitoringBoundary": "New GPT Lead/high workers and saved Argon handoff are authorized. All4quota-limited Argon panes were closed with histories preserved.",
+  "originalDocumentGoal": "Editable HWPX text and equations with externally controlled mathematical visuals",
+  "rawAcquisition": "Two explicitly authorized native panes independently inspect all 20 problems",
+  "pilotReconstruction": "Gates 1/2 have user feedback; problem 3 is held pending fresh user direction.",
+  "historicalDocumentArtifact": {
+    "path": "pilot/problem-01/problem-01.hwpx",
+    "sha256": "b0c20cef5952b01e095411b78b7d5b3cc6ef6753d903174bbacd7efc296fdc45",
+    "disposition": "Preserved completed attempt created before the code-stage stopping instruction; not the current review deliverable"
+  },
+  "acceptanceDecision": null,
+  "authorizedExports": [
+    {
+      "id": "export-001",
+      "authorityInputId": "input-023",
+      "problemContentId": "mc-01",
+      "format": "HWPX",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/exports/problem-01-hwpx",
+      "purpose": "User-requested current-code conversion and visible review specimen"
+    },
+    {
+      "id": "export-002",
+      "authorityInputId": "input-024",
+      "problemContentId": "mc-01",
+      "format": "DOCX",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/exports/problem-01-docx",
+      "purpose": "Additional user-requested current-code DOCX specimen with editable equations"
+    },
+    {
+      "id": "export-003",
+      "authorityInputId": "input-031",
+      "dataset": "gpt-6.1-sol-ultra",
+      "problemContentId": "full-exam-raw-review",
+      "problemCount": 20,
+      "format": "DOCX",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/exports/raw-review/gpt-6.1-sol-ultra",
+      "purpose": "User-requested review copy of the completed extraction; no source acceptance or pilot advancement"
+    },
+    {
+      "id": "export-004",
+      "authorityInputId": "input-031",
+      "dataset": "gpt-6.1-sol-ultra",
+      "problemContentId": "full-exam-raw-review",
+      "problemCount": 20,
+      "format": "HWPX",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/exports/raw-review/gpt-6.1-sol-ultra",
+      "purpose": "User-requested review copy of the completed extraction; no source acceptance or pilot advancement"
+    },
+    {
+      "id": "export-005",
+      "authorityInputId": "input-031",
+      "dataset": "argon-high",
+      "problemContentId": "full-exam-raw-review",
+      "problemCount": 20,
+      "format": "DOCX",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/exports/raw-review/argon-high",
+      "purpose": "User-requested review copy of the completed extraction; no source acceptance or pilot advancement"
+    },
+    {
+      "id": "export-006",
+      "authorityInputId": "input-031",
+      "dataset": "argon-high",
+      "problemContentId": "full-exam-raw-review",
+      "problemCount": 20,
+      "format": "HWPX",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/exports/raw-review/argon-high",
+      "purpose": "User-requested review copy of the completed extraction; no source acceptance or pilot advancement"
+    },
+    {
+      "id": "export-007",
+      "authorityInputId": "input-036",
+      "dataset": "gpt-6.1-sol-ultra",
+      "problemContentId": "full-exam-visual-replacement",
+      "problemCount": 20,
+      "format": "HWPX",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/image-restoration/worker/outputs",
+      "deliveryRoot": "/mnt/c/Users/packr/Desktop/문제편집/clean-visuals-20261020",
+      "purpose": "Versioned clean visual replacement of current delivered HWPX snapshot; original input and native problem text/equations preserved"
+    },
+    {
+      "id": "export-008",
+      "authorityInputId": "input-036",
+      "dataset": "argon-high",
+      "problemContentId": "full-exam-visual-replacement",
+      "problemCount": 20,
+      "format": "HWPX",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/image-restoration/worker/outputs",
+      "deliveryRoot": "/mnt/c/Users/packr/Desktop/문제편집/clean-visuals-20261020",
+      "purpose": "Versioned clean visual replacement of current delivered HWPX snapshot; original input and native problem text/equations preserved"
+    },
+    {
+      "id": "export-009",
+      "authorityInputIds": [
+        "input-037",
+        "input-038"
+      ],
+      "dataset": "gpt-6.1-sol-ultra",
+      "format": "HWPX",
+      "problemCount": 20,
+      "purpose": "Native feedback revision with editable box layout and in-document original/restored comparisons",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/lead/outputs",
+      "deliveryRoot": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020",
+      "overwriteEarlierFiles": false
+    },
+    {
+      "id": "export-010",
+      "authorityInputIds": [
+        "input-037",
+        "input-038"
+      ],
+      "dataset": "argon-high",
+      "format": "HWPX",
+      "problemCount": 20,
+      "purpose": "Native feedback revision with editable box layout and in-document original/restored comparisons",
+      "outputRoot": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/lead/outputs",
+      "deliveryRoot": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020",
+      "overwriteEarlierFiles": false
+    }
+  ],
+  "executionHold": {
+    "authorityInputId": "input-030",
+    "heldProblemNumber": 3,
+    "resumeRequiresNewUserDirection": true
+  },
+  "currentWorkScope": "Native feedback, editable printed box restoration, HWPX embedded source/restored comparisons and GPT pipeline takeover",
+  "paidApiBudget": {
+    "authorityInputId": "input-034",
+    "sessionTotalUsd": 10,
+    "sharedAcrossRoutes": true,
+    "paidCallOwner": "math-argon-lead",
+    "policyPath": "argon-pipeline/budget-policy.json",
+    "successorPaidCallOwner": "math-gpt-lead",
+    "reconciliationRequiredBeforeNewCalls": true
+  },
+  "latestScopedAuthorityInputId": "input-038",
+  "currentAllowedWorker": "math-gpt-lead and its explicitly delegated GPT-6.1-Sol high workers",
+  "currentPhasePath": "feedback-revision/checkpoint.json",
+  "currentTaskPaidApiCallsAllowed": false,
+  "nativeEquationAndLayoutEdits": {
+    "authorityInputId": "input-037",
+    "scope": "Only explicit feedback and source-bound editable box conversion"
+  },
+  "sourceImageComparison": {
+    "authorityInputId": "input-038",
+    "allowed": true,
+    "roles": [
+      "original-evidence",
+      "restored-geometry",
+      "native-restored-layout"
+    ],
+    "originalImageIsNotRestoredContent": true
+  },
+  "paidApiCallsAfterReconciliation": "Only successor Lead may admit previously authorized bounded evaluation within the combined US$10 cap; workers never call paid APIs",
+  "historicalDefaultDeliverable": "Format-independent typed code artifacts before document conversion"
+}

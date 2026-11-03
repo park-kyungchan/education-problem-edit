@@ -1,0 +1,40 @@
+{
+  "kind": "procedure",
+  "id": "P-maintenance",
+  "title": "Extend the knowledge space without rewriting history",
+  "stage": "feedback",
+  "ruleIds": [
+    "R-feedback-lineage",
+    "R-eval-boundary",
+    "R-research-reuse"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-checkpoint21"
+    },
+    {
+      "sourceId": "S-architecture20"
+    }
+  ],
+  "inputs": [
+    "new evidence or implementation revision",
+    "existing stable record IDs"
+  ],
+  "steps": [
+    "Capture source snapshots and explicit evidence class/applicability.",
+    "Add or revise curated records and route keywords; add meaningful routing/contract regression examples.",
+    "Build a new immutable release, validate references/topology/selectors and check source drift.",
+    "Advance current.json only after local checks; keep old releases and external Work state unchanged."
+  ],
+  "outputs": [
+    "new release",
+    "source/record diff",
+    "validation receipt",
+    "current pointer"
+  ],
+  "implementationSourceIds": [],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

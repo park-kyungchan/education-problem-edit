@@ -1,0 +1,44 @@
+{
+  "kind": "procedure",
+  "id": "P-retrieval-audit",
+  "title": "Diagnose retrieval quality before adding more semantic decisions",
+  "stage": "routing",
+  "ruleIds": [
+    "R-retrieval-candidate-integrity",
+    "R-eval-boundary",
+    "R-paid-recovery"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-jev-audit"
+    },
+    {
+      "sourceId": "S-benchmark-report"
+    }
+  ],
+  "inputs": [
+    "frozen task/source/runtime pins",
+    "raw answer contract",
+    "native usage/provider receipts",
+    "candidate and consumption records"
+  ],
+  "steps": [
+    "Check exact response fields and retained raw answers separately from semantic completeness.",
+    "Check coverage by requested facet and exact candidate span before interpreting selector quality.",
+    "Join native consumer usage with actual source-owner request/application receipts; do not infer actor binding from pane identity.",
+    "Report total/cached/uncached input, output including reasoning, wall time, known provider USD and unknown subscription USD separately.",
+    "Patch the retrieval structure or candidate enumerator for observed misses; keep original comparisons frozen."
+  ],
+  "outputs": [
+    "bounded evidence packet",
+    "candidate/coverage diagnosis",
+    "actual comparison with limits"
+  ],
+  "implementationSourceIds": [],
+  "stopWhen": [
+    "Unknown paid outcome would be replayed or accounting storage would need unauthorized repair."
+  ],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

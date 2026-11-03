@@ -1,0 +1,642 @@
+[
+  {
+    "id": "restore-exam",
+    "title": "End-to-end PDF to editable HWPX",
+    "keywords": [
+      "pdf",
+      "hwpx",
+      "복원",
+      "시험지",
+      "end to end"
+    ],
+    "stages": [
+      "routing",
+      "source",
+      "regions",
+      "transcription",
+      "semantics",
+      "geometry",
+      "assets",
+      "equations",
+      "question-layout",
+      "page-layout",
+      "package",
+      "native",
+      "delivery",
+      "feedback"
+    ],
+    "procedureIds": [
+      "P-layout-selection",
+      "P-source",
+      "P-provenance",
+      "P-transcription",
+      "P-image-code",
+      "P-equations",
+      "P-frames",
+      "P-copy",
+      "P-page",
+      "P-package",
+      "P-native",
+      "P-feedback"
+    ],
+    "ruleIds": [
+      "R-layout-choice",
+      "R-native-editability",
+      "R-proportionate-checks"
+    ],
+    "caseIds": [
+      "C-d-source-order"
+    ],
+    "outputContract": "Versioned editable HWPX, source/semantic/asset/layout bindings, actual checks and unresolved ledger.",
+    "escalation": "Resolve only missing source interpretation or required capability."
+  },
+  {
+    "id": "source-ingest",
+    "title": "Source pages and crop coordinates",
+    "keywords": [
+      "페이지 순서",
+      "물리 페이지",
+      "physical page",
+      "page order",
+      "crop",
+      "영역 좌표"
+    ],
+    "stages": [
+      "source",
+      "regions"
+    ],
+    "procedureIds": [
+      "P-source"
+    ],
+    "ruleIds": [
+      "R-source-order"
+    ],
+    "caseIds": [
+      "C-d-source-order"
+    ],
+    "outputContract": "Pinned source manifest, physical/logical mapping and region transforms.",
+    "escalation": "Ambiguous printed order requires source review."
+  },
+  {
+    "id": "printed-marks",
+    "title": "Printed vs student marks",
+    "keywords": [
+      "필기",
+      "연필",
+      "원본 표시",
+      "음영",
+      "점선",
+      "화살표",
+      "각 표시",
+      "tick",
+      "shading",
+      "printed",
+      "handwriting"
+    ],
+    "stages": [
+      "regions",
+      "semantics",
+      "assets"
+    ],
+    "procedureIds": [
+      "P-provenance"
+    ],
+    "ruleIds": [
+      "R-mark-provenance",
+      "R-visual-semantics"
+    ],
+    "caseIds": [
+      "C-d-q8-pencil",
+      "C-d-q21-AP",
+      "C-d-q24-ticks"
+    ],
+    "outputContract": "Typed marks, provenance claims, semantic owners and retained/excluded/unresolved map.",
+    "escalation": "Do not infer provenance from intensity or a visually plausible drawing."
+  },
+  {
+    "id": "image-to-code",
+    "title": "Image to semantic construction and SVG",
+    "keywords": [
+      "image-to-code",
+      "image to code",
+      "도형 복원",
+      "svg",
+      "도형 코드",
+      "topology"
+    ],
+    "stages": [
+      "regions",
+      "semantics",
+      "geometry",
+      "assets"
+    ],
+    "procedureIds": [
+      "P-image-code"
+    ],
+    "ruleIds": [
+      "R-geometry-topology",
+      "R-uncertainty"
+    ],
+    "caseIds": [
+      "C-j20-q11"
+    ],
+    "outputContract": "Source-backed topology, finite construction code, styled assets and unresolveds.",
+    "escalation": "Source uncertainty and exact geometry constraints require separate treatment."
+  },
+  {
+    "id": "geometry-edit",
+    "title": "Bounded semantic geometry edits",
+    "keywords": [
+      "기하 수정",
+      "점 이동",
+      "parameter",
+      "constraint",
+      "도형 수정",
+      "의존성 수정"
+    ],
+    "stages": [
+      "semantics",
+      "geometry",
+      "assets"
+    ],
+    "procedureIds": [
+      "P-geometry-edit"
+    ],
+    "ruleIds": [
+      "R-parameter-ownership",
+      "R-label-anchor",
+      "R-selective-invalidation"
+    ],
+    "caseIds": [
+      "C-j20-q11"
+    ],
+    "outputContract": "Typed patch against base revision, residuals and affected-node manifest.",
+    "escalation": "Unsupported or degenerate construction requires a bounded extension."
+  },
+  {
+    "id": "underline",
+    "title": "Native text underline",
+    "keywords": [
+      "밑줄",
+      "underline"
+    ],
+    "stages": [
+      "transcription",
+      "question-layout"
+    ],
+    "procedureIds": [
+      "P-transcription"
+    ],
+    "ruleIds": [
+      "R-underline"
+    ],
+    "caseIds": [
+      "C-d-underline"
+    ],
+    "outputContract": "Source-bound underline spans and native text properties.",
+    "escalation": "Repeated text requires explicit span offsets."
+  },
+  {
+    "id": "equation-glyphs",
+    "title": "EqEdit symbols and normalization",
+    "keywords": [
+      "BOT",
+      "cong",
+      "perp",
+      "수직 기호",
+      "합동 기호",
+      "수식 기호",
+      "eqedit glyph"
+    ],
+    "stages": [
+      "equations"
+    ],
+    "procedureIds": [
+      "P-equations"
+    ],
+    "ruleIds": [
+      "R-equation-tokens"
+    ],
+    "caseIds": [],
+    "outputContract": "Normalized scripts and qualified native glyph bindings.",
+    "escalation": "New command/version needs a focused native fixture."
+  },
+  {
+    "id": "equation-spacing",
+    "title": "Inline equation spacing and metrics",
+    "keywords": [
+      "수식 공백",
+      "수식 간격",
+      "수식 폭",
+      "수식편집기 공백",
+      "좁히",
+      "equation spacing",
+      "equation width",
+      "baseline"
+    ],
+    "stages": [
+      "equations",
+      "question-layout",
+      "page-layout"
+    ],
+    "procedureIds": [
+      "P-equations"
+    ],
+    "ruleIds": [
+      "R-equation-metrics"
+    ],
+    "caseIds": [
+      "C-j20-proof-width",
+      "C-j21-spacing",
+      "C-d-base-spacing"
+    ],
+    "outputContract": "Exact metric cache bindings and diagnosed spacing component.",
+    "escalation": "Cache miss or changed font/native version requires exact new measurement."
+  },
+  {
+    "id": "frame-alignment",
+    "title": "Example and proof alignment",
+    "keywords": [
+      "보기 정렬",
+      "박스 정렬",
+      "수식 정렬",
+      "LCOL",
+      "eqalign",
+      "matrix",
+      "17번",
+      "18번",
+      "frame alignment"
+    ],
+    "stages": [
+      "equations",
+      "question-layout"
+    ],
+    "procedureIds": [
+      "P-frames"
+    ],
+    "ruleIds": [
+      "R-equation-alignment",
+      "R-native-editability"
+    ],
+    "caseIds": [
+      "C-d-q17-frame",
+      "C-d-q18-frame"
+    ],
+    "outputContract": "Native aligned frame with source row/column ownership.",
+    "escalation": "Mixed prose/blank/figure content should use native structured rows."
+  },
+  {
+    "id": "question-copy",
+    "title": "Whole-question copy/paste",
+    "keywords": [
+      "복사",
+      "붙여넣기",
+      "투명 테이블",
+      "문항 단위",
+      "copy paste",
+      "borderless"
+    ],
+    "stages": [
+      "question-layout",
+      "package",
+      "native"
+    ],
+    "procedureIds": [
+      "P-copy"
+    ],
+    "ruleIds": [
+      "R-question-container"
+    ],
+    "caseIds": [
+      "C-d-template"
+    ],
+    "outputContract": "Question-to-table/descendant bindings plus focused scratch copy/paste evidence.",
+    "escalation": "Package membership alone cannot establish clipboard behavior."
+  },
+  {
+    "id": "page-layout",
+    "title": "Repeated page template and local reflow",
+    "keywords": [
+      "4문제",
+      "4문항",
+      "쪽 배치",
+      "조판",
+      "페이지 레이아웃",
+      "page layout",
+      "template"
+    ],
+    "stages": [
+      "question-layout",
+      "page-layout",
+      "package",
+      "native"
+    ],
+    "procedureIds": [
+      "P-layout-selection",
+      "P-page"
+    ],
+    "ruleIds": [
+      "R-layout-choice",
+      "R-layout-separation",
+      "R-section-properties"
+    ],
+    "caseIds": [
+      "C-d-template"
+    ],
+    "outputContract": "Separate content/local-layout/template artifacts and overflow/page mapping.",
+    "escalation": "Content overflow must be surfaced and resolved without changing meaning."
+  },
+  {
+    "id": "package-check",
+    "title": "HWPX package structure and coverage",
+    "keywords": [
+      "zip",
+      "xml",
+      "패키지 검증",
+      "누락 검사",
+      "package check"
+    ],
+    "stages": [
+      "package"
+    ],
+    "procedureIds": [
+      "P-package"
+    ],
+    "ruleIds": [
+      "R-native-editability",
+      "R-proportionate-checks"
+    ],
+    "caseIds": [],
+    "outputContract": "Independent ZIP/XML/reference/coverage evidence on exact bytes.",
+    "escalation": "Do not promote package validity to native appearance or source acceptance."
+  },
+  {
+    "id": "native-check",
+    "title": "Native Hancom rendering/editability",
+    "keywords": [
+      "COM",
+      "한글 렌더",
+      "native render",
+      "native check",
+      "편집 가능",
+      "scratch"
+    ],
+    "stages": [
+      "native"
+    ],
+    "procedureIds": [
+      "P-native"
+    ],
+    "ruleIds": [
+      "R-native-owner",
+      "R-proportionate-checks"
+    ],
+    "caseIds": [],
+    "outputContract": "Owned native PDF/behavior receipt and actual limitations.",
+    "escalation": "Missing instance ownership prevents attaching to existing user documents."
+  },
+  {
+    "id": "model-routing",
+    "title": "Tools, models and transport reuse",
+    "keywords": [
+      "라우팅",
+      "모델",
+      "Jev",
+      "routing",
+      "transport",
+      "도구 선택",
+      "리서치"
+    ],
+    "stages": [
+      "routing"
+    ],
+    "procedureIds": [
+      "P-routing"
+    ],
+    "ruleIds": [
+      "R-research-reuse",
+      "R-paid-recovery"
+    ],
+    "caseIds": [
+      "C-j21-box-port"
+    ],
+    "outputContract": "Bounded role-appropriate tool/model route with actual readiness evidence.",
+    "escalation": "Historical response, current authentication and native apply are different states."
+  },
+  {
+    "id": "feedback-optimization",
+    "title": "Typed feedback, attribution and evaluation handoff",
+    "keywords": [
+      "BackwardPropagation",
+      "backward",
+      "최적화",
+      "rubric",
+      "eval",
+      "비용",
+      "토큰",
+      "피드백",
+      "feedback",
+      "계층",
+      "위계",
+      "hierarchy",
+      "structure",
+      "typed"
+    ],
+    "stages": [
+      "feedback"
+    ],
+    "procedureIds": [
+      "P-feedback"
+    ],
+    "ruleIds": [
+      "R-feedback-lineage",
+      "R-selective-invalidation",
+      "R-eval-boundary"
+    ],
+    "caseIds": [
+      "C-d-q9-angle",
+      "C-d-q20-arrow"
+    ],
+    "outputContract": "FeedbackEvent, dependency trace, regression proposal, measured/null quality-cost-time fields.",
+    "escalation": "Concurrent rubric remains externally owned; proposed contracts are not adopted results."
+  },
+  {
+    "id": "knowledge-maintenance",
+    "title": "Knowledge release and source drift",
+    "keywords": [
+      "지식 공간",
+      "유지보수",
+      "확장",
+      "새 기록",
+      "knowledge",
+      "maintenance",
+      "source drift"
+    ],
+    "stages": [
+      "feedback"
+    ],
+    "procedureIds": [
+      "P-maintenance"
+    ],
+    "ruleIds": [
+      "R-research-reuse",
+      "R-eval-boundary"
+    ],
+    "caseIds": [],
+    "outputContract": "Immutable successor knowledge release and explicit source drift/curation receipt.",
+    "escalation": "New evidence must be curated; never auto-promote an updated file to accepted truth."
+  },
+  {
+    "id": "hancom-capabilities",
+    "title": "Hancom application and file code-control research",
+    "keywords": [
+      "한글 기능",
+      "한글 API",
+      "한글 제어",
+      "HWPX API",
+      "기능 코드",
+      "Automation API",
+      "ParameterSet",
+      "한글 앱"
+    ],
+    "stages": [
+      "routing"
+    ],
+    "procedureIds": [],
+    "ruleIds": [
+      "R-hancom-surface"
+    ],
+    "caseIds": [],
+    "outputContract": "capability <feature> -> api <exact-id> -> pinned source page plus actual qualification scope.",
+    "escalation": "Use desktop/web/format/sdk explicitly; unsupported or untested behavior remains explicit."
+  },
+  {
+    "id": "selected-image-edit",
+    "title": "Selected diagram marks/labels/fills without document reauthoring",
+    "keywords": [
+      "이미지만",
+      "그림만",
+      "selected image",
+      "이미지 교체",
+      "라벨 이동",
+      "음영 투명도",
+      "각호 제거",
+      "image-only",
+      "도형 표시 수정",
+      "image payload"
+    ],
+    "stages": [
+      "assets",
+      "package",
+      "native",
+      "delivery"
+    ],
+    "procedureIds": [
+      "P-selected-image-patch"
+    ],
+    "ruleIds": [
+      "R-selected-image-patch",
+      "R-raster-style"
+    ],
+    "caseIds": [
+      "C-d-v3-image-only"
+    ],
+    "outputContract": "Versioned media-only HWPX patch, exact question-to-media bindings, unchanged-member proof and affected native visual check.",
+    "escalation": "Changed canvas, aspect/size/crop/transform, owner or shared media requires a declared local-layout route; do not silently broaden the patch."
+  },
+  {
+    "id": "native-transfer",
+    "title": "Whole-question selected-block transfer and format support",
+    "keywords": [
+      "문항 전송",
+      "선택 영역 전송",
+      "HWPML2X",
+      "GetTextFile",
+      "SetTextFile",
+      "selected-block",
+      "Q18 transfer"
+    ],
+    "stages": [
+      "question-layout",
+      "native"
+    ],
+    "procedureIds": [
+      "P-native-transfer"
+    ],
+    "ruleIds": [
+      "R-question-container"
+    ],
+    "caseIds": [
+      "C-d-q18-transfer"
+    ],
+    "outputContract": "Observed Q18 HWPML2X transfer counts, untouched clipboard, unsupported HWPX string path and separately documented file alternative.",
+    "escalation": "Qualify only genuinely missing required behavior; do not rerun an unchanged prior transfer or substitute web signatures for desktop evidence."
+  },
+  {
+    "id": "layout-selection",
+    "title": "Select original exam or reference presentation independently of file format",
+    "keywords": [
+      "레이아웃 선택",
+      "배치 선택",
+      "layout profile",
+      "layout selection",
+      "단일 열",
+      "단일열",
+      "두 단",
+      "2단",
+      "참고 HWP",
+      "reference HWP",
+      "reference layout",
+      "참고 문서 배치"
+    ],
+    "stages": [
+      "routing",
+      "question-layout",
+      "page-layout",
+      "package",
+      "native"
+    ],
+    "procedureIds": [
+      "P-layout-selection",
+      "P-reference-layout"
+    ],
+    "ruleIds": [
+      "R-layout-choice",
+      "R-layout-separation"
+    ],
+    "caseIds": [
+      "C-d-template",
+      "C-d-reference-layout"
+    ],
+    "outputContract": "Resolved profile/selection-required state, independent format and preserved content; both historical deliveries retained.",
+    "escalation": "A new document without a profile requires a user layout choice; an existing profile is preserved absent a requested change."
+  },
+  {
+    "id": "retrieval-diagnostics",
+    "title": "Native model/Jev comparison and candidate evidence integrity",
+    "keywords": [
+      "Jev 비교",
+      "Luna 비교",
+      "모델 비교",
+      "retrieval benchmark",
+      "candidate integrity",
+      "후보 누락",
+      "후보 검증",
+      "측정 결과"
+    ],
+    "stages": [
+      "routing",
+      "feedback"
+    ],
+    "procedureIds": [
+      "P-retrieval-audit"
+    ],
+    "ruleIds": [
+      "R-retrieval-candidate-integrity",
+      "R-eval-boundary"
+    ],
+    "caseIds": [],
+    "outputContract": "Pinned raw answers, actual native/provider metrics, facet coverage and bounded diagnosis.",
+    "escalation": "Do not infer independent child actor binding, general model ranking or causal savings from one diagnostic batch."
+  }
+]

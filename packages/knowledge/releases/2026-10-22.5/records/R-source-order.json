@@ -1,0 +1,37 @@
+{
+  "kind": "rule",
+  "id": "R-source-order",
+  "title": "Pin physical pages and logical order separately",
+  "stage": "source",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-receiptD",
+      "pointer": "/sourcePageOrder"
+    }
+  ],
+  "when": "A scanned exam has reordered or image-only pages.",
+  "do": [
+    "Hash original bytes; retain physical page identity.",
+    "Bind logical order explicitly; Daechi instance is [1,2,4,3,5,6]."
+  ],
+  "avoid": [],
+  "check": [
+    "All physical pages occur exactly once; question numbering matches reading order."
+  ],
+  "invalidates": [
+    "regions",
+    "transcription",
+    "semantics",
+    "geometry",
+    "assets",
+    "equations",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "The Daechi permutation is instance data, never a default for another exam."
+}

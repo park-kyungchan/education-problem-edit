@@ -1,0 +1,35 @@
+{
+  "kind": "rule",
+  "id": "R-underline",
+  "title": "Store underline as a source-bound text span",
+  "stage": "transcription",
+  "evidenceClass": "observed-code",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-compose21",
+      "contains": "span.get('underline'"
+    },
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "밑줄처리"
+    }
+  ],
+  "when": "A question stem contains printed underline.",
+  "do": [
+    "Retain start/end offsets or stable span IDs in text runs.",
+    "Serialize native character underline instead of encoding Korean prose as a math object."
+  ],
+  "avoid": [],
+  "check": [
+    "The exact span is underlined, including repeated text cases and Korean offsets."
+  ],
+  "invalidates": [
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "The candidate Daechi string-match implementation is narrower than a span-ID contract; repeated identical text needs explicit offsets."
+}

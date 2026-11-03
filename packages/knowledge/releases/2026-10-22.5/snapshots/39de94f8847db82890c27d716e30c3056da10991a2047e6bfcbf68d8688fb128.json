@@ -1,0 +1,53 @@
+{
+  "schema": "jungdong.actual-user-completion-decision.v1",
+  "at": "2026-10-22T05:41:21.568Z",
+  "domainId": "mathematics-document-editing",
+  "projectId": "math-problem-restoration",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "taskId": "T-JD-20261021-10-ACCEPT",
+  "decision": "complete-work-as-delivered",
+  "decisionOwner": "actual-user",
+  "decisionSource": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/acceptance/user-direction.original.json",
+    "sha256": "534a6014a24701c1e9fe655d86f6b36b85be329c6899d0292359ee93cb65cab3",
+    "threadId": "01a16201-59ee-7480-9cbd-65e383867ab9",
+    "turnId": "01a1621d-7f25-7c91-8dca-29da7438c0a8",
+    "messageId": "01a1621d-8121-7750-88d3-7dd4955c1deb"
+  },
+  "meaning": "The actual user directs completion of the Jungdong Work and selects the Daechi PDF for the new pilot. Further user-visual-acceptance waiting is superseded by that direction.",
+  "deliveredArtifacts": [
+    {
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery/jungdong-new.hwpx",
+      "sha256": "895bc5628ac998337e96e66aec451eff8236db1afa1e561638f31cb9ac77f0de"
+    },
+    {
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery/jungdong-new.pdf",
+      "sha256": "1748e8799a9935b90802207df76da84dacd4395d094ede33cb304f0b7626e59f"
+    },
+    {
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery/jev-and-llm-explained.html",
+      "sha256": "cd06d1bcf6e0fd0407f8155f4068350694b21cf6f16b43dde404bb4952611e98"
+    },
+    {
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery/comparison.html",
+      "sha256": "7f1d6c9e34d932bfaecee85f8f8f9d0799b4d4f0654c0a516dbc272a1f7635bb"
+    }
+  ],
+  "historicalFinalReadback": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/final-readback.actual.json",
+    "sha256": "e67edc3e1fc4fad195d460d194ae52af47ee7ec9e5c8b86afc066c53df12e05e"
+  },
+  "visualInspectionObserved": null,
+  "sourceAccuracyAcceptance": null,
+  "residualLimitations": [
+    "MC11 dark angle value and interior O/I unresolved; optional two interior diagrams are review alternatives only.",
+    "CR03 angle-mark alternative and CR04 masked/proof/printed-label discrepancies are retained for human review.",
+    "Source-derived figures are images in HWPX; regeneration code is delivered separately as archival snapshots.",
+    "Jev image-region Box has no successful native apply through the current candidate-ID port.",
+    "One confirmed HTTP400 call retains unknown cost and its reservation bound.",
+    "Native GPT provider API call count is unavailable."
+  ],
+  "preserved": "Existing delivered bytes, source uncertainty, execution history, native sessions, enrollment and financial liabilities remain unchanged.",
+  "newModelCalls": 0,
+  "goalLifecycleChanged": false
+}

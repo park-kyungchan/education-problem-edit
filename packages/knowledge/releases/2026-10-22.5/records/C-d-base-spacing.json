@@ -1,0 +1,42 @@
+{
+  "kind": "case",
+  "id": "C-d-base-spacing",
+  "title": "Daechi base uses 25% width safeguard",
+  "stage": "equations",
+  "exam": "daechi-20261022",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-authorD",
+      "contains": "width*1.25"
+    },
+    {
+      "sourceId": "S-receiptD",
+      "pointer": "/verification/corrections"
+    },
+    {
+      "sourceId": "S-finalF"
+    },
+    {
+      "sourceId": "S-verifyF"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Compound math needed wider boxes to avoid overlap; later whitespace concern remains.",
+  "cause": "Observed heuristic introduces extra capacity after collision repair.",
+  "expected": "Use exact native equation creation metrics and baseline/margin binding.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-equation-metrics"
+  ],
+  "requiredChecks": [
+    "Exact script coverage and native changed-region spacing."
+  ],
+  "limitation": "Completed v2 delivery and native spacing checks are reported in S-finalF/S-verifyF; independent source accuracy acceptance remains absent.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

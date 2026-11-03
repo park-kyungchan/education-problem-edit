@@ -1,0 +1,34 @@
+{
+  "kind": "rule",
+  "id": "R-native-owner",
+  "title": "Render through a fresh demonstrably owned Hancom instance",
+  "stage": "native",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-native21",
+      "pointer": "/ownershipMethod"
+    },
+    {
+      "sourceId": "S-renderD"
+    }
+  ],
+  "when": "A native render or scratch behavior check is needed.",
+  "do": [
+    "Use an input copy and hash.",
+    "Resolve fresh COM WindowHandle to PID absent from the preexisting process baseline.",
+    "Open/export/Quit only that verified owned instance."
+  ],
+  "avoid": [
+    "No GetActiveObject attachment, registry/security-module changes or unrelated process termination."
+  ],
+  "check": [
+    "Actual native version, page count, control scope and owned-instance exit recorded."
+  ],
+  "invalidates": [
+    "native",
+    "delivery"
+  ],
+  "limitation": "Historical version 13.0.0.3457 is not proof of the current runtime."
+}

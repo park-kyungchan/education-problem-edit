@@ -1,0 +1,328 @@
+{
+  "schema": "math-editing.interview.v1",
+  "status": "in-progress",
+  "questions": [
+    {
+      "id": "Q-HWP-ROLE",
+      "round": 1,
+      "topic": "Adjacent HWP role",
+      "prompt": "What role does the adjacent HWP play: working document/template, a better original/reference, or unrelated material?",
+      "alternatives": [
+        "Working document or template",
+        "Better original or comparison reference",
+        "Unrelated or unknown"
+      ],
+      "resolvesProblemIds": [
+        "P-SOURCE-ROLE"
+      ],
+      "dependsOnQuestionIds": [],
+      "state": "asked-awaiting-answer",
+      "answerInputId": null
+    },
+    {
+      "id": "Q-PAIN",
+      "round": 1,
+      "topic": "Observed user difficulty and clarified objective",
+      "prompt": "Describe the concrete source-quality difficulty and its effect on editing.",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-ROOT",
+        "P-LEGIBILITY",
+        "P-MARKS"
+      ],
+      "dependsOnQuestionIds": [],
+      "state": "answered",
+      "answerInputId": "input-003"
+    },
+    {
+      "id": "Q-MARKS",
+      "round": 2,
+      "topic": "Final content policy",
+      "prompt": "Should student handwriting, answer ticks and grading circles remain in the final content?",
+      "alternatives": [
+        "Remove all; retain printed content only",
+        "Preserve marks",
+        "Decide by mark type or problem"
+      ],
+      "resolvesProblemIds": [
+        "P-MARKS"
+      ],
+      "dependsOnQuestionIds": [],
+      "state": "answered",
+      "answerInputId": "input-004"
+    },
+    {
+      "id": "Q-DIAGRAM",
+      "round": 3,
+      "topic": "Diagram editability",
+      "prompt": "Must diagram lines, points, labels and numeric annotations remain independently editable in the final HWPX?",
+      "alternatives": [
+        "Independently editable geometry and labels",
+        "Clean diagram images are sufficient",
+        "Compare representative quality before deciding"
+      ],
+      "resolvesProblemIds": [
+        "P-DIAGRAM"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-PAIN"
+      ],
+      "state": "answered",
+      "answerInputId": "input-005"
+    },
+    {
+      "id": "Q-VISUAL-CONTROL",
+      "round": 4,
+      "topic": "Required initial and progressive visual control",
+      "prompt": "Which controls are required: clean faithful restoration and styling, constraint-preserving geometry, or problem-parameter/function-linked visuals?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-VISUAL-CONTROL",
+        "P-CONSTRAINTS",
+        "P-PARAMETRIC"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-DIAGRAM"
+      ],
+      "state": "answered",
+      "answerInputId": "input-006"
+    },
+    {
+      "id": "Q-DEPENDENCIES",
+      "round": 4,
+      "topic": "Dependency reduction priorities",
+      "prompt": "Which dependencies should be reduced first: external paid SaaS, Windows/Hancom installations, or particular agents and visual engines?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-DEPENDENCIES"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-DIAGRAM"
+      ],
+      "state": "answered",
+      "answerInputId": "input-007"
+    },
+    {
+      "id": "Q-SOURCE-REFERENCE",
+      "round": 5,
+      "topic": "Available evidence for unreadable source content",
+      "prompt": "Are there source references beyond this PDF, and what is the role of the adjacent HWP: the only PDF, an HWP reference/restoration, other paper or clean originals/solutions, or unknown?",
+      "alternatives": [
+        "Only the selected PDF",
+        "Adjacent HWP is a reference or earlier restoration",
+        "Other paper, clean originals or solutions exist",
+        "Availability and adjacent HWP role unknown"
+      ],
+      "resolvesProblemIds": [
+        "P-SOURCE-ROLE",
+        "P-AMBIGUITY"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-DIAGRAM"
+      ],
+      "state": "answered",
+      "answerInputId": "input-008"
+    },
+    {
+      "id": "Q-MODEL-ACCESS",
+      "round": 6,
+      "topic": "Jev execution route",
+      "prompt": "Which existing CLI, API or local model route can be used to evaluate Jev-1.14?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-MODEL-COMPARISON"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-SOURCE-REFERENCE"
+      ],
+      "state": "answered",
+      "answerInputId": "input-009"
+    },
+    {
+      "id": "Q-FEEDBACK-UNIT",
+      "round": 6,
+      "topic": "Initial user feedback unit",
+      "prompt": "Should initial feedback compare whole problems, components or uncertain/disagreeing regions?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-HITL"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-SOURCE-REFERENCE"
+      ],
+      "state": "answered",
+      "answerInputId": "input-010"
+    },
+    {
+      "id": "Q-GATEWAY-AUTH",
+      "round": 7,
+      "topic": "Gateway credential availability",
+      "prompt": "Provide a secure local credential-file path for the existing Gateway key; do not provide the key value in chat.",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-MODEL-COMPARISON"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-MODEL-ACCESS"
+      ],
+      "state": "answered",
+      "answerInputId": "input-012"
+    },
+    {
+      "id": "Q-VISUAL-FIDELITY",
+      "round": 8,
+      "topic": "Initial visual restoration fidelity",
+      "prompt": "After removing capture distortion and student marks, should restored visuals closely reproduce original printed placement/proportions/strokes, preserve mathematical conditions and notation with cleaner normalized presentation, or compare two first-problem candidates before deciding?",
+      "alternatives": [
+        "Closest original printed appearance",
+        "Same mathematical content with normalized presentation",
+        "Compare two first-problem candidates"
+      ],
+      "resolvesProblemIds": [
+        "P-VISUAL-CONTROL"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-VISUAL-CONTROL"
+      ],
+      "state": "answered",
+      "answerInputId": "input-013"
+    },
+    {
+      "id": "Q-PILOT01-REVIEW",
+      "round": 9,
+      "topic": "First-problem visual style selection",
+      "prompt": "Select A source-close, B cleaner layout or required visual changes. Source-content and native editing checks remain a separate whole-problem gate.",
+      "alternatives": [
+        "A source-close",
+        "B cleaner layout",
+        "Both require changes"
+      ],
+      "resolvesProblemIds": [
+        "P-VISUAL-CONTROL"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-VISUAL-FIDELITY"
+      ],
+      "state": "answered",
+      "answerInputId": "input-016"
+    },
+    {
+      "id": "Q-PILOT01-GATE",
+      "round": 10,
+      "topic": "Whole-problem HITL gate 1",
+      "prompt": "Review complete problem 1 and its visual quality before the next pilot problem.",
+      "alternatives": [
+        "Approve problem 1 and proceed to problem 2",
+        "Correct problem 1 first"
+      ],
+      "resolvesProblemIds": [
+        "P-LEGIBILITY",
+        "P-NATIVE",
+        "P-REVIEW"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-PILOT01-REVIEW"
+      ],
+      "state": "answered",
+      "answerInputId": "input-028"
+    },
+    {
+      "id": "Q-PILOT02-GATE",
+      "round": 11,
+      "topic": "Whole-problem HITL gate 2",
+      "prompt": "Review the complete portable problem 2 bundle, including the disclosed uncertain B/C-corner marks.",
+      "alternatives": [
+        "Pass Gate 2",
+        "Correct problem 2 first"
+      ],
+      "resolvesProblemIds": [
+        "P-LEGIBILITY",
+        "P-OVERLAP",
+        "P-REVIEW"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-PILOT01-GATE"
+      ],
+      "state": "answered",
+      "answerInputId": "input-030"
+    },
+    {
+      "id": "Q-AMBIGUITY",
+      "round": 6,
+      "topic": "Unrecoverable original content",
+      "prompt": "If neither the sole PDF nor user review can establish an unreadable token or stroke, how should the unresolved content be represented or excluded?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-AMBIGUITY",
+        "P-OVERLAP",
+        "P-OCCLUSION"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-SOURCE-REFERENCE"
+      ],
+      "state": "queued",
+      "answerInputId": null
+    },
+    {
+      "id": "Q-SCOPE",
+      "round": 8,
+      "topic": "Retained problem components",
+      "prompt": "For the confirmed 16 multiple-choice and 4 constructed-response problems, which original numbering, scores, shared prompts and answer spaces must be retained?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-SEGMENT",
+        "P-INTEGRITY"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-AMBIGUITY"
+      ],
+      "state": "queued",
+      "answerInputId": null
+    },
+    {
+      "id": "Q-LAYOUT",
+      "round": 6,
+      "topic": "Layout and evaluation scale",
+      "prompt": "Must the original page arrangement be preserved, or should problems be reflowed? At what page size and display/print scale will the restored document be judged?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-LAYOUT"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-SCOPE"
+      ],
+      "state": "queued",
+      "answerInputId": null
+    },
+    {
+      "id": "Q-ACCEPTANCE",
+      "round": 7,
+      "topic": "Representative restoration and acceptance",
+      "prompt": "Which representative problems and observable editing, reading and print checks establish an acceptable restoration before completing the examination?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-NATIVE",
+        "P-REVIEW"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-LAYOUT"
+      ],
+      "state": "queued",
+      "answerInputId": null
+    }
+  ],
+  "nextUnansweredQuestionId": null,
+  "deferredQuestionIds": [
+    "Q-HWP-ROLE",
+    "Q-AMBIGUITY",
+    "Q-SCOPE",
+    "Q-LAYOUT",
+    "Q-ACCEPTANCE"
+  ],
+  "executionHold": {
+    "authorityInputId": "input-030",
+    "problemNumber": 3,
+    "resumeRequiresNewUserDirection": true
+  },
+  "note": "No pending question has an inferred answer; the HWP-role response introduced research rather than selecting a role."
+}

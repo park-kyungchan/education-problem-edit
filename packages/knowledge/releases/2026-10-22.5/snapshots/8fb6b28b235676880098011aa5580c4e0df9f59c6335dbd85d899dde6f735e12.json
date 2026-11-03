@@ -1,0 +1,22 @@
+{
+    "schema":  "daechi.native-question-transfer.v1",
+    "startedAt":  "2026-10-22T09:00:54.1927483Z",
+    "newPaidCalls":  0,
+    "acceptanceDecision":  null,
+    "ownedPid":  33920,
+    "nativeVersion":  "13, 0, 0, 3457",
+    "tableOrdinal":  23,
+    "findCtrl":  "tbl",
+    "blockCharacters":  115918,
+    "blockContainsQ18":  true,
+    "blockContainsQ19":  false,
+    "nativeBlockInsertion":  true,
+    "transferSaved":  true,
+    "transferPdfSaved":  true,
+    "textInsert":  true,
+    "equationInsert":  true,
+    "editSaved":  true,
+    "clipboardTouched":  false,
+    "ownedQuit":  true,
+    "finishedAt":  "2026-10-22T09:04:07.4362900Z"
+}

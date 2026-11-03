@@ -1,0 +1,42 @@
+{
+  "schema": "math-editing.retrieval-smoke-grading.v1",
+  "role": "Evidence-based producer/curator grading; not an independently calibrated canonical EvalRun.",
+  "frozenRelease": "2026-10-22.2",
+  "results": [
+    {
+      "model": "gpt-6-luna",
+      "completeCases": ["B1", "B2", "B3"],
+      "partialCases": ["B4"],
+      "materialFabricationsObserved": [],
+      "findings": [
+        "Correctly distinguishes historical widening/padding from a completed global narrowing algorithm.",
+        "Correctly identifies printed/student mark dispositions and independent type axes.",
+        "Finds EquationCreate/EqEdit and official pages/field names.",
+        "B4 finds the selected-block transfer and clipboard limit, but leaves observed descendant counts insufficiently supported and does not identify unsupported HWPX strings or FileSaveBlock_S/InsertFile alternative. The pinned S-guidanceF and official hwpx-saveblock source contain those facts.",
+        "This is incomplete evidence retrieval, not a claim that the model fabricated unsupported functionality."
+      ]
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "completeCases": ["B1", "B2", "B3", "B4"],
+      "partialCases": [],
+      "materialFabricationsObserved": [],
+      "findings": [
+        "Retrieves the native environment/font hash, measured metric fields and historical whitespace limits.",
+        "Retrieves all requested source-role/type/topology distinctions.",
+        "Finds official equation action/set fields and exact source pages.",
+        "Retrieves Q18 table ownership, 17 equations/one picture/seven tables, observed HWPML2X transfer, untouched clipboard and documented file-based HWPX alternative, keeping documented versus executed scope separate."
+      ]
+    }
+  ],
+  "evidence": {
+    "localGuidanceSourceId": "S-guidanceF",
+    "officialTransferDiscussion": "https://forum.developer.hancom.com/t/gettextfile-hwpx-saveblock/3102/2",
+    "usage": "benchmark-measurements.actual.json",
+    "answers": ["luna-response.json", "sol-response.json"]
+  },
+  "correctiveKnowledgeChange": "Add a typed transfer recipe that exposes observed descendant counts, verified HWPML2X behavior, unsupported HWPX string transport and the separately documented file route in one bounded retrieval result. Preserve this pre-correction comparison unchanged.",
+  "inference": "Luna completed faster in this one batch; Sol used fewer total reported and uncached input tokens and retrieved the complete evidence set. This does not establish a general ranking or a causal knowledge-space speedup.",
+  "sourceAccuracyAcceptance": null,
+  "canonicalEvalRunId": null
+}

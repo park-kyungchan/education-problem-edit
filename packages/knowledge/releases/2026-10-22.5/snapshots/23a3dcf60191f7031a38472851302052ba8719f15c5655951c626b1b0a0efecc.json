@@ -1,0 +1,18 @@
+{
+  "schema": "math-editing.user-layout-direction.v1",
+  "origin": "actual-user-message",
+  "classification": "user-requirement",
+  "requiredProfiles": ["exam-two-column", "reference-single-column"],
+  "selectionPolicy": [
+    "Honor the explicit user layout choice.",
+    "Preserve a known existing document profile unless the user requests a change.",
+    "For a new document without a choice, offer both profiles before composing.",
+    "Choose HWP or HWPX format separately; neither format forces a layout."
+  ],
+  "sharedReusableContent": ["semantic content", "native equation metrics", "corrected figure payloads", "whole-question ownership", "nested proof/example structures"],
+  "countsScope": "Daechi's 6 pages with 4 questions/page and 12 pages with 2 questions/page are observed instance data, not universal constraints.",
+  "preserveBothDeliveries": true,
+  "workerClose": {"pane": "wA:p4", "onlyAfter": "handoff pulled and worker idle/done", "leadPaneToPreserve": "wA:p1"},
+  "integrationWasAlreadyImplementedByMessage": false,
+  "acceptanceDecision": null
+}

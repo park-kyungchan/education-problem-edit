@@ -1,0 +1,14 @@
+{
+  "output": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/output/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+  "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+  "problems": 24,
+  "choices": 120,
+  "equations": 260,
+  "cleanDiagrams": 21,
+  "allPoints": 100,
+  "logicalPages": 6,
+  "packageCheck": "passed",
+  "nativeRender": "pending",
+  "newPaidCalls": 0,
+  "accepted": null
+}

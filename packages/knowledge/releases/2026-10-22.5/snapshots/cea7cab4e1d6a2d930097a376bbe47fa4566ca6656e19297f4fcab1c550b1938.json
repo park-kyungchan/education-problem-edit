@@ -1,0 +1,59 @@
+{
+  "schema": "math-editing.jev-treatment-parent-audit.v1",
+  "role": "Parent evidence readback; producer smoke grading, not an independent canonical EvalRun",
+  "frozenRelease": "2026-10-22.2",
+  "experimentState": "completed-with-recorded-gaps",
+  "semanticCoverage": {"completeCoreCases": ["B1", "B2", "B3"], "partialCases": ["B4"], "schemaContractPassed": false},
+  "caseFindings": [
+    {"id": "B1", "state": "core-complete-with-exposure-limit", "finding": "Distinguishes old padding/widening from a proven global tightening algorithm and finds the completed exact native metric adapter and relevant environment/key/measurement fields.", "qualification": "The worker's filtered metric view omitted fontFile.sha256. The full frozen S-metricsF snapshot actually contains a3a3cd992a89ac38e7707b58143ebdb1da9511d3c462f019cda7f92c30467807. Do not interpret the worker's returned-snapshot limitation as source absence."},
+    {"id": "B2", "state": "complete-after-source-correction", "finding": "Correctly identifies student Q8 B/C additions, printed Q21 AP and printed Q24 equal-angle ticks; provenance, primitive type and semantic owner remain independent."},
+    {"id": "B3", "state": "complete", "finding": "Finds EquationCreate/EqEdit, required field names, ActionTable page 9 and ParameterSetTable page 56, keeping documentation and runtime qualification separate."},
+    {"id": "B4", "state": "partial", "finding": "Finds question table, package descendant counts and selected-block receipt/clipboard limit. Does not establish the explicit verified HWPML2X method, unsupported HWPX string path and documented FileSaveBlock_S/InsertFile alternative completely."}
+  ],
+  "candidateCoverage": {
+    "step": "steps/evidence-routing-retry1/decide.input.json",
+    "b4SuppliedSources": ["S-bindingsF", "S-copyF", "S-feedbackD"],
+    "relevantSourcesOmittedFromB4Candidates": ["S-guidanceF", "official hwpx-saveblock support discussion"],
+    "inference": "The selector could not choose the omitted negative-capability and alternative-route evidence from its supplied shortlist. More semantic decisions did not repair candidate enumeration.",
+    "descriptionProblem": "The copy-receipt candidate was described as containing descendant counts, although those counts need the bindings/guidance evidence. Candidate descriptions are not source spans."
+  },
+  "occurrenceIntegrity": {
+    "initialWrongFeedbackLineIds": [13, 22, 25],
+    "correctFeedbackLineIds": [9, 16, 17],
+    "wrongSelections": 3,
+    "handling": "Preserved initial decisions, read actual pinned lines, made fresh corrected decisions and excluded wrong occurrences from synthesis. No paid replay.",
+    "inference": "Validate hash, selector and exact copied text before dispatch. Confidence in a producer-authored description cannot validate that description."
+  },
+  "nativeApplication": {
+    "successfulProviderRequests": 3,
+    "decisionRecords": 30,
+    "primitiveAnswers": 68,
+    "sourceRecordApplications": 28,
+    "nonSupersededApplications": 25,
+    "applicationIsNotSourceTruth": true,
+    "gaps": [
+      {"step": "evidence-routing", "state": "local-validation-failed-before-provider", "code": "HIERARCHY_IDS", "handling": "Corrected input in a fresh step."},
+      {"step": "evidence-routing-retry1", "family": "hierarchy-route", "state": "returned-without-native-action", "handling": "Read for role classification; no native source-record application claimed."},
+      {"step": "exact-source-correction", "family": "continuation-context", "state": "returned-application-failed", "code": "JEV_NATIVE_BOUNDARY_NOT_OBSERVED", "handling": "No replay; no applied effect claimed."},
+      {"step": "apply-gap-disposition", "state": "fresh-request-denied-before-provider", "code": "STORAGE_INTEGRITY", "handling": "Final bounded recovery stopped; no accounting repair, duplicate provider request or fallback sender."}
+    ]
+  },
+  "identity": {
+    "consumerNativeSessionId": "01a1630e-4416-7322-bdd1-e2286485f106",
+    "actualJevOwnerSessionId": "01a1629f-4048-76a1-97e0-a00ef54f2a04",
+    "actualJevActorRole": "Lead",
+    "independentlyBoundLunaActor": false,
+    "description": "Root-owned source-owner Jev decisions were consumed by Luna. Tool subprocess identity remained inherited Root context; no fake session/actor environment was supplied."
+  },
+  "outputContract": {"requiredCaseKeys": ["id", "answer", "recordIds", "evidencePaths", "limitations"], "actualReplacementKeys": ["evidence", "limits"], "handling": "Raw native final and result.json retained; field aliases are not silently treated as contract compliance."},
+  "costAndMeasurement": {"nativeUsage": "measurements.actual.json", "knownJevProviderUsd": "0.001153530", "subscriptionUsd": null, "activeMs": null, "accountingAuthority": "palantirkc-jev-accounting", "capDenialObserved": false},
+  "correctiveActions": [
+    {"state": "implemented-in-successor-knowledge", "action": "P-native-transfer exposes all Q18 evidence states together; baseline/treatment keep frozen release 2."},
+    {"state": "implemented-local-validation-utility", "action": "Typed source-occurrence versus metadata-description, exact hash/line/text validation and facet-coverage gap detection with regression cases."},
+    {"state": "implemented-guidance", "action": "R-retrieval-candidate-integrity and P-retrieval-audit route future agents to candidate coverage and actual receipt use."},
+    {"state": "external-native-owner-follow-up-required", "action": "Investigate inherited actor context and boundary/storage integrity through the owning runtime. No fix or new test dispatch was authorized/performed here."}
+  ],
+  "conclusion": "No semantic coverage improvement was established in this single maximal-intervention treatment; reported time/tokens increased. Candidate enumeration/integrity and native ownership are distinct from selector quality. No general model ranking or causal optimization savings are inferred.",
+  "canonicalEvalRunId": null,
+  "acceptanceDecision": null
+}

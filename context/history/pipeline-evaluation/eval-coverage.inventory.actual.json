@@ -1,0 +1,223 @@
+{
+  "schema": "math-pipeline.eval-coverage-inventory.v1",
+  "classification": "Read-only source inventory and actual user requirements; not an adopted rubric, canonical Work registration or observed model-quality result.",
+  "recordedAt": "2026-10-22T05:49:25.449Z",
+  "executionOwner": "Local Herdr",
+  "vpsEffectsAllowedForThisWork": false,
+  "pilot": {
+    "path": "/mnt/c/Users/packr/Downloads/중2 2026학년도 대치중 2학년 2학기 중간고사 (1).pdf",
+    "sha256": "2bfac149055818326290f4444f87f256b5063aa22518d0b79d386cb1f92e1006",
+    "observedPages": 6,
+    "observedQuestions": 24
+  },
+  "historicalReferenceOnly": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021",
+  "coverage": [
+    {
+      "area": "Workflow decomposition and dependencies",
+      "modelContribution": "LLM/Jev selects stages, prerequisites, parallel groups and resource ownership.",
+      "whatNeedsGrading": "Correct scope, real prerequisites, no dependency cycle, safe join and resource conflicts.",
+      "currentSupport": "Existing typed common Git Work graph validation; domain intent scoring still required.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Tool, source and model routing",
+      "modelContribution": "LLM/Jev selects a source, capability or model role.",
+      "whatNeedsGrading": "Available and relevant choice; evidence support; unnecessary escalation/calls; useful downstream outcome.",
+      "currentSupport": "Existing Jev routing/decision primitives and researchRouting evaluator cover only part of this scope.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Page interpretation and order",
+      "modelContribution": "LLM/Jev interprets physical/printed page order and orientation where needed.",
+      "whatNeedsGrading": "Correct Daechi page mapping; all pages covered once; no lost question order.",
+      "currentSupport": "Current Daechi observation gives6 image-only pages with physical3/4 reversed.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Region presence and localization",
+      "modelContribution": "LLM/Jev identifies a question, equation, diagram or relevant context region.",
+      "whatNeedsGrading": "Correct target, full content/label coverage, clipping, coordinate mapping and absence handling.",
+      "currentSupport": "Existing box/presence primitive; prior native candidate-ID apply gap remains a compatibility observation.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Printed-versus-handwritten classification",
+      "modelContribution": "LLM/Jev labels source marks and restoration exclusions.",
+      "whatNeedsGrading": "Printed content retained, handwriting excluded only from restoration, uncertainty retained.",
+      "currentSupport": "Historical provenance and exclusion checks exist; independent image-label truth is still required.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Korean text reading",
+      "modelContribution": "LLM reads stems, options, labels and table/proof text.",
+      "whatNeedsGrading": "Character/number fidelity, order, completeness and source-located uncertainty.",
+      "currentSupport": "Current exact-data checks compare extracted JSON to consumer models; they do not independently establish original reading truth.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Math recognition",
+      "modelContribution": "LLM reads math symbols, expressions, degrees and units.",
+      "whatNeedsGrading": "Exact source symbols and intended structure; accepted equivalent representations bound to source.",
+      "currentSupport": "Math-run mapping exists; source-grounded math grading is not a complete current pipeline.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Problem hierarchy and types",
+      "modelContribution": "LLM groups pages, questions, blocks, options, proof blanks and figures.",
+      "whatNeedsGrading": "Correct parentage, types, ordering, cardinality and cross-reference bindings.",
+      "currentSupport": "Existing JSON structure and consumer cardinality checks are partial coverage.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Ambiguity and competing interpretations",
+      "modelContribution": "LLM/Jev recognizes unreadable or conflicting evidence and selects next actions.",
+      "whatNeedsGrading": "No invented fact; correct unresolved scope; useful alternatives; evidence-backed escalation.",
+      "currentSupport": "Existing ambiguity preservation and Jev decision options; no universal confidence threshold.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Diagram entity identification",
+      "modelContribution": "LLM identifies points, lines, arcs, ticks, fills, labels and style.",
+      "whatNeedsGrading": "Entity coverage and correct source-region attribution.",
+      "currentSupport": "Historical figure IDs/assets exist; granular image-grounded entity grading still required.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Diagram relationships and topology",
+      "modelContribution": "LLM/Jev assigns incidence, endpoints, angle rays, point roles and relationships.",
+      "whatNeedsGrading": "Correct links and mathematical constraints; no inference from handwriting or misleading geometry.",
+      "currentSupport": "Coordinate drawing and some derived intersections/feet exist; a full independently checked relationship model is not established.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Text and math code generation",
+      "modelContribution": "LLM produces editable text/math models and conversion code.",
+      "whatNeedsGrading": "Source semantics retained; editable object structure; serialization mapping; no unsupported substitution.",
+      "currentSupport": "Existing structured models and run mapping; rubric and original-image correspondence remain required.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Diagram code generation",
+      "modelContribution": "LLM produces drawing code, coordinates, construction functions and labels.",
+      "whatNeedsGrading": "Source fidelity, construction validity, stable entity bindings, meaningful parameters and editable dependencies.",
+      "currentSupport": "Existing SVG code and raster checks; successful generation is not a semantic proof.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Layout and frame code decisions",
+      "modelContribution": "LLM/Jev represents option groups, tables, proof boxes and local placement.",
+      "whatNeedsGrading": "Complete content, group relationships, readable placement and required editability.",
+      "currentSupport": "Prior native models exist; evaluate the pre-export representation separately from later HWPX behavior.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Rendered preview interpretation",
+      "modelContribution": "LLM/Jev compares rendered output with original evidence.",
+      "whatNeedsGrading": "Missing/extra symbols, labels, strokes, line style, glyphs, overlap and topology discrepancies.",
+      "currentSupport": "Existing review predicates and visual observations; complete graded source-pair coverage not yet built.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Defect, severity and next-action decisions",
+      "modelContribution": "LLM/Jev reports a defect, severity, patch target or escalation.",
+      "whatNeedsGrading": "Known critical defects detected; valid controls accepted; localized evidence; calibrated uncertainty and useful next action.",
+      "currentSupport": "Existing11 review propositions with assessment/severity/action/target outputs; they need independent score labels.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Edit scope and dependency invalidation",
+      "modelContribution": "LLM/Jev selects which code/artifacts to patch, render or reuse.",
+      "whatNeedsGrading": "All affected descendants updated; unrelated content preserved; no stale cache or unnecessary full regeneration.",
+      "currentSupport": "Existing declared artifact/action dependency semantics; actual edit-invariance coverage remains to be qualified.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Repair and recovery decisions",
+      "modelContribution": "LLM/Jev chooses a bounded correction or interprets a failed attempt.",
+      "whatNeedsGrading": "Actual defect corrected, source facts preserved, retries and uncertain effects accounted for, no hidden replay.",
+      "currentSupport": "Existing accounting/qualification helpers; scoring must retain the failed and corrected outputs.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Workflow-level result and efficiency",
+      "modelContribution": "All admitted model contributions feed the final structured code and review preview.",
+      "whatNeedsGrading": "End-to-end fidelity, traceable propagation, final unresolved defects and total generation/verification/human time/cost.",
+      "currentSupport": "Common quality/improvement contracts and source observations exist; no Daechi model trial has yet been run.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    },
+    {
+      "area": "Evaluator behavior",
+      "modelContribution": "A model grader judges another model output, or a deterministic grader applies expected predicates.",
+      "whatNeedsGrading": "Independently fixed expected behavior; known-bad variants detected; valid controls passed; judge disagreement and evidence gaps explicit.",
+      "currentSupport": "Common evaluator/CaseResult transport exists; a producer self-score is not independent evaluation.",
+      "requiredScopeState": "rubric-required-where-model-contributes",
+      "rubricState": "not-yet-authored-or-adopted",
+      "score": null
+    }
+  ],
+  "traceabilityRequired": [
+    "Domain and Project identity",
+    "Work and Task Issue/Spec/Plan revisions",
+    "Actual execution-pane Run and attempt",
+    "Exact input/source/crop/context",
+    "Model/prompt/route and produced output",
+    "Evaluator/rubric/expected-truth versions",
+    "Code/geometry/render dependency revisions",
+    "Grade, evidence class, uncertainty, time, cost and retained failed attempts"
+  ],
+  "existingCommonContracts": [
+    "EvalDataset",
+    "VerificationUnit",
+    "Evaluator",
+    "EvalSuite",
+    "EvalRun",
+    "CaseResult",
+    "common.quality-improvement.v1",
+    "common.constrained-improvement.v1"
+  ],
+  "runtimeBoundary": "Native Codex retains dispatch, sessions, tools and cancellation. Capture once, grade frozen outputs through existing source-owned evaluation contracts. No second agent runtime or substitute canonical identity store.",
+  "coverageInterpretation": "An eligible unit is scored or explicitly records insufficient/not-applicable with a reason. Missing evidence is never silently promoted to pass.",
+  "registrationPrerequisite": "Actual Local Herdr/native-Codex owner must provide genuine current authority and exact source graph to the existing v3 allocator. Synthetic fixture owners and caller-written membership flags are not production authority.",
+  "nativeRegistrationPerformed": false,
+  "daechiModelTrials": 0,
+  "newPaidCalls": 0,
+  "newHwpxCreated": false
+}

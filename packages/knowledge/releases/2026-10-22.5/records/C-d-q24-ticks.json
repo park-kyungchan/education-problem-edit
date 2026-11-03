@@ -1,0 +1,41 @@
+{
+  "kind": "case",
+  "id": "C-d-q24-ticks",
+  "title": "Daechi Q24: Equal angle ECB/ECD have the same tick on the angle marks.",
+  "stage": "assets",
+  "exam": "daechi-20261022",
+  "question": 24,
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "24-"
+    },
+    {
+      "sourceId": "S-optimizationF"
+    },
+    {
+      "sourceId": "S-finalF"
+    }
+  ],
+  "symptom": "Equal angle ECB/ECD have the same tick on the angle marks.",
+  "cause": null,
+  "expected": "Restore matching angle-tick objects linked by an equal-angle relation.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-visual-semantics",
+    "R-geometry-topology"
+  ],
+  "requiredChecks": [
+    "Pinned original/output region comparison.",
+    "Typed source-mark/semantic ownership coverage.",
+    "Only affected descendants invalidated."
+  ],
+  "limitation": "Source-specific user expectation and producer-reported v2 correction. This curator did not independently regrade the original image; causal attribution remains unproven.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

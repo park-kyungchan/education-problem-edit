@@ -1,0 +1,43 @@
+{
+  "kind": "procedure",
+  "id": "P-native",
+  "title": "Run the required native behavior check",
+  "stage": "native",
+  "ruleIds": [
+    "R-native-owner",
+    "R-proportionate-checks",
+    "R-asset-role"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-native21"
+    },
+    {
+      "sourceId": "S-renderD"
+    }
+  ],
+  "inputs": [
+    "new HWPX hash",
+    "changed-node manifest",
+    "required behavior"
+  ],
+  "steps": [
+    "Re-observe native version and existing processes.",
+    "Render an owned copy; inspect changed regions and page/question distribution.",
+    "Use one scratch edit/copy check only for newly required behavior.",
+    "Quit only owned instance; record limitations separately from source accuracy."
+  ],
+  "outputs": [
+    "native PDF",
+    "owned-process receipt",
+    "targeted behavior evidence"
+  ],
+  "implementationSourceIds": [
+    "S-renderD",
+    "S-render20"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

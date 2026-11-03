@@ -1,0 +1,209 @@
+{
+  "schema": "math-document-editing.architecture-proposal.v1",
+  "identity": {
+    "domain": "mathematics-document-editing",
+    "project": "math-problem-restoration",
+    "work": "math-pipeline-optimization-20261020",
+    "task": "T-OPT-IMAGE-CODE-ARCHITECTURE",
+    "spec": "S-T-OPT-IMAGE-CODE-ARCHITECTURE@1",
+    "plan": "P-T-OPT-IMAGE-CODE-ARCHITECTURE@1"
+  },
+  "status": "proposal-for-user-review-not-implementation",
+  "upperOntology": {
+    "pin": "0.2.0",
+    "modified": false,
+    "extension": "Domain-local typed diagram and layout IR only. Evidence, observation, proposal, verification, evaluation and AcceptanceDecision remain distinct."
+  },
+  "scope": {
+    "endBoundary": "Validated code-level IR, deterministic SVG/optional PNG assets and original-versus-restored review evidence",
+    "excluded": [
+      "HWPX",
+      "DOCX",
+      "COM",
+      "Windows/Hancom integration",
+      "deployment",
+      "new agent runtime",
+      "provider calls",
+      "pipeline implementation"
+    ]
+  },
+  "answer": {
+    "imageToCode": "Feasible as evidence-guided reconstruction with explicit uncertainty, not guaranteed inverse recovery of hidden mathematical intent.",
+    "preciseControl": "Yes for appearance, object identity, labels and bounded edits; mathematical precision additionally requires explicit semantic geometry and source-backed constraints. Raw SVG alone does not provide mathematical correctness.",
+    "recommended": "Reuse existing TypeScript scene/SVG path; add typed semantic IR and a small constructive geometry dependency graph before adopting a general optimizer.",
+    "limit": "A clean, role-consistent drawing does not prove faithful recovery. Unknown values and obscured topology remain unknown until new evidence or explicit approximation authorization."
+  },
+  "observedLocalArchitecture": [
+    {
+      "source": "image-restoration/worker/scenes.ts",
+      "observation": "Already authors path/label/dot primitives and SVG-ready coordinates; relations are strings; constraintSolver:false; exact angles/incidences are not uniformly constructed from dependencies.",
+      "implication": "Reuse primitive renderer, replace free-text relations with typed claims incrementally. Do not rewrite every diagram."
+    },
+    {
+      "source": "feedback-revision/gpt-q11-update/figure/build-figure.ts",
+      "observation": "Already computes circumcenter/incenter from A/B/C and checks acute triangle/interior centers; selected triangle coordinates are authored; 23 degree annotation is deliberately not a solved constraint.",
+      "implication": "This is a viable seed for a geometry module, not proof that the chosen picture satisfies the source angle."
+    },
+    {
+      "source": "feedback-revision/gpt-q11-update/figure/approximation.json",
+      "observation": "Explicitly retains uncertainty about original O/I positions, ray assignment and 23 degree leader/arc endpoints.",
+      "implication": "Import these uncertainties and approximation authority; never promote computed centers into recovered source truth."
+    },
+    {
+      "source": "feedback-revision/gpt-q11-update/figure/verification.json",
+      "observation": "Historical receipt reports build and five tests passed; no current build or visual acceptance was rerun by this research.",
+      "implication": "Historical feasibility evidence only; AcceptanceDecision remains null."
+    }
+  ],
+  "bottlenecks": [
+    {
+      "rank": 1,
+      "issue": "Evidence interpretation and source/handwriting separation",
+      "why": "Illegible labels and obscured rays cannot be reconstructed by rendering choice or higher model confidence.",
+      "remedy": "Pinned original crop; region-level observations; explicit printed/student/ambiguous layers; unresolved ledger."
+    },
+    {
+      "rank": 2,
+      "issue": "Semantic ownership lost between image, authored coordinates and labels",
+      "why": "A named relation in prose does not recompute its dependent point; absolute labels drift after geometry edits.",
+      "remedy": "Stable object IDs; point construction DAG; parameter expressions; anchored labels; source-backed constraints."
+    },
+    {
+      "rank": 3,
+      "issue": "Verification combines appearance with mathematical correctness",
+      "why": "Pixel similarity may reward pencil marks or reject intentionally cleaner spacing; a plausible triangle can violate a printed given.",
+      "remedy": "Separate source comparison, topology checks, residual checks, typography/layout checks and user evaluation."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "name": "Existing TypeScript constructive geometry plus SVG",
+      "recommendation": "default",
+      "dependencyDelta": "No new geometry dependency for initial finite constructions. Reuse existing SVG/raster route after identity and font pinning.",
+      "controls": [
+        "stable IDs",
+        "exact style/label offsets",
+        "derived intersections/feet/centers",
+        "typed editable parameters"
+      ],
+      "limits": [
+        "General nonlinear simultaneous constraints require a later bounded solver adapter",
+        "Implement only selected constructions required by pilot evidence"
+      ],
+      "sources": [
+        "svg-coordinates",
+        "historical scenes.ts",
+        "historical build-figure.ts"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "JSXGraph construction adapter",
+      "recommendation": "conditional if interactive dragging becomes near-term requirement",
+      "dependencyDelta": "One selected library plus pinned browser/DOM renderer and fonts for consistent export.",
+      "controls": [
+        "dependent geometry elements",
+        "circumcenter/incenter",
+        "intersection branch selection",
+        "SVG browser rendering"
+      ],
+      "limits": [
+        "Not image interpretation",
+        "Not a generic exact simultaneous equation solver",
+        "Segment extent defaults and multiple intersections require explicit IR policies",
+        "Bun-only headless export compatibility not verified"
+      ],
+      "sources": [
+        "jsxgraph-home",
+        "jsxgraph-intersection",
+        "jsxgraph-circumcenter",
+        "jsxgraph-incenter"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Penrose constraint/layout adapter",
+      "recommendation": "defer; optional authored diagrams or label-layout experiments after baseline fidelity",
+      "dependencyDelta": "Compiler/optimizer packages, domain/style programs and fixed variation/initial state; validate packaging before adoption.",
+      "controls": [
+        "declared diagram relationships",
+        "optimization objectives",
+        "SVG output"
+      ],
+      "limits": [
+        "Randomized initialization and optimization can alter source composition",
+        "Convergence is not evidence of source truth or exact satisfaction",
+        "Cannot promise identical renders from program text alone; pin runtime/variation and verify residuals"
+      ],
+      "sources": [
+        "penrose-api",
+        "penrose-random",
+        "penrose-overview"
+      ]
+    }
+  ],
+  "boundaries": {
+    "source": "Immutable original PDF/page/crop hashes; original comparison remains available in review output.",
+    "recognition": "Jev exact1.14 performs bounded source/research triage, routing and presence plus Box region proposals only. Experimental singlebox/no-notfound limitation requires paired presence handling; these constraints are inherited from parent, not provider-tested here.",
+    "synthesis": "GPT turns admitted evidence and source mathematical text into typed proposals; uncertain topology/content escalates. Models do not execute arbitrary generated code or silently add facts.",
+    "math": "Source-asserted constraints are distinct from visually inferred shape and authorized illustrative approximation. Constructive geometry evaluates a DAG; general constraint solving is an adapter with residual/branch checks.",
+    "presentation": "Diagram styles and anchored labels separate from math. Options/proof boxes are layout objects, with text/math payloads separate from diagram geometry.",
+    "renderer": "Receives validated, finite, fully resolved drawing coordinates and escaped label payloads; returns SVG, optional raster, and hashes. No OCR/model calls, source edits, answer solving or packaging.",
+    "nativeOwner": "Native Codex owns orchestration, tools, sessions and bounded delegation; deterministic TypeScript owns schema, geometry and asset checks."
+  },
+  "editFlow": [
+    "Classify natural-language request as presentation, geometry-layout, content-parameter or evidence-correction.",
+    "Resolve explicit object IDs against a frozen baseRevision; propose a bounded typed patch with allowed targets, max operation count and preserved constraint IDs.",
+    "Validate references, authority and parameter bounds. Reject unknown source values, implicit source-content changes, stale revisions and undeclared targets.",
+    "Apply patch to a new IR revision; evaluate geometry DAG. For simultaneous constraints, use bounded solver with fixed branch/initial state and fail closed on unsatisfied or degenerate geometry.",
+    "Recompute anchored labels, arcs, dependent annotations and shared expression references. Collision resolution moves presentation only within declared limits.",
+    "Render with pinned viewport, fonts and renderer; produce semantic object diff, parameter diff, geometric residuals and visual original/restored comparison.",
+    "Record verification separately from visual evaluation. User review handles unresolved evidence or semantic changes; progressively reduce routine gates only after verified performance. No synthesized AcceptanceDecision."
+  ],
+  "numericSynchronization": {
+    "architecture": "A canonical parameter/expression ID is shared by problem text/math, diagram dimensions and labels. Never infer linkage by matching identical rendered strings.",
+    "sourceRestoration": "Original values remain frozen. A changed numeric problem is a separate explicit content-edit revision, preserving the restoration baseline.",
+    "unknown": "Unknown/illegible value cannot enter an executable constraint or expression evaluation. Render explicit unresolved state or keep original comparison.",
+    "future": "Code-level text/math representations can later feed native-editable export; document formatting/export remains out of scope."
+  },
+  "reviewPolicy": {
+    "faithfulCleanRestorationMandatory": true,
+    "originalComparisonMandatory": true,
+    "studentWriting": "Excluded only in restored output; retained in original evidence",
+    "q15StudentDrawing": "Excluded from diagram restoration",
+    "boxes": "Options/proof boxes are layout objects, not geometry figures",
+    "cleanerLayout": "Permitted as presentation without changing admitted mathematical content",
+    "constraintPreservingEdits": "Progressive after verification",
+    "acceptanceDecision": null
+  },
+  "userChoices": [
+    {
+      "id": "review-interface",
+      "question": "For code-level review, should the first deliverable be static original/restored comparison plus natural-language revisions, or an interactive browser with draggable objects?",
+      "recommended": "Static comparison first",
+      "impact": "Static fits existing SVG path; immediate interactive dragging makes JSXGraph adapter evaluation material."
+    },
+    {
+      "id": "diagram-label-portability",
+      "question": "Should diagram preview assets prioritize portable identical glyph appearance across computers, or selectable text inside SVG? The semantic text remains editable in the IR in either case.",
+      "recommended": "Portable appearance with source text preserved in IR",
+      "impact": "Outlined-glyph rendering requires a font/shaping asset adapter and hashes; SVG text needs pinned fonts at viewing time. This choice concerns diagram labels only; future native document text/math remains separate."
+    },
+    {
+      "id": "parameter-binding-time",
+      "question": "Should the first IR include dormant shared parameter/expression IDs for future text/math synchronization, or add bindings only after restoration pilots?",
+      "recommended": "Include dormant IDs now, keep source values frozen",
+      "impact": "Early IDs reduce later migration; later binding yields a smaller initial schema but needs a migration."
+    }
+  ],
+  "notObserved": [
+    "New image-to-code accuracy",
+    "Current JSXGraph/Penrose runtime installation or execution",
+    "Deterministic raster/font reproducibility",
+    "Current geometric source truth",
+    "New provider behavior",
+    "Pipeline throughput/cost gains"
+  ],
+  "acceptanceDecision": null
+}

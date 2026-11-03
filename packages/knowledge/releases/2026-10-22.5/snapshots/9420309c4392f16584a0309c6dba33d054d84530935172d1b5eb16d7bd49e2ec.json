@@ -1,0 +1,1819 @@
+{
+  "schema": "daechi.feedback-verification.v1",
+  "artifact": {
+    "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+    "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2"
+  },
+  "pdf": {
+    "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.pdf",
+    "sha256": "c07d786b1cc30d2b8b994451cdf86013babc98ca7c52243621b7e03db4c2337b"
+  },
+  "packageAndCoveragePassed": true,
+  "checks": [
+    {
+      "id": "zip-integrity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "native-controls",
+      "passed": true,
+      "detail": {
+        "equations": 260,
+        "pictures": 21,
+        "tables": 37
+      }
+    },
+    {
+      "id": "metric-1290879574",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-356953715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1086792524",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-664465522",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-762234135",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1707606102",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2077129477",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2141588704",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-957300142",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-462526763",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-756332802",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1920939323",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-906621264",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1926562081",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-209218450",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1781992689",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2002549061",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-3698912",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-787415198",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-266616858",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-402821081",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1764359377",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-761989738",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-548650884",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1932689767",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-79677049",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1286064389",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1629308666",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1336503720",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2138502758",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1331433621",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1330365212",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1756970786",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1499141099",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1294637874",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1989470517",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1469154617",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1543603171",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-844694546",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1230185166",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2132316057",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2082865357",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-323266558",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-640129852",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-931841140",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-565474876",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1125742004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1386546402",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1773032198",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-810912493",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1942191744",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2047885629",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1975048742",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1088678868",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1420752788",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1817507828",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-377759568",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-237480407",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-876423105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1942810295",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2037480678",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1309131709",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-990251815",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1768267200",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1640273241",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-668531676",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-766798428",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1631591961",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-668669557",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1695343166",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-155081071",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-355778851",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2004990105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1252163149",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-21998533",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1064908715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1572208936",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-460220493",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-514582285",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2071911723",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1699685270",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1309878702",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-855116554",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-27787753",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1553063005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2096825958",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-982854878",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2095678562",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1469654224",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1883940232",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1806814256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1272580541",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-220872991",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-861724525",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-932586194",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-783205702",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-186360183",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1130786646",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-181776949",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1176313344",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1746193380",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-810572662",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-373494193",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1046577524",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1411620115",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1063097705",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-701177644",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-16580696",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1346826633",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1018313678",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1551899489",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1075691050",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1118620699",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1483946695",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1424726569",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-924639947",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-29676414",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1647822503",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-625856333",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1468028179",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1855313617",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1377302899",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-711079627",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1805852225",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1369198059",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-853262212",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-623584975",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2089268770",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-398311354",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2025715615",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1422489613",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1845592887",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-642816474",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1636160165",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1122824189",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1148639438",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1377445450",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1908560460",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-917955906",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-594686323",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1580478778",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1365022906",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1469483352",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-522256754",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-65796540",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-12642009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1984172093",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-265445709",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1369172688",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1599159530",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-758836258",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-948078255",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1147212934",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1431204932",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-778784219",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-611410834",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-197920544",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1909371210",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1161841080",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-288283291",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1486907247",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-185986203",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1696061929",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1772614125",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1688488406",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-762608718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1596280259",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1346409294",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-354465620",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2102895199",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-498049414",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-23603546",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-574310574",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1423850780",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2090779306",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-945407564",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-364946389",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1730034188",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-257653289",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-248843816",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-916397354",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2000190342",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-416863588",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1059504896",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-103180620",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1613912349",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1048813506",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2126727351",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-842742534",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-838174612",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1077594757",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-278263719",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-675510236",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-206160183",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-820965356",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1890020235",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-72366707",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1720241130",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-485309023",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1501946061",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2143881963",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-137022739",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1836858710",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1620694804",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1977519118",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1082962952",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-456064772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-479028012",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1886284463",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-224315968",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-13663670",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-4131992",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-492825935",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1862402409",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1296055567",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1626006061",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-332576731",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-605319389",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-618347576",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1901042060",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-550967800",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-345012575",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1343673937",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-408358143",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-968590308",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1340958151",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-88195200",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2058157047",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1843023870",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-481125049",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-85105603",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1194257978",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-953505813",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1431228062",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1126720594",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1578854807",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1026997008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1022671556",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-929738620",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1478887394",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1345922941",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-85130311",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1230337900",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-982337160",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-946415127",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-615754232",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1518861904",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1264973022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-131653714",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-783101538",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-553038665",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-292143868",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1399441981",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1523293450",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1462287781",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-441536594",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-2127156448",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1877783264",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-1659433941",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "metric-636831",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "24-complete-question-containers",
+      "passed": true,
+      "detail": [
+        {
+          "question": 1,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 2,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 3,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 4,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 0,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 5,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 6,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 7,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 8,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 9,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 10,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 11,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 12,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 13,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 0,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 14,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 15,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 16,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 17,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 0,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 18,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 19,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 20,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 21,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 22,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 23,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        },
+        {
+          "question": 24,
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "pictures": 1,
+          "questionLabel": true,
+          "borderless": true,
+          "transparent": true,
+          "inlineTable": true
+        }
+      ]
+    },
+    {
+      "id": "printed-negative-underlines",
+      "passed": true,
+      "detail": [
+        "않은",
+        "없는",
+        "않은",
+        "아닌",
+        "않은",
+        "않은"
+      ]
+    },
+    {
+      "id": "native-q18-transfer-preserves-all-equations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "native-q18-transfer-preserves-container-frame-blanks-image",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "scratch-native-edit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "native-six-page-four-question-coverage",
+      "passed": true,
+      "detail": [
+        {
+          "page": 1,
+          "questions": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "choices": 20
+        },
+        {
+          "page": 2,
+          "questions": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "choices": 20
+        },
+        {
+          "page": 3,
+          "questions": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "choices": 20
+        },
+        {
+          "page": 4,
+          "questions": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "choices": 20
+        },
+        {
+          "page": 5,
+          "questions": [
+            17,
+            18,
+            19,
+            20
+          ],
+          "choices": 20
+        },
+        {
+          "page": 6,
+          "questions": [
+            21,
+            22,
+            23,
+            24
+          ],
+          "choices": 20
+        }
+      ]
+    },
+    {
+      "id": "source-unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "base-unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "windows-delivery-equals-task-build",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "native-transfer-and-edit-receipt",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "verificationClass": "producer-authored deterministic readback plus focused same-worker source/native visual inspection; not independent semantic certification",
+  "visualChecks": [
+    "Q1 inline equation and underlined negative",
+    "Q10 compound ratio followed by Korean",
+    "Q6 native dashed dimensions and construction",
+    "Q18 selected-block native render with full question"
+  ],
+  "sourceContentCertified": false,
+  "nativeClipboardRoundTrip": "not exercised; native selected-block GetTextFile/SetTextFile transfer verified instead",
+  "newPaidCalls": 0,
+  "nativeSubscriptionUsd": null,
+  "acceptanceDecision": null
+}

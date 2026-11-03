@@ -1,0 +1,52 @@
+{
+  "kind": "rule",
+  "id": "R-equation-metrics",
+  "title": "Use native metrics instead of blanket width multipliers",
+  "stage": "equations",
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-compose21",
+      "contains": "width*1.18+240"
+    },
+    {
+      "sourceId": "S-authorD",
+      "contains": "width*1.25"
+    },
+    {
+      "sourceId": "S-width20",
+      "pointer": "/reportedNativeEvidence"
+    },
+    {
+      "sourceId": "S-metricsF",
+      "pointer": "/method"
+    },
+    {
+      "sourceId": "S-authorF",
+      "contains": "Missing exact native metric"
+    }
+  ],
+  "when": "Inline math leaves excess whitespace or overlaps following Korean text.",
+  "do": [
+    "Distinguish EqEdit internal spacing, object width, outer margin, trailing text spaces and paragraph flow.",
+    "Prefer exact native EquationCreate dimensions/baseline/margins for the same script, size and environment.",
+    "Cache by normalized script, normalizer revision, base unit, font identity, native version and method.",
+    "Measure ink-to-next-nonblank glyph for local regressions; shrink only the diagnosed component."
+  ],
+  "avoid": [
+    "No universal 1.18/1.25 multiplier or blind global tightening."
+  ],
+  "check": [
+    "No overlap, no clipped right edge; baseline stable; cache coverage complete."
+  ],
+  "invalidates": [
+    "equations",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Completed v2 pins native version and font bytes around script/base-unit metric keys. Reuse must compare the environment fingerprint; cross-version reuse is not qualified."
+}

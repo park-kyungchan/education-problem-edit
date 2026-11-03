@@ -1,0 +1,115 @@
+{
+  "schema": "jungdong.worker-source-handoff.v1",
+  "at": "2026-10-21T07:04:50.341Z",
+  "from": {
+    "role": "approved-native-worker-a",
+    "nativeSessionId": "01a15d32-e7f7-75e1-a982-37b27a7ed8dc",
+    "actorId": "native-codex:01a15d32-e7f7-75e1-a982-37b27a7ed8dc",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "high",
+    "modelEffortSource": "User-approved pane assignment; active model setting was not mutated."
+  },
+  "to": {
+    "role": "Root",
+    "transport": "file-only-pull",
+    "messageSent": false
+  },
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "taskId": "T-JD-20261021-03-EXTRACT",
+  "state": "task03-frozen-await-separate-text-eq",
+  "completedEffects": [
+    "Bound the actual native CODEX_THREAD_ID to the existing enrolled Work and Task through source-owned CLI.",
+    "Inspected all five hash-matched original page images and new bounded crops through native vision.",
+    "Authored MC01..MC16 and CR01..CR04 with typed text/math/choice/frame/proof/figure records.",
+    "Separated handwritten observations and retained twelve explicit source uncertainties.",
+    "Froze exact source IR, region and ambiguity hashes and wrote source-access/native-consumption records."
+  ],
+  "files": [
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/problems.json",
+      "sha256": "9bbae54aab3aeef18baf4c049bd3e88486a3671af95669b1cba7bcd4a7f02b89"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/regions.json",
+      "sha256": "d95732e7cecbfe733e721c2c6d760c3ff577f474ffc26e68c81e76f096f41608"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/ambiguities.json",
+      "sha256": "20bf705ec54c3d5eab89ca30a62f6ec0461b6a59313d6a07930d1f486fa27069"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/handwriting.json",
+      "sha256": "28480f9d11a96a31fade0056775393a4f31b4259e321f380567f42024578bf95"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/document-metadata.json",
+      "sha256": "179086eb3bc6a9ef9673bd946d27692f216b8ca84a71e947aa6823cb61bea67e"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/crop-transforms.json",
+      "sha256": "b2585241cae7dc1cc192100731adabb25ba2e3b9e7bf4dd63f1c83d1c9db58af"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/structural-validation.json",
+      "sha256": "80c382d94e7e896bced4722020c69e2bee3d7dc99f53b04bef004fa93963bca1"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/native-decision-consumption.json",
+      "sha256": "60cbcb886864717f4c43306d30a5bfc8e2990253695d8c9efb4c6c4d196288a2"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/jev-family-applicability.json",
+      "sha256": "82cde7faaac171dfc115d479afb047c45018c5e0f036234fa129422f6138ebd2"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/input-access-manifest.json",
+      "sha256": "721af08a1a9bc3457c28ae549b2d31c63ea6cd97d8208fa3347bce032dbfc01e"
+    },
+    {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/freeze.json",
+      "sha256": "7380ad1802ca32972036f6a15c1609ec3b3b5c01bfa39aaf8cfa711dc74857fe"
+    }
+  ],
+  "coreHashes": {
+    "problems.json": "9bbae54aab3aeef18baf4c049bd3e88486a3671af95669b1cba7bcd4a7f02b89",
+    "regions.json": "d95732e7cecbfe733e721c2c6d760c3ff577f474ffc26e68c81e76f096f41608",
+    "ambiguities.json": "20bf705ec54c3d5eab89ca30a62f6ec0461b6a59313d6a07930d1f486fa27069"
+  },
+  "pending": [
+    "Separate TEXT-EQ instruction is required before this worker proceeds.",
+    "Human/source readback must resolve or accept the documented ambiguities separately.",
+    "Downstream text/equation, figure reconstruction, HWPX assembly and acceptance belong to later authorized Tasks; none started here."
+  ],
+  "sourceLimitations": [
+    "MC11 dark ∠C numeric value is blank; tentative80°/60° readings are not adopted.",
+    "CR04 opaque source phrase remains blank and is distinct from four original answer blanks.",
+    "Figure layer/label/glyph uncertainties remain in the twelve-entry register."
+  ],
+  "nativeProtocolGaps": [
+    "The finite helper supplies actions by candidate ID. Box localization has no candidate ID; native CLI returned action:null/state:unavailable. No apply success is asserted.",
+    "One oversized-image attempt failed local pre-admission validation; one bounded corrected-asset request followed. No unknown paid call was replayed."
+  ],
+  "continuationRefs": [
+    "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/freeze.json",
+    "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/prep/source-pin.json"
+  ],
+  "lifecycle": {
+    "currentTurn": "end-immediately-after-final-durable-readback",
+    "automaticContinuation": false,
+    "pane": "preserved",
+    "session": "preserved-for-separate-instruction",
+    "actualTurnEndTimestamp": null,
+    "workLifecycleChanged": false,
+    "pausedGoalsChanged": false
+  },
+  "prohibitionsObserved": {
+    "furtherAgents": false,
+    "GoalCalls": false,
+    "remoteCalls": false,
+    "installation": false,
+    "rawProviderApi": false,
+    "externalMessages": false
+  },
+  "sourceAccuracyVerified": false,
+  "acceptanceDecision": null
+}

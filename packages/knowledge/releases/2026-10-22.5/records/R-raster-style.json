@@ -1,0 +1,35 @@
+{
+  "kind": "rule",
+  "id": "R-raster-style",
+  "title": "Check rasterization preserves line styles",
+  "stage": "assets",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-guidanceF",
+      "contains": "solid strokes"
+    },
+    {
+      "sourceId": "S-rasterF"
+    }
+  ],
+  "when": "SVG dash/fill/leader primitives must survive embedding.",
+  "do": [
+    "Use the qualified librsvg/Cairo adapter for this fixture.",
+    "Pin raster backend and fonts; inspect affected embedded/native raster features."
+  ],
+  "avoid": [],
+  "check": [
+    "Dashed curves remain dashed; fills, ticks and arrows survive native export."
+  ],
+  "invalidates": [
+    "assets",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Initial MuPDF trial lost dash styling; this does not establish a defect in every MuPDF version or SVG."
+}

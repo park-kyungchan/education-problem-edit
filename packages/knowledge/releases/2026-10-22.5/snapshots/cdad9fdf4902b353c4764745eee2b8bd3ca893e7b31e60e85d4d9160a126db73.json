@@ -1,0 +1,38 @@
+{
+  "schema": "math-editing.q11-figure-verification.v1",
+  "observedAt": "2026-10-20T12:29:11.202879+00:00",
+  "build": {
+    "command": "bun run build-figure.ts",
+    "exitCode": 0,
+    "pngSha256": "9ba38d37be1d4c0c072a35881d6c11ab9aefcc16443075171f5eb25ce897c3bd",
+    "pixelDimensions": [
+      2304,
+      1618
+    ]
+  },
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v test_q11_figure",
+    "testsRun": 5,
+    "testsPassed": 5,
+    "exitCode": 0
+  },
+  "checks": [
+    "Acute illustrative triangle by positive dot products, with no numerical B/C angle computation",
+    "Computed O equidistant from A/B/C; computed I equidistant from all3sides",
+    "Six interior role-consistent spokes; labels exactly A,B,C,O,I,23°",
+    "Same PNG pixel dimensions2304x1618 and RGB",
+    "Exact delivered r4 baseline identity",
+    "Only BinData/BIN0010.png differs; all other native XML/math/text/layout/role bytes unchanged",
+    "Original comparison BinData/NLO0010.png byte-identical",
+    "Second pass byte-identical; changed other member/wrong asset/existing paths rejected",
+    "Old native-equations history and old delivered r4 unchanged"
+  ],
+  "visualInspection": "Model viewed actual source crops, previous controlled PNG and newly rendered controlled PNG. New image is clean and includes separate O/I and interior rays; no editorial placeholder or combined label.",
+  "sourceAccuracyLimit": "Authorized schematic roles, not a recovery of original exact O/I positions or obscured source line/arc topology. The annotation23° is a given, not a measured diagram angle.",
+  "newNativeRun": false,
+  "nativeFinalRendering": "Lead/parent pending after integration",
+  "output": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/gpt-q11-update/figure/tests/21877a77-7cdc-47ca-b2e8-a837bfc88499/gpt-r4-q11-only.hwpx",
+  "report": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/gpt-q11-update/figure/tests/21877a77-7cdc-47ca-b2e8-a837bfc88499/q11-only.report.json",
+  "outputSha256": "90ac33c81107fac480ce5c83845f4d001b06a4060267eb3583d47a1e25c36fac",
+  "acceptanceDecision": null
+}

@@ -1,0 +1,244 @@
+{
+  "schema": "math-editing.argon-recovery-handoff.v1",
+  "observedAt": "2026-10-20T11:21:10.299Z",
+  "status": "bounded-recovery-complete-local-verification-passed",
+  "logical": {
+    "domainId": "mathematics-document-editing",
+    "projectId": "math-problem-restoration",
+    "workId": "gpt-pipeline-takeover-20261020",
+    "workSpecRevision": 2,
+    "workPlanRevision": 2,
+    "taskId": "T-ARGON-RECOVERY",
+    "specId": "S-T-ARGON-RECOVERY",
+    "specRevision": 1,
+    "planId": "P-T-ARGON-RECOVERY",
+    "planRevision": 1
+  },
+  "owner": {
+    "path": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/owner.json",
+    "threadId": "01a15901-32c4-7811-b392-070ef4a4d969",
+    "paneId": "w7:pF",
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "observedModelAndEffortMatch": true
+  },
+  "ownership": {
+    "writeRoots": [
+      "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker",
+      "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline"
+    ],
+    "exactPreEditSnapshot": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/source-snapshot.json",
+    "immutableArgonPreserved": true,
+    "parentContractsWritten": false,
+    "extraAgentsOrPanesCreated": 0,
+    "paidCallsExecuted": 0,
+    "credentialContentsRead": false,
+    "gitOperations": 0
+  },
+  "artifacts": [
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/recovery.ts",
+      "bytes": 9752,
+      "sha256": "8a954c5e7e81d5076e17890588819354d778fba6c54406d25b76a5982459ce38"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/receipt-store.ts",
+      "bytes": 866,
+      "sha256": "418e12b08066d015efe65b958a23cf7dedfea3b6170fc030cbffb8773eff7dfe"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/transport.ts",
+      "bytes": 19165,
+      "sha256": "e30cca7dfae6152e8e15dee7202f2e5d7861ecfe02b4f6683dc66d5626609190"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/cli.ts",
+      "bytes": 13958,
+      "sha256": "4fbac15edcb39f31ab6f94f9972f041ab1a36ffdb46f7a1c05c4fa44eb13af71"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/test/recovery.test.ts",
+      "bytes": 5073,
+      "sha256": "c5d8513f87b49c4e1cb8f6ab620b39f0fd42b568fe9dfaa9a23ddd7a47c38267"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/README.md",
+      "bytes": 11429,
+      "sha256": "42cafe807aa0d59905299863e664070fe96ca55e5fc4694f09a9e5b3946ab423"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/package.json",
+      "bytes": 650,
+      "sha256": "759e31c82fca159cc270d4a9c8b42d62f19077d8ba5168a8fa225ea1a9c4bebc"
+    }
+  ],
+  "moduleContracts": [
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/recovery.ts",
+      "exports": [
+        "auditSavedBudget(workspaceRoot)",
+        "reconcileLedgerEvidence(params)",
+        "RECOVERY_AUTHORITY",
+        "assertRecoveryLiveAdmission()"
+      ],
+      "input": "Pinned saved policy/prior costs + ledger events + original response receipts and derived corroboration",
+      "output": "Recorded and conservative costs/headroom, per-reservation integrity, unresolved original-receipt hold and current offline authority",
+      "mutations": "None; caller separately persists the report",
+      "failure": "Invalid transitions/costs, duplicate request/generation, missing ledger, receipt boundary violation or source drift fail. Missing response retains its ceiling."
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/receipt-store.ts",
+      "exports": [
+        "createReservationReceiptStore(root, reservationId)",
+        "writeReceiptExclusive(path, json)"
+      ],
+      "input": "Validated reservation ID and explicit root",
+      "output": "Separate request-manifest.json / response.json / failure.json paths within each reservation",
+      "mutations": "Creates only requested receipt directory/files using exclusive-create writes",
+      "failure": "Invalid ID and existing target refuse write; no endpoint attempt can silently overwrite another reservation."
+    }
+  ],
+  "evidence": {
+    "owner.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/owner.json",
+    "source-snapshot.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/source-snapshot.json",
+    "source-pins.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/source-pins.json",
+    "lead-input-readback.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/lead-input-readback.json",
+    "budget-reconciliation.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/budget-reconciliation.json",
+    "saved-attempt-inventory.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/saved-attempt-inventory.json",
+    "effect-inventory.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/effect-inventory.json",
+    "authority-amendment.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/authority-amendment.json",
+    "tools-ledger.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/tools-ledger.json",
+    "change-readback.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/change-readback.json",
+    "common-harness-reconciliation.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/common-harness-reconciliation.json",
+    "checkpoint.json": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/checkpoint.json",
+    "tool-explanation.ko.md": "/home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/tool-explanation.ko.md"
+  },
+  "budget": {
+    "sessionCapUsd": 10,
+    "priorRecordedUsd": 0.011496,
+    "newerSavedPaidCalls": 5,
+    "totalSavedPaidCalls": 9,
+    "recordedCeilingRoundedSettledUsd": 0.023532,
+    "exactDirectlyVerifiedGatewayReportedUsd": "0.023374262",
+    "exactAllCallsUsd": null,
+    "historicalActiveReservedMicroUsd": 0,
+    "historicalUncertainLockedMicroUsd": 0,
+    "unresolvedOriginalReceiptCount": 1,
+    "firstJevOriginalCeilingRetainedMicroUsd": 252,
+    "supplementalAuditHoldMicroUsd": 96,
+    "conservativeCommittedUsd": 0.023628,
+    "auditableHeadroomUsd": 9.976372,
+    "liveCallsAdmitted": false,
+    "invoiceRequeried": false
+  },
+  "verification": {
+    "offlineTests": {
+      "pass": 13,
+      "fail": 0,
+      "assertions": 115
+    },
+    "typecheckExitCode": 0,
+    "checks": [
+      {
+        "id": "tests",
+        "exitCode": 0
+      },
+      {
+        "id": "typecheck",
+        "exitCode": 0
+      },
+      {
+        "id": "verify-contracts",
+        "exitCode": 0
+      },
+      {
+        "id": "status",
+        "exitCode": 0
+      },
+      {
+        "id": "audit-budget",
+        "exitCode": 0
+      },
+      {
+        "id": "replay-probes",
+        "exitCode": 0
+      },
+      {
+        "id": "dry-run-both",
+        "exitCode": 0
+      },
+      {
+        "id": "dry-run-gemini",
+        "exitCode": 0
+      },
+      {
+        "id": "dry-run-jev-compat",
+        "exitCode": 0
+      }
+    ],
+    "networkDisabledInBunChecks": true,
+    "priorFailedRunnerAttemptPreserved": true,
+    "qualification": "Local deterministic/offline behavior only. No target-PDF accuracy, model superiority, general OCR, fresh provider authentication or native HWPX render qualification."
+  },
+  "routeReadiness": [
+    {
+      "route": "systemone-jev-1.14",
+      "configured": true,
+      "callableNow": "live blocked by recovery gate; not probed",
+      "authenticatedNow": "not reverified",
+      "historicalAuthenticationEvidence": "Saved Jev Decisions and TypeSafe compatibility HTTP200 receipts; first pilot Decisions raw receipt missing but normalized result remains",
+      "behaviorallyVerified": "Existing saved synthetic/pilot discrete candidate+defect responses only; source unknowns remain unknown"
+    },
+    {
+      "route": "gpt-gemini-baseline",
+      "model": "openai/gpt-6.1-sol",
+      "configured": true,
+      "callableNow": "live blocked by recovery gate; not probed",
+      "authenticatedNow": "not reverified",
+      "historicalAuthenticationEvidence": "Saved Responses HTTP200 receipts",
+      "behaviorallyVerified": "Existing saved synthetic/pilot discrete responses only; no whole-exam accuracy or winner established"
+    },
+    {
+      "route": "gpt-gemini-baseline",
+      "model": "google/gemini-2.5-pro",
+      "configured": true,
+      "callableNow": "live blocked; unprobed",
+      "authenticatedNow": "unverified",
+      "behaviorallyVerified": "Offline payload construction only"
+    }
+  ],
+  "downstreamDocumentContract": {
+    "owner": "Lead compose and parent verification, outside this lane",
+    "dependency": "(A native equations + B native layout) -> compose -> independent verification. Must not wait for C recovery.",
+    "comparisonLocation": "Inside both final HWPX outputs",
+    "originalLabel": "원본(필기 포함)",
+    "restoredLabel": "복원본",
+    "roles": [
+      "original-evidence",
+      "restored-controlled-geometry",
+      "restored-native-layout"
+    ],
+    "sourceBinding": "Retain pair IDs, source page and box coordinates",
+    "boxRepresentation": "Native editable tables/paragraphs/equations; no full-box raster",
+    "wideFrames": "Readable full-width stacked/adjacent, never tiny half-width thumbnails",
+    "q15": "No output image in any role, including original evidence; no comparison pair",
+    "q11": "Only choice3 resolves to 33 degrees. OAI23 degrees and O/I uncertainty remain unchanged",
+    "hiddenSourceText": "Never invented",
+    "historicalRawReview": "Unchanged hashes and original command defects remain evidence; no claim those old files implement new feedback"
+  },
+  "remainingForLead": [
+    "Independently read handoff and accept receipt delivery if appropriate; no receiver acceptance is synthesized.",
+    "Retain first-Jev full ceiling until original receipt or billing evidence resolves the missing raw cost; do not replay or release it.",
+    "Keep live calls disabled unless a separate Lead admission, current pricing/bounds and serialized shared accounting are explicitly implemented.",
+    "Finish and verify HWPX feedback independently from this lane, preserving native editable boxes, original/restored roles and no Q15 image.",
+    "Preserve textual problem3 hold, original uncertain values, immutable Ontology and historical effects."
+  ],
+  "localRecordState": {
+    "execution": "complete",
+    "verification": "passed",
+    "localAudit": "result-durable",
+    "sharedAudit": "unsynchronized",
+    "formalCompletion": "audit-synchronization-pending"
+  },
+  "acceptanceDecision": null
+}

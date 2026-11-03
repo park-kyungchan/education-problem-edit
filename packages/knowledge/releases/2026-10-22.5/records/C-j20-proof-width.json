@@ -1,0 +1,31 @@
+{
+  "kind": "case",
+  "id": "C-j20-proof-width",
+  "title": "Proof equality overlaps following Korean",
+  "stage": "equations",
+  "exam": "jungdong-20261020",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-width20"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Native equation ink extends to 139.696pt; following Korean starts at 130.8pt (reported overlap 8.896pt).",
+  "cause": "Declared box capacity was too narrow for that script.",
+  "expected": "Bounded width correction from 8100 to 10000 HWP units while retaining height 1350.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-equation-metrics"
+  ],
+  "requiredChecks": [
+    "Recheck ink-to-next-glyph gap for changed controls."
+  ],
+  "limitation": "This was widening, not proof of a completed global whitespace-tightening pass.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

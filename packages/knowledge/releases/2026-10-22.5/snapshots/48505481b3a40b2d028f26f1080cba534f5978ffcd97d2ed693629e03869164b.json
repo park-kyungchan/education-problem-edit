@@ -1,0 +1,470 @@
+{
+  "schema": "math-editing.jev-consumption.v1",
+  "workId": "math-editing-knowledge/jev-retrieval-20261022",
+  "sessionId": "01a1629f-4048-76a1-97e0-a00ef54f2a04",
+  "release": "2026-10-22.2",
+  "nativeDecisionCalls": 3,
+  "nativeDecisionRecords": 30,
+  "primitiveAnswers": 68,
+  "sourceRecordApplications": 28,
+  "knowledgeRetrievalInvocations": 8,
+  "actualReferenceUses": [
+    {
+      "decision": "evidence-routing-retry1/context-selection/b1-metrics",
+      "reference": "S-metricsF",
+      "path": "frozen-space/releases/2026-10-22.2/snapshots/4eb430f20be3df0f6e44760772e2f1da865ed3448c842c0f84e5d37002a70d07.json",
+      "action": "Read the selected immutable metric cache snapshot.",
+      "evidence": "201 script/baseUnit metric rows; nativeVersion 13, 0, 0, 3457; font HYhwpEQ; native EquationCreate method; persisted dimensions/baseline/margins; no blanket multiplier.",
+      "affectedSynthesis": true
+    },
+    {
+      "decision": "evidence-routing-retry1/function-arguments/args-source-authorF",
+      "reference": "S-authorF",
+      "path": "frozen-space/releases/2026-10-22.2/snapshots/7cf9cae8f5bf8df0ebccf2d8a412330ebfdb256babe06affabdc1e981cb0c825.py",
+      "action": "Ran the exact frozen CLI source lookup, then read the selected source snapshot lines for normalizer and metric lookup.",
+      "evidence": "Observed implementation calls admitted.normalize_script and loads native-equation-metrics.actual.json; missing exact metric throws instead of applying a width multiplier.",
+      "affectedSynthesis": true
+    },
+    {
+      "decision": "evidence-routing-retry1/context-selection/b2-direct-feedback; claim-audit/semantic-find/corrected-lines",
+      "reference": "S-feedbackD",
+      "path": "frozen-space/releases/2026-10-22.2/snapshots/24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603.txt",
+      "action": "Read the entire selected immutable feedback snapshot and enumerated its actual line IDs.",
+      "evidence": "Line 9 Q8 pencil B/C erase; line 16 Q21 AP original; line 17 Q24 equal ticks on ECB/ECD original and restore.",
+      "affectedSynthesis": true
+    },
+    {
+      "decision": "evidence-routing-retry1/context-selection/b3-official-corpus; claim-audit/document-rerank/doc-paramtable-p56",
+      "reference": "Frozen official Hancom documentation capture",
+      "path": "frozen-space/research/hancom/2026-10-22/index/manifest.json and CLI capability/api outputs",
+      "action": "Ran frozen capability lookup for create editable equation on desktop and exact API lookup for EqEdit parameter set.",
+      "evidence": "EquationCreate ActionTable_2504 physical page 9; EqEdit ParameterSetTable_2504 physical page 56. EqEdit fields returned by the lookup.",
+      "affectedSynthesis": true
+    },
+    {
+      "decision": "evidence-routing-retry1/context-selection/b4-copy-receipt; claim-audit/semantic-find/copy-q18-receipt",
+      "reference": "S-copyF",
+      "path": "frozen-space/releases/2026-10-22.2/snapshots/8fb6b28b235676880098011aa5580c4e0df9f59c6335dbd85d899dde6f735e12.json",
+      "action": "Read the complete immutable native transfer receipt.",
+      "evidence": "Q18 present and Q19 absent; nativeBlockInsertion=true, transferSaved=true, transferPdfSaved=true, textInsert/equationInsert/editSaved=true, clipboardTouched=false; blockCharacters=115918; nativeVersion 13, 0, 0, 3457.",
+      "affectedSynthesis": true
+    },
+    {
+      "decision": "claim-audit/entity-alignment/q18-bindings",
+      "reference": "S-bindingsF",
+      "path": "frozen-space/releases/2026-10-22.2/snapshots/ef379922e54e75f57045ce138e3119f9bafad8a00f5e4bb57899ca4254a2fefc.json",
+      "action": "Read the complete question binding array and selected Q18 row.",
+      "evidence": "Q18 tableId 223434402, page 5, column 0, slot 1; pictures=1, equations=17, nestedTables=6. These are observed package binding counts, not a post-transfer per-descendant clipboard verification.",
+      "affectedSynthesis": true
+    },
+    {
+      "decision": "claim-audit/citation-relation/cite-direct",
+      "reference": "S-feedbackD line 9",
+      "action": "Used the original Q8 feedback occurrence as direct support for the stated desired cleanup.",
+      "evidence": "Semantic-find correction decision exact-source-correction/q8-line9-correct; first attempted candidate line 13 was discarded.",
+      "affectedSynthesis": true
+    },
+    {
+      "decision": "claim-audit/citation-relation/cite-transfer-direct",
+      "reference": "S-copyF transfer receipt",
+      "action": "Used only for native selected-block insertion/save and clipboard untouched boundary.",
+      "evidence": "Does not establish OS Copy/Paste or GetTextFile/SetTextFile support.",
+      "affectedSynthesis": true
+    }
+  ],
+  "actualUseDeviations": [
+    {
+      "step": "evidence-routing",
+      "event": "JEV_INTERVENTION_HIERARCHY_IDS during work-start validation; zero paid calls and no decision dispatch.",
+      "handling": "Retained the failed receipt; inspected the native schema; created a fresh input with a fully connected hierarchy root and child node graph."
+    },
+    {
+      "step": "claim-audit",
+      "event": "The first supplied semantic-find line candidates for Q8/Q21/Q24 were wrong (13/22/25).",
+      "handling": "After reading the selected source snapshot, preserved those outputs but excluded them from synthesis; obtained new native semantic-find judgments for exact lines 9/16/17 and applied the corrected decisions."
+    },
+    {
+      "step": "exact-source-correction",
+      "event": "The native decision response was received, but continuation-context source-record apply failed with JEV_NATIVE_BOUNDARY_NOT_OBSERVED.",
+      "handling": "Retained response and command evidence; did not replay. The returned selection is not claimed as applied. Other six decisions in this step were applied."
+    },
+    {
+      "step": "apply-gap-disposition",
+      "event": "A fresh native decision request to classify the prior apply gap was denied with STORAGE_INTEGRITY before submission.",
+      "handling": "Retained the command/result evidence; this was the final bounded recovery attempt. No paid request was submitted, no replay was made, and the existing apply gap remains explicit."
+    }
+  ],
+  "unconsumedOrLimitedSelections": [
+    {
+      "family": "hierarchy-route",
+      "step": "evidence-routing-retry1",
+      "reason": "No source-record action candidate was returned; its hierarchy output was used only to classify source roles."
+    },
+    {
+      "family": "semantic-find",
+      "step": "claim-audit",
+      "candidateIds": [
+        "q8-feedback-line13",
+        "q21-feedback-line22",
+        "q24-feedback-line25"
+      ],
+      "reason": "Exact source line readback contradicted the supplied candidate descriptions; superseded by corrected decisions and excluded from synthesis."
+    },
+    {
+      "family": "continuation-context",
+      "step": "exact-source-correction",
+      "candidateId": "continue-actual-result",
+      "reason": "Decision returned, source-record application failed, no replay."
+    }
+  ],
+  "nativeStepResults": [
+    "steps/explicit-native-work-start/result.json",
+    "steps/session-bind/result.json",
+    "steps/evidence-routing/result.json",
+    "steps/evidence-routing-retry1/result.json",
+    "steps/claim-audit/result.json",
+    "steps/exact-source-correction/result.json",
+    "steps/apply-gap-disposition/result.json"
+  ],
+  "acceptanceDecision": null,
+  "decisionApplications": [
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "intake-intent",
+      "decisionId": "decision-2908ce93d0318f7e8ce8ca4a7edcf6351b4072c1304db9e069658cbc7b1f76f6",
+      "selectedCandidateId": "intake-retrieve",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Retrieve pinned source evidence and synthesize answers."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "task-split",
+      "decisionId": "decision-7a5fbfe102782fdce9dc5bdf1fc63c27156afda9cf56f593588d9a9a55250fc4",
+      "selectedCandidateId": "split-four-independent",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Treat B1, B2, B3 and B4 as independent evidence questions; answer each from exact source records and distinguish observation from inference."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "context-selection",
+      "decisionId": "decision-611df3b2ac2e5a2a95a5edecf4aa99b70d19bcc73dd2ee452936a8d2e1c48a8b",
+      "selectedCandidateId": "b1-metrics",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Pinned native metric method and key evidence for Daechi v2; useful to distinguish measured script/base-unit metrics from blanket multipliers."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "context-selection",
+      "decisionId": "decision-7c15082f5887963e8b33c5b1821b382778a54912334dd425e3665f17529c1398",
+      "selectedCandidateId": "b2-direct-feedback",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Direct Daechi user feedback about Q8 B/C, AP and Q24 marks; authoritative for stated desired treatment, not proof of implementation."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "context-selection",
+      "decisionId": "decision-ff821c3bd51629b4f8e008621cdce1de41c55e42645256b2ea01a0c3faad2300",
+      "selectedCandidateId": "b3-official-corpus",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Frozen official Hancom ActionTable and ParameterSetTable captures, distinct by desktop/web/file surfaces."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "context-selection",
+      "decisionId": "decision-0618c135d696cb9a28326db52a4b517a75a72f614b993dea2b20b06c9edbbf46",
+      "selectedCandidateId": "b4-copy-receipt",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Focused selected-block transfer receipt describing Q18 transfer behavior and descendant counts."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "hierarchy-route",
+      "decisionId": "decision-903fa5362d8bc1374a5d417f38b0b3d6e64cac8ccb0410145854a5a5a08b8813",
+      "selectedCandidateId": null,
+      "requestId": null,
+      "nativeAction": null,
+      "applicationStatus": "failed-or-no-action",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Native hierarchy result was read and used to separate evidence classes; no source-record action was returned."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "tool-choice",
+      "decisionId": "decision-ef15d2387e65dc2272c324f7f76a8097cd5edd15e7007fe58dee0c4b60f6b99a",
+      "selectedCandidateId": "tool-frozen-cli",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "The original frozen-space/src/cli.ts with explicit --release 2026-10-22.2."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "function-arguments",
+      "decisionId": "decision-15bb2db1deea035fc059b29263f63f9e3d662149e02ce369967212efe55aa08e",
+      "selectedCandidateId": "args-source-authorF",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Call source S-authorF with --release 2026-10-22.2 to identify its frozen snapshot and provenance."
+    },
+    {
+      "stepId": "evidence-routing-retry1",
+      "familyId": "passage-role",
+      "decisionId": "decision-0eba041825ddf37b730352002ed046c81bc1520cca50a1ad68347296224b8406",
+      "selectedCandidateId": "role-inference",
+      "requestId": "jev-183d31aae2ab6d0134bad5aa4f133056e80c2f9acb1050980518cf1b020d6517",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Derived guidance or inference, not direct source evidence."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "semantic-find",
+      "decisionId": "decision-10cada76ab9cdac48ceac2d9040a55f503eeb54e1b3e94b8a352652223f16655",
+      "selectedCandidateId": "q8-feedback-line13",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": false,
+      "useEvidenceOrReason": "Candidate line ID did not match the exact frozen source; excluded from synthesis after readback."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "semantic-find",
+      "decisionId": "decision-26dcc8c5086a1a3108426f034f2452122c3349752b124b8eb4df614f42bef88c",
+      "selectedCandidateId": "q21-feedback-line22",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": false,
+      "useEvidenceOrReason": "Candidate line ID did not match the exact frozen source; excluded from synthesis after readback."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "semantic-find",
+      "decisionId": "decision-84216080e55b17bf27a1a25530606e6a67959de0065fb084abcf2acece08b2b4",
+      "selectedCandidateId": "q24-feedback-line25",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": false,
+      "useEvidenceOrReason": "Candidate line ID did not match the exact frozen source; excluded from synthesis after readback."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "semantic-find",
+      "decisionId": "decision-2abcfbbc85035012b7c0413fe52f3eb46000d114c2cbdc736c32d0f44f7c4a9d",
+      "selectedCandidateId": "copy-q18-receipt",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "S-copyF transfer receipt: blockContainsQ18=true, blockContainsQ19=false, nativeBlockInsertion=true, transferSaved=true, clipboardTouched=false."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "citation-relation",
+      "decisionId": "decision-e3df13e6dfd8f423aabad1648daec1b2dc10cefafbb8bcb79294221bcf75bd06",
+      "selectedCandidateId": "cite-direct",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Directly states the same claim."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "citation-relation",
+      "decisionId": "decision-ffe098f0d27fa4696c639d323f0d05e07b029a317cd7578d0a01651310cb4da9",
+      "selectedCandidateId": "cite-transfer-direct",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Directly supports selected-block insertion and save, while explicitly showing OS clipboard was untouched."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "document-rerank",
+      "decisionId": "decision-62cd708fa9426d5ed24a5397fc2e9a712eef375508b2e2d531508ca51a092ce2",
+      "selectedCandidateId": "doc-paramtable-p56",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Official ParameterSetTable_2504 page 56: EqEdit fields; document hash 6fa10e0ae69711af99a03e54c321c6c922796bd943badf8c21b2c7dfb780ad6e."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "entity-alignment",
+      "decisionId": "decision-3f1925044fd00026516e22a0b1c6ce04a33a3b77e8a11177d6bb49e38d4ad63a",
+      "selectedCandidateId": "q18-bindings",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "S-bindingsF row: Q18 -> table 223434402, pictures=1, equations=17, nestedTables=6; artifact binding identity."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "output-triage",
+      "decisionId": "decision-0c472af512bc74bed760593dfb4dc9f2ba3a0840c8d29328456a1788026ea75c",
+      "selectedCandidateId": "triage-document-only",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Retain the official documented declaration and explicitly limit it to documentation; mark broader behavior unknown/unverified."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "failure-class",
+      "decisionId": "decision-5e7a233a9ac306ac2f2e42bd32057f9eff6d1823833119292d0474dc0c39dd64",
+      "selectedCandidateId": "failure-input-schema",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Local input/profile schema validation failed before paid Jev dispatch."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "recovery-action",
+      "decisionId": "decision-20cd0c963fc783229d47820ec1bd60dab248d95410b2d9c58f56a20e62b49349",
+      "selectedCandidateId": "recover-corrected-fresh-step",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Correct the supplied hierarchy schema, preserve the failed receipt, use a new step ID and continue after successful owner readback."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "task-priority",
+      "decisionId": "decision-0d997339a7db43583d94a36647d9024bbf8fa19ffb77962b40e6c6e2fd0c7e64",
+      "selectedCandidateId": "priority-b4",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "B4 transfer and clipboard evidence boundary."
+    },
+    {
+      "stepId": "claim-audit",
+      "familyId": "work-state",
+      "decisionId": "decision-58d605a4e05b7fd6fc1e21583443ae5137b28fa979fc0b575c0c543e800d8c61",
+      "selectedCandidateId": "state-continue-report",
+      "requestId": "jev-1927c5ea0a2df593a76a1779535951027687da117109a7a736812c5fe322fc2d",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Continue current Work to write and independently inspect the authorized durable records."
+    },
+    {
+      "stepId": "exact-source-correction",
+      "familyId": "semantic-find",
+      "decisionId": "decision-0f4e4269e6b32325f1fb33b2aed101a69fd15869b049d3004597710b44f45368",
+      "selectedCandidateId": "q8-line9-correct",
+      "requestId": "jev-95af9ab6d4182c15bcad5c23522df4f2600b2b9ea4784c8eeeb80740e87e4bd6",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Exact S-feedbackD line 9 says Q8's angle B/C marks are pencil and should be erased."
+    },
+    {
+      "stepId": "exact-source-correction",
+      "familyId": "semantic-find",
+      "decisionId": "decision-bdf0966003c0405e03f6ef565c9599357e8d319e610ab95657c0e3d8092ca868",
+      "selectedCandidateId": "q21-line16-correct",
+      "requestId": "jev-95af9ab6d4182c15bcad5c23522df4f2600b2b9ea4784c8eeeb80740e87e4bd6",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Exact S-feedbackD line 16 says segment AP in Q21 is original."
+    },
+    {
+      "stepId": "exact-source-correction",
+      "familyId": "semantic-find",
+      "decisionId": "decision-592c565340ae63dfa2282e1f77911295291756041a5bf85db50cfff22910c586",
+      "selectedCandidateId": "q24-line17-correct",
+      "requestId": "jev-95af9ab6d4182c15bcad5c23522df4f2600b2b9ea4784c8eeeb80740e87e4bd6",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Exact S-feedbackD line 17 says the same tick marks on angles ECB and ECD denoting equal size are original and should be restored."
+    },
+    {
+      "stepId": "exact-source-correction",
+      "familyId": "citation-relation",
+      "decisionId": "decision-04ba59d4126026a2f0844206868dab6586a8fb1a2d5e113ea87b77dbebf72071",
+      "selectedCandidateId": "b1-direct-cache",
+      "requestId": "jev-95af9ab6d4182c15bcad5c23522df4f2600b2b9ea4784c8eeeb80740e87e4bd6",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Directly supports the Daechi v2 measured-cache method and fields."
+    },
+    {
+      "stepId": "exact-source-correction",
+      "familyId": "dependency-relation",
+      "decisionId": "decision-79b1ccdda84685ed067e792a43cdc5f4bfa225e3e68e69d0007bc65becafe9f1",
+      "selectedCandidateId": "cases-independent",
+      "requestId": "jev-95af9ab6d4182c15bcad5c23522df4f2600b2b9ea4784c8eeeb80740e87e4bd6",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "No cross-case dependency is supplied; each can be answered from its own evidence."
+    },
+    {
+      "stepId": "exact-source-correction",
+      "familyId": "skill-choice",
+      "decisionId": "decision-48037a8bd08bd7edbc0b5ffc8afb477fbd3eac746755dea04e2f1c9878841965",
+      "selectedCandidateId": "skill-math-start",
+      "requestId": "jev-95af9ab6d4182c15bcad5c23522df4f2600b2b9ea4784c8eeeb80740e87e4bd6",
+      "nativeAction": "source-record",
+      "applicationStatus": "applied",
+      "actualUseAffectedSynthesis": true,
+      "useEvidenceOrReason": "Math editing local source routing, immutable release and output evidence boundaries; read and followed in frozen-space/START.json and AGENTS.md."
+    },
+    {
+      "stepId": "exact-source-correction",
+      "familyId": "continuation-context",
+      "decisionId": "decision-da865e2c01e98e15ad8c7d3f4155c3cd6d7a58162e729a8cd2acdb7a3cdbd3c7",
+      "selectedCandidateId": "continue-actual-result",
+      "requestId": null,
+      "nativeAction": null,
+      "applicationStatus": "failed-or-no-action",
+      "actualUseAffectedSynthesis": false,
+      "useEvidenceOrReason": "Decision returned but native source-record apply failed with JEV_NATIVE_BOUNDARY_NOT_OBSERVED."
+    }
+  ],
+  "nativeProtocolCommandInvocations": 59,
+  "nativeProtocolCommandCounts": {
+    "work-status": 13,
+    "work-start": 7,
+    "work-observe": 6,
+    "decide": 4,
+    "apply": 29
+  }
+}

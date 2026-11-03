@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "test": "bun test",
-    "layout": "bun run src/cli.ts layout"
+    "layout": "bun run src/cli.ts layout",
+    "knowledge": "bun run packages/knowledge/src/cli.ts",
+    "check:context": "bun run scripts/check-context.ts"
   }
 }

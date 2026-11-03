@@ -1,0 +1,38 @@
+{
+  "kind": "rule",
+  "id": "R-question-container",
+  "title": "Make a whole question the native copy unit",
+  "stage": "question-layout",
+  "evidenceClass": "user-requirement",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "투명 테이블"
+    },
+    {
+      "sourceId": "S-questionF",
+      "pointer": "/questionContainer"
+    },
+    {
+      "sourceId": "S-bindingsF"
+    }
+  ],
+  "when": "A question including its figures must copy and paste together.",
+  "do": [
+    "Use one borderless 1x1 native table containing stem, diagram, choices and nested frames.",
+    "Track question ID -> table ID -> all descendant image/equation/frame IDs."
+  ],
+  "avoid": [],
+  "check": [
+    "Every block belongs to the question; scratch native copy/paste retains descendant objects and order."
+  ],
+  "invalidates": [
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Package containment or table count alone does not prove native clipboard behavior."
+}

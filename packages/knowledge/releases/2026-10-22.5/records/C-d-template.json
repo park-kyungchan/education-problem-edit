@@ -1,0 +1,41 @@
+{
+  "kind": "case",
+  "id": "C-d-template",
+  "title": "Four questions per page with independent local layout",
+  "stage": "page-layout",
+  "exam": "daechi-20261022",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-pageF"
+    },
+    {
+      "sourceId": "S-questionF"
+    },
+    {
+      "sourceId": "S-finalF"
+    },
+    {
+      "sourceId": "S-verifyF"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Uniform page cardinality but different content heights and first-page header.",
+  "cause": null,
+  "expected": "Separate question content, local block sizing and per-page minimum slot heights.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-layout-separation",
+    "R-question-container"
+  ],
+  "requiredChecks": [
+    "Six pages, four questions each, descendant containment, focused native copy."
+  ],
+  "limitation": "Completed v2 preserves the six-page layout and Q18 selected-block transfer; OS clipboard behavior was not tested.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

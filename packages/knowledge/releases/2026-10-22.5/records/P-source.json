@@ -1,0 +1,36 @@
+{
+  "kind": "procedure",
+  "id": "P-source",
+  "title": "Ingest and order an exam",
+  "stage": "source",
+  "ruleIds": [
+    "R-source-order",
+    "R-uncertainty"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-receiptD"
+    }
+  ],
+  "inputs": [
+    "PDF path",
+    "requested exam identity"
+  ],
+  "steps": [
+    "Hash original bytes; inspect page count/orientation/text availability.",
+    "Create physical/logical page mapping from printed question order.",
+    "Bind page/crop coordinate transforms and source hashes."
+  ],
+  "outputs": [
+    "source manifest",
+    "page map",
+    "unresolved page ledger"
+  ],
+  "implementationSourceIds": [
+    "S-renderD"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

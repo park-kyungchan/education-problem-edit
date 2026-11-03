@@ -1,0 +1,3929 @@
+{
+  "schema": "math-editing.problem-definition.v1",
+  "revision": 4,
+  "stage": "interview-in-progress",
+  "objective": "Define a reusable dependency-minimized mathematics problem-authoring program and restore printed problems as format-independent typed code, normalized mathematics, controlled visual source and layout structure. Stop before document conversion; later adapters may produce editable HWPX or DOCX. Remove student/grading marks from proposed restored content while preserving raw source evidence.",
+  "currentScope": "Gate 1 received positive direct Word visual feedback and Gate 2 explicitly passed. Problem 3 remains held by input-030. Frozen raw corrective follow-up and Google owner readback are complete. Input-031 authorizes four full-exam DOCX/HWPX review exports. Input-033 creates a native Herdr Argon(high) Lead for document production/review and selectable System One Jev-1.14 versus GPT/Gemini domain routes. Apply source-owned common Work/Task Spec/Plan identities, preserve native runtime ownership, and enforce one shared US$10 paid API cap from input-034. General clean restoration and global acceptance remain unqualified.",
+  "program": {
+    "basisInputIds": [
+      "input-003",
+      "input-004",
+      "input-005",
+      "input-006",
+      "input-007",
+      "input-021"
+    ],
+    "productGoal": "A reusable mathematics problem-authoring domain program with precise contextual control of figures, diagrams and graphs.",
+    "pilotGoal": "Faithfully reconstruct the selected original printed examination, excluding student and grading marks.",
+    "authoringBoundary": {
+      "text": "native-editable-hwpx",
+      "equations": "native-equation-editor-objects",
+      "mathematicalVisuals": "externally-controlled-source-and-rendered-image-in-hwpx",
+      "nativeHwpxGeometryEditingRequired": false
+    },
+    "currentDeliveryBoundary": {
+      "authorityInputId": "input-021",
+      "deliverable": "format-independent-code-before-document-conversion",
+      "canonicalMathematics": "normalized-LaTeX-with-font-and-math-mode-intent",
+      "canonicalVisuals": "typed-semantics-presentation-and-source-code",
+      "documentConversionAllowed": false,
+      "laterTargetAdapters": [
+        "HWPX",
+        "DOCX"
+      ]
+    },
+    "nativeExecution": {
+      "host": "Herdr",
+      "namedAgentClis": [
+        "Codex",
+        "Claude",
+        "Antigravity",
+        "Grok",
+        "Muse"
+      ],
+      "behavioralCompatibility": "not-qualified",
+      "domainProgramInterface": "not-selected",
+      "agentLoopOwner": "Existing native agent CLIs"
+    },
+    "visualControlTiers": [
+      {
+        "id": "faithful-restoration-and-styling",
+        "requirement": "required-initially",
+        "inputId": "input-006",
+        "description": "Clean faithful restoration of original visuals with label placement and line styling.",
+        "qualificationStatus": "not-verified"
+      },
+      {
+        "id": "constraint-preserving-geometry",
+        "requirement": "progressive-after-verification",
+        "inputId": "input-006",
+        "description": "Change points or geometry while preserving established right-angle, parallelism, length and other conditions.",
+        "qualificationStatus": "not-verified"
+      },
+      {
+        "id": "parameter-linked-visuals",
+        "requirement": "progressive-after-verification",
+        "inputId": "input-006",
+        "description": "Link problem values, parameters or functions to visual changes.",
+        "qualificationStatus": "not-verified"
+      }
+    ],
+    "dependencyReductionPriority": [
+      {
+        "rank": 1,
+        "target": "external-paid-saas",
+        "inputId": "input-007"
+      },
+      {
+        "rank": 2,
+        "target": "windows-and-hancom-installation",
+        "inputId": "input-007"
+      }
+    ],
+    "visualEngineSelection": "unselected-pending-qualification",
+    "sourceRepresentationSelection": "unselected"
+  },
+  "evaluation": {
+    "basisInputIds": [
+      "input-008",
+      "input-009",
+      "input-010",
+      "input-012"
+    ],
+    "originalEvidence": "selected-pdf-only",
+    "referenceAdjudicator": "user-visual-feedback",
+    "pilot": {
+      "multipleChoiceCount": 16,
+      "constructedResponseCount": 4,
+      "unit": "one-problem-at-a-time",
+      "reviewDisplayLayout": "not-selected"
+    },
+    "desiredOutcome": "Progressively reduce human-in-the-loop gates using measured recognition and validation quality",
+    "requestedModelLabels": [
+      "gpt-6.1-sol",
+      "Jev-1.14"
+    ],
+    "observedCatalogModels": [
+      {
+        "id": "openai/gpt-6.1-sol",
+        "role": "generative-vision",
+        "metadataEvidencePath": "evidence/vercel/public-model-catalog.json",
+        "liveInferenceVerified": true,
+        "liveInferenceScope": "single-corrected-synthetic-fixture"
+      },
+      {
+        "id": "typesafe-ai/jev-1.14.0",
+        "role": "vision-decision",
+        "metadataEvidencePath": "evidence/vercel/public-model-catalog.json",
+        "liveInferenceVerified": true,
+        "liveInferenceScope": "single-corrected-synthetic-fixture"
+      }
+    ],
+    "gateway": {
+      "mcpAccountAuthenticated": true,
+      "modelCredentialAuthenticated": true,
+      "credentialEvidencePath": "evidence/vercel/gateway-auth.json",
+      "generationExecuted": true
+    },
+    "comparableTasks": [
+      {
+        "id": "COMPARE-CANDIDATE-READINGS",
+        "status": "proposal",
+        "description": "Give both models the same original region and the same user-adjudicated candidate readings; measure candidate selection against an independent reference while preserving unknown cases."
+      },
+      {
+        "id": "COMPARE-DEFECT-DETECTION",
+        "status": "proposal",
+        "description": "Evaluate the same source/restoration pair for omitted or changed symbols, original-versus-student marks and mathematical visual mismatches."
+      },
+      {
+        "id": "COMPARE-WORKFLOW",
+        "status": "proposal",
+        "description": "Compare end-to-end model routes separately from common decision tasks, measuring correction effort, undetected errors, latency and actual usage on each problem."
+      }
+    ],
+    "performanceMeasurements": {
+      "scope": "single-corrected-synthetic-fixture",
+      "receiptPath": "model-probes/comparison.json",
+      "targetDocumentMeasurements": null
+    },
+    "selectedModelOrRouting": null,
+    "hitlReductionThresholds": null,
+    "gateReductionEstablished": false
+  },
+  "pilotStudy": {
+    "status": "cleaner-layout-selected-source-review-in-progress",
+    "problemContentId": "mc-01",
+    "artifactRoot": "pilot/problem-01",
+    "sourceRepresentation": "SVG",
+    "method": "Bounded TypeScript SVG source study rendered with installed PyMuPDF; executed in the requested Herdr sibling pane",
+    "selection": "B",
+    "selectionInputId": "input-016",
+    "selectionScope": "visual-style-direction",
+    "originalContentConfirmedByUser": false,
+    "modelComparisonExecuted": false
+  },
+  "referenceTranscription": {
+    "livePath": "/mnt/c/Users/packr/Desktop/중동중학교_2학년_수학_ 2026학년도_2학기_중간고사.txt",
+    "role": "user-reviewed-transcription-derived-from-selected-pdf",
+    "admittedSnapshotSha256": "8725de60ca71d7855facd7ef85226e22350f68f45d42f96b9af0afe833369611",
+    "comparisonReportPath": "reference-comparison/snapshots/8725de60ca71d7855facd7ef85226e22350f68f45d42f96b9af0afe833369611-c2c6cbf180bc-ba4c94bc56ad.comparison.json",
+    "normalizedCopyPath": "reference-comparison/snapshots/8725de60ca71d7855facd7ef85226e22350f68f45d42f96b9af0afe833369611-c2c6cbf180bc-ba4c94bc56ad.normalized.txt",
+    "normalization": "LaTeX-aware font and math-mode correction",
+    "normalizationInputId": "input-017",
+    "currentness": "Pinned observation; the live authoring file may advance"
+  },
+  "pilotWorkflowPath": "pilot/workflow.json",
+  "currentPilot": {
+    "currentProblem": 2,
+    "gate1": {
+      "state": "accepted-user-visual-review",
+      "inputId": "input-028"
+    },
+    "gate2": {
+      "state": "accepted-user-gate",
+      "inputId": "input-030"
+    },
+    "problem3": {
+      "state": "held-by-user",
+      "inputId": "input-030",
+      "resumeRequiresNewUserDirection": true
+    },
+    "sourceStrokeProvenanceAdjudicated": false,
+    "rawReviewPath": "parallel-extraction/review/final-review.json"
+  },
+  "executionPortfolio": {
+    "domainId": "mathematics-document-editing",
+    "projectId": "math-problem-restoration",
+    "workIds": [
+      "jungdong-grade8-midterm-2026",
+      "dual-route-authoring-pipeline-20261020"
+    ],
+    "taskContractPath": "argon-pipeline/harness-seed.json",
+    "paidApiBudgetUsd": 10,
+    "paidApiBudgetAuthorityInputId": "input-034",
+    "paidCallOwner": "math-argon-lead",
+    "nativeLeadPaneId": "w7:p8",
+    "problem3PilotHeld": true
+  },
+  "originalInputIds": [
+    "input-001",
+    "input-002",
+    "input-003",
+    "input-004",
+    "input-005",
+    "input-006",
+    "input-007",
+    "input-008",
+    "input-009",
+    "input-010",
+    "input-011",
+    "input-012",
+    "input-013",
+    "input-014",
+    "input-015",
+    "input-016",
+    "input-017",
+    "input-018",
+    "input-019",
+    "input-020",
+    "input-021",
+    "input-022",
+    "input-023",
+    "input-024",
+    "input-025",
+    "input-026",
+    "input-027",
+    "input-028",
+    "input-029",
+    "input-030",
+    "input-031",
+    "input-032",
+    "input-033",
+    "input-034"
+  ],
+  "sourceInspectionPath": "evidence/source-inspection.json",
+  "sourceSha256": "82c365b790b30cec5c594d72f2b5b6fb6e6f98b504fd7182c28213e76969c9d4",
+  "contentNodes": [
+    {
+      "id": "source-pdf",
+      "kind": "source-document",
+      "sourceId": "source-pdf"
+    },
+    {
+      "id": "exam",
+      "kind": "exam",
+      "label": "2026 Grade 8 second-semester midterm mathematics examination, Jungdong Middle School"
+    },
+    {
+      "id": "section-mc",
+      "kind": "section",
+      "label": "Multiple-choice problems"
+    },
+    {
+      "id": "section-cr",
+      "kind": "section",
+      "label": "Constructed-response problems"
+    },
+    {
+      "id": "page-1",
+      "kind": "page",
+      "pageNumber": 1
+    },
+    {
+      "id": "scan-1",
+      "kind": "scan",
+      "pageNumber": 1
+    },
+    {
+      "id": "page-2",
+      "kind": "page",
+      "pageNumber": 2
+    },
+    {
+      "id": "scan-2",
+      "kind": "scan",
+      "pageNumber": 2
+    },
+    {
+      "id": "page-3",
+      "kind": "page",
+      "pageNumber": 3
+    },
+    {
+      "id": "scan-3",
+      "kind": "scan",
+      "pageNumber": 3
+    },
+    {
+      "id": "page-4",
+      "kind": "page",
+      "pageNumber": 4
+    },
+    {
+      "id": "scan-4",
+      "kind": "scan",
+      "pageNumber": 4
+    },
+    {
+      "id": "page-5",
+      "kind": "page",
+      "pageNumber": 5
+    },
+    {
+      "id": "scan-5",
+      "kind": "scan",
+      "pageNumber": 5
+    },
+    {
+      "id": "mc-01",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 1,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 1; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-01-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 1; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-01-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 1; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-01-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 1; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-02",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 2,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 2; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-02-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 2; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-02-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 2; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-02-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 2; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-03",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 3,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 3; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-03-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 3; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-03-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 3; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-03-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 3; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-04",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 4,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 4; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-04-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 4; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-04-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 4; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-04-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 4; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-05",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 5,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 5; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-05-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 5; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-05-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 5; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-05-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 5; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-06",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 6,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 6; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-06-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 6; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-06-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 6; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-06-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 6; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-07",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 7,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 7; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-07-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 7; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-07-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 7; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-08",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 8,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 8; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-08-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 8; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-08-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 8; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-08-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 8; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-09",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 9,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 9; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-09-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 9; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-09-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 9; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-09-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 9; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-10",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 10,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 10; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-10-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 10; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-10-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 10; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-10-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 10; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-11",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 11,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 11; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-11-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 11; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-11-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 11; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-11-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 11; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-12",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 12,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 12; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-12-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 12; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-12-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 12; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-12-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 12; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-13",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 13,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 13; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-13-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 13; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-13-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 13; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-13-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 13; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-14",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 14,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 14; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-14-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 14; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-14-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 14; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-14-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 14; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-15",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 15,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 15; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-15-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 15; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-15-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 15; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-15-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 15; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-16",
+      "kind": "problem",
+      "section": "multiple-choice",
+      "number": 16,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 16; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "mc-16-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 16; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-16-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 16; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "mc-16-choices",
+      "kind": "component",
+      "role": "choices",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "multiple-choice problem 16; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-01",
+      "kind": "problem",
+      "section": "constructed-response",
+      "number": 1,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 1; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "cr-01-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 1; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-01-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 1; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-02",
+      "kind": "problem",
+      "section": "constructed-response",
+      "number": 2,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 2; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "cr-02-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 2; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-02-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 2; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-02-shared",
+      "kind": "component",
+      "role": "shared-context",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 2; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-02-part-1",
+      "kind": "component",
+      "role": "subproblem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 2; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-02-part-2",
+      "kind": "component",
+      "role": "subproblem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 2; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-03",
+      "kind": "problem",
+      "section": "constructed-response",
+      "number": 3,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 3; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "cr-03-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 3; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-03-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 3; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-04",
+      "kind": "problem",
+      "section": "constructed-response",
+      "number": 4,
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 4; exact pixel boundary pending"
+        }
+      ],
+      "inventoryStatus": "provisional-visual-inventory"
+    },
+    {
+      "id": "cr-04-stem",
+      "kind": "component",
+      "role": "stem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 4; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-04-diagram",
+      "kind": "component",
+      "role": "diagram",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 4; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-04-shared",
+      "kind": "component",
+      "role": "shared-context",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 4; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-04-part-1",
+      "kind": "component",
+      "role": "subproblem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 4; exact pixel boundary pending"
+        }
+      ]
+    },
+    {
+      "id": "cr-04-part-2",
+      "kind": "component",
+      "role": "subproblem",
+      "sourceLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "constructed-response problem 4; exact pixel boundary pending"
+        }
+      ]
+    }
+  ],
+  "contentEdges": [
+    {
+      "id": "content-edge-1",
+      "from": "exam",
+      "to": "section-mc",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-2",
+      "from": "exam",
+      "to": "section-cr",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-3",
+      "from": "source-pdf",
+      "to": "page-1",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-4",
+      "from": "page-1",
+      "to": "scan-1",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-5",
+      "from": "source-pdf",
+      "to": "page-2",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-6",
+      "from": "page-2",
+      "to": "scan-2",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-7",
+      "from": "source-pdf",
+      "to": "page-3",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-8",
+      "from": "page-3",
+      "to": "scan-3",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-9",
+      "from": "source-pdf",
+      "to": "page-4",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-10",
+      "from": "page-4",
+      "to": "scan-4",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-11",
+      "from": "source-pdf",
+      "to": "page-5",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-12",
+      "from": "page-5",
+      "to": "scan-5",
+      "relation": "contains",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-13",
+      "from": "section-mc",
+      "to": "mc-01",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-14",
+      "from": "scan-1",
+      "to": "mc-01",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-15",
+      "from": "mc-01",
+      "to": "mc-01-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-16",
+      "from": "mc-01",
+      "to": "mc-01-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-17",
+      "from": "mc-01",
+      "to": "mc-01-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-18",
+      "from": "section-mc",
+      "to": "mc-02",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-19",
+      "from": "scan-1",
+      "to": "mc-02",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-20",
+      "from": "mc-02",
+      "to": "mc-02-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-21",
+      "from": "mc-02",
+      "to": "mc-02-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-22",
+      "from": "mc-02",
+      "to": "mc-02-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-23",
+      "from": "section-mc",
+      "to": "mc-03",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-24",
+      "from": "scan-1",
+      "to": "mc-03",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-25",
+      "from": "mc-03",
+      "to": "mc-03-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-26",
+      "from": "mc-03",
+      "to": "mc-03-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-27",
+      "from": "mc-03",
+      "to": "mc-03-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-28",
+      "from": "section-mc",
+      "to": "mc-04",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-29",
+      "from": "scan-1",
+      "to": "mc-04",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-30",
+      "from": "mc-04",
+      "to": "mc-04-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-31",
+      "from": "mc-04",
+      "to": "mc-04-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-32",
+      "from": "mc-04",
+      "to": "mc-04-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-33",
+      "from": "section-mc",
+      "to": "mc-05",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-34",
+      "from": "scan-1",
+      "to": "mc-05",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-35",
+      "from": "mc-05",
+      "to": "mc-05-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-36",
+      "from": "mc-05",
+      "to": "mc-05-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-37",
+      "from": "mc-05",
+      "to": "mc-05-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-38",
+      "from": "section-mc",
+      "to": "mc-06",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-39",
+      "from": "scan-1",
+      "to": "mc-06",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-40",
+      "from": "mc-06",
+      "to": "mc-06-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-41",
+      "from": "mc-06",
+      "to": "mc-06-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-42",
+      "from": "mc-06",
+      "to": "mc-06-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-43",
+      "from": "section-mc",
+      "to": "mc-07",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-44",
+      "from": "scan-2",
+      "to": "mc-07",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-45",
+      "from": "mc-07",
+      "to": "mc-07-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-46",
+      "from": "mc-07",
+      "to": "mc-07-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-47",
+      "from": "section-mc",
+      "to": "mc-08",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-48",
+      "from": "scan-2",
+      "to": "mc-08",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-49",
+      "from": "mc-08",
+      "to": "mc-08-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-50",
+      "from": "mc-08",
+      "to": "mc-08-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-51",
+      "from": "mc-08",
+      "to": "mc-08-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-52",
+      "from": "section-mc",
+      "to": "mc-09",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-53",
+      "from": "scan-2",
+      "to": "mc-09",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-54",
+      "from": "mc-09",
+      "to": "mc-09-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-55",
+      "from": "mc-09",
+      "to": "mc-09-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-56",
+      "from": "mc-09",
+      "to": "mc-09-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-57",
+      "from": "section-mc",
+      "to": "mc-10",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-58",
+      "from": "scan-2",
+      "to": "mc-10",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-59",
+      "from": "mc-10",
+      "to": "mc-10-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-60",
+      "from": "mc-10",
+      "to": "mc-10-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-61",
+      "from": "mc-10",
+      "to": "mc-10-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-62",
+      "from": "section-mc",
+      "to": "mc-11",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-63",
+      "from": "scan-2",
+      "to": "mc-11",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-64",
+      "from": "mc-11",
+      "to": "mc-11-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-65",
+      "from": "mc-11",
+      "to": "mc-11-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-66",
+      "from": "mc-11",
+      "to": "mc-11-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-67",
+      "from": "section-mc",
+      "to": "mc-12",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-68",
+      "from": "scan-3",
+      "to": "mc-12",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-69",
+      "from": "mc-12",
+      "to": "mc-12-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-70",
+      "from": "mc-12",
+      "to": "mc-12-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-71",
+      "from": "mc-12",
+      "to": "mc-12-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-72",
+      "from": "section-mc",
+      "to": "mc-13",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-73",
+      "from": "scan-3",
+      "to": "mc-13",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-74",
+      "from": "mc-13",
+      "to": "mc-13-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-75",
+      "from": "mc-13",
+      "to": "mc-13-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-76",
+      "from": "mc-13",
+      "to": "mc-13-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-77",
+      "from": "section-mc",
+      "to": "mc-14",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-78",
+      "from": "scan-3",
+      "to": "mc-14",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-79",
+      "from": "mc-14",
+      "to": "mc-14-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-80",
+      "from": "mc-14",
+      "to": "mc-14-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-81",
+      "from": "mc-14",
+      "to": "mc-14-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-82",
+      "from": "section-mc",
+      "to": "mc-15",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-83",
+      "from": "scan-3",
+      "to": "mc-15",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-84",
+      "from": "mc-15",
+      "to": "mc-15-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-85",
+      "from": "mc-15",
+      "to": "mc-15-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-86",
+      "from": "mc-15",
+      "to": "mc-15-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-87",
+      "from": "section-mc",
+      "to": "mc-16",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-88",
+      "from": "scan-4",
+      "to": "mc-16",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-89",
+      "from": "mc-16",
+      "to": "mc-16-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-90",
+      "from": "mc-16",
+      "to": "mc-16-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-91",
+      "from": "mc-16",
+      "to": "mc-16-choices",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-92",
+      "from": "section-cr",
+      "to": "cr-01",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-93",
+      "from": "scan-4",
+      "to": "cr-01",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-94",
+      "from": "cr-01",
+      "to": "cr-01-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-95",
+      "from": "cr-01",
+      "to": "cr-01-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-96",
+      "from": "section-cr",
+      "to": "cr-02",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-97",
+      "from": "scan-4",
+      "to": "cr-02",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-98",
+      "from": "cr-02",
+      "to": "cr-02-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-99",
+      "from": "cr-02",
+      "to": "cr-02-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-100",
+      "from": "cr-02",
+      "to": "cr-02-shared",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-101",
+      "from": "cr-02",
+      "to": "cr-02-part-1",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-102",
+      "from": "cr-02-part-1",
+      "to": "cr-02-shared",
+      "relation": "requires-context",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-103",
+      "from": "cr-02-part-1",
+      "to": "cr-02-diagram",
+      "relation": "requires-context",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-104",
+      "from": "cr-02",
+      "to": "cr-02-part-2",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-105",
+      "from": "cr-02-part-2",
+      "to": "cr-02-shared",
+      "relation": "requires-context",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-106",
+      "from": "cr-02-part-2",
+      "to": "cr-02-diagram",
+      "relation": "requires-context",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-107",
+      "from": "section-cr",
+      "to": "cr-03",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-108",
+      "from": "scan-5",
+      "to": "cr-03",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-109",
+      "from": "cr-03",
+      "to": "cr-03-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-110",
+      "from": "cr-03",
+      "to": "cr-03-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-111",
+      "from": "section-cr",
+      "to": "cr-04",
+      "relation": "contains",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-112",
+      "from": "scan-5",
+      "to": "cr-04",
+      "relation": "source-for",
+      "basis": "observed"
+    },
+    {
+      "id": "content-edge-113",
+      "from": "cr-04",
+      "to": "cr-04-stem",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-114",
+      "from": "cr-04",
+      "to": "cr-04-diagram",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-115",
+      "from": "cr-04",
+      "to": "cr-04-shared",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-116",
+      "from": "cr-04",
+      "to": "cr-04-part-1",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-117",
+      "from": "cr-04-part-1",
+      "to": "cr-04-shared",
+      "relation": "requires-context",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-118",
+      "from": "cr-04-part-1",
+      "to": "cr-04-diagram",
+      "relation": "requires-context",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-119",
+      "from": "cr-04",
+      "to": "cr-04-part-2",
+      "relation": "has-component",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-120",
+      "from": "cr-04-part-2",
+      "to": "cr-04-shared",
+      "relation": "requires-context",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "content-edge-121",
+      "from": "cr-04-part-2",
+      "to": "cr-04-diagram",
+      "relation": "requires-context",
+      "basis": "domain-model-proposal"
+    }
+  ],
+  "problemHierarchy": [
+    {
+      "id": "P-ROOT",
+      "parentId": null,
+      "facet": null,
+      "statement": "Define a reusable mathematics problem-authoring program and restore the selected degraded examination",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-005",
+        "statement": "Reusable program intent extends the existing editable-examination restoration objective."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-DIAGRAM",
+        "Q-AMBIGUITY",
+        "Q-SCOPE",
+        "Q-LAYOUT",
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "P-SOURCE",
+      "parentId": "P-ROOT",
+      "facet": "content-integrity",
+      "statement": "Establish source identity and the role of additional material",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "source-inspection-001"
+        ],
+        "statement": "Five scanned pages; no extractable text; one 2480 by 3508 grayscale image per page."
+      },
+      "affectedContentIds": [
+        "source-pdf"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-HWP-ROLE"
+      ]
+    },
+    {
+      "id": "P-SOURCE-ROLE",
+      "parentId": "P-SOURCE",
+      "facet": "content-integrity",
+      "statement": "Determine whether the adjacent HWP is a layout or working-document reference",
+      "claim": {
+        "kind": "open",
+        "questionId": "Q-HWP-ROLE",
+        "statement": "The PDF is the only admitted original; any layout/template role of the adjacent HWP remains undefined."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "unresolved",
+      "questionIds": [
+        "Q-HWP-ROLE"
+      ]
+    },
+    {
+      "id": "P-APPEARANCE",
+      "parentId": "P-ROOT",
+      "facet": "background",
+      "statement": "Separate visual degradation from lost or ambiguous mathematical content",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "visual-review-001"
+        ],
+        "statement": "Background variation and geometric deformation are visible."
+      },
+      "affectedContentIds": [
+        "source-pdf"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "P-BACKGROUND",
+      "parentId": "P-APPEARANCE",
+      "facet": "background",
+      "statement": "Uneven illumination, gray background and surrounding material",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "visual-review-001"
+        ],
+        "statement": "Visible tonal gradients, shadows and adjacent material."
+      },
+      "affectedContentIds": [
+        "page-2",
+        "page-5"
+      ],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Right/lower portion of the photographed paper"
+        },
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Paper edges and surrounding material"
+        }
+      ],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "Low local contrast may obscure printed characters; background correction can also remove faint marks."
+      },
+      "disposition": "definition-only",
+      "questionIds": []
+    },
+    {
+      "id": "P-GEOMETRY",
+      "parentId": "P-APPEARANCE",
+      "facet": "geometry",
+      "statement": "Skew, perspective variation and paper curvature",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "visual-review-001"
+        ],
+        "statement": "Printed borders and separator lines are not uniformly straight or aligned."
+      },
+      "affectedContentIds": [
+        "source-pdf"
+      ],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Header and page outline"
+        },
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Top border and paper outline"
+        }
+      ],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "Geometric distortion can complicate diagram reconstruction and component localization."
+      },
+      "disposition": "definition-only",
+      "questionIds": []
+    },
+    {
+      "id": "P-MARKS",
+      "parentId": "P-ROOT",
+      "facet": "unwanted-marks",
+      "statement": "Exclude all non-original student and grading marks",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-004",
+        "statement": "Remove all student handwriting, answer checks and grading circles; keep printed content only."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Questions 1 through 6"
+        },
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Constructed-response answer areas"
+        }
+      ],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-MARKS"
+      ]
+    },
+    {
+      "id": "P-SEPARATE-MARKS",
+      "parentId": "P-MARKS",
+      "facet": "unwanted-marks",
+      "statement": "Separate marks in blank areas from original content",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "visual-review-001"
+        ],
+        "statement": "Large circles and calculations are visible in margins and answer spaces."
+      },
+      "affectedContentIds": [
+        "page-1",
+        "page-4",
+        "page-5"
+      ],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Work below constructed-response problem 1"
+        }
+      ],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "Non-overlapping marks may be excluded through content reconstruction without needing pixel restoration."
+      },
+      "disposition": "definition-only",
+      "questionIds": []
+    },
+    {
+      "id": "P-OVERLAP",
+      "parentId": "P-MARKS",
+      "facet": "content-integrity",
+      "statement": "Disentangle handwritten marks that cross printed diagrams or labels",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "visual-review-001"
+        ],
+        "statement": "Later-looking calculations and strokes overlap geometry in multiple problems."
+      },
+      "affectedContentIds": [
+        "mc-02",
+        "mc-06",
+        "mc-09",
+        "mc-13"
+      ],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Multiple-choice problems 2 and 6"
+        },
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Multiple-choice problem 13"
+        }
+      ],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "Removing an overlapping stroke without establishing provenance could change the printed geometry or a numeric annotation."
+      },
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "P-LEGIBILITY",
+      "parentId": "P-ROOT",
+      "facet": "legibility",
+      "statement": "Establish the original text, mathematical notation and geometry despite blur",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-003",
+        "statement": "Problem images are very blurry and difficult to interpret."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Question 11 is a candidate for a difficult-detail review"
+        }
+      ],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "P-TEXT",
+      "parentId": "P-LEGIBILITY",
+      "facet": "legibility",
+      "statement": "Korean text, point labels and similar-looking digits",
+      "claim": {
+        "kind": "open",
+        "questionId": "Q-AMBIGUITY",
+        "statement": "A symbol-by-symbol adjudicated inventory is not yet available."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 2,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Question 11 prompt and point labels"
+        }
+      ],
+      "impact": null,
+      "disposition": "unresolved",
+      "questionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "P-EQUATION",
+      "parentId": "P-LEGIBILITY",
+      "facet": "legibility",
+      "statement": "Superscripts, angle symbols, overbars, equality and relation signs",
+      "claim": {
+        "kind": "open",
+        "questionId": "Q-AMBIGUITY",
+        "statement": "A symbol-by-symbol adjudicated inventory is not yet available."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 3,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Questions 13 through 15 mathematical notation"
+        }
+      ],
+      "impact": null,
+      "disposition": "unresolved",
+      "questionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "P-DIAGRAM-SEMANTICS",
+      "parentId": "P-LEGIBILITY",
+      "facet": "legibility",
+      "statement": "Original line segments, right-angle marks, equality ticks and later auxiliary strokes",
+      "claim": {
+        "kind": "open",
+        "questionId": "Q-AMBIGUITY",
+        "statement": "A symbol-by-symbol adjudicated inventory is not yet available."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 1,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Questions 2 and 6 diagrams"
+        }
+      ],
+      "impact": null,
+      "disposition": "unresolved",
+      "questionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "P-AMBIGUITY",
+      "parentId": "P-LEGIBILITY",
+      "facet": "content-integrity",
+      "statement": "Keep unreadable content and candidate interpretations explicit",
+      "claim": {
+        "kind": "open",
+        "questionId": "Q-AMBIGUITY",
+        "statement": "Authority for resolving uncertain source content is undefined."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "A mathematically plausible reconstruction can differ from the actual printed problem."
+      },
+      "disposition": "unresolved",
+      "questionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "P-OCCLUSION",
+      "parentId": "P-AMBIGUITY",
+      "facet": "content-integrity",
+      "statement": "Classify the dark rectangle in the final proof panel",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "visual-review-001"
+        ],
+        "statement": "A dark block exists; its origin and intended meaning are unknown."
+      },
+      "affectedContentIds": [
+        "cr-04"
+      ],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Lower right proof panel, dark rectangular area"
+        }
+      ],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "P-SEGMENT",
+      "parentId": "P-ROOT",
+      "facet": "segmentation",
+      "statement": "Preserve whole problems and shared dependencies during decomposition",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "visual-review-001"
+        ],
+        "statement": "The apparent inventory is 16 multiple-choice and 4 constructed-response problems; some constructed-response items contain shared context and subparts."
+      },
+      "affectedContentIds": [
+        "exam",
+        "cr-02",
+        "cr-04"
+      ],
+      "sampleLocations": [
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 4,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Constructed-response problem 2 shared diagram and subparts"
+        },
+        {
+          "sourceId": "source-pdf",
+          "pageNumber": 5,
+          "coordinateSpace": "embedded-image-pixels",
+          "boundingBox": null,
+          "description": "Constructed-response problem 4 prompt, diagrams and proof panel"
+        }
+      ],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-SCOPE"
+      ]
+    },
+    {
+      "id": "P-INTEGRITY",
+      "parentId": "P-SEGMENT",
+      "facet": "content-integrity",
+      "statement": "Define retained numbering, choices, scores, shared prompts and answer spaces",
+      "claim": {
+        "kind": "open",
+        "questionId": "Q-SCOPE",
+        "statement": "The final inclusion and preservation policy is not fully established."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "unresolved",
+      "questionIds": [
+        "Q-SCOPE"
+      ]
+    },
+    {
+      "id": "P-AUTHOR",
+      "parentId": "P-ROOT",
+      "facet": "native-delivery",
+      "statement": "Map confirmed content to editable Hancom document objects",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-003",
+        "statement": "The final problems must be editable and use the equation editor."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-DIAGRAM",
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "P-DIAGRAM",
+      "parentId": "P-AUTHOR",
+      "facet": "native-delivery",
+      "statement": "Control mathematical visuals outside HWPX and embed rendered images",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-005",
+        "statement": "Native HWPX geometry editing is not required; text and equations remain native editable content."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-DIAGRAM"
+      ]
+    },
+    {
+      "id": "P-LAYOUT",
+      "parentId": "P-AUTHOR",
+      "facet": "target-layout",
+      "statement": "Define final document layout, sizes and typography",
+      "claim": {
+        "kind": "open",
+        "questionId": "Q-LAYOUT",
+        "statement": "Original page fidelity, reflow and intended display/print size remain undecided."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "unresolved",
+      "questionIds": [
+        "Q-LAYOUT"
+      ]
+    },
+    {
+      "id": "P-NATIVE",
+      "parentId": "P-AUTHOR",
+      "facet": "native-delivery",
+      "statement": "Establish official or maintained tool capabilities and native save/readback",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-002",
+        "statement": "Research official Hancom MCP/CLI first and REA feasibility if necessary."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "P-REVIEW",
+      "parentId": "P-ROOT",
+      "facet": "content-integrity",
+      "statement": "Define independent content verification and user acceptance",
+      "claim": {
+        "kind": "open",
+        "questionId": "Q-ACCEPTANCE",
+        "statement": "Detailed legibility, mathematical fidelity, editability and layout criteria remain to be agreed."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "unresolved",
+      "questionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "P-PROGRAM",
+      "parentId": "P-ROOT",
+      "facet": "integration",
+      "statement": "Define the reusable domain program and ownership boundaries",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-005",
+        "statement": "A reusable dependency-minimized mathematics problem-authoring program is wanted."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-VISUAL-CONTROL",
+        "Q-DEPENDENCIES"
+      ]
+    },
+    {
+      "id": "P-VISUAL-CONTROL",
+      "parentId": "P-PROGRAM",
+      "facet": "visual-authoring",
+      "statement": "Faithful mathematical visual restoration, label placement and line styling",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-006",
+        "statement": "This visual-control tier is mandatory initially."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-VISUAL-CONTROL",
+        "Q-VISUAL-FIDELITY",
+        "Q-PILOT01-REVIEW"
+      ]
+    },
+    {
+      "id": "P-CONSTRAINTS",
+      "parentId": "P-PROGRAM",
+      "facet": "visual-authoring",
+      "statement": "Maintain geometric relationships during point or geometry changes",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-006",
+        "statement": "Introduce constraint-preserving geometry progressively after verification."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-VISUAL-CONTROL"
+      ]
+    },
+    {
+      "id": "P-PARAMETRIC",
+      "parentId": "P-PROGRAM",
+      "facet": "visual-authoring",
+      "statement": "Link visuals to problem values, parameters and functions",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-006",
+        "statement": "Introduce problem-parameter and function-linked visuals progressively after verification."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-VISUAL-CONTROL"
+      ]
+    },
+    {
+      "id": "P-DEPENDENCIES",
+      "parentId": "P-PROGRAM",
+      "facet": "dependencies",
+      "statement": "Reduce dependencies in the user's priority order",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-007",
+        "statement": "External paid SaaS first; Windows/Hancom installation dependence second."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-DEPENDENCIES"
+      ]
+    },
+    {
+      "id": "P-NATIVE-CLIS",
+      "parentId": "P-PROGRAM",
+      "facet": "integration",
+      "statement": "Make the domain program usable through the named existing agent CLIs",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-005",
+        "statement": "Herdr-hosted Codex, Claude, Antigravity, Grok and Muse are the named execution context; compatibility is not verified."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "P-INDUSTRY",
+      "parentId": "P-PROGRAM",
+      "facet": "integration",
+      "statement": "Establish source-grounded publishing workflows and candidate visual capabilities",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-005",
+        "statement": "Research existing company problem-authoring workflows and image-to-code capabilities."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "Public vendor capability descriptions do not establish a company's private internal workflow or candidate runtime quality."
+      },
+      "disposition": "definition-only",
+      "questionIds": []
+    },
+    {
+      "id": "P-ORIGINAL-BOUNDARY",
+      "parentId": "P-SOURCE",
+      "facet": "content-integrity",
+      "statement": "Use the selected PDF as the sole original",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-008",
+        "statement": "No better original source is available; the user can visually supply problem-specific feedback."
+      },
+      "affectedContentIds": [
+        "source-pdf"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-SOURCE-REFERENCE"
+      ]
+    },
+    {
+      "id": "P-HITL",
+      "parentId": "P-PROGRAM",
+      "facet": "integration",
+      "statement": "Reduce human review gates progressively while measuring restoration quality",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-008",
+        "statement": "The user initially reviews problems and gives feedback; manual comparison and HITL gates should progressively decrease."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "Fewer human interventions do not establish improved quality unless undetected errors and uncertainty are also measured."
+      },
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-FEEDBACK-UNIT",
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "P-MODEL-COMPARISON",
+      "parentId": "P-HITL",
+      "facet": "legibility",
+      "statement": "Compare gpt-6.1-sol and Jev-1.14 for compatible recognition and validation tasks",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-008",
+        "statement": "Use comparative verification before choosing the better-performing model or route."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "Image input support does not make a generative-vision model and a structured Decision model identical recognition interfaces."
+      },
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-MODEL-ACCESS",
+        "Q-GATEWAY-AUTH",
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "P-FIXTURE-QUALITY",
+      "parentId": "P-MODEL-COMPARISON",
+      "facet": "integration",
+      "statement": "Verify rendered test distinctions before treating model outputs as accuracy evidence",
+      "claim": {
+        "kind": "observed",
+        "evidenceIds": [
+          "evidence-model-synthetic-probe"
+        ],
+        "statement": "The first synthetic fixture lost intended SVG dashes during rendering, making candidate selection ambiguous. Its accuracy was excluded; a new fixture with explicit dash segments passed raster preflight."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "A fixture or renderer defect can invalidate model scores even when both APIs respond successfully."
+      },
+      "disposition": "definition-only",
+      "questionIds": []
+    },
+    {
+      "id": "P-PORTABLE-CODE",
+      "parentId": "P-PROGRAM",
+      "facet": "integration",
+      "statement": "Preserve format-independent typed content before document conversion",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-021",
+        "statement": "Stop at code artifacts that later DOCX/HWPX adapters can consume."
+      },
+      "affectedContentIds": [
+        "mc-01"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": [
+        "Q-PILOT01-GATE"
+      ]
+    },
+    {
+      "id": "P-INDEPENDENT-RAW",
+      "parentId": "P-MODEL-COMPARISON",
+      "facet": "integration",
+      "statement": "Acquire comparable independent full-document raw readings in the two requested native panes",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-019",
+        "statement": "Both requested agents receive the same full problem-definition context and structure all 20 problems, including visual boxes and frames."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": null,
+      "disposition": "definition-only",
+      "questionIds": []
+    },
+    {
+      "id": "P-TRANSCRIPTION",
+      "parentId": "P-SOURCE",
+      "facet": "content-integrity",
+      "statement": "Use evolving user-reviewed transcription with exact snapshot provenance",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-015",
+        "statement": "The user provided manually reviewed source text and will continue authoring it."
+      },
+      "affectedContentIds": [
+        "exam"
+      ],
+      "sampleLocations": [],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "A derived user transcription adds adjudication evidence, not a second independent original scan."
+      },
+      "disposition": "definition-only",
+      "questionIds": []
+    },
+    {
+      "id": "P-MATH-NORMALIZATION",
+      "parentId": "P-TRANSCRIPTION",
+      "facet": "native-delivery",
+      "statement": "Correct inconsistent math syntax while preserving Roman/italic intent and mathematical content",
+      "claim": {
+        "kind": "user-stated",
+        "inputId": "input-017",
+        "statement": "Apply LaTeX-aware correction to rm/it styles and explicit math-mode delimiters."
+      },
+      "affectedContentIds": [],
+      "sampleLocations": [],
+      "impact": {
+        "kind": "hypothesis",
+        "statement": "Formatting normalization does not establish native HWPX equation conversion or repair uncertain mathematical values."
+      },
+      "disposition": "definition-only",
+      "questionIds": []
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-definition",
+      "title": "Problem definition",
+      "status": "active",
+      "purpose": "Establish confirmed requirements, evidence, uncertainty and decision dependencies."
+    },
+    {
+      "id": "stage-tooling",
+      "title": "Tooling feasibility research",
+      "status": "source-research-observed",
+      "purpose": "Source reports for Hancom authoring, REA feasibility and mathematical visuals are available; candidate behavior remains unqualified."
+    },
+    {
+      "id": "stage-model-qualification",
+      "title": "Comparable image-recognition and decision qualification",
+      "status": "synthetic-probe-observed",
+      "purpose": "Both exact model image routes returned valid answers on one corrected synthetic fixture. Target problem quality, repeated accuracy and HITL reduction remain unqualified."
+    },
+    {
+      "id": "stage-gate-reduction",
+      "title": "Measured HITL gate reduction",
+      "status": "pending-definition",
+      "purpose": "Use user-adjudicated cases to propose and independently validate reductions in human correction effort and review gates."
+    },
+    {
+      "id": "stage-source-review",
+      "title": "Source-content adjudication",
+      "status": "pending-definition",
+      "purpose": "Record exact problem components, ambiguous tokens and evidence for original content."
+    },
+    {
+      "id": "stage-pilot",
+      "title": "Representative code reconstruction",
+      "status": "active",
+      "purpose": "Review portable typed text, LaTeX, visual code and layout at each whole-problem gate; do not convert documents."
+    },
+    {
+      "id": "stage-assembly",
+      "title": "Full document assembly",
+      "status": "pending-definition",
+      "purpose": "Restore the agreed problem set using the qualified native authoring path."
+    },
+    {
+      "id": "stage-verification",
+      "title": "Independent document readback",
+      "status": "pending-definition",
+      "purpose": "Inspect saved native objects and rendered content; preserve unresolved results."
+    },
+    {
+      "id": "stage-user-review",
+      "title": "User review",
+      "status": "pending-definition",
+      "purpose": "Obtain an actual user AcceptanceDecision under agreed criteria."
+    }
+  ],
+  "decisionTopology": [
+    {
+      "id": "gate-1",
+      "from": "stage-source-review",
+      "to": "Q-AMBIGUITY",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "gate-2",
+      "from": "stage-pilot",
+      "to": "Q-DIAGRAM",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "gate-3",
+      "from": "stage-pilot",
+      "to": "stage-tooling",
+      "relation": "gated-by",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "gate-4",
+      "from": "stage-pilot",
+      "to": "Q-LAYOUT",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "gate-5",
+      "from": "stage-assembly",
+      "to": "stage-pilot",
+      "relation": "gated-by",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "gate-6",
+      "from": "stage-assembly",
+      "to": "Q-SCOPE",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "gate-7",
+      "from": "stage-user-review",
+      "to": "stage-verification",
+      "relation": "gated-by",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "gate-8",
+      "from": "stage-gate-reduction",
+      "to": "stage-model-qualification",
+      "relation": "gated-by",
+      "basis": "domain-model-proposal"
+    },
+    {
+      "id": "gate-9",
+      "from": "stage-gate-reduction",
+      "to": "Q-ACCEPTANCE",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "gate-pilot-whole-problem",
+      "from": "stage-pilot",
+      "to": "Q-PILOT01-GATE",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-DIAGRAM-0",
+      "from": "Q-DIAGRAM",
+      "to": "Q-PAIN",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-VISUAL-CONTROL-0",
+      "from": "Q-VISUAL-CONTROL",
+      "to": "Q-DIAGRAM",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-DEPENDENCIES-0",
+      "from": "Q-DEPENDENCIES",
+      "to": "Q-DIAGRAM",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-SOURCE-REFERENCE-0",
+      "from": "Q-SOURCE-REFERENCE",
+      "to": "Q-DIAGRAM",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-MODEL-ACCESS-0",
+      "from": "Q-MODEL-ACCESS",
+      "to": "Q-SOURCE-REFERENCE",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-FEEDBACK-UNIT-0",
+      "from": "Q-FEEDBACK-UNIT",
+      "to": "Q-SOURCE-REFERENCE",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-GATEWAY-AUTH-0",
+      "from": "Q-GATEWAY-AUTH",
+      "to": "Q-MODEL-ACCESS",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-VISUAL-FIDELITY-0",
+      "from": "Q-VISUAL-FIDELITY",
+      "to": "Q-VISUAL-CONTROL",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-PILOT01-REVIEW-0",
+      "from": "Q-PILOT01-REVIEW",
+      "to": "Q-VISUAL-FIDELITY",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-PILOT01-GATE-0",
+      "from": "Q-PILOT01-GATE",
+      "to": "Q-PILOT01-REVIEW",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-PILOT02-GATE-0",
+      "from": "Q-PILOT02-GATE",
+      "to": "Q-PILOT01-GATE",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-AMBIGUITY-0",
+      "from": "Q-AMBIGUITY",
+      "to": "Q-SOURCE-REFERENCE",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-SCOPE-0",
+      "from": "Q-SCOPE",
+      "to": "Q-AMBIGUITY",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-LAYOUT-0",
+      "from": "Q-LAYOUT",
+      "to": "Q-SCOPE",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    },
+    {
+      "id": "question-gate-Q-ACCEPTANCE-0",
+      "from": "Q-ACCEPTANCE",
+      "to": "Q-LAYOUT",
+      "relation": "gated-by",
+      "basis": "interview-dependency"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-HWP-ROLE",
+      "round": 1,
+      "topic": "Adjacent HWP role",
+      "prompt": "What role does the adjacent HWP play: working document/template, a better original/reference, or unrelated material?",
+      "alternatives": [
+        "Working document or template",
+        "Better original or comparison reference",
+        "Unrelated or unknown"
+      ],
+      "resolvesProblemIds": [
+        "P-SOURCE-ROLE"
+      ],
+      "dependsOnQuestionIds": [],
+      "state": "asked-awaiting-answer",
+      "answerInputId": null
+    },
+    {
+      "id": "Q-PAIN",
+      "round": 1,
+      "topic": "Observed user difficulty and clarified objective",
+      "prompt": "Describe the concrete source-quality difficulty and its effect on editing.",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-ROOT",
+        "P-LEGIBILITY",
+        "P-MARKS"
+      ],
+      "dependsOnQuestionIds": [],
+      "state": "answered",
+      "answerInputId": "input-003"
+    },
+    {
+      "id": "Q-MARKS",
+      "round": 2,
+      "topic": "Final content policy",
+      "prompt": "Should student handwriting, answer ticks and grading circles remain in the final content?",
+      "alternatives": [
+        "Remove all; retain printed content only",
+        "Preserve marks",
+        "Decide by mark type or problem"
+      ],
+      "resolvesProblemIds": [
+        "P-MARKS"
+      ],
+      "dependsOnQuestionIds": [],
+      "state": "answered",
+      "answerInputId": "input-004"
+    },
+    {
+      "id": "Q-DIAGRAM",
+      "round": 3,
+      "topic": "Diagram editability",
+      "prompt": "Must diagram lines, points, labels and numeric annotations remain independently editable in the final HWPX?",
+      "alternatives": [
+        "Independently editable geometry and labels",
+        "Clean diagram images are sufficient",
+        "Compare representative quality before deciding"
+      ],
+      "resolvesProblemIds": [
+        "P-DIAGRAM"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-PAIN"
+      ],
+      "state": "answered",
+      "answerInputId": "input-005"
+    },
+    {
+      "id": "Q-VISUAL-CONTROL",
+      "round": 4,
+      "topic": "Required initial and progressive visual control",
+      "prompt": "Which controls are required: clean faithful restoration and styling, constraint-preserving geometry, or problem-parameter/function-linked visuals?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-VISUAL-CONTROL",
+        "P-CONSTRAINTS",
+        "P-PARAMETRIC"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-DIAGRAM"
+      ],
+      "state": "answered",
+      "answerInputId": "input-006"
+    },
+    {
+      "id": "Q-DEPENDENCIES",
+      "round": 4,
+      "topic": "Dependency reduction priorities",
+      "prompt": "Which dependencies should be reduced first: external paid SaaS, Windows/Hancom installations, or particular agents and visual engines?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-DEPENDENCIES"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-DIAGRAM"
+      ],
+      "state": "answered",
+      "answerInputId": "input-007"
+    },
+    {
+      "id": "Q-SOURCE-REFERENCE",
+      "round": 5,
+      "topic": "Available evidence for unreadable source content",
+      "prompt": "Are there source references beyond this PDF, and what is the role of the adjacent HWP: the only PDF, an HWP reference/restoration, other paper or clean originals/solutions, or unknown?",
+      "alternatives": [
+        "Only the selected PDF",
+        "Adjacent HWP is a reference or earlier restoration",
+        "Other paper, clean originals or solutions exist",
+        "Availability and adjacent HWP role unknown"
+      ],
+      "resolvesProblemIds": [
+        "P-SOURCE-ROLE",
+        "P-AMBIGUITY"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-DIAGRAM"
+      ],
+      "state": "answered",
+      "answerInputId": "input-008"
+    },
+    {
+      "id": "Q-MODEL-ACCESS",
+      "round": 6,
+      "topic": "Jev execution route",
+      "prompt": "Which existing CLI, API or local model route can be used to evaluate Jev-1.14?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-MODEL-COMPARISON"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-SOURCE-REFERENCE"
+      ],
+      "state": "answered",
+      "answerInputId": "input-009"
+    },
+    {
+      "id": "Q-FEEDBACK-UNIT",
+      "round": 6,
+      "topic": "Initial user feedback unit",
+      "prompt": "Should initial feedback compare whole problems, components or uncertain/disagreeing regions?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-HITL"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-SOURCE-REFERENCE"
+      ],
+      "state": "answered",
+      "answerInputId": "input-010"
+    },
+    {
+      "id": "Q-GATEWAY-AUTH",
+      "round": 7,
+      "topic": "Gateway credential availability",
+      "prompt": "Provide a secure local credential-file path for the existing Gateway key; do not provide the key value in chat.",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-MODEL-COMPARISON"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-MODEL-ACCESS"
+      ],
+      "state": "answered",
+      "answerInputId": "input-012"
+    },
+    {
+      "id": "Q-VISUAL-FIDELITY",
+      "round": 8,
+      "topic": "Initial visual restoration fidelity",
+      "prompt": "After removing capture distortion and student marks, should restored visuals closely reproduce original printed placement/proportions/strokes, preserve mathematical conditions and notation with cleaner normalized presentation, or compare two first-problem candidates before deciding?",
+      "alternatives": [
+        "Closest original printed appearance",
+        "Same mathematical content with normalized presentation",
+        "Compare two first-problem candidates"
+      ],
+      "resolvesProblemIds": [
+        "P-VISUAL-CONTROL"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-VISUAL-CONTROL"
+      ],
+      "state": "answered",
+      "answerInputId": "input-013"
+    },
+    {
+      "id": "Q-PILOT01-REVIEW",
+      "round": 9,
+      "topic": "First-problem visual style selection",
+      "prompt": "Select A source-close, B cleaner layout or required visual changes. Source-content and native editing checks remain a separate whole-problem gate.",
+      "alternatives": [
+        "A source-close",
+        "B cleaner layout",
+        "Both require changes"
+      ],
+      "resolvesProblemIds": [
+        "P-VISUAL-CONTROL"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-VISUAL-FIDELITY"
+      ],
+      "state": "answered",
+      "answerInputId": "input-016"
+    },
+    {
+      "id": "Q-PILOT01-GATE",
+      "round": 10,
+      "topic": "Whole-problem HITL gate 1",
+      "prompt": "Review complete problem 1 and its visual quality before the next pilot problem.",
+      "alternatives": [
+        "Approve problem 1 and proceed to problem 2",
+        "Correct problem 1 first"
+      ],
+      "resolvesProblemIds": [
+        "P-LEGIBILITY",
+        "P-NATIVE",
+        "P-REVIEW"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-PILOT01-REVIEW"
+      ],
+      "state": "answered",
+      "answerInputId": "input-028"
+    },
+    {
+      "id": "Q-PILOT02-GATE",
+      "round": 11,
+      "topic": "Whole-problem HITL gate 2",
+      "prompt": "Review the complete portable problem 2 bundle, including the disclosed uncertain B/C-corner marks.",
+      "alternatives": [
+        "Pass Gate 2",
+        "Correct problem 2 first"
+      ],
+      "resolvesProblemIds": [
+        "P-LEGIBILITY",
+        "P-OVERLAP",
+        "P-REVIEW"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-PILOT01-GATE"
+      ],
+      "state": "answered",
+      "answerInputId": "input-030"
+    },
+    {
+      "id": "Q-AMBIGUITY",
+      "round": 6,
+      "topic": "Unrecoverable original content",
+      "prompt": "If neither the sole PDF nor user review can establish an unreadable token or stroke, how should the unresolved content be represented or excluded?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-AMBIGUITY",
+        "P-OVERLAP",
+        "P-OCCLUSION"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-SOURCE-REFERENCE"
+      ],
+      "state": "queued",
+      "answerInputId": null
+    },
+    {
+      "id": "Q-SCOPE",
+      "round": 8,
+      "topic": "Retained problem components",
+      "prompt": "For the confirmed 16 multiple-choice and 4 constructed-response problems, which original numbering, scores, shared prompts and answer spaces must be retained?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-SEGMENT",
+        "P-INTEGRITY"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-AMBIGUITY"
+      ],
+      "state": "queued",
+      "answerInputId": null
+    },
+    {
+      "id": "Q-LAYOUT",
+      "round": 6,
+      "topic": "Layout and evaluation scale",
+      "prompt": "Must the original page arrangement be preserved, or should problems be reflowed? At what page size and display/print scale will the restored document be judged?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-LAYOUT"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-SCOPE"
+      ],
+      "state": "queued",
+      "answerInputId": null
+    },
+    {
+      "id": "Q-ACCEPTANCE",
+      "round": 7,
+      "topic": "Representative restoration and acceptance",
+      "prompt": "Which representative problems and observable editing, reading and print checks establish an acceptable restoration before completing the examination?",
+      "alternatives": [],
+      "resolvesProblemIds": [
+        "P-NATIVE",
+        "P-REVIEW"
+      ],
+      "dependsOnQuestionIds": [
+        "Q-LAYOUT"
+      ],
+      "state": "queued",
+      "answerInputId": null
+    }
+  ],
+  "criteria": [
+    {
+      "id": "C-EDITABLE",
+      "statement": "Native text and equation-editor equations remain editable after saving and reopening HWPX.",
+      "status": "user-stated",
+      "measurement": "Native document object inspection and actual edit/save/reopen on a representative problem",
+      "threshold": null,
+      "unresolvedQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "C-CLEAN",
+      "statement": "Final problem content excludes student handwriting, selected-answer marks and grading circles.",
+      "status": "user-stated",
+      "measurement": "Problem-by-problem comparison against classified source content",
+      "threshold": "All unwanted student and grading marks excluded",
+      "unresolvedQuestionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "C-FAITHFUL",
+      "statement": "Printed wording, equations, choices, diagram labels and mathematical relationships are faithfully restored.",
+      "status": "proposed",
+      "measurement": "Independent content readback linked to source locations and an ambiguity ledger",
+      "threshold": null,
+      "unresolvedQuestionIds": [
+        "Q-AMBIGUITY",
+        "Q-SCOPE",
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "C-DIAGRAM",
+      "statement": "Mathematical visuals are controlled outside HWPX and inserted as images; faithful restoration, label placement and line styling are mandatory initially.",
+      "status": "user-stated",
+      "measurement": "Representative source/code/render comparison and actual label/style changes; no native HWPX geometry editing is required.",
+      "threshold": null,
+      "unresolvedQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "C-PROGRESSIVE-CONTROL",
+      "statement": "Constraint-preserving geometry and problem-parameter/function-linked visuals are admitted progressively after verification.",
+      "status": "user-stated",
+      "measurement": "Independent constraint and parameter-change probes for each candidate capability",
+      "threshold": null,
+      "unresolvedQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "C-DEPENDENCIES",
+      "statement": "Reduce external paid SaaS dependence first, then Windows/Hancom installation dependence.",
+      "status": "user-stated",
+      "measurement": "Source-backed dependency inventory and observed local/offline execution for a selected candidate",
+      "threshold": null,
+      "unresolvedQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "C-PILOT-UNIT",
+      "statement": "Use the selected PDF's 16 multiple-choice and 4 constructed-response problems as a pilot, proceeding one problem at a time.",
+      "status": "user-stated",
+      "measurement": "Problem-specific artifact and feedback records",
+      "threshold": "One problem per pilot iteration",
+      "unresolvedQuestionIds": []
+    },
+    {
+      "id": "C-HITL",
+      "statement": "Progressively reduce manual comparison and human review gates using verified model performance.",
+      "status": "user-stated",
+      "measurement": "Correction effort, review coverage, undetected errors and unresolved source uncertainty per model route; exact thresholds remain undefined",
+      "threshold": null,
+      "unresolvedQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "C-LAYOUT",
+      "statement": "The document is legible and arranged correctly at the agreed display or print scale.",
+      "status": "proposed",
+      "measurement": null,
+      "threshold": null,
+      "unresolvedQuestionIds": [
+        "Q-LAYOUT",
+        "Q-ACCEPTANCE"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "id": "PROP-RECOVERY",
+      "statement": "Use available source evidence, conservative image diagnostics or independent native references to establish uncertain content before authoring.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-HWP-ROLE",
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "PROP-ADJUDICATION",
+      "statement": "Record each uncertain token or stroke with source location, candidate readings, evidence and an explicit resolution; mathematical plausibility alone does not establish printed-source identity.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-AMBIGUITY"
+      ]
+    },
+    {
+      "id": "PROP-PILOT",
+      "statement": "Select representative clear, blurred, overlapping-mark and multipart problems for a bounded reconstruction and review before full assembly.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-DIAGRAM",
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "PROP-DOMAIN-CLI",
+      "statement": "Expose bounded domain operations through typed file inputs and outputs so existing native agent CLIs can use the program without embedding another agent runtime or a model-provider client.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "PROP-VISUAL-SOURCE",
+      "statement": "Keep source-backed mathematical relationships, presentation settings, engine-specific source and rendered assets distinct. Recognized image coordinates alone do not establish mathematical relationships.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-AMBIGUITY",
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "PROP-MODEL-COMPARISON",
+      "statement": "Compare native generative vision and vision Decision capabilities on shared candidate-selection/error-detection tasks, then evaluate end-to-end routes separately. Keep prompts, exact source regions, schemas, reference provenance and actual model IDs bound to each result.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "PROP-GATE-CALIBRATION",
+      "statement": "Calibrate gate reductions on user-adjudicated cases and verify them on separate cases; preserve indeterminate source readings and measure automatic-accept errors rather than relying on model confidence or agreement alone.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    }
+  ],
+  "acceptanceDecision": null,
+  "implementationStarted": true,
+  "implementationScope": "pilot-02-accepted-pilot-03-held"
+}

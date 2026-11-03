@@ -1,0 +1,99 @@
+{
+  "schema": "math-editing.integration-map.v1",
+  "upperOntologyPin": "0.2.0",
+  "status": "local-artifact-only",
+  "concurrentRubricOwner": {
+    "root": "/home/palantirkc/operations/math-pipeline-audit-20261022",
+    "sourceIds": [
+      "S-rubric22",
+      "S-eval22",
+      "S-verifypolicy22"
+    ],
+    "mutationPerformed": false
+  },
+  "daechiSuccessor": {
+    "root": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022",
+    "state": "v2-delivery-producer-native-checks-observed-not-independent-source-certification",
+    "sourceIds": [
+      "S-finalF",
+      "S-verifyF",
+      "S-copyF",
+      "S-metricsF",
+      "S-guidanceF"
+    ],
+    "clipboardRoundtrip": "not-exercised",
+    "selectedBlockTransfer": "observed-Q18"
+  },
+  "hancom": {
+    "corpus": "research/hancom/2026-10-22",
+    "manifestSha256": "f87652fa7b01f6a909a19345e3dcdcb8caa0621e6fd942bd9d22f73e9c0b071c",
+    "scope": "official-documentation-catalog-with-local-qualification-links"
+  },
+  "layouts": {
+    "profiles": "layout-profiles.json",
+    "formatIndependent": true,
+    "selection": "explicit-choice -> preserve-known-existing -> ask-for-choice",
+    "sourceIds": [
+      "S-layout-direction",
+      "S-hwp-handoff",
+      "S-hwp-verification",
+      "S-hwp-procedure"
+    ]
+  },
+  "retrievalExperiments": {
+    "sourceIds": [
+      "S-benchmark-measurements",
+      "S-benchmark-grading",
+      "S-jev-measurements",
+      "S-jev-audit"
+    ],
+    "canonicalEvalRunId": null,
+    "savingsEstablished": false
+  },
+  "selectedImageEdit": {
+    "surface": "format",
+    "capabilityFamilyIds": [
+      "pictures",
+      "drawing",
+      "format-model",
+      "object-layout"
+    ],
+    "routeId": "selected-image-edit",
+    "procedureId": "P-selected-image-patch",
+    "sourceIds": [
+      "S-imagepatch-guide",
+      "S-imagepatch-receipt",
+      "S-imagepatch-proof",
+      "S-imagepatch-job",
+      "S-imagepatch-code",
+      "S-imagepatch-entry"
+    ],
+    "eligibility": "Only selected figure marks/labels/fills/layers change; embedding canvas/size/crop/transform and question ownership stay fixed.",
+    "fallback": "Shared media or size/aspect/crop/owner changes require a declared local-layout route.",
+    "preservedEvidence": "Retain qualified unchanged text/math/table evidence by exact dependency identity; source ambiguities remain unresolved."
+  },
+  "canonicalContracts": [
+    "EvalDataset",
+    "VerificationUnit",
+    "Evaluator",
+    "EvalSuite",
+    "EvalRun",
+    "CaseResult",
+    "common.quality-improvement.v1",
+    "common.constrained-improvement.v1"
+  ],
+  "adapter": {
+    "state": "proposed",
+    "feedbackContract": "src/contracts.ts#FeedbackEvent",
+    "requiredBindings": [
+      "real native Work/Task/Run/attempt identity",
+      "exact source/output revisions",
+      "independent expected truth and rubric/evaluator versions",
+      "actual time/provider cost and unknown liabilities"
+    ]
+  },
+  "nativeLoopOwner": "native-codex",
+  "newRuntime": false,
+  "canonicalRegistrationPerformed": false,
+  "acceptanceDecision": null
+}

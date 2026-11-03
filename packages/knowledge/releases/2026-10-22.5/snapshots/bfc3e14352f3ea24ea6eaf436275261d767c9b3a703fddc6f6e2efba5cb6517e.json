@@ -1,0 +1,4 @@
+{
+  "q17": "matrix { lcol { \"(ㄱ) 사다리꼴\" # \"(ㄷ) 평행사변형\" # \"(ㅁ) 마름모\" } lcol { \"(ㄴ) 등변사다리꼴\" # \"(ㄹ) 직사각형\" # \"(ㅂ) 정사각형\" } }",
+  "eqalignReusableSample": "eqalign { bar {rm {AB}} &= bar {rm {DC}} # bar {rm {AD}} &= bar {rm {BC}} }"
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "case",
+  "id": "C-d-v3-image-only",
+  "title": "Q1/Q5/Q10 image-only successor without document reauthoring",
+  "stage": "package",
+  "exam": "daechi-20261022",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-imagepatch-receipt"
+    },
+    {
+      "sourceId": "S-imagepatch-guide"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Q1 had redundant angle arcs, Q5 A overlapped a baseline region, Q10 fill obscured BO.",
+  "cause": "Image mark/label/fill presentation needed a bounded source-specific revision.",
+  "expected": "Retain original Q1 dots, move only Q5 label A and paint Q10 25%-opacity sector beneath geometry; replace three bound PNG members.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-selected-image-patch",
+    "R-raster-style"
+  ],
+  "requiredChecks": [
+    "Exactly three BinData members changed; 29 other members and all native text positions identical to v2.",
+    "Six native pages and affected visual inspection."
+  ],
+  "limitation": "The embedded preview stayed unchanged. Native PDF/crops are current visual evidence. Q16/Q17 uncertainty and earlier acceptance limits persist; no paired speedup or token saving was measured.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

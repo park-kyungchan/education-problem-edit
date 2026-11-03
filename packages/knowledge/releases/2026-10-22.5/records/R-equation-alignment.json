@@ -1,0 +1,41 @@
+{
+  "kind": "rule",
+  "id": "R-equation-alignment",
+  "title": "Reuse explicit alignment recipes",
+  "stage": "equations",
+  "evidenceClass": "observed-code",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-alignF",
+      "pointer": "/q17"
+    },
+    {
+      "sourceId": "S-alignF",
+      "pointer": "/eqalignReusableSample"
+    },
+    {
+      "sourceId": "S-questionF",
+      "pointer": "/q18Alignment"
+    }
+  ],
+  "when": "An example/proof frame contains aligned rows or paired columns.",
+  "do": [
+    "Use matrix with lcol rows for homogeneous two-column lists.",
+    "Use eqalign with & and # for mathematical relation alignment.",
+    "Use native table/paragraph rows for mixed Korean prose, blanks, figures and formulas."
+  ],
+  "avoid": [],
+  "check": [
+    "Source order, cell ownership, line wrapping and native glyph rendering."
+  ],
+  "invalidates": [
+    "equations",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Observed candidate recipes are not universal EqEdit syntax qualification; font/version changes invalidate native evidence."
+}

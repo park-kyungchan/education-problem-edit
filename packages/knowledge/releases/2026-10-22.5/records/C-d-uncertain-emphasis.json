@@ -1,0 +1,37 @@
+{
+  "kind": "case",
+  "id": "C-d-uncertain-emphasis",
+  "title": "Q16/Q17 extra stem emphasis remains uncertain",
+  "stage": "regions",
+  "exam": "daechi-20261022",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-finalF",
+      "pointer": "/uncertainties"
+    },
+    {
+      "sourceId": "S-observationsF"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Irregular extra underlines/emphasis overlap handwritten strokes.",
+  "cause": null,
+  "expected": "Keep core wording and uncertainty; do not certify extra marks as printed.",
+  "outcome": "unresolved",
+  "ruleIds": [
+    "R-mark-provenance",
+    "R-uncertainty",
+    "R-underline"
+  ],
+  "requiredChecks": [
+    "New clean source or exact user adjudication before resolving provenance."
+  ],
+  "limitation": "Global underline restoration does not authorize inventing uncertain underline spans.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

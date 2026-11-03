@@ -1,0 +1,74 @@
+{
+  "schema": "jungdong.risk-register.v1",
+  "ontologyVersion": "0.2.0",
+  "domainId": "mathematics-document-editing",
+  "projectId": "math-problem-restoration",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "acceptanceDecision": null,
+  "risks": [
+    {
+      "id": "R-JD-01",
+      "title": "Source uncertainty persists",
+      "observation": "MC08 arcs; MC11 actual O/I/inner geometry; CR04 AC/AD/covered proof; first relation = versus congruence; crest detail.",
+      "mitigation": "Keep source-proven alternatives, neutral blanks and explicit sidecar; actual human choice remains separate.",
+      "status": "disclosed",
+      "blocksPlanning": false
+    },
+    {
+      "id": "R-JD-02",
+      "title": "Freshness contamination",
+      "observation": "Old source text/scene/delivered artifacts are available to the planner as metadata.",
+      "mitigation": "Production extractors receive source-only context and record input access; prior content is quarantined until fresh output freeze.",
+      "status": "disclosed",
+      "blocksPlanning": false
+    },
+    {
+      "id": "R-JD-03",
+      "title": "Native runtime drift",
+      "observation": "Historical Hancom version, Python modules and COM success do not prove current readiness.",
+      "mitigation": "Re-observe installed tools after approval; no install or remote fallback; stop affected task on missing capability.",
+      "status": "disclosed",
+      "blocksPlanning": false
+    },
+    {
+      "id": "R-JD-04",
+      "title": "Native equation/render differences",
+      "observation": "Old adapters include symbols later repaired, e.g. perpendicular/congruence/square mappings.",
+      "mitigation": "Do not execute early authoring adapter as-is. New task owns generic adapter and finite native controls, verified with actual output.",
+      "status": "disclosed",
+      "blocksPlanning": false
+    },
+    {
+      "id": "R-JD-05",
+      "title": "Shared financial and hook state",
+      "observation": "PostToolUse changes semantic state; earlier explicit decision CLI returned JEV_RECEIPT_CONFLICT after durable decision storage.",
+      "mitigation": "Preserve raw receipts and costs; use consumed current explicit batch; fixed remaining planning artifacts have empty current profile. No old paid replay or configuration fix.",
+      "status": "disclosed",
+      "blocksPlanning": false
+    },
+    {
+      "id": "R-JD-06",
+      "title": "Human approval not yet issued",
+      "observation": "No production approval or AcceptanceDecision exists.",
+      "mitigation": "Keep every production task held; Root pulls files; actual user response must bind packet digest.",
+      "status": "disclosed",
+      "blocksPlanning": false
+    },
+    {
+      "id": "R-JD-07",
+      "title": "Diagram editability expectation",
+      "observation": "SVG/code regeneration and HWPX embedded PNG editability differ from native HWP shapes.",
+      "mitigation": "State exact editable boundary in approval packet and output manifest.",
+      "status": "disclosed",
+      "blocksPlanning": false
+    },
+    {
+      "id": "R-JD-08",
+      "title": "Legacy holds and accounting liabilities",
+      "observation": "Pilot03 fulltext and exhausted historical recoveries/unknown liability remain.",
+      "mitigation": "New Work origin and account do not authorize old replay/release or a second allowance.",
+      "status": "disclosed",
+      "blocksPlanning": false
+    }
+  ]
+}

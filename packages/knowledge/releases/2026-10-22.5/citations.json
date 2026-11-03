@@ -1,0 +1,1004 @@
+[
+  {
+    "recordId": "R-source-order",
+    "sourceId": "S-receiptD",
+    "pointer": "/sourcePageOrder",
+    "lines": null
+  },
+  {
+    "recordId": "R-uncertainty",
+    "sourceId": "S-q11approx20",
+    "pointer": "/retainedUncertainty",
+    "lines": null
+  },
+  {
+    "recordId": "R-uncertainty",
+    "sourceId": "S-accept21",
+    "pointer": "/residualLimitations",
+    "lines": null
+  },
+  {
+    "recordId": "R-mark-provenance",
+    "sourceId": "S-feedbackD",
+    "contains": "각B와 각C",
+    "lines": [
+      9,
+      9
+    ]
+  },
+  {
+    "recordId": "R-mark-provenance",
+    "sourceId": "S-feedbackD",
+    "contains": "선분 AP",
+    "lines": [
+      16,
+      16
+    ]
+  },
+  {
+    "recordId": "R-visual-semantics",
+    "sourceId": "S-feedbackD",
+    "lines": null
+  },
+  {
+    "recordId": "R-geometry-topology",
+    "sourceId": "S-figureD",
+    "contains": "const intersect=",
+    "lines": [
+      8,
+      8
+    ]
+  },
+  {
+    "recordId": "R-geometry-topology",
+    "sourceId": "S-q11code20",
+    "lines": null
+  },
+  {
+    "recordId": "R-geometry-topology",
+    "sourceId": "S-architecture20",
+    "pointer": "/editFlow",
+    "lines": null
+  },
+  {
+    "recordId": "R-parameter-ownership",
+    "sourceId": "S-architecture20",
+    "pointer": "/numericSynchronization",
+    "lines": null
+  },
+  {
+    "recordId": "R-label-anchor",
+    "sourceId": "S-feedbackD",
+    "contains": "114도",
+    "lines": [
+      10,
+      10
+    ]
+  },
+  {
+    "recordId": "R-label-anchor",
+    "sourceId": "S-ir-proposal20",
+    "contains": "type Label",
+    "lines": [
+      28,
+      28
+    ]
+  },
+  {
+    "recordId": "R-native-editability",
+    "sourceId": "S-guide20",
+    "contains": "native frame",
+    "lines": [
+      3,
+      3
+    ]
+  },
+  {
+    "recordId": "R-native-editability",
+    "sourceId": "S-native21",
+    "pointer": "/editabilityProbe",
+    "lines": null
+  },
+  {
+    "recordId": "R-equation-tokens",
+    "sourceId": "S-normalizer20",
+    "contains": "TOKENS =",
+    "lines": [
+      25,
+      25
+    ]
+  },
+  {
+    "recordId": "R-equation-tokens",
+    "sourceId": "S-normalverify20",
+    "pointer": "/verified",
+    "lines": null
+  },
+  {
+    "recordId": "R-equation-metrics",
+    "sourceId": "S-compose21",
+    "contains": "width*1.18+240",
+    "lines": [
+      93,
+      93
+    ]
+  },
+  {
+    "recordId": "R-equation-metrics",
+    "sourceId": "S-authorD",
+    "contains": "width*1.25",
+    "lines": [
+      85,
+      85
+    ]
+  },
+  {
+    "recordId": "R-equation-metrics",
+    "sourceId": "S-width20",
+    "pointer": "/reportedNativeEvidence",
+    "lines": null
+  },
+  {
+    "recordId": "R-equation-metrics",
+    "sourceId": "S-metricsF",
+    "pointer": "/method",
+    "lines": null
+  },
+  {
+    "recordId": "R-equation-metrics",
+    "sourceId": "S-authorF",
+    "contains": "Missing exact native metric",
+    "lines": [
+      80,
+      80
+    ]
+  },
+  {
+    "recordId": "R-equation-alignment",
+    "sourceId": "S-alignF",
+    "pointer": "/q17",
+    "lines": null
+  },
+  {
+    "recordId": "R-equation-alignment",
+    "sourceId": "S-alignF",
+    "pointer": "/eqalignReusableSample",
+    "lines": null
+  },
+  {
+    "recordId": "R-equation-alignment",
+    "sourceId": "S-questionF",
+    "pointer": "/q18Alignment",
+    "lines": null
+  },
+  {
+    "recordId": "R-underline",
+    "sourceId": "S-compose21",
+    "contains": "span.get('underline'",
+    "lines": [
+      72,
+      72
+    ]
+  },
+  {
+    "recordId": "R-underline",
+    "sourceId": "S-feedbackD",
+    "contains": "밑줄처리",
+    "lines": [
+      6,
+      6
+    ]
+  },
+  {
+    "recordId": "R-question-container",
+    "sourceId": "S-feedbackD",
+    "contains": "투명 테이블",
+    "lines": [
+      4,
+      4
+    ]
+  },
+  {
+    "recordId": "R-question-container",
+    "sourceId": "S-questionF",
+    "pointer": "/questionContainer",
+    "lines": null
+  },
+  {
+    "recordId": "R-question-container",
+    "sourceId": "S-bindingsF",
+    "lines": null
+  },
+  {
+    "recordId": "R-layout-separation",
+    "sourceId": "S-pageF",
+    "lines": null
+  },
+  {
+    "recordId": "R-layout-separation",
+    "sourceId": "S-questionF",
+    "lines": null
+  },
+  {
+    "recordId": "R-section-properties",
+    "sourceId": "S-authorD",
+    "contains": "HP+'secPr',HP+'ctrl'",
+    "lines": [
+      60,
+      60
+    ]
+  },
+  {
+    "recordId": "R-section-properties",
+    "sourceId": "S-receiptD",
+    "pointer": "/verification/corrections",
+    "lines": null
+  },
+  {
+    "recordId": "R-native-owner",
+    "sourceId": "S-native21",
+    "pointer": "/ownershipMethod",
+    "lines": null
+  },
+  {
+    "recordId": "R-native-owner",
+    "sourceId": "S-renderD",
+    "lines": null
+  },
+  {
+    "recordId": "R-proportionate-checks",
+    "sourceId": "S-guide20",
+    "lines": null
+  },
+  {
+    "recordId": "R-proportionate-checks",
+    "sourceId": "S-native21",
+    "pointer": "/controlTraversalLimit",
+    "lines": null
+  },
+  {
+    "recordId": "R-proportionate-checks",
+    "sourceId": "S-verifypolicy22",
+    "lines": null
+  },
+  {
+    "recordId": "R-selective-invalidation",
+    "sourceId": "S-architecture20",
+    "pointer": "/editFlow",
+    "lines": null
+  },
+  {
+    "recordId": "R-selective-invalidation",
+    "sourceId": "S-eval22",
+    "pointer": "/traceabilityRequired",
+    "lines": null
+  },
+  {
+    "recordId": "R-paid-recovery",
+    "sourceId": "S-recovery20",
+    "pointer": "/verification/qualification",
+    "lines": null
+  },
+  {
+    "recordId": "R-paid-recovery",
+    "sourceId": "S-source21",
+    "pointer": "/nativeProtocolGaps",
+    "lines": null
+  },
+  {
+    "recordId": "R-research-reuse",
+    "sourceId": "S-hancom-research20",
+    "lines": null
+  },
+  {
+    "recordId": "R-research-reuse",
+    "sourceId": "S-visual-research20",
+    "lines": null
+  },
+  {
+    "recordId": "R-research-reuse",
+    "sourceId": "S-jev-research20",
+    "lines": null
+  },
+  {
+    "recordId": "R-research-reuse",
+    "sourceId": "S-receiptD",
+    "pointer": "/implementation",
+    "lines": null
+  },
+  {
+    "recordId": "R-feedback-lineage",
+    "sourceId": "S-feedbackD",
+    "lines": null
+  },
+  {
+    "recordId": "R-feedback-lineage",
+    "sourceId": "S-eval22",
+    "pointer": "/traceabilityRequired",
+    "lines": null
+  },
+  {
+    "recordId": "R-feedback-lineage",
+    "sourceId": "S-evaluation20",
+    "pointer": "/metrics",
+    "lines": null
+  },
+  {
+    "recordId": "R-eval-boundary",
+    "sourceId": "S-eval22",
+    "pointer": "/existingCommonContracts",
+    "lines": null
+  },
+  {
+    "recordId": "R-eval-boundary",
+    "sourceId": "S-rubric22",
+    "lines": null
+  },
+  {
+    "recordId": "R-asset-role",
+    "sourceId": "S-guide20",
+    "contains": "JPEG",
+    "lines": [
+      24,
+      24
+    ]
+  },
+  {
+    "recordId": "R-asset-role",
+    "sourceId": "S-imagecheck20",
+    "lines": null
+  },
+  {
+    "recordId": "R-raster-style",
+    "sourceId": "S-guidanceF",
+    "contains": "solid strokes",
+    "lines": [
+      101,
+      101
+    ]
+  },
+  {
+    "recordId": "R-raster-style",
+    "sourceId": "S-rasterF",
+    "lines": null
+  },
+  {
+    "recordId": "P-source",
+    "sourceId": "S-receiptD",
+    "lines": null
+  },
+  {
+    "recordId": "P-provenance",
+    "sourceId": "S-feedbackD",
+    "lines": null
+  },
+  {
+    "recordId": "P-provenance",
+    "sourceId": "S-scenes20",
+    "lines": null
+  },
+  {
+    "recordId": "P-transcription",
+    "sourceId": "S-ir21",
+    "lines": null
+  },
+  {
+    "recordId": "P-transcription",
+    "sourceId": "S-contentD",
+    "lines": null
+  },
+  {
+    "recordId": "P-image-code",
+    "sourceId": "S-architecture20",
+    "lines": null
+  },
+  {
+    "recordId": "P-image-code",
+    "sourceId": "S-q11approx20",
+    "lines": null
+  },
+  {
+    "recordId": "P-geometry-edit",
+    "sourceId": "S-architecture20",
+    "pointer": "/editFlow",
+    "lines": null
+  },
+  {
+    "recordId": "P-equations",
+    "sourceId": "S-normalizer20",
+    "lines": null
+  },
+  {
+    "recordId": "P-equations",
+    "sourceId": "S-authorF",
+    "lines": null
+  },
+  {
+    "recordId": "P-equations",
+    "sourceId": "S-metricsF",
+    "lines": null
+  },
+  {
+    "recordId": "P-frames",
+    "sourceId": "S-alignF",
+    "lines": null
+  },
+  {
+    "recordId": "P-frames",
+    "sourceId": "S-questionF",
+    "lines": null
+  },
+  {
+    "recordId": "P-copy",
+    "sourceId": "S-questionF",
+    "lines": null
+  },
+  {
+    "recordId": "P-copy",
+    "sourceId": "S-bindingsF",
+    "lines": null
+  },
+  {
+    "recordId": "P-page",
+    "sourceId": "S-pageF",
+    "lines": null
+  },
+  {
+    "recordId": "P-page",
+    "sourceId": "S-questionF",
+    "lines": null
+  },
+  {
+    "recordId": "P-page",
+    "sourceId": "S-layout-direction",
+    "lines": null
+  },
+  {
+    "recordId": "P-package",
+    "sourceId": "S-authorD",
+    "lines": null
+  },
+  {
+    "recordId": "P-package",
+    "sourceId": "S-imagecheck20",
+    "lines": null
+  },
+  {
+    "recordId": "P-native",
+    "sourceId": "S-native21",
+    "lines": null
+  },
+  {
+    "recordId": "P-native",
+    "sourceId": "S-renderD",
+    "lines": null
+  },
+  {
+    "recordId": "P-routing",
+    "sourceId": "S-recovery20",
+    "lines": null
+  },
+  {
+    "recordId": "P-routing",
+    "sourceId": "S-jev-research20",
+    "lines": null
+  },
+  {
+    "recordId": "P-routing",
+    "sourceId": "S-hancom-research20",
+    "lines": null
+  },
+  {
+    "recordId": "P-feedback",
+    "sourceId": "S-feedbackD",
+    "lines": null
+  },
+  {
+    "recordId": "P-feedback",
+    "sourceId": "S-eval22",
+    "lines": null
+  },
+  {
+    "recordId": "P-feedback",
+    "sourceId": "S-evaluation20",
+    "lines": null
+  },
+  {
+    "recordId": "P-maintenance",
+    "sourceId": "S-checkpoint21",
+    "lines": null
+  },
+  {
+    "recordId": "P-maintenance",
+    "sourceId": "S-architecture20",
+    "lines": null
+  },
+  {
+    "recordId": "C-j20-proof-width",
+    "sourceId": "S-width20",
+    "lines": null
+  },
+  {
+    "recordId": "C-j20-body-width",
+    "sourceId": "S-widthread20",
+    "lines": null
+  },
+  {
+    "recordId": "C-j20-q11",
+    "sourceId": "S-q11approx20",
+    "lines": null
+  },
+  {
+    "recordId": "C-j20-q11",
+    "sourceId": "S-q11verify20",
+    "lines": null
+  },
+  {
+    "recordId": "C-j21-spacing",
+    "sourceId": "S-compose21",
+    "contains": "width*1.18+240",
+    "lines": [
+      93,
+      93
+    ]
+  },
+  {
+    "recordId": "C-j21-box-port",
+    "sourceId": "S-source21",
+    "pointer": "/nativeProtocolGaps",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-source-order",
+    "sourceId": "S-receiptD",
+    "pointer": "/sourcePageOrder",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-base-spacing",
+    "sourceId": "S-authorD",
+    "contains": "width*1.25",
+    "lines": [
+      85,
+      85
+    ]
+  },
+  {
+    "recordId": "C-d-base-spacing",
+    "sourceId": "S-receiptD",
+    "pointer": "/verification/corrections",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-base-spacing",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-base-spacing",
+    "sourceId": "S-verifyF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-template",
+    "sourceId": "S-pageF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-template",
+    "sourceId": "S-questionF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-template",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-template",
+    "sourceId": "S-verifyF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q6-dash",
+    "sourceId": "S-feedbackD",
+    "contains": "6-",
+    "lines": [
+      8,
+      8
+    ]
+  },
+  {
+    "recordId": "C-d-q6-dash",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q6-dash",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q8-pencil",
+    "sourceId": "S-feedbackD",
+    "contains": "8-",
+    "lines": [
+      9,
+      9
+    ]
+  },
+  {
+    "recordId": "C-d-q8-pencil",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q8-pencil",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q9-angle",
+    "sourceId": "S-feedbackD",
+    "contains": "9-",
+    "lines": [
+      10,
+      10
+    ]
+  },
+  {
+    "recordId": "C-d-q9-angle",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q9-angle",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q10-fill",
+    "sourceId": "S-feedbackD",
+    "contains": "10-",
+    "lines": [
+      11,
+      11
+    ]
+  },
+  {
+    "recordId": "C-d-q10-fill",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q10-fill",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q11-arrow",
+    "sourceId": "S-feedbackD",
+    "contains": "11-",
+    "lines": [
+      12,
+      12
+    ]
+  },
+  {
+    "recordId": "C-d-q11-arrow",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q11-arrow",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q17-frame",
+    "sourceId": "S-feedbackD",
+    "contains": "17-",
+    "lines": [
+      13,
+      13
+    ]
+  },
+  {
+    "recordId": "C-d-q17-frame",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q17-frame",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q18-frame",
+    "sourceId": "S-feedbackD",
+    "contains": "18-",
+    "lines": [
+      14,
+      14
+    ]
+  },
+  {
+    "recordId": "C-d-q18-frame",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q18-frame",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q20-arrow",
+    "sourceId": "S-feedbackD",
+    "contains": "20-",
+    "lines": [
+      15,
+      15
+    ]
+  },
+  {
+    "recordId": "C-d-q20-arrow",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q20-arrow",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q21-AP",
+    "sourceId": "S-feedbackD",
+    "contains": "21-",
+    "lines": [
+      16,
+      16
+    ]
+  },
+  {
+    "recordId": "C-d-q21-AP",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q21-AP",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q24-ticks",
+    "sourceId": "S-feedbackD",
+    "contains": "24-",
+    "lines": [
+      17,
+      17
+    ]
+  },
+  {
+    "recordId": "C-d-q24-ticks",
+    "sourceId": "S-optimizationF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q24-ticks",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-underline",
+    "sourceId": "S-feedbackD",
+    "contains": "밑줄처리",
+    "lines": [
+      6,
+      6
+    ]
+  },
+  {
+    "recordId": "C-d-underline",
+    "sourceId": "S-finalF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-underline",
+    "sourceId": "S-verifyF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-raster-dash",
+    "sourceId": "S-guidanceF",
+    "contains": "solid strokes",
+    "lines": [
+      101,
+      101
+    ]
+  },
+  {
+    "recordId": "C-d-raster-dash",
+    "sourceId": "S-rasterF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-raster-dash",
+    "sourceId": "S-finalF",
+    "pointer": "/supersededTrial",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q18-transfer",
+    "sourceId": "S-copyF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-q18-transfer",
+    "sourceId": "S-guidanceF",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-uncertain-emphasis",
+    "sourceId": "S-finalF",
+    "pointer": "/uncertainties",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-uncertain-emphasis",
+    "sourceId": "S-observationsF",
+    "lines": null
+  },
+  {
+    "recordId": "R-hancom-surface",
+    "sourceId": "S-hancom-capture",
+    "lines": null
+  },
+  {
+    "recordId": "R-hancom-surface",
+    "sourceId": "S-hancom-index",
+    "lines": null
+  },
+  {
+    "recordId": "R-hancom-surface",
+    "sourceId": "S-hancom-boundary",
+    "lines": null
+  },
+  {
+    "recordId": "R-selected-image-patch",
+    "sourceId": "S-imagepatch-guide",
+    "lines": null
+  },
+  {
+    "recordId": "R-selected-image-patch",
+    "sourceId": "S-imagepatch-receipt",
+    "pointer": "/patch/changedMembers",
+    "lines": null
+  },
+  {
+    "recordId": "R-selected-image-patch",
+    "sourceId": "S-imagepatch-code",
+    "lines": null
+  },
+  {
+    "recordId": "R-selected-image-patch",
+    "sourceId": "S-imagepatch-proof",
+    "pointer": "/allNonTargetMembersByteIdentical",
+    "lines": null
+  },
+  {
+    "recordId": "P-selected-image-patch",
+    "sourceId": "S-imagepatch-guide",
+    "lines": null
+  },
+  {
+    "recordId": "P-selected-image-patch",
+    "sourceId": "S-imagepatch-code",
+    "lines": null
+  },
+  {
+    "recordId": "P-selected-image-patch",
+    "sourceId": "S-imagepatch-entry",
+    "lines": null
+  },
+  {
+    "recordId": "P-selected-image-patch",
+    "sourceId": "S-imagepatch-proof",
+    "lines": null
+  },
+  {
+    "recordId": "P-selected-image-patch",
+    "sourceId": "S-imagepatch-job",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-v3-image-only",
+    "sourceId": "S-imagepatch-receipt",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-v3-image-only",
+    "sourceId": "S-imagepatch-guide",
+    "lines": null
+  },
+  {
+    "recordId": "P-native-transfer",
+    "sourceId": "S-guidanceF",
+    "lines": null
+  },
+  {
+    "recordId": "P-native-transfer",
+    "sourceId": "S-copyF",
+    "lines": null
+  },
+  {
+    "recordId": "P-native-transfer",
+    "sourceId": "S-transfer-discussion",
+    "lines": null
+  },
+  {
+    "recordId": "R-layout-choice",
+    "sourceId": "S-layout-direction",
+    "lines": null
+  },
+  {
+    "recordId": "R-layout-choice",
+    "sourceId": "S-hwp-procedure",
+    "lines": null
+  },
+  {
+    "recordId": "P-layout-selection",
+    "sourceId": "S-layout-direction",
+    "lines": null
+  },
+  {
+    "recordId": "P-reference-layout",
+    "sourceId": "S-hwp-procedure",
+    "lines": null
+  },
+  {
+    "recordId": "P-reference-layout",
+    "sourceId": "S-hwp-verification",
+    "lines": null
+  },
+  {
+    "recordId": "R-retrieval-candidate-integrity",
+    "sourceId": "S-jev-audit",
+    "lines": null
+  },
+  {
+    "recordId": "R-retrieval-candidate-integrity",
+    "sourceId": "S-jev-measurements",
+    "lines": null
+  },
+  {
+    "recordId": "R-retrieval-candidate-integrity",
+    "sourceId": "S-jev-consumption",
+    "lines": null
+  },
+  {
+    "recordId": "P-retrieval-audit",
+    "sourceId": "S-jev-audit",
+    "lines": null
+  },
+  {
+    "recordId": "P-retrieval-audit",
+    "sourceId": "S-benchmark-report",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-reference-layout",
+    "sourceId": "S-hwp-handoff",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-reference-layout",
+    "sourceId": "S-hwp-verification",
+    "lines": null
+  },
+  {
+    "recordId": "C-d-reference-layout",
+    "sourceId": "S-hwp-procedure",
+    "lines": null
+  }
+]

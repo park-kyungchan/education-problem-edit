@@ -1,0 +1,36 @@
+{
+  "kind": "rule",
+  "id": "R-proportionate-checks",
+  "title": "Verify distinct claims with the smallest useful checks",
+  "stage": "native",
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-guide20"
+    },
+    {
+      "sourceId": "S-native21",
+      "pointer": "/controlTraversalLimit"
+    },
+    {
+      "sourceId": "S-verifypolicy22"
+    }
+  ],
+  "when": "A reversible edit needs verification and the user wants minimum repetition.",
+  "do": [
+    "Run package/reference/coverage checks once for new bytes.",
+    "Run one native render for changed layout/glyph behavior; inspect changed regions and page distribution.",
+    "Run scratch copy/edit only for the newly required behavior.",
+    "Repeat only after a defect or change invalidates prior evidence."
+  ],
+  "avoid": [],
+  "check": [
+    "Source fidelity, math validity, rendering, editability and acceptance remain separate result fields."
+  ],
+  "invalidates": [
+    "native",
+    "delivery"
+  ],
+  "limitation": "HeadCtrl/Next counts may omit nested controls; use package XML for complete containment."
+}

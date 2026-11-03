@@ -1,0 +1,140 @@
+{
+  "schema": "math-editing.native-retrieval-measurements.v1",
+  "recordedAt": "2026-10-22T09:47:21.533Z",
+  "results": [
+    {
+      "name": "knowledge-luna-high",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "currentPane": "wA:p2",
+      "nativeSessionPath": "/home/palantirkc/.codex/sessions/2026/10/22/rollout-2026-10-22T18-40-20-01a162fb-a235-7663-818c-6f38f8df7df3.jsonl",
+      "nativeSessionId": "01a162fb-a235-7663-818c-6f38f8df7df3",
+      "turnId": "01a162fc-9812-7823-a5f2-e2632706cb93",
+      "submittedAt": "2026-10-22T09:41:23.188Z",
+      "taskStartedAt": "2026-10-22T09:41:23.615Z",
+      "completedAt": "2026-10-22T09:42:28.526Z",
+      "taskWallMs": 64911,
+      "dispatchToCompletionWallMs": 65338,
+      "usage": {
+        "input_tokens": 359414,
+        "cached_input_tokens": 304128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6004,
+        "reasoning_output_tokens": 2781,
+        "total_tokens": 365418,
+        "uncachedInputTokens": 55286
+      },
+      "usageScope": "Native cumulative reported usage for one fresh-session task, summed across model requests. Cached inputs repeat prior context; output includes reasoning, so reasoning is not added again.",
+      "actualToolInvocations": 8,
+      "reportedToolInvocations": 8,
+      "tools": [
+        {
+          "at": "2026-10-22T09:41:28.306Z",
+          "name": "exec",
+          "callId": "call_43cf68fd9c334363a6a6b091d8018b8d"
+        },
+        {
+          "at": "2026-10-22T09:41:32.494Z",
+          "name": "exec",
+          "callId": "call_887e6f24cd104b5da276223fe7058198"
+        },
+        {
+          "at": "2026-10-22T09:41:36.716Z",
+          "name": "exec",
+          "callId": "call_c6ec2eabc5794377b19836352073c484"
+        },
+        {
+          "at": "2026-10-22T09:41:41.926Z",
+          "name": "exec",
+          "callId": "call_68383a9abf1f4f5d907111bb19ebf7ae"
+        },
+        {
+          "at": "2026-10-22T09:41:46.690Z",
+          "name": "exec",
+          "callId": "call_f2e33e153f8445efb5786082d29c97aa"
+        },
+        {
+          "at": "2026-10-22T09:41:52.099Z",
+          "name": "exec",
+          "callId": "call_961f6a15ceb14567b6d77ae6d169a96a"
+        },
+        {
+          "at": "2026-10-22T09:41:55.457Z",
+          "name": "exec",
+          "callId": "call_3b3b84c86a2248e09667289e7a2e7ace"
+        },
+        {
+          "at": "2026-10-22T09:42:03.060Z",
+          "name": "exec",
+          "callId": "call_b50ad8f829704d3699599af63eb25413"
+        }
+      ],
+      "answerPath": "/home/palantirkc/operations/math-editing-knowledge-20261022/luna-response.json",
+      "answerSha256": "353dd74aad754db2395650b30d780507ed5a573f554f289c6342928f2e21d01a",
+      "priceUsd": null,
+      "activeMs": null
+    },
+    {
+      "name": "knowledge-sol-high",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "currentPane": "wA:p3",
+      "nativeSessionPath": "/home/palantirkc/.codex/sessions/2026/10/22/rollout-2026-10-22T18-40-32-01a162fb-d1f9-76e2-8c35-aec51725153d.jsonl",
+      "nativeSessionId": "01a162fb-d1f9-76e2-8c35-aec51725153d",
+      "turnId": "01a162fc-97b7-7d71-9407-cc93d458257e",
+      "submittedAt": "2026-10-22T09:41:23.188Z",
+      "taskStartedAt": "2026-10-22T09:41:23.537Z",
+      "completedAt": "2026-10-22T09:44:36.854Z",
+      "taskWallMs": 193317,
+      "dispatchToCompletionWallMs": 193666,
+      "usage": {
+        "input_tokens": 258649,
+        "cached_input_tokens": 206720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6038,
+        "reasoning_output_tokens": 1561,
+        "total_tokens": 264687,
+        "uncachedInputTokens": 51929
+      },
+      "usageScope": "Native cumulative reported usage for one fresh-session task, summed across model requests. Cached inputs repeat prior context; output includes reasoning, so reasoning is not added again.",
+      "actualToolInvocations": 5,
+      "reportedToolInvocations": 5,
+      "tools": [
+        {
+          "at": "2026-10-22T09:41:30.741Z",
+          "name": "exec",
+          "callId": "call_dd0d59e5c66e416e9abcd9d80d3bffe6"
+        },
+        {
+          "at": "2026-10-22T09:41:39.590Z",
+          "name": "exec",
+          "callId": "call_87b5548e303d4762a5da12979271e578"
+        },
+        {
+          "at": "2026-10-22T09:41:54.256Z",
+          "name": "exec",
+          "callId": "call_c6f9d95df0e04469baa47261ab9fef00"
+        },
+        {
+          "at": "2026-10-22T09:42:39.113Z",
+          "name": "exec",
+          "callId": "call_c686ce8241764dbfbe0449b3857b44a7"
+        },
+        {
+          "at": "2026-10-22T09:43:08.590Z",
+          "name": "exec",
+          "callId": "call_c0a088e5f48c49f2a89a66d99413e804"
+        }
+      ],
+      "answerPath": "/home/palantirkc/operations/math-editing-knowledge-20261022/sol-response.json",
+      "answerSha256": "e6b15c273b9ea0de4553f7f53dfd34d3fb1b954cbfa7ce6a710f6ec431b5e321",
+      "priceUsd": null,
+      "activeMs": null
+    }
+  ],
+  "nativeSessionFilesModified": false,
+  "canonicalEvalRunId": null,
+  "sourceAccuracyAcceptance": null,
+  "placementCorrection": "Workers were started in inherited tool-context tab w9:t1, then moved once to the actual requester tab wA:t1 after user clarification; work was not restarted or replayed.",
+  "limitation": "One batch per model; no causal knowledge-space savings or general model ranking is established. New provider API inference was not used; native subscription cost remains unknown."
+}

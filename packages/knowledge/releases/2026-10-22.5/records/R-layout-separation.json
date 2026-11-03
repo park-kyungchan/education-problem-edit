@@ -1,0 +1,33 @@
+{
+  "kind": "rule",
+  "id": "R-layout-separation",
+  "title": "Separate content, question layout and page template",
+  "stage": "page-layout",
+  "evidenceClass": "observed-code",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-pageF"
+    },
+    {
+      "sourceId": "S-questionF"
+    }
+  ],
+  "when": "Four questions per page repeat while positions vary with content volume.",
+  "do": [
+    "Keep semantic content free of page coordinates.",
+    "Store figure width/local frame rules in question layout.",
+    "Store column-major slot order, first-page header, minimum heights and overflow policy in the page template."
+  ],
+  "avoid": [],
+  "check": [
+    "24 questions, six pages, four per page for this exam; long frames remain readable."
+  ],
+  "invalidates": [
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Per-page slot heights are Daechi instance parameters, not universal fixed coordinates."
+}

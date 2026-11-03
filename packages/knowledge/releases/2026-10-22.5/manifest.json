@@ -1,0 +1,23 @@
+{
+  "schema": "math-editing.knowledge-release.v1",
+  "release": "2026-10-22.5",
+  "capturedAt": "2026-10-22T10:34:17.243Z",
+  "upperOntologyPin": "0.2.0",
+  "sourceCount": 76,
+  "recordCount": 71,
+  "inventoryCount": 19727,
+  "sourceAccuracyAcceptance": null,
+  "canonicalWorkRegistrationPerformed": false,
+  "costs": {
+    "newPaidCalls": 0,
+    "savingsMeasured": false,
+    "scope": "release-construction-only"
+  },
+  "coverage": "File-level inventory across selected operation roots; curated semantic synthesis of pinned sources. Inventory-only entries are not claimed to be semantically reviewed.",
+  "limitations": [
+    "External active sources are frozen snapshots; later changes require curated successor ingestion.",
+    "Historical verification is scoped to exact recorded bytes and fixtures.",
+    "No full automatic printed/handwritten classifier, generalized geometry solver or canonical rubric is installed by this release.",
+    "Native retrieval trials measure actual time/tokens; causal knowledge-space savings remain unmeasured. Packet size is a retrieval bound."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "procedure",
+  "id": "P-frames",
+  "title": "Align example lists and proof frames",
+  "stage": "question-layout",
+  "ruleIds": [
+    "R-equation-alignment",
+    "R-native-editability"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-alignF"
+    },
+    {
+      "sourceId": "S-questionF"
+    }
+  ],
+  "inputs": [
+    "ordered frame content",
+    "row/column roles"
+  ],
+  "steps": [
+    "Choose matrix/lcol for homogeneous paired lists; eqalign for aligned equations.",
+    "Use native rows/paragraphs/blank tables for mixed proof prose.",
+    "Keep frame semantics and question ownership independent of page placement."
+  ],
+  "outputs": [
+    "native frame",
+    "alignment recipe",
+    "row/cell bindings"
+  ],
+  "implementationSourceIds": [
+    "S-alignF",
+    "S-authorF"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

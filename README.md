@@ -1,23 +1,24 @@
 # Problem Edit
 
-Tools and procedures for restoring math exams as editable documents. This is a work in progress: the current code selects a layout, but does not extract PDF content or generate an HWPX file.
+Math exam restoration code, curated knowledge and selected historical context in one repository.
 
-## Historical implementation
+Start with the [context map](context/README.md), [current selection](context/current.json), [architecture and directory tree](docs/architecture.md), and [restoration workflow](docs/workflow.md). Repository agent guidance is in [AGENTS.md](AGENTS.md).
 
-`legacy/knowledge` contains selected knowledge-router source; `legacy/dual-pipeline` contains decision-pipeline source; `legacy/figures` and `legacy/composition` contain source from a previous document production. These are source references, not a runnable distribution: they depend on historical records, inputs, native tools, packages and runtime bindings that are not bundled. Local machine paths were replaced with `/LOCAL_HOME/` and `/WINDOWS_USER/` placeholders and require deliberate adaptation. Some historical implementations include live-provider and file-writing code; inspect their effects before running them.
+## Run
 
-The source PDF, old operation records, account credentials and runtime state are not part of this initial snapshot. The repository does not claim that a restored exam or end-to-end conversion has been validated in another environment.
-
-## Layout selection
-
-Requires Bun. Run from the repository root:
+Requires Bun. From the repository root:
 
 ```sh
-bun run layout list
-bun run layout resolve --profile reference-single-column --format hwpx
 bun test
+bun run check:context
+bun run layout resolve --profile reference-single-column --format hwpx
+bun run knowledge route restore-exam --max-chars 6000
 ```
 
-`exam-two-column` preserves a two-column exam structure. `reference-single-column` arranges questions in a single flow. The selection and document format are independent; choosing HWPX does not choose a profile. Page counts, question counts, and exact margins depend on the source and are not prescribed by the selector.
+The next-document selection is a single-column reference layout and HWPX format. The portable selector and knowledge retrieval are runnable. The historical decision, figure and composition packages need dependency and native-environment work before complete PDF-to-HWPX restoration can be claimed.
 
-The full restoration workflow must establish source custody, transcribe and review questions, preserve uncertainties, create and verify native equations and figures, compose pages, and verify the resulting document in a qualified native environment. This repository does not yet implement or verify that complete workflow.
+## Structure
+
+`src/` owns the portable selector. `packages/` owns knowledge, the decision prototype, figure authoring and document composition. `context/` owns the current transfer state, the historical requirements/decisions/checks, and the import coverage manifest. `docs/` explains the workflow and boundaries. New per-source inputs and outputs belong in ignored `runs/`.
+
+The retained knowledge release includes 71 rule/procedure/case records, 76 source references and 75 distinct evidence snapshots. Another 21 selected operation documents describe past requirements, plans, completion decisions and held work. [coverage.json](context/coverage.json) records every imported file hash and all known exclusions. The historical broad file inventory, complete Hancom research corpus, original PDFs, native deliveries and native runtime state are not bundled. Historical source paths are provenance, not portable dependencies. Full local-context collection and end-to-end authoring verification are not claimed.

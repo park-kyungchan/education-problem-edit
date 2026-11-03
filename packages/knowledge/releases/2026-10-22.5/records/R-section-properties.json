@@ -1,0 +1,33 @@
+{
+  "kind": "rule",
+  "id": "R-section-properties",
+  "title": "Preserve section controls when replacing paragraph runs",
+  "stage": "package",
+  "evidenceClass": "observed-code",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-authorD",
+      "contains": "HP+'secPr',HP+'ctrl'"
+    },
+    {
+      "sourceId": "S-receiptD",
+      "pointer": "/verification/corrections"
+    }
+  ],
+  "when": "A serializer clears the initial paragraph or rebuilds section content.",
+  "do": [
+    "Preserve secPr and section ctrl; set intentional header/footer heights.",
+    "Do not let table anchor paragraphs add unintended page height."
+  ],
+  "avoid": [],
+  "check": [
+    "Native page count and actual question starts, not only declared page metadata."
+  ],
+  "invalidates": [
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "The base Daechi serializer already contains the corrective preservation logic."
+}

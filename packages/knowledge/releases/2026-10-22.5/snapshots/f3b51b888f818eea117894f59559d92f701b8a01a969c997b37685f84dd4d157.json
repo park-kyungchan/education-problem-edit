@@ -1,0 +1,48 @@
+{
+  "schema": "math-restoration.delivery.v1",
+  "status": "completed",
+  "completedAt": "2026-10-22T08:21:38.133Z",
+  "source": "/mnt/c/Users/packr/Downloads/중2 2026학년도 대치중 2학년 2학기 중간고사 (1).pdf",
+  "delivered": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_복원.hwpx",
+  "sha256": "98cf12999579e263cf197af93f1840a4e74f7e381740a2ec5363f83026f99b7f",
+  "problems": 24,
+  "choices": 120,
+  "pages": 6,
+  "nativeEquations": 259,
+  "cleanDiagrams": 21,
+  "sourcePageOrder": [
+    1,
+    2,
+    4,
+    3,
+    5,
+    6
+  ],
+  "editable": [
+    "Korean text",
+    "Native equations",
+    "Choice lists",
+    "Proof and example frames"
+  ],
+  "diagrams": "Deterministic SVG source rendered to embedded PNG, excluding handwriting",
+  "implementation": {
+    "engine": "Existing pinned python-hwpx 6.6.0",
+    "reusedModule": "Existing admitted EqEdit normalization",
+    "planApplied": "Structured content/math/diagram/layout, computed geometric incidence and constrained values",
+    "unavailableImprovements": "No in-progress or unqualified Jev/native workflow activation inferred"
+  },
+  "verification": {
+    "packageAndCoverage": "passed",
+    "nativeHancomOpen": true,
+    "nativeVersion": "13, 0, 0, 3457",
+    "nativePages": 6,
+    "corrections": "Section properties and header/footer spacing; compound equation width collisions",
+    "nativeReceipt": "/mnt/c/Users/packr/Downloads/Daechi-restored-20261022/native-r4/daechi-native.json",
+    "finalView": "Contact-sheet coverage plus changed ratio and proof-frame regions",
+    "sourceContentCertified": false
+  },
+  "newPaidCalls": 0,
+  "repositoryMutation": false,
+  "historicalWorksChanged": false,
+  "acceptanceDecision": null
+}

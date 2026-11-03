@@ -1,0 +1,421 @@
+{
+  "schema": "math-pipeline.audit-report.v1",
+  "observedAt": "2026-10-22T05:22:37.039Z",
+  "status": "audit-complete-daechi-restoration-not-yet-qualified",
+  "sourceSynchronization": [
+    {
+      "name": "agent-platform",
+      "path": "/home/palantirkc/worktrees/math-pipeline-audit-20261022/agent-platform",
+      "head": "4cd6eea995700177159a3d3d42bf63024fb5fc13",
+      "remoteMain": "4cd6eea995700177159a3d3d42bf63024fb5fc13",
+      "observedRemoteMain": "4cd6eea995700177159a3d3d42bf63024fb5fc13",
+      "synchronized": true,
+      "clean": true,
+      "nativeActivationPerformed": false
+    },
+    {
+      "name": "codex-harness-engineering",
+      "path": "/home/palantirkc/worktrees/math-pipeline-audit-20261022/codex-harness-engineering",
+      "head": "22e9e556cd027d6b2d748bcdd47eef044cf69768",
+      "remoteMain": "22e9e556cd027d6b2d748bcdd47eef044cf69768",
+      "observedRemoteMain": "22e9e556cd027d6b2d748bcdd47eef044cf69768",
+      "synchronized": true,
+      "clean": true,
+      "nativeActivationPerformed": false
+    },
+    {
+      "name": "education-platform",
+      "path": "/home/palantirkc/worktrees/math-pipeline-audit-20261022/education-platform",
+      "head": "da51312ed08d506853c46d17573a5b5a1f405bef",
+      "remoteMain": "da51312ed08d506853c46d17573a5b5a1f405bef",
+      "observedRemoteMain": "da51312ed08d506853c46d17573a5b5a1f405bef",
+      "synchronized": true,
+      "clean": true,
+      "nativeActivationPerformed": false
+    },
+    {
+      "name": "academy-workbench",
+      "path": "/home/palantirkc/worktrees/math-pipeline-audit-20261022/academy-workbench",
+      "head": "1eb54682f695f6b1c792cc5001a885e926bb678e",
+      "remoteMain": "1eb54682f695f6b1c792cc5001a885e926bb678e",
+      "observedRemoteMain": "1eb54682f695f6b1c792cc5001a885e926bb678e",
+      "synchronized": true,
+      "clean": true,
+      "nativeActivationPerformed": false
+    }
+  ],
+  "originalSourcePreservation": [
+    {
+      "name": "agent-platform",
+      "headUnchanged": true,
+      "workingTreeStatusUnchanged": true,
+      "branchTrackingBefore": "## main...origin/main",
+      "branchTrackingAfter": "## main...origin/main [behind 107]",
+      "trackingInterpretation": "Fetching intentionally updates origin/main and may change behind counts; source preservation compares working-tree entries and actual file bytes.",
+      "localFileCount": 27,
+      "localFilesUnchanged": true
+    },
+    {
+      "name": "education-platform",
+      "headUnchanged": true,
+      "workingTreeStatusUnchanged": true,
+      "branchTrackingBefore": "## HEAD (no branch)",
+      "branchTrackingAfter": "## HEAD (no branch)",
+      "trackingInterpretation": "Fetching intentionally updates origin/main and may change behind counts; source preservation compares working-tree entries and actual file bytes.",
+      "localFileCount": 0,
+      "localFilesUnchanged": true
+    },
+    {
+      "name": "academy-workbench",
+      "headUnchanged": true,
+      "workingTreeStatusUnchanged": true,
+      "branchTrackingBefore": "## HEAD (no branch)",
+      "branchTrackingAfter": "## HEAD (no branch)",
+      "trackingInterpretation": "Fetching intentionally updates origin/main and may change behind counts; source preservation compares working-tree entries and actual file bytes.",
+      "localFileCount": 0,
+      "localFilesUnchanged": true
+    }
+  ],
+  "historicalOutputs": [
+    {
+      "format": "hwpx",
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/gpt-6.1-sol-ultra-20-problems-q11-updated-review-r6.hwpx",
+      "sha256": "90ac33c81107fac480ce5c83845f4d001b06a4060267eb3583d47a1e25c36fac",
+      "exists": true,
+      "matchesRecordedSha256": true
+    },
+    {
+      "format": "pdf",
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/gpt-6.1-sol-ultra-20-problems-q11-updated-review-r6.pdf",
+      "sha256": "3417ad747c9e40c99c0815b4d96d7a2c1ff143aab385bb8bd09d263ee9a1f582",
+      "exists": true,
+      "matchesRecordedSha256": true
+    },
+    {
+      "format": "hwpx",
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/gpt-6.1-sol-ultra-20-problems-readable-comparison-r7.hwpx",
+      "sha256": "c5fd4bcd7aa50ea28460b8ee20e58acefab5808901c5715ad1e4a14d082e8b5b",
+      "exists": true,
+      "matchesRecordedSha256": true
+    },
+    {
+      "format": "pdf",
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/gpt-6.1-sol-ultra-20-problems-readable-comparison-r7.pdf",
+      "sha256": "fb679541cafd541903e820f1be8dea34a94a4dd692c8a5fdd4365dda2f67fdae",
+      "exists": true,
+      "matchesRecordedSha256": true
+    },
+    {
+      "format": "hwpx",
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/argon-high-20-problems-feedback-r5.hwpx",
+      "sha256": "f52e261540d18ed3c88b605c23bb8e449a0a9bd724fa2adbbda0b1ceb7b01017",
+      "exists": true,
+      "matchesRecordedSha256": true
+    },
+    {
+      "format": "pdf",
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/argon-high-20-problems-feedback-r5.pdf",
+      "sha256": "3260552af063ba77626bfcafcf5990f7f7e3a3336402380ba6ec9bb8047ef174",
+      "exists": true,
+      "matchesRecordedSha256": true
+    }
+  ],
+  "localRecordAudits": [
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/common-harness-records.json",
+      "sha256": "62a37b0fe3b2ae600f266849158ec373958686995d0adc1b1226c1c86a132c0a",
+      "recordCount": 132,
+      "counts": {
+        "work": 2,
+        "spec": 11,
+        "plan": 11,
+        "input": 34,
+        "decision": 37,
+        "task": 9,
+        "evidence": 28
+      },
+      "structuralFailures": [],
+      "duplicateScopedIdRevisionCount": 0,
+      "missingHistoricalTaskContracts": [],
+      "sharedAuditStates": [
+        "pending",
+        "unsynchronized"
+      ],
+      "limitation": "Structural validation and local reference coverage only; not a committed Git Work graph, native identity allocation, semantic acceptance or runtime activation."
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/common-harness-records.json",
+      "sha256": "dee32b49ccc6a3b4e5ccd5953715f832d2360c9bfdfa96d940ceb747221c9e8b",
+      "recordCount": 77,
+      "counts": {
+        "input": 4,
+        "decision": 3,
+        "spec": 21,
+        "plan": 25,
+        "work": 1,
+        "task": 10,
+        "evidence": 13
+      },
+      "structuralFailures": [],
+      "duplicateScopedIdRevisionCount": 0,
+      "missingHistoricalTaskContracts": [],
+      "sharedAuditStates": [
+        "unsynchronized"
+      ],
+      "limitation": "Structural validation and local reference coverage only; not a committed Git Work graph, native identity allocation, semantic acceptance or runtime activation."
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-optimization-20261020/common-harness-records.json",
+      "sha256": "bd47b6c018060c4702e152679b8ee743395fd015c8be0aadf87ae9f00fe23fe9",
+      "recordCount": 711,
+      "counts": {
+        "input": 100,
+        "decision": 25,
+        "work": 1,
+        "spec": 163,
+        "plan": 176,
+        "task": 75,
+        "evidence": 147,
+        "effect": 24
+      },
+      "structuralFailures": [],
+      "duplicateScopedIdRevisionCount": 0,
+      "missingHistoricalTaskContracts": [],
+      "sharedAuditStates": [
+        "unsynchronized"
+      ],
+      "limitation": "Structural validation and local reference coverage only; not a committed Git Work graph, native identity allocation, semantic acceptance or runtime activation."
+    }
+  ],
+  "tests": [
+    {
+      "name": "Current-main Git Work v3 contracts and identity allocation",
+      "path": "/home/palantirkc/operations/math-pipeline-audit-20261022/current-main-git-work-tests.log",
+      "sha256": "24f275cb480bcbb77db66bd56d57dc3d6b8d7f4e62ecc69d6281489b8db5a803",
+      "passed": 93,
+      "failed": 0,
+      "assertions": 739,
+      "scope": "Synthetic source tests in an isolated current-main checkout; not native adoption."
+    },
+    {
+      "name": "Existing dual pipeline and progressive qualification",
+      "path": "/home/palantirkc/operations/math-pipeline-audit-20261022/legacy-pipeline-tests.log",
+      "sha256": "40fa037b509e26dead02fe290b9584244a8e0eba8ab8170077a878e00851bd08",
+      "passed": 70,
+      "failed": 3,
+      "assertions": 302,
+      "scope": "Offline, with fetch blocked. Three legacy budget-recovery tests fail against the evolved shared ledger.",
+      "errors": [
+        "RECEIPT_OUTSIDE_AUDIT_BOUNDARY",
+        "INVALID_LEDGER_SCHEMA"
+      ],
+      "interpretation": "Outdated legacy audit assumptions. These failures do not by themselves establish lost funds or a defect in the successor native accounting implementation."
+    }
+  ],
+  "legacyDryRun": {
+    "path": "/home/palantirkc/operations/math-pipeline-audit-20261022/legacy-dry-run.json",
+    "sha256": "3bcf21d84b77d13f463e22e0bf6421a677a7083cbcca4423274961407a56f250",
+    "networkCallsExecuted": 0,
+    "credentialsRead": false,
+    "preparedManifests": 6
+  },
+  "selectedPdf": {
+    "schema": "math-pipeline.pdf-observation.v1",
+    "sourcePath": "/mnt/c/Users/packr/Downloads/중2 2026학년도 대치중 2학년 2학기 중간고사 (1).pdf",
+    "sha256": "2bfac149055818326290f4444f87f256b5063aa22518d0b79d386cb1f92e1006",
+    "bytes": 3075783,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 595,
+        "heightPoints": 842,
+        "textChars": 0,
+        "images": 1,
+        "textSample": ""
+      },
+      {
+        "page": 2,
+        "widthPoints": 595,
+        "heightPoints": 842,
+        "textChars": 0,
+        "images": 1,
+        "textSample": ""
+      },
+      {
+        "page": 3,
+        "widthPoints": 595,
+        "heightPoints": 842,
+        "textChars": 0,
+        "images": 1,
+        "textSample": ""
+      },
+      {
+        "page": 4,
+        "widthPoints": 595,
+        "heightPoints": 842,
+        "textChars": 0,
+        "images": 1,
+        "textSample": ""
+      },
+      {
+        "page": 5,
+        "widthPoints": 595,
+        "heightPoints": 842,
+        "textChars": 0,
+        "images": 1,
+        "textSample": ""
+      },
+      {
+        "page": 6,
+        "widthPoints": 595,
+        "heightPoints": 842,
+        "textChars": 0,
+        "images": 1,
+        "textSample": ""
+      }
+    ],
+    "scope": "Read-only metadata, text-layer observation and local preview rendering. No OCR, model call or document export.",
+    "inventoryRef": {
+      "path": "/home/palantirkc/operations/math-pipeline-audit-20261022/pdf-page-inventory.json",
+      "sha256": "643a6a54255bda79094fcf1f68c470a678503b073ed5c21688172de548c6a408"
+    },
+    "logicalReadingOrderPdfPages": [
+      1,
+      2,
+      4,
+      3,
+      5,
+      6
+    ]
+  },
+  "findings": [
+    {
+      "label": "A01",
+      "priority": "high",
+      "observation": "Problem-editing code and records remain operation-local and unpublished, with absolute owner imports, Jungdong fixtures and one-off document composers.",
+      "consequence": "Current-main synchronization alone does not produce a portable Daechi pipeline.",
+      "next": "Select the source owner and extract a parameterized pre-export interface; keep historical documents and Work IDs unchanged."
+    },
+    {
+      "label": "A02",
+      "priority": "high",
+      "observation": "Jev route/box/review recorded actual samples, but their owner handoffs explicitly leave quality evaluation pending. The latest visual-output task records no quality evaluation, source-correctness verification or visual QA.",
+      "consequence": "HTTP 200 and typed output cannot establish restoration fidelity or time savings.",
+      "next": "Evaluate frozen output and source pairs before HWPX creation; do not replay prior paid calls."
+    },
+    {
+      "label": "A03",
+      "priority": "high",
+      "observation": "Three existing recovery tests fail because the legacy budget auditor accepts only the earlier ledger schema and earlier receipt subtree.",
+      "consequence": "The legacy audit-budget/status route cannot qualify current shared accounting.",
+      "next": "Use and independently read back the actual native accounting owner when paid evaluation is selected. Do not broaden historical boundaries, reset the ledger or claim an available budget from old reports."
+    },
+    {
+      "label": "A04",
+      "priority": "medium",
+      "observation": "All 920 examined local legacy records pass current v1 structural validation. Scoped IDs plus revisions have no duplicates, and all selected Task Spec/Plan revisions exist. They remain unsynchronized local bundles rather than canonical Git Work records.",
+      "consequence": "Historical records should be retained rather than renumbered. The new v3 ID allocator and effective contracts are merged source, not activated for this workflow.",
+      "next": "For new canonical writes, use the actual native owner and explicit v3 entrypoint. Preserve old IDs and revisions through the supported legacy bridge; do not invent migration or enrollment."
+    },
+    {
+      "label": "A05",
+      "priority": "high",
+      "observation": "Daechi has six image-only pages, 24 visually observed multiple-choice questions, and physical PDF pages 3/4 reversed relative to printed page order. Handwriting overlaps original mathematical content.",
+      "consequence": "Page order, source coverage and source-versus-handwriting ambiguity must be evaluated explicitly.",
+      "next": "Read in PDF-page order 1,2,4,3,5,6 through a manifest without rewriting the original PDF. Qualify text and geometry from high-resolution evidence."
+    },
+    {
+      "label": "A06",
+      "priority": "medium",
+      "observation": "Prior optimization work already proposed dependency hashes and delta verification, but measured source-to-preview savings remain unestablished. Historical native-render timing is not a pre-export baseline.",
+      "consequence": "More checks and more contract revisions are not evidence of reduced total work time.",
+      "next": "Measure verification separately, reuse unchanged qualified results, and rerun only checks invalidated by the actual edit."
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "path": "/home/palantirkc/worktrees/math-pipeline-audit-20261022/agent-platform/packages/work-continuity/contracts/v3-implementation.json",
+      "sha256": "c41e34c02a2ac6cad4e09afe474a88cc581cea75fb4d5d926f457d40515a3533"
+    },
+    {
+      "path": "/home/palantirkc/worktrees/math-pipeline-audit-20261022/agent-platform/docs/constrained-improvement.md",
+      "sha256": "d807e7d33bfc89111674f63dc78090a11f7a8dd1f455264ae922c3ab405f5579"
+    },
+    {
+      "path": "/home/palantirkc/worktrees/math-pipeline-audit-20261022/agent-platform/packages/evidence-foundry/src/modules/evals/quality-improvement.ts",
+      "sha256": "054a8d2f4f8e2ca6dfedaee17c3a508942e4a532b1035f2584224b33bb4b6b71"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/checkpoint.json",
+      "sha256": "9e483cdcb0722e6b16046fa3ead0b6e5f2dc9ad6174c0c4bf860ced5ef154a9b"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/cli.ts",
+      "sha256": "49b7b45d8fbcd30045c7fbda9b1f224549799e924440110b27216d9fdc29fe73"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/recovery.ts",
+      "sha256": "8a954c5e7e81d5076e17890588819354d778fba6c54406d25b76a5982459ce38"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/jev-first/client.ts",
+      "sha256": "44bbd79f67e5efd606da7499c9b452f3769695b32969e1995857c8e9f4d470ba"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/jev-first/review.ts",
+      "sha256": "6780b05cb63fb9aba312983692a6eb6cea7d118da5db039f13b76043324aa4a5"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/dual-pipeline/src/progressive/qualification.ts",
+      "sha256": "4aa073996e46852669cd82b6f1c14934f85d562cfbc0c84d7616ce8a8a235ce0"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/lead/compose_r5.ts",
+      "sha256": "91e5d95d39b8b92d6009c804054814eba3d59f1036770c3f6dfc14acd1d6ec70"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-optimization-20261020/common-harness-binding.json",
+      "sha256": "fa62ce39fddb6b371610306e12e33f4e828e3c54659a8f276a33a7c98f5aec59"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-optimization-20261020/progressive-jev/adopt-first/expansion/visual-outputs/status.json",
+      "sha256": "a030dffe69a98631abbf9bd2141dcfa342eefe67d533dc21b3a01401726b217a"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-optimization-20261020/progressive-jev/adopt-first/tasks/T-JEV-ADOPT-REVIEW/status.json",
+      "sha256": "6a59e71cce0d26af414fad04b8a7367cc50c2e75bd74e29bd54bd678d815aa50"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-optimization-20261020/session-analysis/summary.txt",
+      "sha256": "d1213ec8fc85d14de0dfc98b438995bbb676a3ea17b0557899861b0c126a7ea1"
+    }
+  ],
+  "proposalRefs": [
+    {
+      "path": "/home/palantirkc/operations/math-pipeline-audit-20261022/rubric.proposed.json",
+      "sha256": "57046d170fd5c92b6ab42facfcec22f9802a05906ff2cb741d85a6631a8a0fd8"
+    },
+    {
+      "path": "/home/palantirkc/operations/math-pipeline-audit-20261022/verification-policy.proposed.json",
+      "sha256": "632e1a7dc1aa5a5ca83171d27131a69e89b1ccb2928167a4081bd8108392241d"
+    }
+  ],
+  "nextActions": [
+    "Qualify the selected canonical problem-editing owner and the actual native v3/accounting bindings before canonical writes or paid trials.",
+    "Create and independently verify the small pre-HWPX source-case/known-defect set, then evaluate frozen artifacts with existing contracts.",
+    "Measure dependency-based verification reuse first; add model routing experiments only where needed.",
+    "Produce HWPX only after the user's required adversarial fidelity checks; verify native serialization as a separate later step."
+  ],
+  "limitations": [
+    "No new model-quality scores, measured time savings or Daechi restored output exist yet.",
+    "No VPS source/runtime was synchronized or observed; this audit concerns the selected local checkouts.",
+    "Source synchronization is isolated to avoid overwriting dirty source or activating pinned native configuration.",
+    "Historical pilot03 and old Goals remain unchanged."
+  ],
+  "newPaidCalls": 0,
+  "hwpxCreated": false,
+  "canonicalIdentityAllocationPerformed": false,
+  "nativeActivationPerformed": false,
+  "publicationPerformed": false,
+  "acceptanceDecision": null
+}

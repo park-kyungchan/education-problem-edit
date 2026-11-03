@@ -1,0 +1,230 @@
+{
+  "schema": "jungdong.work-plan.v1",
+  "id": "WP-JD-HWPX-20261021",
+  "revision": 3,
+  "ontologyVersion": "0.2.0",
+  "domainId": "mathematics-document-editing",
+  "projectId": "math-problem-restoration",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "acceptanceDecision": null,
+  "status": "production-delivered-additive-explanation-running",
+  "workSpec": {
+    "id": "WS-JD-HWPX-20261021",
+    "revision": 3,
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/work-spec.r3.json"
+  },
+  "selectedPlanningChoices": {
+    "intake-intent": "full20-staged-checkpoints",
+    "context-selection": "delivery-receipt",
+    "task-split": "separate-text-figure-native",
+    "dependency-relation": "independent-after-ir",
+    "task-priority": "provenance-before-contract-detail"
+  },
+  "selectionEvidence": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/native/current-plan-batch-readback.json",
+  "taskOrder": [
+    {
+      "taskId": "T-JD-20261021-00-PLAN",
+      "specId": "TS-JD-20261021-00-PLAN",
+      "specRevision": 1,
+      "planId": "TP-JD-20261021-00-PLAN",
+      "planRevision": 1,
+      "ownerRole": "jungdong-hwpx-planner",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-01-APPROVAL",
+      "specId": "TS-JD-20261021-01-APPROVAL",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-01-APPROVAL",
+      "planRevision": 2,
+      "ownerRole": "user-via-Root",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-02-PREP",
+      "specId": "TS-JD-20261021-02-PREP",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-02-PREP",
+      "planRevision": 2,
+      "ownerRole": "future-native-lead",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-03-EXTRACT",
+      "specId": "TS-JD-20261021-03-EXTRACT",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-03-EXTRACT",
+      "planRevision": 2,
+      "ownerRole": "future-native-source-owner",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-04-TEXT-EQ",
+      "specId": "TS-JD-20261021-04-TEXT-EQ",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-04-TEXT-EQ",
+      "planRevision": 2,
+      "ownerRole": "future-native-text-owner",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-05-FIGURES",
+      "specId": "TS-JD-20261021-05-FIGURES",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-05-FIGURES",
+      "planRevision": 2,
+      "ownerRole": "future-native-figure-owner",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-06-ASSEMBLE",
+      "specId": "TS-JD-20261021-06-ASSEMBLE",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-06-ASSEMBLE",
+      "planRevision": 2,
+      "ownerRole": "future-native-composition-owner",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-07-SOURCE-STRUCTURE",
+      "specId": "TS-JD-20261021-07-SOURCE-STRUCTURE",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-07-SOURCE-STRUCTURE",
+      "planRevision": 2,
+      "ownerRole": "future-native-readback-owner",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-08-NATIVE",
+      "specId": "TS-JD-20261021-08-NATIVE",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-08-NATIVE",
+      "planRevision": 2,
+      "ownerRole": "future-native-windows-owner",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-09-REVIEW",
+      "specId": "TS-JD-20261021-09-REVIEW",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-09-REVIEW",
+      "planRevision": 2,
+      "ownerRole": "future-native-review-owner",
+      "status": "completed-operationally"
+    },
+    {
+      "taskId": "T-JD-20261021-10-ACCEPT",
+      "specId": "TS-JD-20261021-10-ACCEPT",
+      "specRevision": 2,
+      "planId": "TP-JD-20261021-10-ACCEPT",
+      "planRevision": 2,
+      "ownerRole": "user-via-Root",
+      "status": "approved-awaiting-prerequisites"
+    },
+    {
+      "taskId": "T-JD-20261021-11-EXPLAIN",
+      "specId": "TS-JD-20261021-11-EXPLAIN",
+      "specRevision": 1,
+      "planId": "TP-JD-20261021-11-EXPLAIN",
+      "planRevision": 1,
+      "ownerRole": "existing-native-lead",
+      "status": "executing-after-production-delivery"
+    }
+  ],
+  "dependencyGraph": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/dependency-graph.r3.json",
+  "maxConcurrentProductionActorsProposed": 2,
+  "currentAdditionalActorsDispatched": 2,
+  "parallelismAuthority": "Dependency independence does not authorize a spawn. Explicit approval must include the proposed bound; otherwise one native actor executes independent stages sequentially.",
+  "runNamespace": "After approval create immutable production stage outputs. source-ir/text/figures files are first-run planned paths; freeze instead of overwrite. Package/native/review use <new-run-id>; later corrections create new named versions and producer pins.",
+  "versioning": "First new HWPX revision r1 is independent of old delivered r7; each correction gets a new output revision and hash.",
+  "readyNow": [
+    "T-JD-20261021-02-PREP"
+  ],
+  "heldTasks": [],
+  "checks": {
+    "planning": [
+      "ID uniqueness and references",
+      "DAG acyclicity and producer closure",
+      "Topological waves and disjoint writes",
+      "Exact source/baseline existence and hashes",
+      "All production held and no production artifacts present"
+    ],
+    "production": [
+      "Source/structural readback for exact new package",
+      "Fresh native open/export, editability and layout evidence",
+      "Destination hash readback if delivery authorized"
+    ],
+    "acceptance": "Actual user visual review; no model-quality benchmark."
+  },
+  "pendingDecisionOwner": "native execution owners; actual user visual acceptance remains pending",
+  "approvalArtifacts": [
+    "approval-artifact-manifest.json",
+    "approval-record.template.json",
+    "approval-pending.json",
+    "production-authority.contract.json"
+  ],
+  "budget": {
+    "authority": "palantirkc-jev-accounting",
+    "storeIdentity": "/home/palantirkc/operations/herdr-jev-first-adoption-20261021/activation/accounting.sqlite",
+    "policyRevision": "57efe1e5eafd3b9184170c7fa43f7f4160f9148736093dc6b4f65f99e0f6b419",
+    "dailyCapMicroUsd": "10000000",
+    "timezone": "Asia/Seoul",
+    "scope": "Shared across eligible Works, actors and hosts; no per-Work reset or new allowance.",
+    "inheritedPilotCumulativeCapPreserved": true,
+    "supplement294Preserved": true,
+    "unknownLiabilitiesPreserved": true,
+    "admission": "Only the current source-owned native accounting owner may admit a paid decision; missing binding/certification or cap rejection holds dependent Jev effects.",
+    "rawProviderAllowed": false,
+    "unknownPaidReplayAllowed": false,
+    "nativeCodexCost": "Native Codex subscription/runtime costs are separate and are not fabricated into Jev debits."
+  },
+  "newAgentConstraint": {
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "high",
+    "source": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/user-instructions.actual.json",
+    "substitutionAllowed": false,
+    "appliesTo": "Every new native agent; existing planning turn settings are not mutated."
+  },
+  "paneAllocation": {
+    "lead": {
+      "paneId": "w7:p33",
+      "tasks": [
+        "02-PREP",
+        "06-ASSEMBLE",
+        "08-NATIVE",
+        "09-REVIEW"
+      ],
+      "activeProductionDuringWorkerParallelWave": false
+    },
+    "workerA": {
+      "name": "jungdong-source-text",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "tasks": [
+        "03-EXTRACT",
+        "04-TEXT-EQ",
+        "07-SOURCE-STRUCTURE"
+      ]
+    },
+    "workerB": {
+      "name": "jungdong-figures",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "tasks": [
+        "05-FIGURES"
+      ],
+      "startProductionOnlyAfter": "Frozen fresh IR from03-EXTRACT"
+    },
+    "maxConcurrentProductionActors": 2
+  },
+  "predecessor": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/work-plan.json",
+    "revision": 2,
+    "sha256": "3ad91cad51a3cd3c3b73852297a85634abb4335bd0bca46e54a4177f16da8427"
+  },
+  "addendum": {
+    "authorityRef": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/explanation-user-instruction.actual.json",
+    "mainProductionDelivered": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/delivery.actual.json",
+    "humanAcceptanceIsSeparate": true
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "math-editing.q11-schematic-approximation.v1",
+  "taskId": "T-GPT-Q11-INTERIOR-APPROX",
+  "authorityInputs": [
+    "input-040",
+    "input-041"
+  ],
+  "sourcePage": 2,
+  "sourceBox": [
+    1540,
+    1710,
+    1960,
+    2005
+  ],
+  "geometricRoles": {
+    "O": "Computed circumcenter of the chosen illustrative acute triangle only",
+    "I": "Computed incenter of the chosen illustrative acute triangle only"
+  },
+  "points": {
+    "A": {
+      "x": 500,
+      "y": 65
+    },
+    "B": {
+      "x": 65,
+      "y": 395
+    },
+    "C": {
+      "x": 575,
+      "y": 395
+    },
+    "O": {
+      "x": 320,
+      "y": 279.4318181818182
+    },
+    "I": {
+      "x": 423.7964082578423,
+      "y": 274.30497452255395
+    }
+  },
+  "centerRoleChecks": {
+    "acuteByPositiveDotProducts": true,
+    "bothCentersInside": true
+  },
+  "rays": [
+    "AO",
+    "BO",
+    "CO",
+    "AI",
+    "BI",
+    "CI"
+  ],
+  "approximation": "Source-shaped illustrative triangle. Coordinates are authored visual choices, not recovered source measurements or source truth. Six role-consistent spokes restore the visible interior structure under the actual user approximation authorization.",
+  "retainedUncertainty": [
+    "Original O/I pixel positions and assignment of obscured rays remain unresolved.",
+    "Printed versus pencil detail cannot be separated at every interior stroke.",
+    "Source 23° leader/arc endpoints are not fully recovered; the clean marker/leader is schematic."
+  ],
+  "givenOAI23": "23° is retained as the source given annotation, not a measured angle or a constraint used to solve the drawing. The approximate picture is not a to-scale claim.",
+  "choice3": "33° remains the separately confirmed native choice. No choices or native text/math are modified by this asset.",
+  "prohibitedInferences": [
+    "No B or C angle value is computed/reported",
+    "No correct option is selected",
+    "No handwritten27° or worked answers are copied",
+    "No new source acceptance or pilot03 release"
+  ],
+  "comparisonPolicy": "Original evidence remains inside BOTH future GPT copies. This asset replaces only the restored-controlled-geometry Q11 member.",
+  "imageText": [
+    "A",
+    "B",
+    "C",
+    "O",
+    "I",
+    "23°"
+  ],
+  "acceptanceDecision": null
+}

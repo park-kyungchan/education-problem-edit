@@ -1,0 +1,39 @@
+{
+  "schema": "jungdong.reuse-policy.v1",
+  "ontologyVersion": "0.2.0",
+  "domainId": "mathematics-document-editing",
+  "projectId": "math-problem-restoration",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "acceptanceDecision": null,
+  "status": "proposed-requires-production-approval",
+  "freshnessClaim": "Fresh original-source extraction and figure code; reused infrastructure must be declared separately.",
+  "sourceForExtraction": [
+    "original PDF with exact SHA256",
+    "hash-matched preexisting original embedded-page images only"
+  ],
+  "quarantinedUntilFreshOutputFreeze": [
+    "prior user-reviewed transcription",
+    "all old extracted problem text/IR/answer interpretations",
+    "old SVG/scene/PNG restored assets",
+    "old HWPX/PDF content"
+  ],
+  "allowedInfrastructureKnowledge": [
+    "HWPX schema and generic empty-document API",
+    "native equation/layout conventions subject to current native verification",
+    "owned Hancom COM process-isolation pattern",
+    "generic source/package/hash/readback methods"
+  ],
+  "disallowedExecution": [
+    "old render-hwpx.py as-is because it reads old execution-policy and old dataset plans",
+    "old compose_r5/compose_q11_review and hardcoded old patch scripts as fresh document pipelines",
+    "old recovery/pilot dispatchers and typed-corpus replay"
+  ],
+  "reviewOnlyAfterFreeze": {
+    "allowed": true,
+    "requiresDeclaredAccessManifest": true,
+    "mayUse": "Exact prior r7/r6 content and derived reference for labeled comparison and discrepancy reporting.",
+    "mustNot": "Retroactively relabel reused text/geometry as fresh extraction or silently correct frozen IR from baseline."
+  },
+  "originalsImmutable": true,
+  "fullDocumentCopiesDuringPlanning": false
+}

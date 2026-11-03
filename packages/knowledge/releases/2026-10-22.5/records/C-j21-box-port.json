@@ -1,0 +1,32 @@
+{
+  "kind": "case",
+  "id": "C-j21-box-port",
+  "title": "Box result cannot apply through candidate-ID helper",
+  "stage": "routing",
+  "exam": "jungdong-20261021",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-source21",
+      "pointer": "/nativeProtocolGaps"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Native Box localization has no candidate ID; helper returned null action/unavailable.",
+  "cause": "Protocol mismatch between spatial result and finite candidate-ID application port.",
+  "expected": "Keep response evidence separate from native action consumption; require actual compatible apply/readback.",
+  "outcome": "unresolved",
+  "ruleIds": [
+    "R-paid-recovery"
+  ],
+  "requiredChecks": [
+    "Actual input/output port compatibility; no paid replay."
+  ],
+  "limitation": "This is historical; do not assume every current native owner has the same limitation.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

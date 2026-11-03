@@ -1,0 +1,20 @@
+{
+  "schema": "math-editing.maintenance.v1",
+  "stableIds": true,
+  "immutableReleases": true,
+  "updatePolicy": [
+    "New sources are captured and curated, never automatically accepted.",
+    "Do not overwrite old release snapshots.",
+    "Revise records with explicit scope and source references; add route/citation regression examples.",
+    "Run build with a new YYYY-MM-DD.N, validate it, then advance current.json.",
+    "External source owners and historical acceptance remain unchanged."
+  ],
+  "deprecationPolicy": "Keep IDs and replace contents only in a successor release; add superseded-by metadata before removing a route.",
+  "verificationInvalidation": {
+    "sourceBytes": "Source interpretation and all source-bound descendants.",
+    "topology": "Dependent geometry/assets/layout/native output.",
+    "labelOffset": "Local asset and embedding/layout/native region.",
+    "equationMetric": "Bound controls, layout, package and native spacing.",
+    "pageTemplate": "Page layout/package/native pagination; source meaning unchanged."
+  }
+}

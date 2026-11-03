@@ -1,0 +1,48 @@
+{
+  "kind": "procedure",
+  "id": "P-image-code",
+  "title": "Reconstruct image as semantic geometry and SVG",
+  "stage": "geometry",
+  "ruleIds": [
+    "R-geometry-topology",
+    "R-visual-semantics",
+    "R-label-anchor",
+    "R-uncertainty"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-architecture20"
+    },
+    {
+      "sourceId": "S-q11approx20"
+    }
+  ],
+  "inputs": [
+    "source mark ledger",
+    "printed givens",
+    "entity IDs"
+  ],
+  "steps": [
+    "Define incidence, angle rays, equal-mark relations and claims before coordinates.",
+    "Construct only needed points/feet/intersections/centers with explicit branch and extent.",
+    "Keep source assertions separate from chosen illustrative coordinates.",
+    "Render styled SVG and PNG; compare printed object coverage."
+  ],
+  "outputs": [
+    "diagram IR proposal",
+    "construction code",
+    "SVG/PNG",
+    "coverage/uncertainty sidecar"
+  ],
+  "implementationSourceIds": [
+    "S-figureD",
+    "S-q11code20",
+    "S-scenes20"
+  ],
+  "stopWhen": [
+    "Degenerate geometry or unsupported source constraint would be hidden."
+  ],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

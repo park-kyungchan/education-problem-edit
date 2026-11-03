@@ -1,0 +1,35 @@
+{
+  "kind": "rule",
+  "id": "R-retrieval-candidate-integrity",
+  "title": "Verify candidate occurrences and cover all requested evidence roles",
+  "stage": "routing",
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-jev-audit"
+    },
+    {
+      "sourceId": "S-jev-measurements"
+    },
+    {
+      "sourceId": "S-jev-consumption"
+    }
+  ],
+  "when": "A semantic selector/reranker receives pre-parsed source candidates.",
+  "do": [
+    "Generate exact occurrences from pinned bytes; attach source hash, selector and verbatim occurrence, not a model-authored line description.",
+    "Validate hash and exact span before any paid decision; model confidence cannot validate source truth.",
+    "Split a question into evidence facets such as actual behavior, negative capability and documented alternative. Enumerate candidates for every facet before narrowing.",
+    "Keep metadata descriptions and source occurrences as different types. Missing candidates remain coverage gaps; a selector cannot recover omitted sources.",
+    "Record returned, native-applied, superseded and actually-used decisions separately; retain actor/consumer identities and failed steps."
+  ],
+  "avoid": [],
+  "check": [
+    "No candidate points to text different from its described source occurrence.",
+    "Each requested evidence facet has source candidates or an explicit gap.",
+    "Superseded or failed applications are excluded from accepted evidence."
+  ],
+  "invalidates": [],
+  "limitation": "This trial found candidate/coverage and native binding limitations. It does not establish general Jev/model quality or a causal speedup."
+}

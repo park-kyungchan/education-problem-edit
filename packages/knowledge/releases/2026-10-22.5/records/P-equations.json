@@ -1,0 +1,48 @@
+{
+  "kind": "procedure",
+  "id": "P-equations",
+  "title": "Normalize and size native equations",
+  "stage": "equations",
+  "ruleIds": [
+    "R-equation-tokens",
+    "R-equation-metrics"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-normalizer20"
+    },
+    {
+      "sourceId": "S-authorF"
+    },
+    {
+      "sourceId": "S-metricsF"
+    }
+  ],
+  "inputs": [
+    "math runs",
+    "normalizer revision",
+    "native environment identity"
+  ],
+  "steps": [
+    "Normalize standalone admitted tokens.",
+    "Resolve exact native metric cache key; report missing scripts rather than guessing a multiplier.",
+    "Serialize width/height/baseline/margins and bind control IDs to content runs.",
+    "For spacing defects, separate internal gap, object width, margin and trailing-space causes."
+  ],
+  "outputs": [
+    "EqEdit controls",
+    "metric bindings",
+    "cache misses",
+    "focused spacing evidence"
+  ],
+  "implementationSourceIds": [
+    "S-normalizer20",
+    "S-measureF",
+    "S-authorF",
+    "S-measure20"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

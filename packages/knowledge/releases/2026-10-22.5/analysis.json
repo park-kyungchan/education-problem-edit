@@ -1,0 +1,117 @@
+{
+  "schema": "math-editing.meta-analysis.v1",
+  "classification": "derived-synthesis-with-source-references",
+  "axes": {
+    "hierarchy": "Document -> page -> question -> block -> run/figure/frame -> entity/mark. Knowledge hierarchy separately groups domain -> layer -> stage -> record.",
+    "topology": "Typed geometric incidence/ray/owner/equal-mark relations, plus a separate pipeline dependency graph; neither is reducible to folder placement.",
+    "structure": "Semantic content, mathematical construction, presentation, native question container and page template have separate ownership and revisions.",
+    "type": "Claims, mark provenance, coordinates, units, object kinds, evidence states and feedback attribution are discriminated; missing evidence remains unknown."
+  },
+  "findings": [
+    {
+      "id": "A1",
+      "claim": "Evidence interpretation is the main repeated source of semantic defects; neat output and code execution do not establish original truth.",
+      "sources": [
+        "S-feedbackD",
+        "S-q11approx20",
+        "S-source21"
+      ],
+      "action": "Use source-mark inventories and typed claims before style cleanup."
+    },
+    {
+      "id": "A2",
+      "claim": "Historical SVG paths provide appearance control and finite constructions but do not consistently carry executable semantic topology.",
+      "sources": [
+        "S-scenes20",
+        "S-figureD",
+        "S-ir-proposal20"
+      ],
+      "action": "Reuse renderers and migrate only affected entities to stable typed constructors; avoid a wholesale rewrite."
+    },
+    {
+      "id": "A3",
+      "claim": "Equation whitespace has multiple layers; historical bounded widening and blanket safety padding must not be recalled as a completed narrowing algorithm.",
+      "sources": [
+        "S-width20",
+        "S-widthread20",
+        "S-compose21",
+        "S-authorD",
+        "S-authorF"
+      ],
+      "action": "Use exact native metrics, environment-bound cache keys and ink-to-following-glyph checks."
+    },
+    {
+      "id": "A4",
+      "claim": "Question ownership and repeated page composition are different structures.",
+      "sources": [
+        "S-questionF",
+        "S-pageF",
+        "S-bindingsF"
+      ],
+      "action": "Keep whole-question native containers separate from local block layout and content-dependent page slots."
+    },
+    {
+      "id": "A5",
+      "claim": "Research publication, installed code, response transport, native application, output verification and user completion differ.",
+      "sources": [
+        "S-hancom-research20",
+        "S-recovery20",
+        "S-source21",
+        "S-native21",
+        "S-accept21"
+      ],
+      "action": "Route by evidence class and exact capability scope rather than a single ready boolean."
+    },
+    {
+      "id": "A6",
+      "claim": "Optimization needs frozen comparable attempts and typed dependency attribution; producer confidence and missing costs cannot fill evidence gaps.",
+      "sources": [
+        "S-evaluation20",
+        "S-eval22",
+        "S-feedbackD"
+      ],
+      "action": "Capture FeedbackEvent once and hand off to existing rubric/evaluator ownership; measure quality and total cost/time independently."
+    }
+  ],
+  "backwardPropagation": {
+    "meaning": "Evidence-grounded error attribution and selective recomputation, not gradient training.",
+    "backward": [
+      "exact output defect -> native control/content node",
+      "node -> producing attempt and input revisions",
+      "attempt -> source mark/semantic/metric/layout decision",
+      "decision -> source region and actual authority"
+    ],
+    "forward": [
+      "choose bounded patch class",
+      "walk typed affected descendants",
+      "rebuild only invalidated outputs",
+      "retain failed/corrected pair and independent quality/cost/time evidence"
+    ],
+    "ambiguity": "Cause status stays suspected or unknown until supporting evidence exists."
+  },
+  "efficiencyPlan": {
+    "implemented": [
+      "stable record IDs",
+      "intent routing",
+      "bounded context packets",
+      "pinned source snapshots",
+      "stage impact and source trace queries",
+      "metadata-only inventory search"
+    ],
+    "proposed": [
+      "automatic producer dependency manifests beyond manually authored Daechi graph",
+      "environment fingerprint enforcement at every native metric reuse",
+      "mark-provenance classifier with independently labelled source regions",
+      "common-Harness regression case registration"
+    ],
+    "measurementsRequired": [
+      "routing success against held-out requests",
+      "tokens actually consumed per task",
+      "request-to-delivery and human correction time",
+      "source/mark errors and evaluator disagreements",
+      "provider-reported paid cost plus unknown liabilities",
+      "rebuild counts and unchanged-node preservation"
+    ],
+    "savingsObserved": null
+  }
+}

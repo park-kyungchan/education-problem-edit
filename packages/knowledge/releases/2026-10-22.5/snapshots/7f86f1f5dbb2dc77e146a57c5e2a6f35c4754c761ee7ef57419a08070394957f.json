@@ -1,0 +1,21 @@
+{
+  "source": {
+    "path": "/mnt/c/Users/packr/Downloads/\uc9112 2026\ud559\ub144\ub3c4 \ub300\uce58\uc911 2\ud559\ub144 2\ud559\uae30 \uc911\uac04\uace0\uc0ac (1).pdf",
+    "sha256": "2bfac149055818326290f4444f87f256b5063aa22518d0b79d386cb1f92e1006"
+  },
+  "base": {
+    "path": "/mnt/c/Users/packr/Downloads/\ub300\uce58\uc911_2026_2\ud559\ub144_2\ud559\uae30_\uc911\uac04\uace0\uc0ac_\ubcf5\uc6d0.hwpx",
+    "sha256": "98cf12999579e263cf197af93f1840a4e74f7e381740a2ec5363f83026f99b7f"
+  },
+  "physicalOrder": [
+    1,
+    2,
+    4,
+    3,
+    5,
+    6
+  ],
+  "sourcePages": 6,
+  "baseInspected": "ZIP XML directly and prior native PDF",
+  "accepted": null
+}

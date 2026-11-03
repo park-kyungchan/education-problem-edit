@@ -1,0 +1,35 @@
+{
+  "kind": "rule",
+  "id": "R-research-reuse",
+  "title": "Reuse dated research by role and refresh only the changed surface",
+  "stage": "routing",
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-hancom-research20"
+    },
+    {
+      "sourceId": "S-visual-research20"
+    },
+    {
+      "sourceId": "S-jev-research20"
+    },
+    {
+      "sourceId": "S-receiptD",
+      "pointer": "/implementation"
+    }
+  ],
+  "when": "A future agent is about to research HWPX, diagram or image APIs again.",
+  "do": [
+    "Route first to the relevant pinned implementation/receipt.",
+    "Distinguish documentation, proposed tool, installed package and actual native behavior.",
+    "Refresh current official docs or local help only for an unsupported command, changed version or missing capability."
+  ],
+  "avoid": [],
+  "check": [
+    "The selected source has matching applicability and no unresolved drift."
+  ],
+  "invalidates": [],
+  "limitation": "Old research once said native behavior was unverified; later production receipts establish a narrower observed behavior. Neither replaces the other."
+}

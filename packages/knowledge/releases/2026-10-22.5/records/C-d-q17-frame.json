@@ -1,0 +1,40 @@
+{
+  "kind": "case",
+  "id": "C-d-q17-frame",
+  "title": "Daechi Q17: Items (ㄱ) through (ㅂ) in the example frame need alignment.",
+  "stage": "equations",
+  "exam": "daechi-20261022",
+  "question": 17,
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "17-"
+    },
+    {
+      "sourceId": "S-optimizationF"
+    },
+    {
+      "sourceId": "S-finalF"
+    }
+  ],
+  "symptom": "Items (ㄱ) through (ㅂ) in the example frame need alignment.",
+  "cause": null,
+  "expected": "Use a reusable native aligned row/column recipe; preserve source reading order.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-equation-alignment"
+  ],
+  "requiredChecks": [
+    "Pinned original/output region comparison.",
+    "Typed source-mark/semantic ownership coverage.",
+    "Only affected descendants invalidated."
+  ],
+  "limitation": "Source-specific user expectation and producer-reported v2 correction. This curator did not independently regrade the original image; causal attribution remains unproven.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

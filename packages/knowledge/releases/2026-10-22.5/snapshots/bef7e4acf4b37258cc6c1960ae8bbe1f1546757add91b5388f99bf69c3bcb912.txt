@@ -1,0 +1,45 @@
+현재 산출물은 Q11만 교체한 GPT 검토본 r6(51쪽), 원본 대조를 유지한 GPT 읽기 쉬운 비교본 r7(32쪽), Argon 피드백 비교본 r5(50쪽)입니다. 기존 r4/r6 배달 파일은 보존합니다. 이 guide와 delivery manifest는 실제 실행 파일·입력·결과·검사 경로를 연결합니다. source 판독 승인이나 전역 AcceptanceDecision을 대신하지 않습니다.
+
+HWPX는 글·수식·표·그림을 ZIP 내부 XML과 binary 파일로 저장합니다. XML은 문서 객체의 속성과 연결을 기록하고, JSON은 변경 허용 목록·hash·검사 결과를 기록합니다. SHA256 hash로 파일 bytes의 동일성을 확인합니다. native frame은 Hancom의 편집 가능한 표·문단·수식이며, 복원 기하는 코드가 만든 PNG입니다. 원본 스캔은 original-evidence role로만 문서 안에 넣습니다.
+
+1. Herdr / native Codex
+실행자: 기존 Lead gpt-6.1-sol/ultra와 허용된 세 worker gpt-6.1-sol/high입니다. 입력은 현재 WorkSpec4/Plan6, ComposeSpec4/Plan6, VerifySpec4/Plan4와 input040/041입니다. Herdr는 지정 pane으로 bounded 작업을 전달하며 Codex가 agent loop를 소유합니다. 출력은 dispatch·owner·input-hash receipt와 각 module handoff입니다. done 상태만으로 통과시키지 않고 실제 파일과 native 결과를 읽었습니다. 새 pane, 별도 agent runtime, paid API 호출은 추가하지 않았습니다.
+
+2. Bun / Python 조합
+실행자: Lead 로컬 process입니다. 기존 피드백 branch는 equation -> native layout -> source-bound square/width 순서로 frozen module을 적용했습니다. GPT r6는 compose_q11_review.ts가 exact r4에 A의 patch_q11_asset.py를 적용합니다. 허용 변경은 BinData/BIN0010.png 한 member뿐입니다. 다른 XML·수식·배치·원본 PNG가 달라지면 실패합니다. GPT r7은 frozen filter_readable.py가 exact r6와 role report를 읽습니다. 정확한 실행 인자는 r7 compose-command.json에 있습니다. 기존 파일을 resave하지 않고 새 파일을 만듭니다. 출력은 HWPX, filter report, 제거한 내용의 sidecar, typed role manifest입니다. module/source hash나 예상 control이 다르면 조합을 중단합니다.
+
+3. Controlled SVG / PNG
+실행자: A의 Bun build-figure.ts와 Python renderer입니다. 입력은 MC11 원본 crop, scene/mapping과 허용된 schematic 정책입니다. acute source-shaped triangle의 circumcenter/incenter를 계산해 ABC/O/I, 여섯 내부 선과23도 표시를 그립니다. 출력 PNG는2304x1618이며 native 크기와 control ID는 유지합니다. O/I와 내부 선의 위치는 시각 근사이며 source truth가 아닙니다. B/C 값이나 정답을 계산하지 않았습니다. 원래 OAI23과 native 세 번째 보기33은 변하지 않습니다. 다른 일반 도형 PNG도 r7에서 bytes 그대로입니다.
+
+4. Native equation / layout module
+실행자: A/B의 Python ZIP/XML patch입니다. 실제 Hancom fixture로 perpendicular 명령 BOT, congruence 명령 ==, source square U+25A1 □를 확인했습니다. finite control whitelist만 고치며 수치·문자·operator·font·height와 PNG를 보존합니다. Korean-only underline equation은 지정 세 stem에서 native charPr underline text로 전환했습니다. CR2 보기와 다른 인쇄 frame은 native 표·문단·수식으로 복원했습니다. Q15에는 어떤 role의 그림도 없습니다. 단순11쌍은 약79mm 두 열, 넓은 frame은 full width 또는 인접 페이지로 둡니다. Argon r5는 실제 negative gap이 확인된 일곱 object 폭만 바꿨고 새 PDF에서 다음 비공백 glyph까지 최소3.107pt를 확인했습니다. 예상 script/control 밖 변경은 실패합니다.
+
+5. Readable filter / cache cleanup
+입력 exact r6에서228 technical/review 문단을 제거하고40 role label을 원본/복원본으로 줄였습니다.20문항·20pair,216수식·38그림·29표와 native underline을 유지했습니다. masked-proof와 crest의 두 editorial 문자열은 빈 native 영역/음영으로 바꾸고 숨겨진 내용은 채우지 않았습니다. Preview/PrvText.txt도 정리하고 Preview/PrvImage.png는 명시적으로 neutral white thumbnail로 교체했습니다. 이 thumbnail은 실제 page screenshot이라고 주장하지 않습니다. content.hpf title도 정리했습니다. 실제 변경 member 네 개와 문단/control 이동은 report에 whitelist로 남겼습니다. sidecar에 uncertainty/provenance를 보존합니다.
+
+6. PowerShell / Hancom COM
+실행자: Lead의 render-final-isolated.ps1과 Windows Hancom13.0.0.3457입니다. COM은 외부 process가 Hancom Open/SaveAs를 호출하는 Windows interface입니다. 입력 hash를 확인한 owned copy를 fresh COM으로 엽니다. WindowHandle을 실제 PID로 해석해 기존 Hwp process 목록에 없음을 확인한 뒤에만 Open/숨김/Quit를 수행합니다. GetActiveObject나 registry/security-module 변경을 쓰지 않았습니다. r7 own PID12324만 종료했고 사용자 PID30076/Window1444166은 유지됐습니다. 출력은 native PDF와 Open/export/Quit·page/control count receipt입니다. ownership 검증이 실패하면 문서를 열거나 기존 instance를 종료하지 않습니다.
+
+7. PyMuPDF / Pillow / independent readers
+PyMuPDF가 실제 native PDF의 text·bbox·images·page preview를 읽습니다. Pillow가 decoded RGB를 비교합니다. HWPX 내부 original/clean PNG는 role manifest의 정확한 bytes/hash가 기본 증거입니다. Hancom은 PDF에서 PNG를 JPEG로 바꾸므로 PNG/PDF bytes나 source pixels가 같다고 주장하지 않습니다. 실제 PDF JPEG의 quantization/subsampling으로 source RGB를 encode한 reference와 decoded RGB가 정확히 같아야 합니다. clean raw MAE<=1/RMS<=4는 유지하고 noisy original은 raw RMS<=4와 exact decoded JPEG reference를 요구하며 raw MAE도 기록합니다. 과거 rawMAE2 실패는 보존했습니다. r7의38개 모두 이 role-bound 기준을 통과했습니다. 실제 pages2/14/23/32에서 배치·O/I·native box·square·빈칸·음영·마지막 Korean 간격을 보았습니다. 파일 검사는 source 판독 정확도나 편집 실험의 대체물이 아닙니다.
+
+8. Parent QA / delivery / offline recovery
+Parent QA는 별도 frozen artifact reader로 r7의339 source/package 검사와50 fresh native 검사를 통과시켰습니다. Desktop 복사·readback·사용자 링크는 root의 별도 delivery receipt가 증거입니다. Lead는 배달된 r4/r6를 덮어쓰지 않습니다. recovery lane은 saved provider/cost receipt와 offline route test를 보존했고 보수적 committed 비용은 USD0.023628, cap USD10입니다. 역사적으로 덮어쓴 첫 Jev receipt는 추가 hold로 기록했습니다. invoice를 새로 조회하거나 paid call을 재개하지 않았습니다. offline route qualification은 현재 provider 인증·실제 호출·판독 우위를 증명하지 않습니다. pilot03 full-text는 계속 held입니다.
+
+남은 source 한계는 MC08 일부 angle arc, MC11 실제 O/I·내부 선·arc, CR4 AC/AD 절차와 어두운 가림 내용, crest detail입니다. Argon 첫 proof relation은 기존 literal =와 현재 == 선택의 source-reading 차이가 QA에 별도 residual로 남습니다. r5의 일곱 width 변경은 그 이전 script를 그대로 보존하며, 전체 source 판독 통과라고 주장하지 않습니다. 새로운 정답/숫자/숨겨진 proof를 추정하지 않았습니다. Q11 schematic 근사 허용과 choice3=33 확인을 다른 source 승인으로 확대하지 않습니다.
+
+Lead manifest: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/lead/handoff-manifest.current.json
+Readable composition: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/lead/runs/2026-10-20T12-41-25-201Z-4fa5ec0d/composition.json
+Readable native/visual readback: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/lead/runs/2026-10-20T12-41-25-201Z-4fa5ec0d/native-preview/native-readback.json
+Readable sidecar: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/lead/runs/2026-10-20T12-41-25-201Z-4fa5ec0d/readable-sidecar.json
+Readable actual-page gallery: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/lead/runs/2026-10-20T12-41-25-201Z-4fa5ec0d/native-preview/review.html
+각 run의 module-freeze/에 실제 조합 코드가 있습니다. 아래 lane guide의 hash와 모든 HWPX/PDF·role/source·검사 경로는 manifest에서 찾을 수 있습니다.
+
+Controlled figures: /home/palantirkc/operations/math-problem-editing-20261020/image-restoration/worker/tool-explanation.ko.txt
+Native equations: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/native-equations/handoff.ko.md
+Proof square qualification: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/native-equations/proof-symbol-probe/handoff.ko.md
+Finite body square repair: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/native-equations/body-symbol-probe/tool-explanation.ko.txt
+Native comparison layout and widths: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/native-layout/tool-explanation.ko.txt
+Q11 interior approximation: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/gpt-q11-update/figure/tool-explanation.ko.txt
+Readable comparison filter: /home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/gpt-q11-update/clean-book/tool-explanation.ko.txt
+Offline pipeline recovery: /home/palantirkc/operations/math-problem-editing-20261020/pipeline-takeover/worker/tool-explanation.ko.md

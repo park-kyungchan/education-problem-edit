@@ -1,0 +1,852 @@
+{
+  "schema": "math-editing.clean-visual-verification.v1",
+  "observedAt": "2026-10-20T10:53:51.844940+00:00",
+  "packageChecks": [
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "passed": true,
+      "equationObjectsByteCanonicalEqual": true,
+      "equationCount": 214,
+      "nativeTextEqualExceptDeclaredMetadata": true,
+      "otherNativeObjectsCanonicalEqualAfterAllowedChanges": true,
+      "outputPictureCount": 20,
+      "placementCoverage": 22,
+      "unchangedPackageMembers": [
+        "mimetype",
+        "version.xml",
+        "Contents/header.xml",
+        "Preview/PrvText.txt",
+        "settings.xml",
+        "META-INF/container.rdf",
+        "META-INF/container.xml",
+        "META-INF/manifest.xml"
+      ],
+      "embeddedGeneratedImagesVerified": true,
+      "minimumEffectiveDpi": 450.0154285714286,
+      "zipXmlMimeRefsCanvasEdgesPassed": true,
+      "output": {
+        "path": "/home/palantirkc/operations/math-problem-editing-20261020/image-restoration/worker/outputs/gpt-6.1-sol-ultra-20-problems-clean-figures-v1.hwpx",
+        "sha256": "5684a476fedd56040921181f5dadcf0c6add8393fa34b5c3e572c521e941587a",
+        "bytes": 1725988
+      }
+    },
+    {
+      "dataset": "argon-high",
+      "passed": true,
+      "equationObjectsByteCanonicalEqual": true,
+      "equationCount": 243,
+      "nativeTextEqualExceptDeclaredMetadata": true,
+      "otherNativeObjectsCanonicalEqualAfterAllowedChanges": true,
+      "outputPictureCount": 20,
+      "placementCoverage": 24,
+      "unchangedPackageMembers": [
+        "mimetype",
+        "version.xml",
+        "Contents/header.xml",
+        "Preview/PrvText.txt",
+        "settings.xml",
+        "META-INF/container.rdf",
+        "META-INF/container.xml",
+        "META-INF/manifest.xml"
+      ],
+      "embeddedGeneratedImagesVerified": true,
+      "minimumEffectiveDpi": 450.0033333333333,
+      "zipXmlMimeRefsCanvasEdgesPassed": true,
+      "output": {
+        "path": "/home/palantirkc/operations/math-problem-editing-20261020/image-restoration/worker/outputs/argon-high-20-problems-clean-figures-v1.hwpx",
+        "sha256": "0467eb6e0d43ba0f6769338f741cdb2fd934879cb0576bd22d6ef17843d4b9a9",
+        "bytes": 1759902
+      }
+    }
+  ],
+  "inputChecks": [
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/image-restoration/inputs/gpt-6.1-sol-ultra-20-problems.hwpx",
+      "sha256": "1fd70450dfa7c73bde4b448cfc8031fe7365e639fc0e3caecbac946120d30e51",
+      "matchesFrozen": true
+    },
+    {
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/parallel-pane-review-20261020/gpt-6.1-sol-ultra-20-problems.hwpx",
+      "sha256": "1fd70450dfa7c73bde4b448cfc8031fe7365e639fc0e3caecbac946120d30e51",
+      "matchesFrozen": true
+    },
+    {
+      "path": "/home/palantirkc/operations/math-problem-editing-20261020/image-restoration/inputs/argon-high-20-problems.hwpx",
+      "sha256": "ef4a3ad723d660e8b08f8193b8cbc349d57a131d27c20b46bf076742eafb80b9",
+      "matchesFrozen": true
+    },
+    {
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/parallel-pane-review-20261020/argon-high-20-problems.hwpx",
+      "sha256": "ef4a3ad723d660e8b08f8193b8cbc349d57a131d27c20b46bf076742eafb80b9",
+      "matchesFrozen": true
+    },
+    {
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/중2 2026학년도 중동중 2학년 2학기 중간고사.pdf",
+      "sha256": "82c365b790b30cec5c594d72f2b5b6fb6e6f98b504fd7182c28213e76969c9d4",
+      "matchesFrozen": true
+    }
+  ],
+  "nativeRendering": {
+    "status": "opened-rendered-and-all-40-rasters-compared",
+    "datasets": [
+      {
+        "dataset": "gpt-6.1-sol-ultra",
+        "passed": true,
+        "nativeReceipt": {
+          "schema": "math-editing.owned-native-render.v1",
+          "dataset": "gpt-6.1-sol-ultra",
+          "observedAt": "2026-10-20T10:54:33.0857461Z",
+          "inputPath": "C:\\Users\\packr\\Desktop\\문제편집\\clean-visuals-20261020\\native-review\\gpt-6.1-sol-ultra-20-problems-clean-figures-v1.hwpx",
+          "inputSha256": "5684a476fedd56040921181f5dadcf0c6add8393fa34b5c3e572c521e941587a",
+          "freshComInstance": true,
+          "existingApplicationAttached": false,
+          "registryChanged": false,
+          "securityModuleRegistrationChanged": false,
+          "openSucceeded": true,
+          "pdfExportSucceeded": true,
+          "ownedInstanceQuit": true,
+          "acceptanceDecision": null,
+          "version": "13, 0, 0, 3457",
+          "pageCount": 30,
+          "nativeEquationControlCount": 214,
+          "nativePictureControlCount": 20,
+          "pdfPath": "C:\\Users\\packr\\Desktop\\문제편집\\clean-visuals-20261020\\native-review\\gpt-6.1-sol-ultra-clean-figures-v1-native.pdf",
+          "pdfSha256": "1244b19c2b6ac36c5d5bbb0eb063c6469377e7fd1c44f977ea3bad59b18bc47c",
+          "result": "opened-and-rendered"
+        },
+        "nativePdf": "/home/palantirkc/operations/math-problem-editing-20261020/image-restoration/worker/native/gpt-6.1-sol-ultra-clean-figures-v1-native.pdf",
+        "allGeneratedImagesComparedInNativePdf": true,
+        "matchedImageCount": 20,
+        "matches": [
+          {
+            "placementId": "gpt-6.1-sol-ultra-01",
+            "page": 2,
+            "bboxPoints": [
+              101.39800262451172,
+              232.25802612304688,
+              470.3489990234375,
+              499.4800109863281
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.981955429844296,
+            "rasterMeanAbsoluteError0To255": 0.20177009434119372,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-02-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-01-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-02",
+            "page": 3,
+            "bboxPoints": [
+              101.39800262451172,
+              232.25698852539062,
+              470.3489990234375,
+              495.875
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.0030428673729928,
+            "rasterMeanAbsoluteError0To255": 0.23262623194275686,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-03-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-02-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-03",
+            "page": 4,
+            "bboxPoints": [
+              101.39800262451172,
+              234.90101623535156,
+              470.3489990234375,
+              431.7130126953125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.284000108536784,
+            "rasterMeanAbsoluteError0To255": 0.27942913163366784,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-04-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-03-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-04",
+            "page": 5,
+            "bboxPoints": [
+              111.12999725341797,
+              253.52496337890625,
+              460.7380065917969,
+              551.5069580078125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.933411206277954,
+            "rasterMeanAbsoluteError0To255": 0.197353985648961,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-05-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-04-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-05",
+            "page": 6,
+            "bboxPoints": [
+              101.39800262451172,
+              257.8500061035156,
+              470.3489990234375,
+              541.6539916992188
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.065053183380817,
+            "rasterMeanAbsoluteError0To255": 0.22676751199209932,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-06-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-05-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-06",
+            "page": 7,
+            "bboxPoints": [
+              122.78299713134766,
+              234.9010009765625,
+              449.2039794921875,
+              532.8829956054688
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.0659251729548913,
+            "rasterMeanAbsoluteError0To255": 0.2351711885776902,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-07-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-06-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-07",
+            "page": 9,
+            "bboxPoints": [
+              180.93099975585938,
+              260.85400390625,
+              390.9360046386719,
+              558.8359985351562
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.2771017501992143,
+            "rasterMeanAbsoluteError0To255": 0.26780054357560606,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-09-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-07-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-08",
+            "page": 11,
+            "bboxPoints": [
+              129.031005859375,
+              261.57501220703125,
+              442.7170104980469,
+              559.5570068359375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.753692265584577,
+            "rasterMeanAbsoluteError0To255": 0.1934657798134185,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-11-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-08-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-09",
+            "page": 13,
+            "bboxPoints": [
+              153.0590057373047,
+              281.03997802734375,
+              418.80902099609375,
+              579.02197265625
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.232834507419995,
+            "rasterMeanAbsoluteError0To255": 0.28580630960165215,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-13-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-09-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-10",
+            "page": 15,
+            "bboxPoints": [
+              101.39800262451172,
+              241.38900756835938,
+              470.3489990234375,
+              500.5610046386719
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.9539748957748218,
+            "rasterMeanAbsoluteError0To255": 0.22600990591951656,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-15-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-10-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-12",
+            "page": 18,
+            "bboxPoints": [
+              152.21800231933594,
+              252.56304931640625,
+              419.6500244140625,
+              550.5450439453125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.7804939375690345,
+            "rasterMeanAbsoluteError0To255": 0.21478472394276465,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-18-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-12-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-13",
+            "page": 20,
+            "bboxPoints": [
+              101.39800262451172,
+              264.218994140625,
+              470.3489990234375,
+              469.6820068359375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.301294902982399,
+            "rasterMeanAbsoluteError0To255": 0.2807351205940937,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-20-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-13-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-15",
+            "page": 22,
+            "bboxPoints": [
+              101.39800262451172,
+              252.56399536132812,
+              470.3489990234375,
+              500.9219970703125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.8278870366348174,
+            "rasterMeanAbsoluteError0To255": 0.20270076653055377,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-22-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-15-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-16",
+            "page": 23,
+            "bboxPoints": [
+              101.39800262451172,
+              164.49098205566406,
+              470.3489990234375,
+              383.2909851074219
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.2370179715857574,
+            "rasterMeanAbsoluteError0To255": 0.2835275337563039,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-23-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-16-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-17",
+            "page": 24,
+            "bboxPoints": [
+              120.38099670410156,
+              385.69403076171875,
+              451.48797607421875,
+              683.676025390625
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.2248782617158636,
+            "rasterMeanAbsoluteError0To255": 0.261696103686107,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-24-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-17-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-18",
+            "page": 25,
+            "bboxPoints": [
+              101.39800262451172,
+              96.12301635742188,
+              470.3489990234375,
+              237.30401611328125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.5463589544273093,
+            "rasterMeanAbsoluteError0To255": 0.436123118228773,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-25-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-18-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-19",
+            "page": 26,
+            "bboxPoints": [
+              101.39800262451172,
+              182.0330047607422,
+              470.3489990234375,
+              406.84100341796875
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.9805782471788398,
+            "rasterMeanAbsoluteError0To255": 0.20283781210430515,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-26-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-19-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-20",
+            "page": 28,
+            "bboxPoints": [
+              101.39800262451172,
+              81.70401000976562,
+              470.3489990234375,
+              371.8760070800781
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.8250753931981134,
+            "rasterMeanAbsoluteError0To255": 0.18823918858842287,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-28-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-20-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-21",
+            "page": 28,
+            "bboxPoints": [
+              101.39800262451172,
+              437.1199645996094,
+              470.3489990234375,
+              725.8499755859375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.6851391689833968,
+            "rasterMeanAbsoluteError0To255": 0.18693983214703888,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-28-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-21-native-144dpi.png"
+          },
+          {
+            "placementId": "gpt-6.1-sol-ultra-22",
+            "page": 29,
+            "bboxPoints": [
+              136.9600067138672,
+              140.94000244140625,
+              434.90802001953125,
+              438.9219970703125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.6539263157833535,
+            "rasterMeanAbsoluteError0To255": 0.5134369583414301,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/gpt-6.1-sol-ultra/page-29-96dpi.png",
+            "crop144dpi": "native/gpt-6.1-sol-ultra/gpt-6.1-sol-ultra-22-native-144dpi.png"
+          }
+        ],
+        "scope": "Owned Hancom open/PDF export, native equation control count, complete raster comparison (Hancom JPEG, not exact pixels), placement bounds and physical-size checks. Native equation UI editing not exercised.",
+        "rasterPassRule": "Same dimensions and document sequence, maximum RGB-channel RMSE < 8/255 and MAE < 2/255; visual inspection remains necessary."
+      },
+      {
+        "dataset": "argon-high",
+        "passed": true,
+        "nativeReceipt": {
+          "schema": "math-editing.owned-native-render.v1",
+          "dataset": "argon-high",
+          "observedAt": "2026-10-20T10:54:54.4034202Z",
+          "inputPath": "C:\\Users\\packr\\Desktop\\문제편집\\clean-visuals-20261020\\native-review\\argon-high-20-problems-clean-figures-v1.hwpx",
+          "inputSha256": "0467eb6e0d43ba0f6769338f741cdb2fd934879cb0576bd22d6ef17843d4b9a9",
+          "freshComInstance": true,
+          "existingApplicationAttached": false,
+          "registryChanged": false,
+          "securityModuleRegistrationChanged": false,
+          "openSucceeded": true,
+          "pdfExportSucceeded": true,
+          "ownedInstanceQuit": true,
+          "acceptanceDecision": null,
+          "version": "13, 0, 0, 3457",
+          "pageCount": 26,
+          "nativeEquationControlCount": 243,
+          "nativePictureControlCount": 20,
+          "pdfPath": "C:\\Users\\packr\\Desktop\\문제편집\\clean-visuals-20261020\\native-review\\argon-high-clean-figures-v1-native.pdf",
+          "pdfSha256": "78c07dbc4777880fdedef8206943dfc373b48d0a5866592c0068a227916a5607",
+          "result": "opened-and-rendered"
+        },
+        "nativePdf": "/home/palantirkc/operations/math-problem-editing-20261020/image-restoration/worker/native/argon-high-clean-figures-v1-native.pdf",
+        "allGeneratedImagesComparedInNativePdf": true,
+        "matchedImageCount": 20,
+        "matches": [
+          {
+            "placementId": "argon-high-01",
+            "page": 2,
+            "bboxPoints": [
+              101.39800262451172,
+              232.25701904296875,
+              470.3489990234375,
+              497.43701171875
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.9757751659260874,
+            "rasterMeanAbsoluteError0To255": 0.20058399800389157,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-02-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-01-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-02",
+            "page": 3,
+            "bboxPoints": [
+              101.39800262451172,
+              232.25701904296875,
+              470.3489990234375,
+              480.97601318359375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.058362707400854,
+            "rasterMeanAbsoluteError0To255": 0.2566076746619446,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-03-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-02-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-03",
+            "page": 4,
+            "bboxPoints": [
+              101.39800262451172,
+              234.9010009765625,
+              470.3489990234375,
+              427.1470031738281
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.301811638062505,
+            "rasterMeanAbsoluteError0To255": 0.28376418089092426,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-04-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-03-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-04",
+            "page": 5,
+            "bboxPoints": [
+              115.69499969482422,
+              253.52496337890625,
+              456.2929992675781,
+              551.5069580078125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.951549256708122,
+            "rasterMeanAbsoluteError0To255": 0.20093158423914553,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-05-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-04-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-05",
+            "page": 6,
+            "bboxPoints": [
+              101.39800262451172,
+              260.49395751953125,
+              470.3489990234375,
+              546.4599609375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.0664612080109634,
+            "rasterMeanAbsoluteError0To255": 0.23178299097416744,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-06-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-05-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-06",
+            "page": 7,
+            "bboxPoints": [
+              132.7550048828125,
+              234.9010009765625,
+              438.9930114746094,
+              532.8829956054688
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.0661699011202135,
+            "rasterMeanAbsoluteError0To255": 0.23850412227195977,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-07-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-06-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-07",
+            "page": 9,
+            "bboxPoints": [
+              177.56700134277344,
+              260.85400390625,
+              394.29998779296875,
+              558.8359985351562
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.1997243489978326,
+            "rasterMeanAbsoluteError0To255": 0.2502592404166433,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-09-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-07-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-08",
+            "page": 10,
+            "bboxPoints": [
+              129.63099670410156,
+              261.57501220703125,
+              442.115966796875,
+              559.5570068359375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.7417090329771423,
+            "rasterMeanAbsoluteError0To255": 0.1917053793215896,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-10-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-08-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-09",
+            "page": 11,
+            "bboxPoints": [
+              132.875,
+              281.03997802734375,
+              438.87200927734375,
+              579.02197265625
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.063128067745416,
+            "rasterMeanAbsoluteError0To255": 0.23980119059569432,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-11-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-09-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-10",
+            "page": 12,
+            "bboxPoints": [
+              101.39800262451172,
+              317.68701171875,
+              470.3489990234375,
+              575.177001953125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.9627568240644062,
+            "rasterMeanAbsoluteError0To255": 0.2241933079236673,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-12-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-10-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-12",
+            "page": 15,
+            "bboxPoints": [
+              154.62100219726562,
+              252.56304931640625,
+              417.12799072265625,
+              550.5450439453125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.8098282401424015,
+            "rasterMeanAbsoluteError0To255": 0.22309805424534102,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-15-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-12-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-13",
+            "page": 16,
+            "bboxPoints": [
+              101.39800262451172,
+              264.2179870605469,
+              470.3489990234375,
+              462.35198974609375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.298375432250176,
+            "rasterMeanAbsoluteError0To255": 0.25989071061259317,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-16-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-13-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-15",
+            "page": 18,
+            "bboxPoints": [
+              101.39800262451172,
+              252.56298828125,
+              470.3489990234375,
+              502.9639892578125
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.8320132045721549,
+            "rasterMeanAbsoluteError0To255": 0.19941646450913486,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-18-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-15-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-16",
+            "page": 19,
+            "bboxPoints": [
+              101.39800262451172,
+              164.49099731445312,
+              470.3489990234375,
+              387.97698974609375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.241977183993715,
+            "rasterMeanAbsoluteError0To255": 0.2791529769016328,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-19-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-16-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-17",
+            "page": 20,
+            "bboxPoints": [
+              118.81900024414062,
+              308.07501220703125,
+              452.9289855957031,
+              606.0570068359375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.2259972825388403,
+            "rasterMeanAbsoluteError0To255": 0.260345189109042,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-20-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-17-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-18",
+            "page": 21,
+            "bboxPoints": [
+              101.39800262451172,
+              81.70497131347656,
+              470.3489990234375,
+              223.2459716796875
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.634365903952265,
+            "rasterMeanAbsoluteError0To255": 0.47309371464932126,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-21-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-18-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-19",
+            "page": 22,
+            "bboxPoints": [
+              101.39800262451172,
+              184.67599487304688,
+              470.3489990234375,
+              426.4259948730469
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.9716780476993563,
+            "rasterMeanAbsoluteError0To255": 0.203785101888668,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-22-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-19-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-21",
+            "page": 23,
+            "bboxPoints": [
+              101.39800262451172,
+              504.52703857421875,
+              470.3489990234375,
+              649.072021484375
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.91912362566926,
+            "rasterMeanAbsoluteError0To255": 0.5269015511566384,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-23-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-21-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-23",
+            "page": 24,
+            "bboxPoints": [
+              101.39800262451172,
+              96.12301635742188,
+              470.3489990234375,
+              383.7720031738281
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 1.7109733011458643,
+            "rasterMeanAbsoluteError0To255": 0.18921943632454838,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-24-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-23-native-144dpi.png"
+          },
+          {
+            "placementId": "argon-high-24",
+            "page": 24,
+            "bboxPoints": [
+              135.03799438476562,
+              434.59698486328125,
+              436.7099914550781,
+              732.5789794921875
+            ],
+            "exactPixelMatch": false,
+            "nativeImageEncoding": "jpeg",
+            "rasterRmse0To255": 2.6292183563697433,
+            "rasterMeanAbsoluteError0To255": 0.4996680094600191,
+            "rasterComparisonPassed": true,
+            "normalPageScale96dpi": "native/argon-high/page-24-96dpi.png",
+            "crop144dpi": "native/argon-high/argon-high-24-native-144dpi.png"
+          }
+        ],
+        "scope": "Owned Hancom open/PDF export, native equation control count, complete raster comparison (Hancom JPEG, not exact pixels), placement bounds and physical-size checks. Native equation UI editing not exercised.",
+        "rasterPassRule": "Same dimensions and document sequence, maximum RGB-channel RMSE < 8/255 and MAE < 2/255; visual inspection remains necessary."
+      }
+    ]
+  },
+  "sourceAccuracy": "bounded visual inspection; unresolved source regions retained explicitly",
+  "acceptanceDecision": null,
+  "coverage": {
+    "clean-replaced": 33,
+    "intentionally-removed-student-only": 6,
+    "unresolved-with-explicit-placeholder": 7
+  },
+  "limits": [
+    "Native body equation encoding issues (perp/box) are intentionally unchanged.",
+    "MC8 omitted uncertain arcs, MC11 internal O/I, CR4 procedure glyph and dark proof block remain explicit uncertainties.",
+    "Stage 1 source-grounded drawings do not establish a general constraint solver, full source accuracy or user acceptance."
+  ]
+}

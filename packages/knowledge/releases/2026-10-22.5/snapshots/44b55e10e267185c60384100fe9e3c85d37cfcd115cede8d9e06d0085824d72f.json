@@ -1,0 +1,12 @@
+{
+  "schema": "daechi.layout-inputs.v1",
+  "observedAt": "2026-10-22T09:58:32.214Z",
+  "content": {
+    "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v3.hwpx",
+    "sha256": "4dae49b2b37078d257e86e09802a3f2c6fefd05383ac84248eecca691b74ccfe"
+  },
+  "reference": {
+    "path": "/mnt/c/Users/packr/Downloads/2026 2학기 중간 2학년 대치.hwp",
+    "sha256": "12fd782053285524d4049b63f3ae00c211d9a309a1e93ecf7727f52575473808"
+  }
+}

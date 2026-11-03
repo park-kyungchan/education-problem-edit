@@ -1,0 +1,107 @@
+{
+  "schema": "daechi.image-patch-completion.v1",
+  "status": "completed-delivered",
+  "patch": {
+    "schema": "daechi.selected-image-patch.v1",
+    "input": {
+      "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+      "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2"
+    },
+    "output": {
+      "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v3.hwpx",
+      "sha256": "4dae49b2b37078d257e86e09802a3f2c6fefd05383ac84248eecca691b74ccfe"
+    },
+    "bindings": [
+      {
+        "questionId": 1,
+        "pictureControlId": "1702942990",
+        "binaryItemId": "BIN0001",
+        "member": "BinData/BIN0001.png",
+        "oldSha256": "c7fe2913d5302c7c30f436de52035a5ad904d982e846d30f62d56f9cd4b1be44",
+        "newSha256": "d03f3c58126573675da2454dc99d1ab710709ecdb0aeb60a19902170888d5394",
+        "pixelSize": [
+          1080,
+          705
+        ],
+        "repair": "Remove two redundant angle arcs; retain original two dots and all geometry."
+      },
+      {
+        "questionId": 5,
+        "pictureControlId": "1307070064",
+        "binaryItemId": "BIN0004",
+        "member": "BinData/BIN0004.png",
+        "oldSha256": "95784bc9c96437ee26c61a89017d47b41c2af41321b91d6f7df3c8059c9dd599",
+        "newSha256": "ec6eedd840a267f5396eff04dd3ae092dce135df53d4abbeb6c4e0f0ede37602",
+        "pixelSize": [
+          1080,
+          660
+        ],
+        "repair": "Place label A below line l, separated from the right-angle mark above l."
+      },
+      {
+        "questionId": 10,
+        "pictureControlId": "1675501133",
+        "binaryItemId": "BIN0009",
+        "member": "BinData/BIN0009.png",
+        "oldSha256": "34591495f4eb270515dc63f7c72ecfca14bf0b359304edd4aec232d438d30103",
+        "newSha256": "94e569e1177785bf1257c93a6dab96f42afe7ac6318834faceb288ecef33cb35",
+        "pixelSize": [
+          1080,
+          705
+        ],
+        "repair": "Use sector fill opacity 0.25 and paint it beneath solid edges/spokes."
+      }
+    ],
+    "changedMembers": [
+      "BinData/BIN0001.png",
+      "BinData/BIN0004.png",
+      "BinData/BIN0009.png"
+    ],
+    "preservedMemberCount": 29,
+    "allNonTargetMembersByteIdentical": true,
+    "allXmlAndEquationsAndTableLayoutByteIdentical": true,
+    "unchangedPixelAndControlDimensions": true,
+    "sourceUnchanged": true,
+    "packagePatchWallMs": 95.784,
+    "packageCheck": "passed",
+    "nativeRender": "pending",
+    "acceptanceDecision": null
+  },
+  "native": {
+    "pages": 6,
+    "nativeVersion": "13, 0, 0, 3457",
+    "wallMs": 12406.263,
+    "renderReceipt": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/image-patch-v3/native-render.actual.json",
+    "allTextSpansAndPositionsEqualToV2": true,
+    "affectedPages": [
+      1,
+      2,
+      3
+    ]
+  },
+  "measuredTokenSavings": null,
+  "pairedLatencySavings": null,
+  "newPaidCalls": 0,
+  "acceptanceDecision": null,
+  "verification": {
+    "packageNonTargetMembersByteIdentical": true,
+    "nativeSixPages": true,
+    "allNativeTextAndPositionsIdenticalToV2": true,
+    "nativeVisualChecked": [
+      "Q1 dots without arcs",
+      "Q5 label below baseline",
+      "Q10 translucent sector behind visible BO"
+    ],
+    "nativeVisualEvidence": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/image-patch-v3/native-three-images.png",
+    "fullReauthoringExecuted": false,
+    "nestedCopyProbeRepeated": false
+  },
+  "handoff": {
+    "targetThread": "01a1629f-4048-76a1-97e0-a00ef54f2a04",
+    "nativeQueueSucceeded": true,
+    "messageId": "01a162f3-38fd-7e51-98cc-314d6b47975b",
+    "recipientAcknowledged": false,
+    "dispatchReceipt": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/image-patch-v3/dispatch.actual.json",
+    "recipientContext": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/image-patch-v3/recipient-context.actual.json"
+  }
+}

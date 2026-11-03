@@ -1,0 +1,34 @@
+{
+  "kind": "rule",
+  "id": "R-parameter-ownership",
+  "title": "Bind shared values by parameter ID",
+  "stage": "semantics",
+  "evidenceClass": "proposal",
+  "applicability": "proposed-contract",
+  "evidence": [
+    {
+      "sourceId": "S-architecture20",
+      "pointer": "/numericSynchronization"
+    }
+  ],
+  "when": "A numeric edit should update text, math and diagram labels together.",
+  "do": [
+    "Use a canonical parameter/expression ID, unit and revision.",
+    "Keep source-restoration values frozen; explicit content edits create a successor revision."
+  ],
+  "avoid": [],
+  "check": [
+    "Every intended dependent reference updates; identical unrelated strings remain unchanged."
+  ],
+  "invalidates": [
+    "geometry",
+    "assets",
+    "equations",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "No automatic shared-parameter adapter is claimed to be installed."
+}

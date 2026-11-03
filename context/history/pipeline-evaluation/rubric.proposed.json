@@ -1,0 +1,138 @@
+{
+  "status": "prospective-proposal-not-a-model-evaluation-result",
+  "schema": "math-pipeline.adversarial-rubric.proposal.v1",
+  "target": "Daechi source -> structured text/math/diagram/layout -> independently reviewed preview; HWPX serialization follows later.",
+  "source": {
+    "path": "/mnt/c/Users/packr/Downloads/중2 2026학년도 대치중 2학년 2학기 중간고사 (1).pdf",
+    "sha256": "2bfac149055818326290f4444f87f256b5063aa22518d0b79d386cb1f92e1006"
+  },
+  "objective": {
+    "primary": "Minimize total active work time including generation, verification, intervention and repair.",
+    "secondary": "Report API cost, uncertain liabilities and human-review time separately.",
+    "mandatory": "Preserve printed source facts, mathematical meaning, source ambiguity, editability and full problem coverage."
+  },
+  "terms": {
+    "adversarial": "Use controlled known-bad restoration variants and known-good controls to test what the verifier actually detects.",
+    "rubric": "Predeclared per-criterion expected behavior, evidence, pass/fail/unknown rules and next action."
+  },
+  "hardCriteria": [
+    {
+      "name": "Source identity and coverage",
+      "expected": "Correct source hash, 6 pages, logical page mapping, all 24 question numbers once, complete options/proof text and original/restored role mapping.",
+      "failure": "Missing, duplicated, reordered or cross-source content blocks export."
+    },
+    {
+      "name": "Printed text and mathematics",
+      "expected": "Numbers, labels, signs, degrees, units, options and equation structure preserve the printed source. A mathematically correct solution does not establish correct transcription.",
+      "failure": "Any unresolved material content mismatch blocks export."
+    },
+    {
+      "name": "Geometry and topology",
+      "expected": "Endpoints, incidence, parallel/perpendicular relations, line styles, angle assignments and folded-point identities match source-supported constraints.",
+      "failure": "A changed mathematical relation blocks export even if the preview looks plausible."
+    },
+    {
+      "name": "Marks and ambiguity",
+      "expected": "Remove student marks only from restored content. Retain original evidence. Unreadable printed/pencil overlap remains unknown until resolved.",
+      "failure": "Inventing a source fact or silently erasing a source feature blocks export; an honest unknown requests bounded review."
+    },
+    {
+      "name": "Editable structure and edit scope",
+      "expected": "Text, mathematics and proof/option boxes remain structured; figure source remains editable. Label-only edits preserve geometry and unrelated content.",
+      "failure": "Flattening required structure, stale render reuse or unrelated edits blocks export."
+    },
+    {
+      "name": "Useful verifier behavior",
+      "expected": "Detect seeded material defects and correctly accept unambiguous valid controls. Localize each finding to a question/object/source region.",
+      "failure": "A seeded critical false clear blocks verifier adoption. Indiscriminate rejection is measured as false alarms, not detection success."
+    }
+  ],
+  "softDiagnostics": {
+    "scoring": "Use separate anchored 0/1/2 observations: 0 unusable, 1 bounded local repair required, 2 usable. Record not-applicable and unknown separately.",
+    "dimensions": [
+      "Label readability and clipping",
+      "Spacing and visual consistency",
+      "Precision of the proposed repair",
+      "Amount of user review required"
+    ],
+    "criticalCompensationAllowed": false,
+    "legacy75PointThresholdReusedAsNewApproval": false
+  },
+  "samplePlan": {
+    "maturity": "Small pilot; not a statistical claim of zero future errors.",
+    "calibrationQuestionNumbers": [
+      1,
+      17
+    ],
+    "heldoutQuestionNumbers": [
+      12,
+      14,
+      18,
+      23
+    ],
+    "documentCheck": "Page-order and question-coverage case, including the observed reversed physical pages.",
+    "sourceFamilies": [
+      "Q1: equal-length marks and dotted construction",
+      "Q12: overlapping I/O labels, rays and handwriting",
+      "Q14: diagonal/perpendicular-foot connectivity",
+      "Q17: option/table coverage",
+      "Q18: structured proof blanks and symbol bindings",
+      "Q23: folded rectangle and original/folded point labels"
+    ],
+    "variants": "For each of six source cases, one independently checked valid control and two single-defect variants: 18 content variants plus the document-mapping case. Group all variants of one question in the same split.",
+    "controlledDefects": [
+      "Changed number, label or angle assignment",
+      "Missing option, proof blank or unit",
+      "Wrong endpoint or solid/dashed style",
+      "Student annotation promoted to source content",
+      "Stale preview after a code edit",
+      "False clean judgment despite a seeded critical defect"
+    ],
+    "independence": "Expected truth and permitted ambiguities must be fixed from high-resolution source before candidate outputs. Mutation labels remain hidden from the evaluated verifier. The same author session is not an independent grader.",
+    "executionState": "Cases proposed; content truth and actual variant outputs are not yet created or certified."
+  },
+  "comparison": {
+    "baseline": "Freeze the current working pre-export route, exact source/crop/code/renderer versions and actual exposed context.",
+    "candidate": "First test dependency-based verification reuse as one declared change. Then test Jev triage with bounded strong-model escalation separately if useful; do not run a four-arm matrix by default.",
+    "fairness": "Use identical source cases and useful-completion criteria. Freeze expected outcomes before viewing candidate results. Common captured inputs may be reused only with exact lineage; do not present counterfactual reuse as measured end-to-end savings.",
+    "repeatPolicy": "Start with one bounded paired pilot. Repeat only an unresolved or near-equal comparison, retaining all attempts and their cost. Do not replay completed or uncertain external effects.",
+    "report": [
+      "Seeded critical misses / applicable seeded critical defects",
+      "Valid controls accepted / applicable valid controls",
+      "False alarms and ambiguity escalations",
+      "Corrected versus final uncorrected defects",
+      "Generation, render, deterministic-check, model-review, human-review and repair time",
+      "Total wall time with user-wait intervals disclosed separately",
+      "Provider-reported cost including failed/repeated calls and escalation",
+      "Setup/evaluation cost separate from recurring per-paper cost"
+    ],
+    "unknownNativeCost": "Native subscription tokens are neither an observed API invoice nor automatically zero USD. Report native usage separately when price is unknown.",
+    "adoption": "Required quality must hold. Prefer lower total active work time, disclose cost and per-case regressions. If cost and time trade off materially or evidence is insufficient, return the specific decision to the user."
+  },
+  "graders": {
+    "deterministic": "Use existing source-owned validators for identity, coverage, hashes, relationships and edit invariants.",
+    "model": "Optional bounded visual/source judgment only where deterministic checks cannot decide; never accept the producer's self-score as independent evidence.",
+    "human": "Review source ambiguity and residual material findings using original/restored pairs. Scope each request to the affected region."
+  },
+  "evaluationTimeControl": "Capture each restoration occurrence once and pin it. Apply multiple graders to that same frozen output offline instead of rerunning restoration for every criterion. Run cheap deterministic checks first, then only necessary model/human review. Retain evaluator errors separately from target errors.",
+  "currentCommonContracts": {
+    "owner": {
+      "name": "agent-platform",
+      "path": "/home/palantirkc/worktrees/math-pipeline-audit-20261022/agent-platform",
+      "head": "4cd6eea995700177159a3d3d42bf63024fb5fc13",
+      "remoteMain": "4cd6eea995700177159a3d3d42bf63024fb5fc13",
+      "observedRemoteMain": "4cd6eea995700177159a3d3d42bf63024fb5fc13",
+      "synchronized": true,
+      "clean": true,
+      "nativeActivationPerformed": false
+    },
+    "quality": "common.quality-improvement.v1 with behavior/detection/control criteria",
+    "efficiency": "common.constrained-improvement.v1 after quality; preserve actual Work/Spec/Plan and exact source/evidence pins",
+    "readiness": "Proposed cases are not yet registered EvalDataset/EvalRun records or native Work allocations. Existing shared contracts remain the intended integration; no second agent runtime or evaluation database."
+  },
+  "methodologySource": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
+  "modelTrialsExecutedInThisAudit": 0,
+  "newPaidCalls": 0,
+  "hwpxCreated": false,
+  "acceptanceDecision": null
+}

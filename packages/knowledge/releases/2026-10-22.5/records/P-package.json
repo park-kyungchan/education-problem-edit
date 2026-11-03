@@ -1,0 +1,40 @@
+{
+  "kind": "procedure",
+  "id": "P-package",
+  "title": "Check new HWPX bytes once",
+  "stage": "package",
+  "ruleIds": [
+    "R-native-editability",
+    "R-section-properties",
+    "R-proportionate-checks"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-authorD"
+    },
+    {
+      "sourceId": "S-imagecheck20"
+    }
+  ],
+  "inputs": [
+    "versioned HWPX",
+    "expected content/control/asset map"
+  ],
+  "steps": [
+    "Check ZIP/XML/mimetype/reference integrity.",
+    "Check question/choice coverage, all descendant native controls, asset roles and exact scripts.",
+    "Hash source/base/output; preserve originals and previous deliveries."
+  ],
+  "outputs": [
+    "package result",
+    "coverage/binding report",
+    "output hash"
+  ],
+  "implementationSourceIds": [
+    "S-authorD"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "daechi.question-layout.v1",
+  "defaultFigureMm": 66,
+  "figureWidthMm": {
+    "3": 42,
+    "15": 53,
+    "18": 47,
+    "20": 53
+  },
+  "stemPointSize": {
+    "4": 9.5,
+    "5": 9.5,
+    "13": 9.5,
+    "18": 9.5,
+    "21": 9.5,
+    "22": 9.5
+  },
+  "questionContainer": "one borderless native 1x1 table per whole question; source frames nested inside",
+  "q18FigureOwner": "proof-frame",
+  "q17Alignment": "native MATRIX with two LCOL columns and three rows",
+  "q18Alignment": "left-aligned proof paragraphs and native inline blank tables, common paragraph origin"
+}

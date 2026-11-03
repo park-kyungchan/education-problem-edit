@@ -1,0 +1,51 @@
+{
+  "kind": "procedure",
+  "id": "P-reference-layout",
+  "title": "Reflow preserved native question containers into a reference layout",
+  "stage": "page-layout",
+  "ruleIds": [
+    "R-layout-choice",
+    "R-layout-separation",
+    "R-question-container",
+    "R-section-properties",
+    "R-native-owner",
+    "R-proportionate-checks"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-hwp-procedure"
+    },
+    {
+      "sourceId": "S-hwp-verification"
+    }
+  ],
+  "inputs": [
+    "selected reference-single-column profile",
+    "exact content/reference hashes",
+    "whole-question bindings",
+    "owned native adapter"
+  ],
+  "steps": [
+    "Inspect the reference actual paper/margins/columns/paragraph rhythm and scope its incomplete or differently ordered content.",
+    "Move intact question envelopes out of obsolete page containers. Preserve scripts, metric dimensions/baselines/margins, figure payloads/bindings and nested controls.",
+    "Apply current reference flow parameters, preserve initial secPr/colPr and review whole-question overflow.",
+    "Set requested native DocSummaryInfo title and opf:title. Save with the explicit requested HWP or HWPX format.",
+    "For HWP, require actual CFB/HWP signatures; clear/reopen the delivered file and export its PDF. Compare content/binding preservation and changed layout once."
+  ],
+  "outputs": [
+    "versioned native document and PDF",
+    "content/metric/media preservation receipt",
+    "observed pagination and unresolveds"
+  ],
+  "implementationSourceIds": [
+    "S-hwp-layout-code",
+    "S-hwp-native-code"
+  ],
+  "stopWhen": [
+    "Container identity or native instance ownership is unresolved.",
+    "Content or equation metrics would be altered merely to fit a page."
+  ],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

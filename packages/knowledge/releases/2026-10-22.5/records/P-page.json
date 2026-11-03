@@ -1,0 +1,49 @@
+{
+  "kind": "procedure",
+  "id": "P-page",
+  "title": "Compose the selected page layout independently of content",
+  "stage": "page-layout",
+  "ruleIds": [
+    "R-layout-choice",
+    "R-layout-separation",
+    "R-section-properties",
+    "R-equation-metrics"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-pageF"
+    },
+    {
+      "sourceId": "S-questionF"
+    },
+    {
+      "sourceId": "S-layout-direction"
+    }
+  ],
+  "inputs": [
+    "resolved layout profile",
+    "question-local layouts",
+    "native equation metrics"
+  ],
+  "steps": [
+    "Run layout resolve with explicit choice or known existing profile; obtain a choice for a new document without one.",
+    "For exam-two-column, reuse column-major slots and the first-page heading; for reference-single-column, use the reference flow procedure P-reference-layout.",
+    "Derive slot heights or content flow for this exam; surface overflow explicitly.",
+    "Preserve section controls and inspect native page/question starts."
+  ],
+  "outputs": [
+    "selected profile and separately selected format",
+    "page layout",
+    "overflow report",
+    "question/page mapping"
+  ],
+  "implementationSourceIds": [
+    "S-pageF",
+    "S-questionF",
+    "S-authorF"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

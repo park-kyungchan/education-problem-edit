@@ -1,0 +1,28 @@
+{
+  "kind": "rule",
+  "id": "R-eval-boundary",
+  "title": "Reference concurrent rubric ownership without adopting proposals",
+  "stage": "feedback",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-eval22",
+      "pointer": "/existingCommonContracts"
+    },
+    {
+      "sourceId": "S-rubric22"
+    }
+  ],
+  "when": "Knowledge-space cases need future common-Harness evaluation.",
+  "do": [
+    "Export compatible case inputs/expected behavior/evidence references.",
+    "Resolve real EvalDataset/VerificationUnit/Evaluator/EvalRun identities at the native owner when available."
+  ],
+  "avoid": [],
+  "check": [
+    "Registration/activation status and acceptance are explicit; immutable upper Ontology 0.2.0 remains unchanged."
+  ],
+  "invalidates": [],
+  "limitation": "This space is a local retrieval and knowledge artifact, not a canonical Work registry or a second evaluation runtime."
+}

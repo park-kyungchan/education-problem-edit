@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-22T10:34:18.865Z",
+  "counts": {
+    "stages": 14,
+    "records": 71,
+    "sources": 76,
+    "routes": 21,
+    "graphNodes": 168,
+    "graphEdges": 483
+  },
+  "snapshots": 76,
+  "citations": 170,
+  "inventoryReadErrors": [],
+  "acceptanceDecision": null
+}

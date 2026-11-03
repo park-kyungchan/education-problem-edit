@@ -1,0 +1,40 @@
+{
+  "kind": "case",
+  "id": "C-d-reference-layout",
+  "title": "Single-column native HWP successor preserves all v3 question content",
+  "stage": "page-layout",
+  "exam": "daechi-20261022",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-hwp-handoff"
+    },
+    {
+      "sourceId": "S-hwp-verification"
+    },
+    {
+      "sourceId": "S-hwp-procedure"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "The user requested a second presentation based on an observed reference HWP.",
+  "cause": null,
+  "expected": "Both deliveries remain selectable; the new HWP has the exact requested title and preserves 24 questions, 120 choices, 260 native equations and 21 identical PNG payloads.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-layout-choice",
+    "R-layout-separation",
+    "R-native-owner"
+  ],
+  "requiredChecks": [
+    "Native HWP save/clear/reopen and exact title.",
+    "Per-question content/math/media/nested control preservation; one column and observed 12 pages."
+  ],
+  "limitation": "The reference itself has only 20 questions in a different order. This is a full-content adaptation, not a page-coordinate facsimile or new source semantic acceptance.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

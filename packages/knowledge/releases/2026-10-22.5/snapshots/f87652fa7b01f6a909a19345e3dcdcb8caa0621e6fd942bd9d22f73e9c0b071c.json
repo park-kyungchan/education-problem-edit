@@ -1,0 +1,27 @@
+{
+  "schema": "hancom.capability-corpus.v1",
+  "capturedDate": "2026-10-22",
+  "officialCaptureSha256": "0a2659d4f2ca8656bbc3f1e84d6fd68e81602b8313925b951a67804cb6b3c4d8",
+  "files": {
+    "actions.json": "515fee4e7655fab1b3cc305b71d08183f94e5574f8fecb70426b3d2f5eca50e8",
+    "parameter-sets.json": "bd222ebbd36f5c83a55ac27568ce10586c90b28a2e1ab7461a0a455a629f196f",
+    "api-members.json": "e1d9d003fba923a8f4fad9d8603c0d70d41ae0dc03c9b3cf50dcb36144a74434",
+    "documents.json": "6faf82b57338590c80861501f82a9f769a1ceb0edee3bd8679529f82d238a883",
+    "pages.jsonl": "ba457e4234d7558ded1e3f9b583aa6d2e69588d648485570c02231cda501b9ef",
+    "summary.json": "75777edbb57157d829d832df2f8976792b724087e49503ce5761fd73639c3b96",
+    "web-documents.json": "c9ac4b00aff22216d843dc6ee1672a3c2c2a4fc47f8f2c701586d4a20c0341d8",
+    "capabilities.json": "fa9be11c5940bc78de904f9511cf9a640421f15a549f81e0407529cf7114b4c7",
+    "action-families.json": "38acf28ec3d8f758063584ae8997634828d035509998e57ce9d5b1311eecbff6",
+    "official-model-headers.json": "0b76750603491cf53fc0f6484971e34f43ac6469ac39c4b62a6e4c81ae7b28f3"
+  },
+  "capabilityFamilies": 24,
+  "actionDeclarations": 937,
+  "assignedActions": 937,
+  "assignmentMethod": "Deterministic prefix/name routing heuristics; all declarations retain original source pages. Unmatched declarations remain in other-documented-actions.",
+  "unclassifiedActions": 130,
+  "officialModelHeaders": 292,
+  "coverage": "All captured official ActionTable table pages and ParameterSet sections are indexed; full PDF text remains the fallback for parser gaps. This is not a claim that every application UI feature is automatable or tested.",
+  "runtimeQualifiedScope": "Only local evidence IDs cited per capability family, with their exact bytes/version/behavior limits.",
+  "newNativeOperations": 0,
+  "newPaidCalls": 0
+}

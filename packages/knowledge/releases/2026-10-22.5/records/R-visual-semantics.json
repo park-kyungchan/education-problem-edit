@@ -1,0 +1,32 @@
+{
+  "kind": "rule",
+  "id": "R-visual-semantics",
+  "title": "Represent printed decorative marks as semantic objects",
+  "stage": "assets",
+  "evidenceClass": "user-requirement",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD"
+    }
+  ],
+  "when": "Angle arrows, equal-angle ticks, dashed dimensions or shading communicate source meaning.",
+  "do": [
+    "Use explicit primitive types and semantic owner references.",
+    "Separate a leader-arrow pointing at an angle from a parallel-arrow attached to a segment.",
+    "Bind equal-angle/length marks through a relation ID; preserve fill and dash style separately from provenance."
+  ],
+  "avoid": [],
+  "check": [
+    "All required source marks mapped to an output object; no extra mark introduced."
+  ],
+  "invalidates": [
+    "assets",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "A visually similar path without owner/ray binding is insufficient for semantic edits."
+}

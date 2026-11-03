@@ -1,0 +1,48 @@
+{
+  "kind": "rule",
+  "id": "R-selected-image-patch",
+  "title": "Patch selected image payloads when the native layout envelope is unchanged",
+  "stage": "package",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-imagepatch-guide"
+    },
+    {
+      "sourceId": "S-imagepatch-receipt",
+      "pointer": "/patch/changedMembers"
+    },
+    {
+      "sourceId": "S-imagepatch-code"
+    },
+    {
+      "sourceId": "S-imagepatch-proof",
+      "pointer": "/allNonTargetMembersByteIdentical"
+    }
+  ],
+  "when": "Only a diagram mark, label offset, fill opacity or draw order changes; native size/crop/transform and ownership remain valid.",
+  "do": [
+    "Use user delta + selected scene + exact input package + image binding + replacement + relevant prior checks.",
+    "Resolve question -> table -> picture control -> binaryItemIDRef -> manifest member -> expected old payload hash.",
+    "Require same PNG pixel size and unchanged embedding/ownership; shared media requires a declared local-layout route rather than bypassing the finite patch guard.",
+    "Replace only selected media in a new versioned HWPX; require all non-target uncompressed member bytes and order identical.",
+    "Check affected native image regions and exact unchanged text/layout evidence; retain prior equation/table/transfer qualification.",
+    "Treat dots and arcs as source encodings, label placement as presentation independent of vertex/incidence, and sector fill opacity/layer independently of stroke/image opacity. Paint fill beneath geometry.",
+    "Retain the original embedded preview with an explicit stale-preview limit; refreshing it adds a separately declared derived-member edit."
+  ],
+  "avoid": [
+    "Do not rerun whole-paper transcription, recreate equations/question tables or regenerate all scenes for this eligible delta."
+  ],
+  "check": [
+    "Source/base/output hashes and allowed changed-member list.",
+    "Fixed canvas/embedding, unique media references, affected visual features.",
+    "If an embedded preview is retained, use fresh native PDF/crops as current evidence."
+  ],
+  "invalidates": [
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "v3 package patch was 95.784ms and native export 12406.263ms for one occurrence. Total task time and token savings are unknown. Shared media, size/aspect/crop/owner changes require local-layout routing."
+}

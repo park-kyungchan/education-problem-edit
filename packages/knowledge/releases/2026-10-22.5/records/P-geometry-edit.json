@@ -1,0 +1,44 @@
+{
+  "kind": "procedure",
+  "id": "P-geometry-edit",
+  "title": "Apply a bounded geometry or label edit",
+  "stage": "geometry",
+  "ruleIds": [
+    "R-geometry-topology",
+    "R-parameter-ownership",
+    "R-label-anchor",
+    "R-selective-invalidation"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-architecture20",
+      "pointer": "/editFlow"
+    }
+  ],
+  "inputs": [
+    "base revision",
+    "node IDs",
+    "edit request",
+    "preserved constraints"
+  ],
+  "steps": [
+    "Classify presentation vs geometry vs content vs source correction.",
+    "Validate allowed targets and authority; create successor revision.",
+    "Recompute typed descendants and residuals, then update anchored marks/labels.",
+    "Produce semantic/presentation diff and unchanged-node hashes."
+  ],
+  "outputs": [
+    "bounded patch",
+    "affected-node manifest",
+    "new assets",
+    "residual report"
+  ],
+  "implementationSourceIds": [
+    "S-ir-proposal20",
+    "S-figureD"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

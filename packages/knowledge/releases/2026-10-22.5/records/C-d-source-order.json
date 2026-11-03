@@ -1,0 +1,32 @@
+{
+  "kind": "case",
+  "id": "C-d-source-order",
+  "title": "Daechi physical pages 3 and 4 are swapped",
+  "stage": "source",
+  "exam": "daechi-20261022",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-receiptD",
+      "pointer": "/sourcePageOrder"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Physical PDF order differs from printed question order.",
+  "cause": "Scanned page permutation.",
+  "expected": "Read physical pages in [1,2,4,3,5,6] logical order.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-source-order"
+  ],
+  "requiredChecks": [
+    "Every physical page appears once; questions 1 through 24 remain ordered."
+  ],
+  "limitation": "Exam-specific mapping.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

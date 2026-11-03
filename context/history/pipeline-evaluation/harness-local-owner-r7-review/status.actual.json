@@ -1,0 +1,222 @@
+{
+  "schema": "math-pipeline.r7-independent-source-review.v1",
+  "completedAt": "2026-10-22T15:50:24.034Z",
+  "classification": "Exact R7 source integration qualified; activation and all live effects held",
+  "sourcePins": {
+    "candidate": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering",
+    "common": "/home/palantirkc/worktrees/math-harness-native-20261022/agent-platform",
+    "nativeBase": "22e9e556cd027d6b2d748bcdd47eef044cf69768",
+    "selectedMain": "61d7865f623a8b2952041fde45b0d9225189b006",
+    "selectedTree": "a6564766fdf43a33021156379ff91beef621ee96",
+    "sourceSnapshotId": "local-source:3eb7c5f0bbf6a22186ec41e0720014f42785e3556a033e4cecf2b69c7b8c11e9",
+    "freeze": "/home/palantirkc/operations/math-pipeline-audit-20261022/harness-local-owner-r7/lead-r7-freeze.actual.json",
+    "freezeSha256": "892552fd10549a432ab5734bdd6c4d9dc7b897ae514d8bc3a40ae4e119915714",
+    "manifestSha256": "c7b7c8d90e72805b68046d78cfd0826b640d74200ebee9c91278c3027e5e7fd7",
+    "fullPatchSha256": "edad645864e916d3d7f3090e6d670cba20e74b3939e78669f986bc78629f020b",
+    "r6DeltaSha256": "1a198ccbb16d3d978db24c1969346fa30251452eb53925315200a3b7b7686870",
+    "exactFiles": 17,
+    "changedSinceR6": [
+      "architecture/git-work-native-source.json",
+      "src/cli.ts",
+      "src/native/git-work-boundary.test.ts",
+      "src/native/git-work-boundary.ts",
+      "src/native/git-work-owner.ts"
+    ],
+    "registeredPins": 152,
+    "checkedSourceInstalledPins": 180,
+    "priorEvidencePreserved": 1769,
+    "ontologyVersion": "0.2.0"
+  },
+  "sourceReadiness": {
+    "ready": true,
+    "scope": "Only the two required lease/final-await integration corrections and their actual selected-main availability; prior R5 multi-actor recovery and R6 graph qualification retained.",
+    "unresolvedFindings": 0,
+    "blockingFindingIds": [],
+    "priorR5": "Preserved unchanged recovery/authority semantics and previous independently qualified evidence.",
+    "priorR6": "Preserved complete main graph/provenance, original 967 blobs, all 1052 paths, 58 Tasks, 66 aliases, 68 dependencies and existing holds."
+  },
+  "activationReadiness": {
+    "ready": false,
+    "activation": false,
+    "nativeVerified": false,
+    "remainingGates": [
+      {
+        "id": "actual-Root-same-session-no-daemon",
+        "owner": "Actual user and Lead w9:p1",
+        "state": "required-before-live-effects",
+        "sessionId": "01a16201-59ee-7480-9cbd-65e383867ab9",
+        "evidence": "/home/palantirkc/operations/math-pipeline-audit-20261022/lead-runtime-transition.actual.json",
+        "recordedError": "ACTUAL_CODEX_SESSION_DESCRIPTOR_REQUIRED",
+        "action": "Resume this same native session using codex-herdr --no-daemon with the directed bypass flags, then perform actual guarded caller/process/session/pane readback. Launch arguments alone are insufficient. User owns capacity resume; preserve daemon and other sessions."
+      },
+      {
+        "id": "current-exact-activation-and-owner-CAS",
+        "owner": "Actual native Lead",
+        "state": "required-after-current-identity",
+        "action": "Refresh the activation/preparation packet for the exact frozen R7 source, registration and CLI hashes; reobserve current selected main, owner ref/head and control/scope revisions through the existing native owner. This review changes no activation, actual owner ref, scope, enrollment or canonical record and supplies no permission grant."
+      },
+      {
+        "id": "actual-distinct-executor-binding",
+        "owner": "Lead and actual assigned worker",
+        "state": "required-before-real-Run",
+        "action": "Bind the actual worker actor/session/pane/process and current enrollment epoch to its assigned bounded Task. The worker owns its Run/attempt/result; Lead scope/renewal is separate. Preserve original arm/event/receipt/source and sole palantirkc-jev-accounting authority with unknown liabilities."
+      },
+      {
+        "id": "Daechi-selected-external-artifact-P2",
+        "owner": "Lead and actual producer owner",
+        "state": "required-before-dependent-Daechi-execution",
+        "action": "Keep the separate selected-external-artifact P2 and actual cross-Work producer Task, artifact revision/digest and milestone dependency. Input custody and this source qualification do not establish the producer deliverable, rubric/eval or AcceptanceDecision."
+      }
+    ]
+  },
+  "findings": [],
+  "dispositionOfPriorFindings": [
+    {
+      "id": "R6-INTEGRATION-LEASE-DURATION",
+      "priorSeverity": "P1",
+      "disposition": "closed-for-exact-R7-source-qualification",
+      "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-owner.ts",
+      "line": 372,
+      "related": [
+        {
+          "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-boundary.ts",
+          "line": 439
+        },
+        {
+          "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-boundary.ts",
+          "line": 466
+        },
+        {
+          "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-boundary.ts",
+          "line": 633
+        },
+        {
+          "path": "/home/palantirkc/worktrees/math-harness-native-20261022/agent-platform/packages/work-continuity/src/git-work/git-owner-transaction.ts",
+          "line": 271
+        }
+      ],
+      "independentEvidence": [
+        "bounded-positive.actual.json",
+        "successor.actual.json",
+        "independent-real-graph.log",
+        "independent-successor.log"
+      ],
+      "reason": "The native lease is min(parent expiry, now + 180000ms); hook policy stays attenuated. Actual selected-main scope issuance, Work allocation and resulting-head read complete with a narrower 120s disposable parent. A separate actual-main Work successor completes with the 180s ceiling. Operation-local native snapshots preserve frozen qualified legacy-binding identities and use separate mutable array projections. Same-head reuse rechecks current source/caller/head/authority/epoch/expiry; distinct heads and subsequent operations qualify afresh. Common maintained verifiers and final CAS expiry remain intact.",
+      "remainingRepair": null
+    },
+    {
+      "id": "R6-INTEGRATION-FINAL-READBACK-CURRENTNESS",
+      "priorSeverity": "P2",
+      "disposition": "closed-for-exact-R7-source-qualification",
+      "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-boundary.ts",
+      "line": 489,
+      "related": [
+        {
+          "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-boundary.ts",
+          "line": 706
+        },
+        {
+          "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-owner.ts",
+          "line": 385
+        },
+        {
+          "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-owner.ts",
+          "line": 499
+        },
+        {
+          "path": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering/src/native/git-work-owner.ts",
+          "line": 517
+        }
+      ],
+      "independentEvidence": [
+        "final-caller.actual.json",
+        "final-caller.replay.actual.json",
+        "final-parent-expiry.actual.json",
+        "final-parent-expiry.replay.actual.json"
+      ],
+      "reason": "After the final maintained awaited read, exact sources, current scope/join, native caller/process, result ref head, applicable enrollment and expiry are reopened before completion. Independent actual-main final-read caller drift and real parent expiry withhold complete and leave the original once operation unknown, parent Work binding unassigned, original publication result and exact completed snapshot digest retained, and both original identity receipts unchanged. Re-entry does not publish again. Source/head/epoch/authority/lease drift and successor callback retention are additionally covered by source inspection plus the unchanged exact R7 targeted tests.",
+      "remainingRepair": null
+    }
+  ],
+  "independentVerification": {
+    "cases": 4,
+    "failures": 0,
+    "actualGraphAllocation": {
+      "issueMs": 31106,
+      "operationMs": 65333,
+      "totalMs": 96464,
+      "leaseMs": 119870,
+      "marginMs": 54537
+    },
+    "actualGraphSuccessor": {
+      "issueMs": 31317,
+      "seedAllocationMs": 66858,
+      "successorMs": 116116,
+      "totalMs": 214316,
+      "leaseCeilingMs": 180000
+    },
+    "finalCallerDrift": {
+      "error": "Error: LOCAL_LEASE_OR_NATIVE_CALLER_CHANGED",
+      "status": "unknown",
+      "publicationRetained": true,
+      "replayPublications": 0
+    },
+    "finalParentExpiry": {
+      "error": "Error: LOCAL_CURRENT_SCOPE_REQUIRED",
+      "status": "unknown",
+      "publicationRetained": true,
+      "replayPublications": 0
+    },
+    "serializedSnapshotProofRefused": "Error: V3_LEGACY_ACTUAL_SOURCE_QUALIFICATION_REQUIRED",
+    "sourceCheck": "concrete-local-owner-source-qualified"
+  },
+  "reusedEvidence": {
+    "affectedCases": 72,
+    "finalRelevantRetestCases": 16,
+    "newR7Cases": 15,
+    "priorActualMainCases": 3,
+    "finiteGuards": 12,
+    "selectedRootGuards": 5,
+    "strictTypes": "exact recorded affected/full checks reused",
+    "requiredNative": "673 pass / 2 timeouts, exact two unchanged cases then pass at 30s; no full clean rerun",
+    "unaffectedCommonAndRecoveryEvidencePreserved": true
+  },
+  "limitations": [
+    "Availability is demonstrated for the exact selected immutable 61d7865 main and these bounded disposable operations. No remote refresh was performed and no live production timing or acceptance is established. A shorter remaining parent or slower operation can still hold unknown; elapsed time does not renew authority.",
+    "The earlier 64383ms attempt failed before publication and is not a completed timing baseline. The implementer measured 35388ms issuance plus 93404ms allocation/readback (128808ms total) under concurrent disposable load. Independent timing is reported separately and does not establish a production speedup.",
+    "Only native boundary snapshot reuse is measured by the wrapper counts. The unchanged common successor independently performs its maintained lifecycle checks as well; these are neither skipped nor represented as globally cached verifier calls.",
+    "Unknown operations remain durable and queryable through the existing native control reader. The original result/head/snapshot and immutable canonical receipts are evidence, not recovered authority. No general publication-reconciliation command exists; source-owned reconciliation must reopen current sources, head, parent, caller, epoch and original receipts before any future decision.",
+    "If common fails before exposing a result or resulting-head callback, only the existing pending/unknown fence and canonical Git evidence may be available. No receipt or completion is fabricated. On tested drift the transient in-transaction lease rolls back to null; this is not a successful completion or authorization to replay.",
+    "Serialized persisted snapshots lose maintained in-memory qualification. The independent actual-main probe confirms V3_LEGACY_ACTUAL_SOURCE_QUALIFICATION_REQUIRED when used as proof. All existing legacy dependency holds remain effective.",
+    "No broad suite was duplicated. The required native check remains recorded as 673 pass and 2 timeout failures, followed by just those unchanged two cases passing with a 30000ms deadline. This is not a full clean rerun."
+  ],
+  "needsLeadInterview": [],
+  "nextBoundedAction": {
+    "owner": "Lead w9:p1",
+    "action": "Pull these structured findings through native completion wait. Retain source-qualified status at the exact freeze, then address the remaining actual identity/current activation/worker/artifact gates through their existing owners.",
+    "stopAt": "Independent review complete; no activation or live effects."
+  },
+  "effects": {
+    "sourceEdits": 0,
+    "commonInstalledOrPriorEvidenceWrites": 0,
+    "activation": false,
+    "nativeVerified": false,
+    "actualControlOpens": 0,
+    "actualControlScopeEnrollmentCanonicalRunEffects": 0,
+    "paidCalls": 0,
+    "remoteWork": 0,
+    "trustAuthenticationSessionDatabaseChanges": 0,
+    "dependencyInstallationOrLinkChanges": 0,
+    "actualRefsCommitsPublication": 0,
+    "newAgentsPanesOrMessages": 0,
+    "unknownLiabilitiesPreserved": true,
+    "fixtureEffects": "Only assigned evidence and explicit disposable owner/control/Git fixtures. Fixture refs/commits use read-only actual Git object alternates. Maintained helpers clean their disposable fixtures after assertions; durable logs, original receipt bytes, exact head/digest/timing and replay readback remain in the assigned evidence root."
+  },
+  "evaluation": null,
+  "acceptanceDecision": null,
+  "artifacts": {
+    "verification": "verification.actual.json",
+    "preservation": "pins.after.actual.json",
+    "reuse": "reused-evidence.actual.json"
+  }
+}

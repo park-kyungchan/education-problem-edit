@@ -1,0 +1,35 @@
+{
+  "kind": "case",
+  "id": "C-d-q18-transfer",
+  "title": "Q18 whole-question native selected-block transfer",
+  "stage": "native",
+  "exam": "daechi-20261022",
+  "question": 18,
+  "evidence": [
+    {
+      "sourceId": "S-copyF"
+    },
+    {
+      "sourceId": "S-guidanceF"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Whole-question transfer must retain proof, blanks, equations and picture.",
+  "cause": null,
+  "expected": "Native HWPML2X selected-block transfer retains 17 equations, one picture and seven tables.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-question-container",
+    "R-proportionate-checks"
+  ],
+  "requiredChecks": [
+    "Check selected block excludes Q19; scratch insertion/edit/reopen scope."
+  ],
+  "limitation": "OS clipboard Copy/Paste was not invoked; active transfer time is unknown and wall interval includes access-dialog waiting.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

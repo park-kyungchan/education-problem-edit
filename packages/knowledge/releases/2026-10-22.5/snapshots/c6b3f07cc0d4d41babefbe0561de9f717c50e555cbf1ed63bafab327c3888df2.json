@@ -1,0 +1,345 @@
+{
+  "schema": "math-editing.body-square-width-readback.v1",
+  "nativeFixturePdf": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/native-equations/proof-symbol-probe/proof-square-native.pdf",
+  "nativeFixturePdfSha256": "c727c33f50ecfe01a24101d43adf19668cabe70be87f9b72d1a22e5a8e16b0bd",
+  "measurementSource": "Existing native PDF; no new COM",
+  "nativeSingleSquareABCDInkWidthPt": 39.976318359375,
+  "nativeEqualityInkWidthPt": 90.37630462646484,
+  "nativeEqualityInterTermOperatorGapPt": 12.327362060546875,
+  "embeddedHyhwpEQAdvancesPt": {
+    "ABCD": 29.80799986839294,
+    "ABCE": 28.65984017372131,
+    "PQRS": 28.107840042114255,
+    "60": 12.342720336914061
+  },
+  "method": "ABCD and ABFE=EFCD use actual qualified native PDF ink bounds. ABCE/PQRS use same-or-shorter inherited letter advances plus 0.5pt allowance. ABCD=60 uses actual single-prefix ink plus observed native equality gap plus inherited digit advances and 0.5pt allowance. These are bounded capacity checks, not a new native render.",
+  "bodyWidthChanges": 0,
+  "items": [
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "1353065666",
+      "script": "box rm {ABCD}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 39.976318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.6636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "886402081",
+      "script": "box rm {ABCD}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 39.976318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.6636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "165475421",
+      "script": "box rm {ABCD} = 60",
+      "currentSz": {
+        "width": "6629",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 65.14640075683593,
+      "availableWidthPt": 66.29,
+      "headroomPt": 1.1435992431640756,
+      "widthChange": false,
+      "widthBefore": 6629,
+      "widthAfter": 6629
+    },
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "9099929",
+      "script": "box rm {PQRS}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 40.476318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.1636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "1207620953",
+      "script": "box rm {ABCD}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 39.976318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.6636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "54519740",
+      "script": "box rm {ABCD}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 39.976318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.6636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "919934403",
+      "script": "box rm {ABCE}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 40.476318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.1636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "202203529",
+      "script": "box rm {ABCE}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 40.476318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.1636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "gpt-6.1-sol-ultra",
+      "controlId": "1373235088",
+      "script": "box rm {ABFE} = box rm {EFCD}",
+      "currentSz": {
+        "width": "9666",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 90.37630462646484,
+      "availableWidthPt": 96.66,
+      "headroomPt": 6.283695373535153,
+      "widthChange": false,
+      "widthBefore": 9666,
+      "widthAfter": 9666
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "1210538517",
+      "script": "box rm {ABCD}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 39.976318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.6636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "723732044",
+      "script": "box rm {ABCD}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 39.976318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.6636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "1933470425",
+      "script": "box rm {ABCD} = 60",
+      "currentSz": {
+        "width": "6629",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 65.14640075683593,
+      "availableWidthPt": 66.29,
+      "headroomPt": 1.1435992431640756,
+      "widthChange": false,
+      "widthBefore": 6629,
+      "widthAfter": 6629
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "810874275",
+      "script": "box rm {PQRS}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 40.476318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.1636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "1089891055",
+      "script": "box rm {ABCD}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 39.976318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.6636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "1535965398",
+      "script": "box rm {ABCD}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 39.976318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.6636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "1537809727",
+      "script": "box rm {ABCE}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 40.476318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.1636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "1614322138",
+      "script": "box rm {ABCE}",
+      "currentSz": {
+        "width": "4264",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 40.476318359375,
+      "availableWidthPt": 42.64,
+      "headroomPt": 2.1636816406250006,
+      "widthChange": false,
+      "widthBefore": 4264,
+      "widthAfter": 4264
+    },
+    {
+      "dataset": "argon-high",
+      "controlId": "490166798",
+      "script": "box rm {ABFE} = box rm {EFCD}",
+      "currentSz": {
+        "width": "9666",
+        "widthRelTo": "ABSOLUTE",
+        "height": "1089",
+        "heightRelTo": "ABSOLUTE",
+        "protect": "0"
+      },
+      "inheritedInkOrConservativeEstimatePt": 90.37630462646484,
+      "availableWidthPt": 96.66,
+      "headroomPt": 6.283695373535153,
+      "widthChange": false,
+      "widthBefore": 9666,
+      "widthAfter": 9666
+    }
+  ],
+  "finalNativeCollisionVerification": "Lead final fresh native render; no body width mutation admitted/needed from this readback",
+  "acceptanceDecision": null
+}

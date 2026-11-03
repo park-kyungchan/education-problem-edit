@@ -1,0 +1,35 @@
+{
+  "kind": "rule",
+  "id": "R-native-editability",
+  "title": "Keep text, math and frames in native objects",
+  "stage": "question-layout",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-guide20",
+      "contains": "native frame"
+    },
+    {
+      "sourceId": "S-native21",
+      "pointer": "/editabilityProbe"
+    }
+  ],
+  "when": "An HWPX is required for later question editing.",
+  "do": [
+    "Use native text runs, EqEdit controls, paragraphs/tables for examples and proof blanks.",
+    "Rasterize only diagram appearance while retaining code and semantic sidecar."
+  ],
+  "avoid": [],
+  "check": [
+    "Package bindings and a targeted scratch edit check establish only their actual scope."
+  ],
+  "invalidates": [
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "SVG source editability is separate from direct editing of an embedded PNG in Hancom."
+}

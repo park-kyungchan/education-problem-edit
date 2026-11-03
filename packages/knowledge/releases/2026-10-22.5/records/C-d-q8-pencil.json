@@ -1,0 +1,41 @@
+{
+  "kind": "case",
+  "id": "C-d-q8-pencil",
+  "title": "Daechi Q8: Extra angle marks near B/C are student pencil additions.",
+  "stage": "regions",
+  "exam": "daechi-20261022",
+  "question": 8,
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "8-"
+    },
+    {
+      "sourceId": "S-optimizationF"
+    },
+    {
+      "sourceId": "S-finalF"
+    }
+  ],
+  "symptom": "Extra angle marks near B/C are student pencil additions.",
+  "cause": null,
+  "expected": "Exclude those marks from restoration while retaining original source evidence.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-mark-provenance",
+    "R-visual-semantics"
+  ],
+  "requiredChecks": [
+    "Pinned original/output region comparison.",
+    "Typed source-mark/semantic ownership coverage.",
+    "Only affected descendants invalidated."
+  ],
+  "limitation": "Source-specific user expectation and producer-reported v2 correction. This curator did not independently regrade the original image; causal attribution remains unproven.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

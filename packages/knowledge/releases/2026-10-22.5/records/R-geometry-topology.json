@@ -1,0 +1,41 @@
+{
+  "kind": "rule",
+  "id": "R-geometry-topology",
+  "title": "Construct dependent geometry from typed relationships",
+  "stage": "geometry",
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-figureD",
+      "contains": "const intersect="
+    },
+    {
+      "sourceId": "S-q11code20"
+    },
+    {
+      "sourceId": "S-architecture20",
+      "pointer": "/editFlow"
+    }
+  ],
+  "when": "A geometric edit should preserve incidence or center/foot relationships.",
+  "do": [
+    "Maintain stable point/segment/ray IDs and a construction DAG.",
+    "Specify intersection extent and branch; reject zero-length and near-parallel degeneracy.",
+    "Evaluate labels and marks after their owners."
+  ],
+  "avoid": [],
+  "check": [
+    "Incidence and source-required residuals hold; unchanged objects retain identity."
+  ],
+  "invalidates": [
+    "geometry",
+    "assets",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Existing finite constructors are seeds; the proposed universal DAG/validator is not installed."
+}

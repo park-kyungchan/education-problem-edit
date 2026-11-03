@@ -1,0 +1,35 @@
+{
+  "kind": "case",
+  "id": "C-j20-q11",
+  "title": "Illustrative O/I geometry with unresolved source rays",
+  "stage": "geometry",
+  "exam": "jungdong-20261020",
+  "question": 11,
+  "evidence": [
+    {
+      "sourceId": "S-q11approx20"
+    },
+    {
+      "sourceId": "S-q11verify20"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Original O/I positions, obscured rays and 23-degree arc endpoints could not be fully recovered.",
+  "cause": "Source occlusion and provenance ambiguity remain unresolved.",
+  "expected": "Use only the authorized illustrative acute triangle; keep the 23-degree annotation separate from solved constraints.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-uncertainty",
+    "R-geometry-topology"
+  ],
+  "requiredChecks": [
+    "Center-role residuals; single asset member change; original crop preserved."
+  ],
+  "limitation": "Historical tests establish finite roles and patch scope, not recovered source truth.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

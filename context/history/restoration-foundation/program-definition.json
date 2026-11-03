@@ -1,0 +1,127 @@
+{
+  "schema": "math-editing.program-definition.v1",
+  "revision": 4,
+  "stage": "interview-in-progress",
+  "requirements": {
+    "basisInputIds": [
+      "input-003",
+      "input-004",
+      "input-005",
+      "input-006",
+      "input-007",
+      "input-021"
+    ],
+    "productGoal": "A reusable mathematics problem-authoring domain program with precise contextual control of figures, diagrams and graphs.",
+    "pilotGoal": "Faithfully reconstruct the selected original printed examination, excluding student and grading marks.",
+    "authoringBoundary": {
+      "text": "native-editable-hwpx",
+      "equations": "native-equation-editor-objects",
+      "mathematicalVisuals": "externally-controlled-source-and-rendered-image-in-hwpx",
+      "nativeHwpxGeometryEditingRequired": false
+    },
+    "currentDeliveryBoundary": {
+      "authorityInputId": "input-021",
+      "deliverable": "format-independent-code-before-document-conversion",
+      "canonicalMathematics": "normalized-LaTeX-with-font-and-math-mode-intent",
+      "canonicalVisuals": "typed-semantics-presentation-and-source-code",
+      "documentConversionAllowed": false,
+      "laterTargetAdapters": [
+        "HWPX",
+        "DOCX"
+      ]
+    },
+    "nativeExecution": {
+      "host": "Herdr",
+      "namedAgentClis": [
+        "Codex",
+        "Claude",
+        "Antigravity",
+        "Grok",
+        "Muse"
+      ],
+      "behavioralCompatibility": "not-qualified",
+      "domainProgramInterface": "not-selected",
+      "agentLoopOwner": "Existing native agent CLIs"
+    },
+    "visualControlTiers": [
+      {
+        "id": "faithful-restoration-and-styling",
+        "requirement": "required-initially",
+        "inputId": "input-006",
+        "description": "Clean faithful restoration of original visuals with label placement and line styling.",
+        "qualificationStatus": "not-verified"
+      },
+      {
+        "id": "constraint-preserving-geometry",
+        "requirement": "progressive-after-verification",
+        "inputId": "input-006",
+        "description": "Change points or geometry while preserving established right-angle, parallelism, length and other conditions.",
+        "qualificationStatus": "not-verified"
+      },
+      {
+        "id": "parameter-linked-visuals",
+        "requirement": "progressive-after-verification",
+        "inputId": "input-006",
+        "description": "Link problem values, parameters or functions to visual changes.",
+        "qualificationStatus": "not-verified"
+      }
+    ],
+    "dependencyReductionPriority": [
+      {
+        "rank": 1,
+        "target": "external-paid-saas",
+        "inputId": "input-007"
+      },
+      {
+        "rank": 2,
+        "target": "windows-and-hancom-installation",
+        "inputId": "input-007"
+      }
+    ],
+    "visualEngineSelection": "unselected-pending-qualification",
+    "sourceRepresentationSelection": "unselected"
+  },
+  "executionPortfolio": {
+    "domainId": "mathematics-document-editing",
+    "projectId": "math-problem-restoration",
+    "workIds": [
+      "jungdong-grade8-midterm-2026",
+      "dual-route-authoring-pipeline-20261020"
+    ],
+    "taskContractPath": "argon-pipeline/harness-seed.json",
+    "paidApiBudgetUsd": 10,
+    "paidApiBudgetAuthorityInputId": "input-034",
+    "paidCallOwner": "math-argon-lead",
+    "nativeLeadPaneId": "w7:p8",
+    "problem3PilotHeld": true
+  },
+  "architectureProposals": [
+    {
+      "id": "PROP-DOMAIN-CLI",
+      "statement": "Expose bounded domain operations through typed file inputs and outputs so existing native agent CLIs can use the program without embedding another agent runtime or a model-provider client.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-ACCEPTANCE"
+      ]
+    },
+    {
+      "id": "PROP-VISUAL-SOURCE",
+      "statement": "Keep source-backed mathematical relationships, presentation settings, engine-specific source and rendered assets distinct. Recognized image coordinates alone do not establish mathematical relationships.",
+      "status": "unselected",
+      "gatedByQuestionIds": [
+        "Q-AMBIGUITY",
+        "Q-ACCEPTANCE"
+      ]
+    }
+  ],
+  "visualDraftContract": "contract.ts#MathematicalVisualDraft",
+  "visualDraftInstances": [],
+  "ownership": {
+    "agentLoopToolsSessions": "Existing native agent CLIs",
+    "terminalWorkspace": "Herdr",
+    "domainMeaning": "Mathematics problem-authoring program",
+    "commonSemantics": "Source-owned common Harness and immutable Ontology 0.2.0"
+  },
+  "dependenciesAndEngines": "Portable TypeScript/SVG pilot bundles 1 and 2 are verified. Problem 1 scoped HWPX native rendering and DOCX structure were checked; the user positively reviewed DOCX in Word. General adapter equivalence, Google equations and equation edit/save remain unqualified. Problem 3 is held.",
+  "acceptanceDecision": null
+}

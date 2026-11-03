@@ -1,0 +1,36 @@
+{
+  "kind": "rule",
+  "id": "R-label-anchor",
+  "title": "Anchor labels to owners and resolve collisions in presentation",
+  "stage": "assets",
+  "evidenceClass": "user-requirement",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "114도"
+    },
+    {
+      "sourceId": "S-ir-proposal20",
+      "contains": "type Label"
+    }
+  ],
+  "when": "A label or degree value overlaps a source segment.",
+  "do": [
+    "Bind label to the angle/point/relation it names.",
+    "Adjust label offset/leader within a bounded local region without moving source geometry."
+  ],
+  "avoid": [],
+  "check": [
+    "Degree text avoids segment AB and still points to the intended AIB angle."
+  ],
+  "invalidates": [
+    "assets",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Daechi Q9 feedback identifies overlap; this space does not certify its live repair."
+}

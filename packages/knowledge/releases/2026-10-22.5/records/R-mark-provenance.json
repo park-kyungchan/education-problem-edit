@@ -1,0 +1,39 @@
+{
+  "kind": "rule",
+  "id": "R-mark-provenance",
+  "title": "Classify marks by role and provenance before cleanup",
+  "stage": "regions",
+  "evidenceClass": "user-requirement",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "각B와 각C"
+    },
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "선분 AP"
+    }
+  ],
+  "when": "A source contains pencil marks mixed with printed geometry.",
+  "do": [
+    "Inventory every segment, arc, arrow, tick, fill and label.",
+    "Use topology, repeated print style, stroke continuity and source context as evidence; grayscale alone is insufficient.",
+    "Retain ambiguous marks in the ledger; exclude confirmed student marks only from the restored layer."
+  ],
+  "avoid": [],
+  "check": [
+    "Printed AP/angle marks retained; student B/C additions excluded; original crop unchanged."
+  ],
+  "invalidates": [
+    "semantics",
+    "geometry",
+    "assets",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "The feedback is direct evidence for these Daechi cases; a general automatic classifier is not qualified."
+}

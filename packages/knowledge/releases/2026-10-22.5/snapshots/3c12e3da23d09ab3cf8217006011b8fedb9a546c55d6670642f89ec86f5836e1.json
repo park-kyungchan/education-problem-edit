@@ -1,0 +1,46 @@
+{
+  "schema": "math-editing.code-feasibility-evaluation-design.v1",
+  "status": "designed-not-executed",
+  "target": "Pre-export image-to-code/control pipeline",
+  "cases": {
+    "path": "/home/palantirkc/operations/math-problem-optimization-20261020/architecture-research/offline-feasibility-cases.proposal.json",
+    "sha256": "594edfb1b32e909a7b15aea135142e4ff01f87a90e64be462db85197da88bf41"
+  },
+  "proposedFirstSequence": [
+    "Use the existing Q11 scene to prove label-only changes preserve geometry and vertex edits recompute O/I/spokes; retain 23-degree annotation uncertainty.",
+    "Use a marked geometry crop to qualify Jev presence+Box and two-interpretation handling against independently reviewed regions.",
+    "Use a printed 보기/proof frame to prove layout objects retain text/math structure rather than flattening into a diagram raster."
+  ],
+  "baseline": "Pin existing source crops/manual text/current scene code/renderer for each selected case; historical document-oriented durations are context only.",
+  "candidate": "Same evidence, requests, expected behavior, evaluator, fonts/viewport; only declared typed-IR/Jev-routing treatment changes.",
+  "independentCriteria": [
+    "No source fact invented; unknowns and authorized approximations explicit.",
+    "Original evidence retained; student marks absent only from restored content.",
+    "Stable IDs, topology, admissible constraints and source bindings survive edits.",
+    "Text/math and layout frames remain structured code.",
+    "No claimed model confidence substitutes for source truth or user acceptance."
+  ],
+  "metrics": [
+    "Request-to-reviewed-code seconds by research/recognition/synthesis/preview/review phase",
+    "Provider-reported paid USD and retained uncertainty",
+    "Changed/invalidated nodes and rebuild count",
+    "Source-interpretation error and escalation counts",
+    "Geometry residuals, source coverage and edit preservation"
+  ],
+  "boundedTrialProposal": {
+    "caseCount": 3,
+    "changeAttemptsPerCase": 2,
+    "paidImageCallLimit": "Not admitted; set in implementation scope",
+    "stopOn": [
+      "Source fact fabricated",
+      "Missing source/expected outcome",
+      "Unsolved/degenerate geometry",
+      "Cost uncertainty exceeds admitted reservation",
+      "Scope expands to document export"
+    ]
+  },
+  "numericalLatencyGoal": null,
+  "selectionThresholds": "Calibrate on independent case labels; no universal Jev confidence threshold assumed.",
+  "successClaim": "Separate capability gain, preserved quality, detection gain and insufficient evidence before efficiency comparison.",
+  "acceptanceDecision": null
+}

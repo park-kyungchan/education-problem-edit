@@ -1,0 +1,50 @@
+{
+    "schema":  "jungdong.owned-native-receipt.v1",
+    "startedAt":  "2026-10-21T07:49:40.6375210Z",
+    "inputPath":  "C:\\Users\\packr\\Desktop\\문제편집\\jungdong-jev-new-20261021\\2026-10-21T07-49-37-702Z\\jungdong-new-comparison.hwpx",
+    "expectedSha256":  "895bc5628ac998337e96e66aec451eff8236db1afa1e561638f31cb9ac77f0de",
+    "stage":  "native-export-and-scratch-probe-recorded",
+    "openSucceeded":  true,
+    "pdfExportSucceeded":  true,
+    "ownedInstanceQuit":  true,
+    "registryChanged":  false,
+    "securityModuleChanged":  false,
+    "usedGetActiveObject":  false,
+    "acceptanceDecision":  null,
+    "inputCopySha256":  "895bc5628ac998337e96e66aec451eff8236db1afa1e561638f31cb9ac77f0de",
+    "preexistingHwpProcesses":  [
+
+                                ],
+    "ownedProcessId":  13172,
+    "ownedWindowHandle":  "1441974",
+    "ownedStartTime":  "2026-10-21T07:49:40.8392223Z",
+    "ownershipMethod":  "Fresh COM WindowHandle resolved to Hwp PID absent from preexisting baseline",
+    "actualHancomVersion":  "13, 0, 0, 3457",
+    "nativePageCount":  21,
+    "controlCounts":  {
+                          "equations":  162,
+                          "pictures":  36,
+                          "tables":  45
+                      },
+    "controlTraversalLimit":  "HeadCtrl/Next only; nested-table reachability is not assumed. Package XML is checked independently.",
+    "pdfPath":  "C:\\Users\\packr\\Desktop\\문제편집\\jungdong-jev-new-20261021\\2026-10-21T07-49-37-702Z\\native-working\\jungdong-native-r1.pdf",
+    "pdfSha256":  "1748e8799a9935b90802207df76da84dacd4395d094ede33cb304f0b7626e59f",
+    "editabilityProbe":  {
+                             "bodyInsertSucceeded":  true,
+                             "equationInsertSucceeded":  true,
+                             "scratchSaveSucceeded":  true,
+                             "scratchReopenSucceeded":  true,
+                             "bodyMarkerFound":  true,
+                             "marker":  "JUNGDONG_EDITABILITY_PROBE_ONLY",
+                             "equationScript":  "x+1",
+                             "scope":  "Scratch copy only; final HWPX and exported PDF remain unchanged",
+                             "scratchPath":  "C:\\Users\\packr\\Desktop\\문제편집\\jungdong-jev-new-20261021\\2026-10-21T07-49-37-702Z\\native-working\\jungdong-editability-scratch-r1.hwpx",
+                             "scratchSha256":  "3d2d729ff316d61e9557a756d5e8718cc52697a488b2f427de715a9e2806a13c"
+                         },
+    "originalInputSha256After":  "895bc5628ac998337e96e66aec451eff8236db1afa1e561638f31cb9ac77f0de",
+    "originalInputUnchanged":  true,
+    "preexistingProcessesAfter":  [
+
+                                  ],
+    "finishedAt":  "2026-10-21T07:50:05.4352315Z"
+}

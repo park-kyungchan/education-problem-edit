@@ -1,0 +1,9 @@
+{
+  "schema": "math-editing.knowledge-current.v1",
+  "release": "2026-10-22.5",
+  "manifestSha256": "ccc05cb8f17c13162afe7abb0a665f2966e87c713687149b5976f0fb6668f46a",
+  "selectedAt": "2026-10-22T10:35:45.687Z",
+  "status": "locally-validated",
+  "ingestionReceipt": "/home/palantirkc/operations/math-editing-knowledge-20261022/v3-ingestion.actual.json",
+  "acceptanceDecision": null
+}

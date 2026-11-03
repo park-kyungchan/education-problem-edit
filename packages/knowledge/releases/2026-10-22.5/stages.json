@@ -1,0 +1,215 @@
+[
+  {
+    "id": "routing",
+    "layer": "evidence",
+    "input": [
+      "request",
+      "current authority",
+      "known capability evidence"
+    ],
+    "output": [
+      "bounded route",
+      "selected source IDs"
+    ],
+    "invariant": "Configured, callable, authenticated and behaviorally qualified are distinct.",
+    "defaultExecutor": "Deterministic lookup; native agent only for unresolved scope"
+  },
+  {
+    "id": "source",
+    "layer": "evidence",
+    "input": [
+      "PDF bytes"
+    ],
+    "output": [
+      "source hash",
+      "physical/logical page map"
+    ],
+    "invariant": "One immutable source identity; physical page and reading order are different fields.",
+    "defaultExecutor": "Local hash/PDF readers"
+  },
+  {
+    "id": "regions",
+    "layer": "evidence",
+    "input": [
+      "page images",
+      "question boundaries"
+    ],
+    "output": [
+      "typed regions",
+      "mark provenance",
+      "ambiguity ledger"
+    ],
+    "invariant": "No printed mark is erased solely for resembling pencil.",
+    "defaultExecutor": "Bounded perception with preserved original crops"
+  },
+  {
+    "id": "transcription",
+    "layer": "meaning",
+    "input": [
+      "regions",
+      "printed text/math"
+    ],
+    "output": [
+      "question/block/run tree",
+      "text styling",
+      "unresolved readings"
+    ],
+    "invariant": "Exact symbols, values, ordering and underline spans remain source-bound.",
+    "defaultExecutor": "Bounded transcription plus deterministic cardinality checks"
+  },
+  {
+    "id": "semantics",
+    "layer": "meaning",
+    "input": [
+      "transcription",
+      "region claims"
+    ],
+    "output": [
+      "entities",
+      "incidence",
+      "angle rays",
+      "parameters",
+      "topology"
+    ],
+    "invariant": "Source assertions, inference and authorized approximation remain separate.",
+    "defaultExecutor": "Typed synthesis with deterministic reference checks"
+  },
+  {
+    "id": "geometry",
+    "layer": "construction",
+    "input": [
+      "semantic topology",
+      "presentation parameters"
+    ],
+    "output": [
+      "construction DAG",
+      "resolved coordinates",
+      "residuals"
+    ],
+    "invariant": "Coordinates do not establish source truth; degenerate/ambiguous branches remain explicit.",
+    "defaultExecutor": "Pure finite geometry code"
+  },
+  {
+    "id": "assets",
+    "layer": "construction",
+    "input": [
+      "geometry",
+      "style",
+      "labels"
+    ],
+    "output": [
+      "SVG",
+      "PNG",
+      "asset role/hash map"
+    ],
+    "invariant": "Retain arrow/tick/fill/dash semantics and anchored labels.",
+    "defaultExecutor": "Pinned deterministic SVG/raster tools"
+  },
+  {
+    "id": "equations",
+    "layer": "document",
+    "input": [
+      "math runs",
+      "EqEdit adapter",
+      "native metric cache"
+    ],
+    "output": [
+      "native equations",
+      "metric bindings"
+    ],
+    "invariant": "Script identity, font/version, baseline, outer margin and ink extent are distinct.",
+    "defaultExecutor": "Qualified EqEdit normalization and exact metric lookup"
+  },
+  {
+    "id": "question-layout",
+    "layer": "document",
+    "input": [
+      "runs",
+      "figures",
+      "frames"
+    ],
+    "output": [
+      "question container",
+      "local layout",
+      "content bindings"
+    ],
+    "invariant": "A whole question owns its text, equations, images and nested frames.",
+    "defaultExecutor": "Native paragraph/table serializer"
+  },
+  {
+    "id": "page-layout",
+    "layer": "document",
+    "input": [
+      "question boxes",
+      "template",
+      "measured extents"
+    ],
+    "output": [
+      "page slots",
+      "header/footer",
+      "overflow report"
+    ],
+    "invariant": "Page placement does not mutate semantic content or diagram topology.",
+    "defaultExecutor": "Template and bounded content reflow"
+  },
+  {
+    "id": "package",
+    "layer": "document",
+    "input": [
+      "native objects",
+      "page layout",
+      "assets"
+    ],
+    "output": [
+      "HWPX",
+      "package manifest"
+    ],
+    "invariant": "ZIP/XML/reference validity is different from native appearance and source accuracy.",
+    "defaultExecutor": "Existing serializer and independent package reader"
+  },
+  {
+    "id": "native",
+    "layer": "evaluation",
+    "input": [
+      "HWPX copy",
+      "native environment identity"
+    ],
+    "output": [
+      "PDF",
+      "native observations",
+      "scratch behavior checks"
+    ],
+    "invariant": "Own the actual COM process; inspect only checks invalidated by this change.",
+    "defaultExecutor": "Owned Hancom COM and PDF readers"
+  },
+  {
+    "id": "delivery",
+    "layer": "evaluation",
+    "input": [
+      "versioned HWPX",
+      "actual readback"
+    ],
+    "output": [
+      "delivered hash",
+      "limitations",
+      "user completion reference"
+    ],
+    "invariant": "Completion direction is not automatic semantic accuracy acceptance.",
+    "defaultExecutor": "Local copy and hash readback"
+  },
+  {
+    "id": "feedback",
+    "layer": "evaluation",
+    "input": [
+      "user/evaluator observation",
+      "artifact/node IDs"
+    ],
+    "output": [
+      "defect attribution",
+      "minimal invalidation",
+      "proposed eval cases"
+    ],
+    "invariant": "Trace backward to evidence and forward through dependencies; do not fabricate a root cause or savings.",
+    "defaultExecutor": "Typed feedback capture and deterministic graph traversal"
+  }
+]

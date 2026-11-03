@@ -1,0 +1,3093 @@
+{
+  "nodes": [
+    {
+      "id": "domain:math-editing",
+      "kind": "domain"
+    },
+    {
+      "id": "layer:evidence",
+      "kind": "layer"
+    },
+    {
+      "id": "layer:meaning",
+      "kind": "layer"
+    },
+    {
+      "id": "layer:construction",
+      "kind": "layer"
+    },
+    {
+      "id": "layer:document",
+      "kind": "layer"
+    },
+    {
+      "id": "layer:evaluation",
+      "kind": "layer"
+    },
+    {
+      "id": "layer:source-library",
+      "kind": "layer"
+    },
+    {
+      "id": "stage:routing",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:source",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:regions",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:transcription",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:semantics",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:geometry",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:assets",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:equations",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:question-layout",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:page-layout",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:package",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:native",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:delivery",
+      "kind": "stage"
+    },
+    {
+      "id": "stage:feedback",
+      "kind": "stage"
+    },
+    {
+      "id": "R-source-order",
+      "kind": "record"
+    },
+    {
+      "id": "R-uncertainty",
+      "kind": "record"
+    },
+    {
+      "id": "R-mark-provenance",
+      "kind": "record"
+    },
+    {
+      "id": "R-visual-semantics",
+      "kind": "record"
+    },
+    {
+      "id": "R-geometry-topology",
+      "kind": "record"
+    },
+    {
+      "id": "R-parameter-ownership",
+      "kind": "record"
+    },
+    {
+      "id": "R-label-anchor",
+      "kind": "record"
+    },
+    {
+      "id": "R-native-editability",
+      "kind": "record"
+    },
+    {
+      "id": "R-equation-tokens",
+      "kind": "record"
+    },
+    {
+      "id": "R-equation-metrics",
+      "kind": "record"
+    },
+    {
+      "id": "R-equation-alignment",
+      "kind": "record"
+    },
+    {
+      "id": "R-underline",
+      "kind": "record"
+    },
+    {
+      "id": "R-question-container",
+      "kind": "record"
+    },
+    {
+      "id": "R-layout-separation",
+      "kind": "record"
+    },
+    {
+      "id": "R-section-properties",
+      "kind": "record"
+    },
+    {
+      "id": "R-native-owner",
+      "kind": "record"
+    },
+    {
+      "id": "R-proportionate-checks",
+      "kind": "record"
+    },
+    {
+      "id": "R-selective-invalidation",
+      "kind": "record"
+    },
+    {
+      "id": "R-paid-recovery",
+      "kind": "record"
+    },
+    {
+      "id": "R-research-reuse",
+      "kind": "record"
+    },
+    {
+      "id": "R-feedback-lineage",
+      "kind": "record"
+    },
+    {
+      "id": "R-eval-boundary",
+      "kind": "record"
+    },
+    {
+      "id": "R-asset-role",
+      "kind": "record"
+    },
+    {
+      "id": "R-raster-style",
+      "kind": "record"
+    },
+    {
+      "id": "P-source",
+      "kind": "record"
+    },
+    {
+      "id": "P-provenance",
+      "kind": "record"
+    },
+    {
+      "id": "P-transcription",
+      "kind": "record"
+    },
+    {
+      "id": "P-image-code",
+      "kind": "record"
+    },
+    {
+      "id": "P-geometry-edit",
+      "kind": "record"
+    },
+    {
+      "id": "P-equations",
+      "kind": "record"
+    },
+    {
+      "id": "P-frames",
+      "kind": "record"
+    },
+    {
+      "id": "P-copy",
+      "kind": "record"
+    },
+    {
+      "id": "P-page",
+      "kind": "record"
+    },
+    {
+      "id": "P-package",
+      "kind": "record"
+    },
+    {
+      "id": "P-native",
+      "kind": "record"
+    },
+    {
+      "id": "P-routing",
+      "kind": "record"
+    },
+    {
+      "id": "P-feedback",
+      "kind": "record"
+    },
+    {
+      "id": "P-maintenance",
+      "kind": "record"
+    },
+    {
+      "id": "C-j20-proof-width",
+      "kind": "record"
+    },
+    {
+      "id": "C-j20-body-width",
+      "kind": "record"
+    },
+    {
+      "id": "C-j20-q11",
+      "kind": "record"
+    },
+    {
+      "id": "C-j21-spacing",
+      "kind": "record"
+    },
+    {
+      "id": "C-j21-box-port",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-source-order",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-base-spacing",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-template",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q6-dash",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q8-pencil",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q9-angle",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q10-fill",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q11-arrow",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q17-frame",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q18-frame",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q20-arrow",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q21-AP",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q24-ticks",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-underline",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-raster-dash",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-q18-transfer",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-uncertain-emphasis",
+      "kind": "record"
+    },
+    {
+      "id": "R-hancom-surface",
+      "kind": "record"
+    },
+    {
+      "id": "R-selected-image-patch",
+      "kind": "record"
+    },
+    {
+      "id": "P-selected-image-patch",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-v3-image-only",
+      "kind": "record"
+    },
+    {
+      "id": "P-native-transfer",
+      "kind": "record"
+    },
+    {
+      "id": "R-layout-choice",
+      "kind": "record"
+    },
+    {
+      "id": "P-layout-selection",
+      "kind": "record"
+    },
+    {
+      "id": "P-reference-layout",
+      "kind": "record"
+    },
+    {
+      "id": "R-retrieval-candidate-integrity",
+      "kind": "record"
+    },
+    {
+      "id": "P-retrieval-audit",
+      "kind": "record"
+    },
+    {
+      "id": "C-d-reference-layout",
+      "kind": "record"
+    },
+    {
+      "id": "S-guide20",
+      "kind": "source"
+    },
+    {
+      "id": "S-scenes20",
+      "kind": "source"
+    },
+    {
+      "id": "S-imagecheck20",
+      "kind": "source"
+    },
+    {
+      "id": "S-q11approx20",
+      "kind": "source"
+    },
+    {
+      "id": "S-q11code20",
+      "kind": "source"
+    },
+    {
+      "id": "S-q11verify20",
+      "kind": "source"
+    },
+    {
+      "id": "S-normalizer20",
+      "kind": "source"
+    },
+    {
+      "id": "S-normalverify20",
+      "kind": "source"
+    },
+    {
+      "id": "S-width20",
+      "kind": "source"
+    },
+    {
+      "id": "S-widthread20",
+      "kind": "source"
+    },
+    {
+      "id": "S-measure20",
+      "kind": "source"
+    },
+    {
+      "id": "S-render20",
+      "kind": "source"
+    },
+    {
+      "id": "S-recovery20",
+      "kind": "source"
+    },
+    {
+      "id": "S-hancom-research20",
+      "kind": "source"
+    },
+    {
+      "id": "S-visual-research20",
+      "kind": "source"
+    },
+    {
+      "id": "S-jev-research20",
+      "kind": "source"
+    },
+    {
+      "id": "S-ir-proposal20",
+      "kind": "source"
+    },
+    {
+      "id": "S-architecture20",
+      "kind": "source"
+    },
+    {
+      "id": "S-evaluation20",
+      "kind": "source"
+    },
+    {
+      "id": "S-reuse21",
+      "kind": "source"
+    },
+    {
+      "id": "S-ir21",
+      "kind": "source"
+    },
+    {
+      "id": "S-compose21",
+      "kind": "source"
+    },
+    {
+      "id": "S-native21",
+      "kind": "source"
+    },
+    {
+      "id": "S-source21",
+      "kind": "source"
+    },
+    {
+      "id": "S-accept21",
+      "kind": "source"
+    },
+    {
+      "id": "S-checkpoint21",
+      "kind": "source"
+    },
+    {
+      "id": "S-receiptD",
+      "kind": "source"
+    },
+    {
+      "id": "S-contentD",
+      "kind": "source"
+    },
+    {
+      "id": "S-figureD",
+      "kind": "source"
+    },
+    {
+      "id": "S-authorD",
+      "kind": "source"
+    },
+    {
+      "id": "S-renderD",
+      "kind": "source"
+    },
+    {
+      "id": "S-feedbackD",
+      "kind": "source"
+    },
+    {
+      "id": "S-inputsF",
+      "kind": "source"
+    },
+    {
+      "id": "S-authorF",
+      "kind": "source"
+    },
+    {
+      "id": "S-metricsF",
+      "kind": "source"
+    },
+    {
+      "id": "S-measureF",
+      "kind": "source"
+    },
+    {
+      "id": "S-alignF",
+      "kind": "source"
+    },
+    {
+      "id": "S-pageF",
+      "kind": "source"
+    },
+    {
+      "id": "S-questionF",
+      "kind": "source"
+    },
+    {
+      "id": "S-bindingsF",
+      "kind": "source"
+    },
+    {
+      "id": "S-buildF",
+      "kind": "source"
+    },
+    {
+      "id": "S-finalF",
+      "kind": "source"
+    },
+    {
+      "id": "S-verifyF",
+      "kind": "source"
+    },
+    {
+      "id": "S-copyF",
+      "kind": "source"
+    },
+    {
+      "id": "S-guidanceF",
+      "kind": "source"
+    },
+    {
+      "id": "S-optimizationF",
+      "kind": "source"
+    },
+    {
+      "id": "S-feedbackgraphF",
+      "kind": "source"
+    },
+    {
+      "id": "S-observationsF",
+      "kind": "source"
+    },
+    {
+      "id": "S-timeF",
+      "kind": "source"
+    },
+    {
+      "id": "S-rasterF",
+      "kind": "source"
+    },
+    {
+      "id": "S-rubric22",
+      "kind": "source"
+    },
+    {
+      "id": "S-eval22",
+      "kind": "source"
+    },
+    {
+      "id": "S-verifypolicy22",
+      "kind": "source"
+    },
+    {
+      "id": "S-hancom-capture",
+      "kind": "source"
+    },
+    {
+      "id": "S-hancom-index",
+      "kind": "source"
+    },
+    {
+      "id": "S-hancom-boundary",
+      "kind": "source"
+    },
+    {
+      "id": "S-imagepatch-guide",
+      "kind": "source"
+    },
+    {
+      "id": "S-imagepatch-receipt",
+      "kind": "source"
+    },
+    {
+      "id": "S-imagepatch-code",
+      "kind": "source"
+    },
+    {
+      "id": "S-imagepatch-entry",
+      "kind": "source"
+    },
+    {
+      "id": "S-imagepatch-proof",
+      "kind": "source"
+    },
+    {
+      "id": "S-imagepatch-job",
+      "kind": "source"
+    },
+    {
+      "id": "S-transfer-discussion",
+      "kind": "source"
+    },
+    {
+      "id": "S-layout-direction",
+      "kind": "source"
+    },
+    {
+      "id": "S-hwp-inputs",
+      "kind": "source"
+    },
+    {
+      "id": "S-hwp-handoff",
+      "kind": "source"
+    },
+    {
+      "id": "S-hwp-verification",
+      "kind": "source"
+    },
+    {
+      "id": "S-hwp-procedure",
+      "kind": "source"
+    },
+    {
+      "id": "S-hwp-layout-code",
+      "kind": "source"
+    },
+    {
+      "id": "S-hwp-native-code",
+      "kind": "source"
+    },
+    {
+      "id": "S-benchmark-measurements",
+      "kind": "source"
+    },
+    {
+      "id": "S-benchmark-grading",
+      "kind": "source"
+    },
+    {
+      "id": "S-benchmark-report",
+      "kind": "source"
+    },
+    {
+      "id": "S-jev-measurements",
+      "kind": "source"
+    },
+    {
+      "id": "S-jev-audit",
+      "kind": "source"
+    },
+    {
+      "id": "S-jev-consumption",
+      "kind": "source"
+    }
+  ],
+  "edges": [
+    {
+      "from": "domain:math-editing",
+      "to": "layer:evidence",
+      "relation": "contains"
+    },
+    {
+      "from": "domain:math-editing",
+      "to": "layer:meaning",
+      "relation": "contains"
+    },
+    {
+      "from": "domain:math-editing",
+      "to": "layer:construction",
+      "relation": "contains"
+    },
+    {
+      "from": "domain:math-editing",
+      "to": "layer:document",
+      "relation": "contains"
+    },
+    {
+      "from": "domain:math-editing",
+      "to": "layer:evaluation",
+      "relation": "contains"
+    },
+    {
+      "from": "domain:math-editing",
+      "to": "layer:source-library",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:evidence",
+      "to": "stage:routing",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:evidence",
+      "to": "stage:source",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:evidence",
+      "to": "stage:regions",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:meaning",
+      "to": "stage:transcription",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:meaning",
+      "to": "stage:semantics",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:construction",
+      "to": "stage:geometry",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:construction",
+      "to": "stage:assets",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:document",
+      "to": "stage:equations",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:document",
+      "to": "stage:question-layout",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:document",
+      "to": "stage:page-layout",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:document",
+      "to": "stage:package",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:evaluation",
+      "to": "stage:native",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:evaluation",
+      "to": "stage:delivery",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:evaluation",
+      "to": "stage:feedback",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-guide20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-scenes20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-imagecheck20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-q11approx20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-q11code20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-q11verify20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-normalizer20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-normalverify20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-width20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-widthread20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-measure20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-render20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-recovery20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hancom-research20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-visual-research20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-jev-research20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-ir-proposal20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-architecture20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-evaluation20",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-reuse21",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-ir21",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-compose21",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-native21",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-source21",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-accept21",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-checkpoint21",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-receiptD",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-contentD",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-figureD",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-authorD",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-renderD",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-feedbackD",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-inputsF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-authorF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-metricsF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-measureF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-alignF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-pageF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-questionF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-bindingsF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-buildF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-finalF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-verifyF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-copyF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-guidanceF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-optimizationF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-feedbackgraphF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-observationsF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-timeF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-rasterF",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-rubric22",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-eval22",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-verifypolicy22",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hancom-capture",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hancom-index",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hancom-boundary",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-imagepatch-guide",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-imagepatch-receipt",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-imagepatch-code",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-imagepatch-entry",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-imagepatch-proof",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-imagepatch-job",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-transfer-discussion",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-layout-direction",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hwp-inputs",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hwp-handoff",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hwp-verification",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hwp-procedure",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hwp-layout-code",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-hwp-native-code",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-benchmark-measurements",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-benchmark-grading",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-benchmark-report",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-jev-measurements",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-jev-audit",
+      "relation": "contains"
+    },
+    {
+      "from": "layer:source-library",
+      "to": "S-jev-consumption",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:source",
+      "to": "R-source-order",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:semantics",
+      "to": "R-uncertainty",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:regions",
+      "to": "R-mark-provenance",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "R-visual-semantics",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:geometry",
+      "to": "R-geometry-topology",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:semantics",
+      "to": "R-parameter-ownership",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "R-label-anchor",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:question-layout",
+      "to": "R-native-editability",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "R-equation-tokens",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "R-equation-metrics",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "R-equation-alignment",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:transcription",
+      "to": "R-underline",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:question-layout",
+      "to": "R-question-container",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:page-layout",
+      "to": "R-layout-separation",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:package",
+      "to": "R-section-properties",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:native",
+      "to": "R-native-owner",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:native",
+      "to": "R-proportionate-checks",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:feedback",
+      "to": "R-selective-invalidation",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "R-paid-recovery",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "R-research-reuse",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:feedback",
+      "to": "R-feedback-lineage",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:feedback",
+      "to": "R-eval-boundary",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "R-asset-role",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "R-raster-style",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:source",
+      "to": "P-source",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:regions",
+      "to": "P-provenance",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:transcription",
+      "to": "P-transcription",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:geometry",
+      "to": "P-image-code",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:geometry",
+      "to": "P-geometry-edit",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "P-equations",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:question-layout",
+      "to": "P-frames",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:question-layout",
+      "to": "P-copy",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:page-layout",
+      "to": "P-page",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:package",
+      "to": "P-package",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:native",
+      "to": "P-native",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "P-routing",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:feedback",
+      "to": "P-feedback",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:feedback",
+      "to": "P-maintenance",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "C-j20-proof-width",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "C-j20-body-width",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:geometry",
+      "to": "C-j20-q11",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "C-j21-spacing",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "C-j21-box-port",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:source",
+      "to": "C-d-source-order",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "C-d-base-spacing",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:page-layout",
+      "to": "C-d-template",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "C-d-q6-dash",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:regions",
+      "to": "C-d-q8-pencil",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "C-d-q9-angle",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "C-d-q10-fill",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "C-d-q11-arrow",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:equations",
+      "to": "C-d-q17-frame",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:question-layout",
+      "to": "C-d-q18-frame",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "C-d-q20-arrow",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:regions",
+      "to": "C-d-q21-AP",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "C-d-q24-ticks",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:transcription",
+      "to": "C-d-underline",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:assets",
+      "to": "C-d-raster-dash",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:native",
+      "to": "C-d-q18-transfer",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:regions",
+      "to": "C-d-uncertain-emphasis",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "R-hancom-surface",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:package",
+      "to": "R-selected-image-patch",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:package",
+      "to": "P-selected-image-patch",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:package",
+      "to": "C-d-v3-image-only",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:native",
+      "to": "P-native-transfer",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "R-layout-choice",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "P-layout-selection",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:page-layout",
+      "to": "P-reference-layout",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "R-retrieval-candidate-integrity",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "P-retrieval-audit",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:page-layout",
+      "to": "C-d-reference-layout",
+      "relation": "contains"
+    },
+    {
+      "from": "stage:routing",
+      "to": "stage:source",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:source",
+      "to": "stage:regions",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:regions",
+      "to": "stage:transcription",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:transcription",
+      "to": "stage:semantics",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:semantics",
+      "to": "stage:geometry",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:geometry",
+      "to": "stage:assets",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:transcription",
+      "to": "stage:equations",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:transcription",
+      "to": "stage:question-layout",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:assets",
+      "to": "stage:question-layout",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:equations",
+      "to": "stage:question-layout",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:question-layout",
+      "to": "stage:page-layout",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:page-layout",
+      "to": "stage:package",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:package",
+      "to": "stage:native",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:native",
+      "to": "stage:delivery",
+      "relation": "feeds"
+    },
+    {
+      "from": "stage:delivery",
+      "to": "stage:feedback",
+      "relation": "feeds"
+    },
+    {
+      "from": "R-source-order",
+      "to": "S-receiptD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-uncertainty",
+      "to": "S-q11approx20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-uncertainty",
+      "to": "S-accept21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-mark-provenance",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-mark-provenance",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-visual-semantics",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-geometry-topology",
+      "to": "S-figureD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-geometry-topology",
+      "to": "S-q11code20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-geometry-topology",
+      "to": "S-architecture20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-parameter-ownership",
+      "to": "S-architecture20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-label-anchor",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-label-anchor",
+      "to": "S-ir-proposal20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-native-editability",
+      "to": "S-guide20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-native-editability",
+      "to": "S-native21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-tokens",
+      "to": "S-normalizer20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-tokens",
+      "to": "S-normalverify20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-metrics",
+      "to": "S-compose21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-metrics",
+      "to": "S-authorD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-metrics",
+      "to": "S-width20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-metrics",
+      "to": "S-metricsF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-metrics",
+      "to": "S-authorF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-alignment",
+      "to": "S-alignF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-alignment",
+      "to": "S-alignF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-equation-alignment",
+      "to": "S-questionF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-underline",
+      "to": "S-compose21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-underline",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-question-container",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-question-container",
+      "to": "S-questionF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-question-container",
+      "to": "S-bindingsF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-layout-separation",
+      "to": "S-pageF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-layout-separation",
+      "to": "S-questionF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-section-properties",
+      "to": "S-authorD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-section-properties",
+      "to": "S-receiptD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-native-owner",
+      "to": "S-native21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-native-owner",
+      "to": "S-renderD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-proportionate-checks",
+      "to": "S-guide20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-proportionate-checks",
+      "to": "S-native21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-proportionate-checks",
+      "to": "S-verifypolicy22",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-selective-invalidation",
+      "to": "S-architecture20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-selective-invalidation",
+      "to": "S-eval22",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-paid-recovery",
+      "to": "S-recovery20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-paid-recovery",
+      "to": "S-source21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-research-reuse",
+      "to": "S-hancom-research20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-research-reuse",
+      "to": "S-visual-research20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-research-reuse",
+      "to": "S-jev-research20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-research-reuse",
+      "to": "S-receiptD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-feedback-lineage",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-feedback-lineage",
+      "to": "S-eval22",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-feedback-lineage",
+      "to": "S-evaluation20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-eval-boundary",
+      "to": "S-eval22",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-eval-boundary",
+      "to": "S-rubric22",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-asset-role",
+      "to": "S-guide20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-asset-role",
+      "to": "S-imagecheck20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-raster-style",
+      "to": "S-guidanceF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-raster-style",
+      "to": "S-rasterF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-source",
+      "to": "S-receiptD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-provenance",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-provenance",
+      "to": "S-scenes20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-transcription",
+      "to": "S-ir21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-transcription",
+      "to": "S-contentD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-image-code",
+      "to": "S-architecture20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-image-code",
+      "to": "S-q11approx20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-geometry-edit",
+      "to": "S-architecture20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-equations",
+      "to": "S-normalizer20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-equations",
+      "to": "S-authorF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-equations",
+      "to": "S-metricsF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-frames",
+      "to": "S-alignF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-frames",
+      "to": "S-questionF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-copy",
+      "to": "S-questionF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-copy",
+      "to": "S-bindingsF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-page",
+      "to": "S-pageF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-page",
+      "to": "S-questionF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-page",
+      "to": "S-layout-direction",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-package",
+      "to": "S-authorD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-package",
+      "to": "S-imagecheck20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-native",
+      "to": "S-native21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-native",
+      "to": "S-renderD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-routing",
+      "to": "S-recovery20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-routing",
+      "to": "S-jev-research20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-routing",
+      "to": "S-hancom-research20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-feedback",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-feedback",
+      "to": "S-eval22",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-feedback",
+      "to": "S-evaluation20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-maintenance",
+      "to": "S-checkpoint21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-maintenance",
+      "to": "S-architecture20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-j20-proof-width",
+      "to": "S-width20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-j20-body-width",
+      "to": "S-widthread20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-j20-q11",
+      "to": "S-q11approx20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-j20-q11",
+      "to": "S-q11verify20",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-j21-spacing",
+      "to": "S-compose21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-j21-box-port",
+      "to": "S-source21",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-source-order",
+      "to": "S-receiptD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-base-spacing",
+      "to": "S-authorD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-base-spacing",
+      "to": "S-receiptD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-base-spacing",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-base-spacing",
+      "to": "S-verifyF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-template",
+      "to": "S-pageF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-template",
+      "to": "S-questionF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-template",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-template",
+      "to": "S-verifyF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q6-dash",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q6-dash",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q6-dash",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q8-pencil",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q8-pencil",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q8-pencil",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q9-angle",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q9-angle",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q9-angle",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q10-fill",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q10-fill",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q10-fill",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q11-arrow",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q11-arrow",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q11-arrow",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q17-frame",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q17-frame",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q17-frame",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q18-frame",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q18-frame",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q18-frame",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q20-arrow",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q20-arrow",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q20-arrow",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q21-AP",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q21-AP",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q21-AP",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q24-ticks",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q24-ticks",
+      "to": "S-optimizationF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q24-ticks",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-underline",
+      "to": "S-feedbackD",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-underline",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-underline",
+      "to": "S-verifyF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-raster-dash",
+      "to": "S-guidanceF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-raster-dash",
+      "to": "S-rasterF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-raster-dash",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q18-transfer",
+      "to": "S-copyF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-q18-transfer",
+      "to": "S-guidanceF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-uncertain-emphasis",
+      "to": "S-finalF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-uncertain-emphasis",
+      "to": "S-observationsF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-hancom-surface",
+      "to": "S-hancom-capture",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-hancom-surface",
+      "to": "S-hancom-index",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-hancom-surface",
+      "to": "S-hancom-boundary",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-selected-image-patch",
+      "to": "S-imagepatch-guide",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-selected-image-patch",
+      "to": "S-imagepatch-receipt",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-selected-image-patch",
+      "to": "S-imagepatch-code",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-selected-image-patch",
+      "to": "S-imagepatch-proof",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "S-imagepatch-guide",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "S-imagepatch-code",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "S-imagepatch-entry",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "S-imagepatch-proof",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "S-imagepatch-job",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-v3-image-only",
+      "to": "S-imagepatch-receipt",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-v3-image-only",
+      "to": "S-imagepatch-guide",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-native-transfer",
+      "to": "S-guidanceF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-native-transfer",
+      "to": "S-copyF",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-native-transfer",
+      "to": "S-transfer-discussion",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-layout-choice",
+      "to": "S-layout-direction",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-layout-choice",
+      "to": "S-hwp-procedure",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-layout-selection",
+      "to": "S-layout-direction",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "S-hwp-procedure",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "S-hwp-verification",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-retrieval-candidate-integrity",
+      "to": "S-jev-audit",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-retrieval-candidate-integrity",
+      "to": "S-jev-measurements",
+      "relation": "supported-by"
+    },
+    {
+      "from": "R-retrieval-candidate-integrity",
+      "to": "S-jev-consumption",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-retrieval-audit",
+      "to": "S-jev-audit",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-retrieval-audit",
+      "to": "S-benchmark-report",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-reference-layout",
+      "to": "S-hwp-handoff",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-reference-layout",
+      "to": "S-hwp-verification",
+      "relation": "supported-by"
+    },
+    {
+      "from": "C-d-reference-layout",
+      "to": "S-hwp-procedure",
+      "relation": "supported-by"
+    },
+    {
+      "from": "P-source",
+      "to": "R-source-order",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-source",
+      "to": "R-uncertainty",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-provenance",
+      "to": "R-mark-provenance",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-provenance",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-provenance",
+      "to": "R-uncertainty",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-transcription",
+      "to": "R-underline",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-transcription",
+      "to": "R-native-editability",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-transcription",
+      "to": "R-uncertainty",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-image-code",
+      "to": "R-geometry-topology",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-image-code",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-image-code",
+      "to": "R-label-anchor",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-image-code",
+      "to": "R-uncertainty",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-geometry-edit",
+      "to": "R-geometry-topology",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-geometry-edit",
+      "to": "R-parameter-ownership",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-geometry-edit",
+      "to": "R-label-anchor",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-geometry-edit",
+      "to": "R-selective-invalidation",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-equations",
+      "to": "R-equation-tokens",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-equations",
+      "to": "R-equation-metrics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-frames",
+      "to": "R-equation-alignment",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-frames",
+      "to": "R-native-editability",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-copy",
+      "to": "R-question-container",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-copy",
+      "to": "R-native-editability",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-copy",
+      "to": "R-proportionate-checks",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-page",
+      "to": "R-layout-choice",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-page",
+      "to": "R-layout-separation",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-page",
+      "to": "R-section-properties",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-page",
+      "to": "R-equation-metrics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-package",
+      "to": "R-native-editability",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-package",
+      "to": "R-section-properties",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-package",
+      "to": "R-proportionate-checks",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-native",
+      "to": "R-native-owner",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-native",
+      "to": "R-proportionate-checks",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-native",
+      "to": "R-asset-role",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-routing",
+      "to": "R-research-reuse",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-routing",
+      "to": "R-paid-recovery",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-feedback",
+      "to": "R-feedback-lineage",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-feedback",
+      "to": "R-selective-invalidation",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-feedback",
+      "to": "R-eval-boundary",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-maintenance",
+      "to": "R-feedback-lineage",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-maintenance",
+      "to": "R-eval-boundary",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-maintenance",
+      "to": "R-research-reuse",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-j20-proof-width",
+      "to": "R-equation-metrics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-j20-body-width",
+      "to": "R-equation-metrics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-j20-q11",
+      "to": "R-uncertainty",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-j20-q11",
+      "to": "R-geometry-topology",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-j21-spacing",
+      "to": "R-equation-metrics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-j21-box-port",
+      "to": "R-paid-recovery",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-source-order",
+      "to": "R-source-order",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-base-spacing",
+      "to": "R-equation-metrics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-template",
+      "to": "R-layout-separation",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-template",
+      "to": "R-question-container",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q6-dash",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q8-pencil",
+      "to": "R-mark-provenance",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q8-pencil",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q9-angle",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q9-angle",
+      "to": "R-label-anchor",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q10-fill",
+      "to": "R-mark-provenance",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q10-fill",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q11-arrow",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q17-frame",
+      "to": "R-equation-alignment",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q18-frame",
+      "to": "R-equation-alignment",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q18-frame",
+      "to": "R-native-editability",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q20-arrow",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q20-arrow",
+      "to": "R-uncertainty",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q21-AP",
+      "to": "R-mark-provenance",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q21-AP",
+      "to": "R-geometry-topology",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q24-ticks",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q24-ticks",
+      "to": "R-geometry-topology",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-underline",
+      "to": "R-underline",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-raster-dash",
+      "to": "R-raster-style",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q18-transfer",
+      "to": "R-question-container",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-q18-transfer",
+      "to": "R-proportionate-checks",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-uncertain-emphasis",
+      "to": "R-mark-provenance",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-uncertain-emphasis",
+      "to": "R-uncertainty",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-uncertain-emphasis",
+      "to": "R-underline",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "R-selected-image-patch",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "R-raster-style",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "R-visual-semantics",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "R-label-anchor",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-v3-image-only",
+      "to": "R-selected-image-patch",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-v3-image-only",
+      "to": "R-raster-style",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-native-transfer",
+      "to": "R-question-container",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-native-transfer",
+      "to": "R-native-owner",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-native-transfer",
+      "to": "R-proportionate-checks",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-layout-selection",
+      "to": "R-layout-choice",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "R-layout-choice",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "R-layout-separation",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "R-question-container",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "R-section-properties",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "R-native-owner",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "R-proportionate-checks",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-retrieval-audit",
+      "to": "R-retrieval-candidate-integrity",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-retrieval-audit",
+      "to": "R-eval-boundary",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-retrieval-audit",
+      "to": "R-paid-recovery",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-reference-layout",
+      "to": "R-layout-choice",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-reference-layout",
+      "to": "R-layout-separation",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "C-d-reference-layout",
+      "to": "R-native-owner",
+      "relation": "uses-rule"
+    },
+    {
+      "from": "P-source",
+      "to": "S-renderD",
+      "relation": "implements"
+    },
+    {
+      "from": "P-provenance",
+      "to": "S-scenes20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-provenance",
+      "to": "S-figureD",
+      "relation": "implements"
+    },
+    {
+      "from": "P-transcription",
+      "to": "S-ir21",
+      "relation": "implements"
+    },
+    {
+      "from": "P-transcription",
+      "to": "S-contentD",
+      "relation": "implements"
+    },
+    {
+      "from": "P-transcription",
+      "to": "S-compose21",
+      "relation": "implements"
+    },
+    {
+      "from": "P-image-code",
+      "to": "S-figureD",
+      "relation": "implements"
+    },
+    {
+      "from": "P-image-code",
+      "to": "S-q11code20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-image-code",
+      "to": "S-scenes20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-geometry-edit",
+      "to": "S-ir-proposal20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-geometry-edit",
+      "to": "S-figureD",
+      "relation": "implements"
+    },
+    {
+      "from": "P-equations",
+      "to": "S-normalizer20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-equations",
+      "to": "S-measureF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-equations",
+      "to": "S-authorF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-equations",
+      "to": "S-measure20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-frames",
+      "to": "S-alignF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-frames",
+      "to": "S-authorF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-copy",
+      "to": "S-authorF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-copy",
+      "to": "S-bindingsF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-page",
+      "to": "S-pageF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-page",
+      "to": "S-questionF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-page",
+      "to": "S-authorF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-package",
+      "to": "S-authorD",
+      "relation": "implements"
+    },
+    {
+      "from": "P-native",
+      "to": "S-renderD",
+      "relation": "implements"
+    },
+    {
+      "from": "P-native",
+      "to": "S-render20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-routing",
+      "to": "S-recovery20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-feedback",
+      "to": "S-eval22",
+      "relation": "implements"
+    },
+    {
+      "from": "P-feedback",
+      "to": "S-ir-proposal20",
+      "relation": "implements"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "S-imagepatch-entry",
+      "relation": "implements"
+    },
+    {
+      "from": "P-selected-image-patch",
+      "to": "S-imagepatch-code",
+      "relation": "implements"
+    },
+    {
+      "from": "P-native-transfer",
+      "to": "S-authorF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-native-transfer",
+      "to": "S-copyF",
+      "relation": "implements"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "S-hwp-layout-code",
+      "relation": "implements"
+    },
+    {
+      "from": "P-reference-layout",
+      "to": "S-hwp-native-code",
+      "relation": "implements"
+    }
+  ]
+}

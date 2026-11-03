@@ -1,0 +1,47 @@
+{
+  "schema": "daechi.selected-image-patch-job.v1",
+  "input": {
+    "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+    "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2"
+  },
+  "output": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v3.hwpx",
+  "edits": [
+    {
+      "questionId": 1,
+      "questionTableId": "907409714",
+      "pictureControlId": "1702942990",
+      "member": "BinData/BIN0001.png",
+      "expectedOldSha256": "c7fe2913d5302c7c30f436de52035a5ad904d982e846d30f62d56f9cd4b1be44",
+      "replacement": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/image-patch-v3/figures/q1.png",
+        "sha256": "d03f3c58126573675da2454dc99d1ab710709ecdb0aeb60a19902170888d5394"
+      },
+      "repair": "Remove two redundant angle arcs; retain original two dots and all geometry."
+    },
+    {
+      "questionId": 5,
+      "questionTableId": "1982101459",
+      "pictureControlId": "1307070064",
+      "member": "BinData/BIN0004.png",
+      "expectedOldSha256": "95784bc9c96437ee26c61a89017d47b41c2af41321b91d6f7df3c8059c9dd599",
+      "replacement": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/image-patch-v3/figures/q5.png",
+        "sha256": "ec6eedd840a267f5396eff04dd3ae092dce135df53d4abbeb6c4e0f0ede37602"
+      },
+      "repair": "Place label A below line l, separated from the right-angle mark above l."
+    },
+    {
+      "questionId": 10,
+      "questionTableId": "2146776001",
+      "pictureControlId": "1675501133",
+      "member": "BinData/BIN0009.png",
+      "expectedOldSha256": "34591495f4eb270515dc63f7c72ecfca14bf0b359304edd4aec232d438d30103",
+      "replacement": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/image-patch-v3/figures/q10.png",
+        "sha256": "94e569e1177785bf1257c93a6dab96f42afe7ac6318834faceb288ecef33cb35"
+      },
+      "repair": "Use sector fill opacity 0.25 and paint it beneath solid edges/spokes."
+    }
+  ],
+  "receipt": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/image-patch-v3/patch.actual.json"
+}

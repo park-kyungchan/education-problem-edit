@@ -1,0 +1,39 @@
+{
+  "kind": "case",
+  "id": "C-d-raster-dash",
+  "title": "SVG dash arrays lost in initial raster trial",
+  "stage": "assets",
+  "exam": "daechi-20261022",
+  "question": 6,
+  "evidence": [
+    {
+      "sourceId": "S-guidanceF",
+      "contains": "solid strokes"
+    },
+    {
+      "sourceId": "S-rasterF"
+    },
+    {
+      "sourceId": "S-finalF",
+      "pointer": "/supersededTrial"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Initial MuPDF raster made dashed annotations solid.",
+  "cause": "Raster backend did not preserve that SVG line style.",
+  "expected": "Use the observed librsvg/Cairo adapter and check the actual embedded output.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-raster-style"
+  ],
+  "requiredChecks": [
+    "Affected raster/native dashed-feature inspection."
+  ],
+  "limitation": "Historical source-level style presence did not establish raster fidelity.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

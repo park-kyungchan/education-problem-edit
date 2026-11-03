@@ -1,0 +1,1119 @@
+{
+  "schema": "problem-edit.context-coverage.v1",
+  "sourceRelease": "2026-10-22.5",
+  "files": [
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/manifest.json",
+      "sha256": "ccc05cb8f17c13162afe7abb0a665f2966e87c713687149b5976f0fb6668f46a",
+      "bytes": 1089,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/build-checks.json",
+      "sha256": "cded45e0e174fc025087650e9c1127932e37739348a4c04dbffc26bea5331e5f",
+      "bytes": 275,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/7f062a2c80acc1c59e483ac485b01dbc71d1415ea632ab92c311ad377dbd4e44.py",
+      "sha256": "7f062a2c80acc1c59e483ac485b01dbc71d1415ea632ab92c311ad377dbd4e44",
+      "bytes": 7493,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/c52aa8a71f637de435a0039007058db1176de51b29d24bff702daa50e9223139.md",
+      "sha256": "c52aa8a71f637de435a0039007058db1176de51b29d24bff702daa50e9223139",
+      "bytes": 5698,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/bef7e4acf4b37258cc6c1960ae8bbe1f1546757add91b5388f99bf69c3bcb912.txt",
+      "sha256": "bef7e4acf4b37258cc6c1960ae8bbe1f1546757add91b5388f99bf69c3bcb912",
+      "bytes": 9784,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/c0eec868d2fa54864af6a309dac97cb3f99ce3432e29a8a555b0977cb4bca16c.ts",
+      "sha256": "c0eec868d2fa54864af6a309dac97cb3f99ce3432e29a8a555b0977cb4bca16c",
+      "bytes": 3418,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/bfc3e14352f3ea24ea6eaf436275261d767c9b3a703fddc6f6e2efba5cb6517e.json",
+      "sha256": "bfc3e14352f3ea24ea6eaf436275261d767c9b3a703fddc6f6e2efba5cb6517e",
+      "bytes": 301,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/f87652fa7b01f6a909a19345e3dcdcb8caa0621e6fd942bd9d22f73e9c0b071c.json",
+      "sha256": "f87652fa7b01f6a909a19345e3dcdcb8caa0621e6fd942bd9d22f73e9c0b071c",
+      "bytes": 1851,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/c1ded9e3012c8aa7372b4fe1b0c87d945bf9c33028723cd7f9ad2cee98667e3c.ts",
+      "sha256": "c1ded9e3012c8aa7372b4fe1b0c87d945bf9c33028723cd7f9ad2cee98667e3c",
+      "bytes": 18359,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/2ba382b67f99f629b21ca88b4a35d2aeb7ce74ed688652703a7693f60fb418e4.json",
+      "sha256": "2ba382b67f99f629b21ca88b4a35d2aeb7ce74ed688652703a7693f60fb418e4",
+      "bytes": 2464,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/2ba7f2b5a789d3a0adc7154a175d8f32adfde538d97e2714cbe7a9f77ab47efb.json",
+      "sha256": "2ba7f2b5a789d3a0adc7154a175d8f32adfde538d97e2714cbe7a9f77ab47efb",
+      "bytes": 12679,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/632e1a7dc1aa5a5ca83171d27131a69e89b1ccb2928167a4081bd8108392241d.json",
+      "sha256": "632e1a7dc1aa5a5ca83171d27131a69e89b1ccb2928167a4081bd8108392241d",
+      "bytes": 4521,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/e692ab18f4801d20395f5b07eb46580d72fc125cb8575a2b1f41fe1dbbacdf46.py",
+      "sha256": "e692ab18f4801d20395f5b07eb46580d72fc125cb8575a2b1f41fe1dbbacdf46",
+      "bytes": 14090,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/0550f558ca35f698a54bd119370aa163250e497158d016753961242217b54d72.ps1",
+      "sha256": "0550f558ca35f698a54bd119370aa163250e497158d016753961242217b54d72",
+      "bytes": 5213,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/0a2659d4f2ca8656bbc3f1e84d6fd68e81602b8313925b951a67804cb6b3c4d8.json",
+      "sha256": "0a2659d4f2ca8656bbc3f1e84d6fd68e81602b8313925b951a67804cb6b3c4d8",
+      "bytes": 11283,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/187e0c2fc4cfd3f3b5840202ad06e0e81e19a653cda9257ee3ff32a1891c65f5.md",
+      "sha256": "187e0c2fc4cfd3f3b5840202ad06e0e81e19a653cda9257ee3ff32a1891c65f5",
+      "bytes": 6806,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/44b55e10e267185c60384100fe9e3c85d37cfcd115cede8d9e06d0085824d72f.json",
+      "sha256": "44b55e10e267185c60384100fe9e3c85d37cfcd115cede8d9e06d0085824d72f",
+      "bytes": 475,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/7f86f1f5dbb2dc77e146a57c5e2a6f35c4754c761ee7ef57419a08070394957f.json",
+      "sha256": "7f86f1f5dbb2dc77e146a57c5e2a6f35c4754c761ee7ef57419a08070394957f",
+      "bytes": 661,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/7aed3b899b7fed269d83b100367136e2e1394a3ada97c199889f3b835803f889.ps1",
+      "sha256": "7aed3b899b7fed269d83b100367136e2e1394a3ada97c199889f3b835803f889",
+      "bytes": 2506,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/4c7c44e94eb056a0c86bc81165e83e3db78ac457895cc07579628267fc5499ec.py",
+      "sha256": "4c7c44e94eb056a0c86bc81165e83e3db78ac457895cc07579628267fc5499ec",
+      "bytes": 15106,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/c02f2de35c6daa5de394c0463becee7a7cd5982c53fada63207419223e3e6938.ts",
+      "sha256": "c02f2de35c6daa5de394c0463becee7a7cd5982c53fada63207419223e3e6938",
+      "bytes": 10420,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/c7ab7924faaaf1daa2b93f99cd84cf5cf169321b118093aff7af3765ba01f577.json",
+      "sha256": "c7ab7924faaaf1daa2b93f99cd84cf5cf169321b118093aff7af3765ba01f577",
+      "bytes": 20470,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/cdad9fdf4902b353c4764745eee2b8bd3ca893e7b31e60e85d4d9160a126db73.json",
+      "sha256": "cdad9fdf4902b353c4764745eee2b8bd3ca893e7b31e60e85d4d9160a126db73",
+      "bytes": 2166,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/5e0e668987d43dc0ce07c7f1f90dd42d860794318990d1632a5a1cefb9934e95.md",
+      "sha256": "5e0e668987d43dc0ce07c7f1f90dd42d860794318990d1632a5a1cefb9934e95",
+      "bytes": 10817,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/ff41809ca17e2d9707360d6b3069d1206e0f3b4092d1668463693d44824842d8.json",
+      "sha256": "ff41809ca17e2d9707360d6b3069d1206e0f3b4092d1668463693d44824842d8",
+      "bytes": 7154,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/ff39eee843589fef81abf3a18f0ff77b833634827bdc94e5042be45da938b8cf.md",
+      "sha256": "ff39eee843589fef81abf3a18f0ff77b833634827bdc94e5042be45da938b8cf",
+      "bytes": 6580,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/22b297d7ac20e9d0a1f241a6fa2e8d1306e98d5e59973f933c4d79ec411653cb.json",
+      "sha256": "22b297d7ac20e9d0a1f241a6fa2e8d1306e98d5e59973f933c4d79ec411653cb",
+      "bytes": 1658,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/df41371bd4dae2d7213356ef1735be794a18980c7a80ab3e05ff49838c67722c.md",
+      "sha256": "df41371bd4dae2d7213356ef1735be794a18980c7a80ab3e05ff49838c67722c",
+      "bytes": 8557,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/e997019140e6308fbc1eeda79f8b93c08f6f802e59a4589b0db5171c8d0d881e.json",
+      "sha256": "e997019140e6308fbc1eeda79f8b93c08f6f802e59a4589b0db5171c8d0d881e",
+      "bytes": 448,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/fdb410642acd33bd39baf9369c5b139175a6223dda292ef9efc79d54bdcb6e2a.json",
+      "sha256": "fdb410642acd33bd39baf9369c5b139175a6223dda292ef9efc79d54bdcb6e2a",
+      "bytes": 2845,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/a39e250e4dcb8ae76e05a51494e537baf54b2f03a8ca8f8763a039b6eff51c6d.ts",
+      "sha256": "a39e250e4dcb8ae76e05a51494e537baf54b2f03a8ca8f8763a039b6eff51c6d",
+      "bytes": 8632,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128.json",
+      "sha256": "39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128",
+      "bytes": 3073,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/3ac27c90c2ad091f53593f9b0c3f3d55ab2d29510f31203e3ad65e6137579cb8.json",
+      "sha256": "3ac27c90c2ad091f53593f9b0c3f3d55ab2d29510f31203e3ad65e6137579cb8",
+      "bytes": 14914,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/48505481b3a40b2d028f26f1080cba534f5978ffcd97d2ed693629e03869164b.json",
+      "sha256": "48505481b3a40b2d028f26f1080cba534f5978ffcd97d2ed693629e03869164b",
+      "bytes": 24748,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/05b4c31b087dbaf6f5846e96f839dcba1b50267d8655a63915dbf475f276e0e3.json",
+      "sha256": "05b4c31b087dbaf6f5846e96f839dcba1b50267d8655a63915dbf475f276e0e3",
+      "bytes": 1099,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/5e827abcb8fc4b16e20e343ccb067710fd98a6b22ca49d3d6993d84e6947da47.py",
+      "sha256": "5e827abcb8fc4b16e20e343ccb067710fd98a6b22ca49d3d6993d84e6947da47",
+      "bytes": 4431,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/eebcacf5991888b584a43a2759334bc8f96cfc22d08d2e9da50d2e9b374e9694.json",
+      "sha256": "eebcacf5991888b584a43a2759334bc8f96cfc22d08d2e9da50d2e9b374e9694",
+      "bytes": 2210,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/0a5929475d5faa1e349ce421c25d6ad77dd0431dbe323b05eb6aee2b6c55bf64.md",
+      "sha256": "0a5929475d5faa1e349ce421c25d6ad77dd0431dbe323b05eb6aee2b6c55bf64",
+      "bytes": 9562,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/876be7ad311503ae3a25b77bd91d2829eede6b3c559834c1e735f4844c807b94.ps1",
+      "sha256": "876be7ad311503ae3a25b77bd91d2829eede6b3c559834c1e735f4844c807b94",
+      "bytes": 3299,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/b2b7c5bc4857b815a1e6026e03cbc0a4302fdc19e3cf4285d9ddaab1b3439296.json",
+      "sha256": "b2b7c5bc4857b815a1e6026e03cbc0a4302fdc19e3cf4285d9ddaab1b3439296",
+      "bytes": 35120,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/7f5da947eee799433325f00a9336e3e2285917f4e94a4efecad0834fb4390abe.json",
+      "sha256": "7f5da947eee799433325f00a9336e3e2285917f4e94a4efecad0834fb4390abe",
+      "bytes": 973,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/eb6ba71d943ba20dbd3075a08734882edd50b9a90a5a08ca07d7e87e5a440765.py",
+      "sha256": "eb6ba71d943ba20dbd3075a08734882edd50b9a90a5a08ca07d7e87e5a440765",
+      "bytes": 1737,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/e95586f107c366c21b37ce3c9e71f2c6c47e9e8680cd8a18925d46edcdea6b05.json",
+      "sha256": "e95586f107c366c21b37ce3c9e71f2c6c47e9e8680cd8a18925d46edcdea6b05",
+      "bytes": 10135,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/d967976ac447ff2c6432b9527dc5aaafc85bfa7e759c9101c0cfb16c9878396d.json",
+      "sha256": "d967976ac447ff2c6432b9527dc5aaafc85bfa7e759c9101c0cfb16c9878396d",
+      "bytes": 3976,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/dc908961335d049dde5feb26fa7e34e38227fa67cd497ca91dfa22535b3a4052.md",
+      "sha256": "dc908961335d049dde5feb26fa7e34e38227fa67cd497ca91dfa22535b3a4052",
+      "bytes": 8129,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/145077c2e62b1f93d4297c4ca0879dbe8b8422143e00e670e30df04070f83bf8.py",
+      "sha256": "145077c2e62b1f93d4297c4ca0879dbe8b8422143e00e670e30df04070f83bf8",
+      "bytes": 10734,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/7531359deaf08fd43afacd8ab242e6717bb5456029dad0d749a59816a51d5278.json",
+      "sha256": "7531359deaf08fd43afacd8ab242e6717bb5456029dad0d749a59816a51d5278",
+      "bytes": 13946,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/226d6aeb5e83682e3b2a7e4fddfb0222f8c0530d840d2c5976637427001cad19.json",
+      "sha256": "226d6aeb5e83682e3b2a7e4fddfb0222f8c0530d840d2c5976637427001cad19",
+      "bytes": 2311,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/57046d170fd5c92b6ab42facfcec22f9802a05906ff2cb741d85a6631a8a0fd8.json",
+      "sha256": "57046d170fd5c92b6ab42facfcec22f9802a05906ff2cb741d85a6631a8a0fd8",
+      "bytes": 8960,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/7cf9cae8f5bf8df0ebccf2d8a412330ebfdb256babe06affabdc1e981cb0c825.py",
+      "sha256": "7cf9cae8f5bf8df0ebccf2d8a412330ebfdb256babe06affabdc1e981cb0c825",
+      "bytes": 11532,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/27948962e0881a65820bc1e3d437b3698e70e2bddc7f71bbc29b91aa064fd831.json",
+      "sha256": "27948962e0881a65820bc1e3d437b3698e70e2bddc7f71bbc29b91aa064fd831",
+      "bytes": 708,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/f70b2aee5f628539b7785f2a26ab89887221432e6fcdb2950d2ddaa78a10ccfe.md",
+      "sha256": "f70b2aee5f628539b7785f2a26ab89887221432e6fcdb2950d2ddaa78a10ccfe",
+      "bytes": 14209,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/9420309c4392f16584a0309c6dba33d054d84530935172d1b5eb16d7bd49e2ec.json",
+      "sha256": "9420309c4392f16584a0309c6dba33d054d84530935172d1b5eb16d7bd49e2ec",
+      "bytes": 33872,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/7e9b1b9ba33f068cd668b39e33253867bc30d6c418fc31120621fd9fce8d0043.json",
+      "sha256": "7e9b1b9ba33f068cd668b39e33253867bc30d6c418fc31120621fd9fce8d0043",
+      "bytes": 6431,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/4eb430f20be3df0f6e44760772e2f1da865ed3448c842c0f84e5d37002a70d07.json",
+      "sha256": "4eb430f20be3df0f6e44760772e2f1da865ed3448c842c0f84e5d37002a70d07",
+      "bytes": 82555,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/4acbedd38e059d684bcca9d7aa3c6f84f66a044412a4ca59bd2771d2d1f67196.json",
+      "sha256": "4acbedd38e059d684bcca9d7aa3c6f84f66a044412a4ca59bd2771d2d1f67196",
+      "bytes": 581,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603.txt",
+      "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603",
+      "bytes": 2515,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/3c12e3da23d09ab3cf8217006011b8fedb9a546c55d6670642f89ec86f5836e1.json",
+      "sha256": "3c12e3da23d09ab3cf8217006011b8fedb9a546c55d6670642f89ec86f5836e1",
+      "bytes": 2642,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/f143cb45ad4dd30d4fab5a7fb2980e4e4a2c6816d0628e05f607b12eb0846fa3.json",
+      "sha256": "f143cb45ad4dd30d4fab5a7fb2980e4e4a2c6816d0628e05f607b12eb0846fa3",
+      "bytes": 2636,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/23a3dcf60191f7031a38472851302052ba8719f15c5655951c626b1b0a0efecc.json",
+      "sha256": "23a3dcf60191f7031a38472851302052ba8719f15c5655951c626b1b0a0efecc",
+      "bytes": 1072,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/d6871ba7d8b2628fadebe01e892a48a9a6d1b2d423c5dde349e9f21a753f7a81.json",
+      "sha256": "d6871ba7d8b2628fadebe01e892a48a9a6d1b2d423c5dde349e9f21a753f7a81",
+      "bytes": 5775,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/cea7cab4e1d6a2d930097a376bbe47fa4566ca6656e19297f4fcab1c550b1938.json",
+      "sha256": "cea7cab4e1d6a2d930097a376bbe47fa4566ca6656e19297f4fcab1c550b1938",
+      "bytes": 6006,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/c6b3f07cc0d4d41babefbe0561de9f717c50e555cbf1ed63bafab327c3888df2.json",
+      "sha256": "c6b3f07cc0d4d41babefbe0561de9f717c50e555cbf1ed63bafab327c3888df2",
+      "bytes": 10326,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/babc151865dfabd072a7ad3b50ba0c5aa45d718dcb6301d75d3668dbf625fc8b.ts",
+      "sha256": "babc151865dfabd072a7ad3b50ba0c5aa45d718dcb6301d75d3668dbf625fc8b",
+      "bytes": 434,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/44000f5b32b28f14571f13a66b1e7f2c3c54a614dc63da3bde6e5a805c11ce21.json",
+      "sha256": "44000f5b32b28f14571f13a66b1e7f2c3c54a614dc63da3bde6e5a805c11ce21",
+      "bytes": 11271,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/503a28b4cc5d952ee9adc9016de03a7d70b337105621d7c0d53a2691daca6c76.py",
+      "sha256": "503a28b4cc5d952ee9adc9016de03a7d70b337105621d7c0d53a2691daca6c76",
+      "bytes": 8838,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/335d89a033b1f7b518a09a5b5989b10d2b8e40d6b3c08bcb4866549fa7ca2d96.json",
+      "sha256": "335d89a033b1f7b518a09a5b5989b10d2b8e40d6b3c08bcb4866549fa7ca2d96",
+      "bytes": 2272,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/dff1c8519f68a210d9a2e5c95d3e3eecd2e6e5730ad953ba352094d80c2be546.json",
+      "sha256": "dff1c8519f68a210d9a2e5c95d3e3eecd2e6e5730ad953ba352094d80c2be546",
+      "bytes": 80934,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/fd89c3b6d757dcca7735df6dd67105ebd7d9580708a17b794b9cd42ce810aee4.ts",
+      "sha256": "fd89c3b6d757dcca7735df6dd67105ebd7d9580708a17b794b9cd42ce810aee4",
+      "bytes": 1262,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/ef379922e54e75f57045ce138e3119f9bafad8a00f5e4bb57899ca4254a2fefc.json",
+      "sha256": "ef379922e54e75f57045ce138e3119f9bafad8a00f5e4bb57899ca4254a2fefc",
+      "bytes": 5276,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/e5e583847412248ee200a46a880f22c1c31f19802cf8c5f6ecadcfd68ef55baa.json",
+      "sha256": "e5e583847412248ee200a46a880f22c1c31f19802cf8c5f6ecadcfd68ef55baa",
+      "bytes": 1800,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/8fb6b28b235676880098011aa5580c4e0df9f59c6335dbd85d899dde6f735e12.json",
+      "sha256": "8fb6b28b235676880098011aa5580c4e0df9f59c6335dbd85d899dde6f735e12",
+      "bytes": 670,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/89d5a805771fd868e283a430e770bfd10a1723974de7f2cdbeaffc2aeeb8fb88.json",
+      "sha256": "89d5a805771fd868e283a430e770bfd10a1723974de7f2cdbeaffc2aeeb8fb88",
+      "bytes": 13341,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/cbba18acb853d58c85bd43b9e2db0a0869506dce1af532629a8351aff9c1c61b.json",
+      "sha256": "cbba18acb853d58c85bd43b9e2db0a0869506dce1af532629a8351aff9c1c61b",
+      "bytes": 681,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/f7dee2d1431f5133ebc01261fbdaec8605b8f1a0f97db57a61a62c61d63aa11e.ts",
+      "sha256": "f7dee2d1431f5133ebc01261fbdaec8605b8f1a0f97db57a61a62c61d63aa11e",
+      "bytes": 6389,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/f3b51b888f818eea117894f59559d92f701b8a01a969c997b37685f84dd4d157.json",
+      "sha256": "f3b51b888f818eea117894f59559d92f701b8a01a969c997b37685f84dd4d157",
+      "bytes": 1740,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/snapshots/509274ceee222bf478996cd722190ba0d571e73eddf08a19e67f7f0550369f38.json",
+      "sha256": "509274ceee222bf478996cd722190ba0d571e73eddf08a19e67f7f0550369f38",
+      "bytes": 5470,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/flows.json",
+      "sha256": "8fa1083515b45a43f06cf3d82ba78e66bf1536bb1a2fd563dff2951656cd312a",
+      "bytes": 2215,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/index.json",
+      "sha256": "a68c303cd0337f6129f493fad0cf1da5bdb58f7234d763d4bb44f27dc9cae985",
+      "bytes": 13981,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/topology.json",
+      "sha256": "9245de58455949c0d4a64d978d203e36347846696d394271e3e4cf417797a3a2",
+      "bytes": 62703,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/citations.json",
+      "sha256": "46b06680c94dab71b2992875b71c2247086309089d2475a80805566c8c08aa5d",
+      "bytes": 18731,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/sources.json",
+      "sha256": "d8855bf5faa1f69dabc2c60242a40fa49a0bede8054cb35731f55595f9a50bd6",
+      "bytes": 39687,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/stages.json",
+      "sha256": "2083366e429c1d5f133782c536c1b4575aa0904903902d00fea76de1f57a8eb8",
+      "bytes": 5441,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/analysis.json",
+      "sha256": "cf2cbc0d3e2f9a9693b48471b5ad58608fc2da1c4a643a7ed10dfa3d02ca185f",
+      "bytes": 4910,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-mark-provenance.json",
+      "sha256": "0565be819068e4b6a9c84376146735bc0cdf29443605fe699a1dbac22304d69a",
+      "bytes": 1189,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-proportionate-checks.json",
+      "sha256": "a96a24ac7a7647ef8448009d839031d605c4952851adf960c6016eef9a400997",
+      "bytes": 1143,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q10-fill.json",
+      "sha256": "581156a59677efbf967e5eaf7012013302cab1e5e9d24f7f25126b3531dafc74",
+      "bytes": 1188,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-image-code.json",
+      "sha256": "2780562734ad1f02860b49d20cb818b1937f7001b3ea8abee564967f40de6c31",
+      "bytes": 1317,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q20-arrow.json",
+      "sha256": "b97344d1fe5455750d78bad34e841726c16b4a2798efc664adc93a39a7e7e46b",
+      "bytes": 1306,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-research-reuse.json",
+      "sha256": "bae2b0db6416afdc4e05f279d9da4dbc67c15cba0b08c6caa290c551fb3fe9a1",
+      "bytes": 1168,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-routing.json",
+      "sha256": "1551e22e984192d252c53cef75749a1de15347f43cf1bef1dff2c359be6dd67c",
+      "bytes": 1252,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-feedback.json",
+      "sha256": "58ee91308166ab85a10a4996caf3c591375d14197dbecfa81f9ba9467234352d",
+      "bytes": 1295,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-reference-layout.json",
+      "sha256": "23674e832fa2b7edf4fa2d92ef38c1147e86ce4b6748f7af9e24db0235e69274",
+      "bytes": 1955,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-copy.json",
+      "sha256": "ea9a0c3217c7daff36f148ac5c3a6b3b11d1e2172fb9aa149f968effcf62317f",
+      "bytes": 1287,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-section-properties.json",
+      "sha256": "a5615643567de1912baf01839587c5614747c80de8b4b62cbe2b0b9592f36ee4",
+      "bytes": 947,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q8-pencil.json",
+      "sha256": "8c400a54c4cdc07db68ed23a94eb490e050966852d3c62bb01036e8381e4ab24",
+      "bytes": 1199,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-uncertain-emphasis.json",
+      "sha256": "981e84c3575f2b520d952e55ea1fd10fbe05802340f96454662dbccf096c57cd",
+      "bytes": 1010,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-visual-semantics.json",
+      "sha256": "4c3d002c8ee9bba27b60d942de5cc8d2a63254543a0a49f484a9716bf20bfc24",
+      "bytes": 1031,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-label-anchor.json",
+      "sha256": "4e9556021a597adcd3363d1c2f344e8dc1bc00d5246189159c16be2c21fdfa38",
+      "bytes": 968,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-selected-image-patch.json",
+      "sha256": "02100808349382cc49b8f0307615cab3cb4593e3f2efa2d09133ba1b138666a4",
+      "bytes": 2445,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-selective-invalidation.json",
+      "sha256": "03be1fd8cbd2109099bebceb45b6f0a0c8a3a545a2b53e4443810ff38334b494",
+      "bytes": 1006,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-layout-choice.json",
+      "sha256": "f39c97fb195a1d8d50d6cc589a0bbf25a502c41a77b8b5e571633bd0596c6974",
+      "bytes": 1407,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-layout-separation.json",
+      "sha256": "09e8ea966362cc3eda72ad267b4801facbb8da0c7cb4904b7f5339a44cd6d650",
+      "bytes": 975,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-feedback-lineage.json",
+      "sha256": "58f72feef4b65739bbe53556827b4d83838a9d23a55f97961145ee2c7c8d8ac2",
+      "bytes": 1129,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-source.json",
+      "sha256": "aeba4e24240c514a69b0bbee40a8a751128a17f98f504c9af3197be01e5c6df7",
+      "bytes": 899,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-page.json",
+      "sha256": "82fafe8bb3032ac6496dc989b7bb62e7aab65d51acda90b19100ec093eaec819",
+      "bytes": 1458,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-j20-q11.json",
+      "sha256": "86f6dc6d32b9e976a2797079c3e8a99413a5c0df00230a3cbd045745939658b1",
+      "bytes": 1100,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-geometry-edit.json",
+      "sha256": "d18dcce5192c762db4b15a5c5971f48add3e29614b9a8c31fe5aa76d21fcbfc4",
+      "bytes": 1198,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-parameter-ownership.json",
+      "sha256": "b286915e57f72a72fab85fac96387e2c0294cb0e1c94d87605b30539b2970954",
+      "bytes": 944,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-package.json",
+      "sha256": "f6a77355f7e8d49d3ed7da9c63438aa20f369abdfb9929667ce24e5b5094fe2c",
+      "bytes": 1027,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-layout-selection.json",
+      "sha256": "7d3cc7883c3649362f783607a07a8ec6d2c6964b3ed3e54e09e91dac2fe3f580",
+      "bytes": 1212,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-selected-image-patch.json",
+      "sha256": "592a05955a737aa272298b007c2d34da557bdf0d873d1d622e6795f3fe9de01f",
+      "bytes": 2390,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-template.json",
+      "sha256": "b6fa7a442a9ef87d0d94c3ba7745a955247c9b9f738a84a4cf640f44df82d20a",
+      "bytes": 1108,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-retrieval-candidate-integrity.json",
+      "sha256": "4fa62b60db58ce8bf0862bb9065c0883b6fb2bc6dda78b5a0d41e74100803f56",
+      "bytes": 1690,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-uncertainty.json",
+      "sha256": "173615e21b41d27c16f7fc26cdef36e13cfccb7ea194197ce7a920b49a61da99",
+      "bytes": 1087,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-raster-style.json",
+      "sha256": "894b1318192d98dfe3e3bd3b94a537638f916f7e01c55964940366bf2368fc70",
+      "bytes": 944,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-question-container.json",
+      "sha256": "94fe5194eb4843f9114ea10a0097109566be01525ebc1767beb077ecfbb34208",
+      "bytes": 1070,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-v3-image-only.json",
+      "sha256": "75f2746116174773d31c2f5b02df534f606ad08dbcde8ea86a98602f309747c1",
+      "bytes": 1339,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-frames.json",
+      "sha256": "0aaebeff1f878bce0d33357ae9b5676af69a14d88ba79c877fdd7ada84a90da5",
+      "bytes": 1023,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-transcription.json",
+      "sha256": "f4f9b9ab4463950d5d6bc6c4afae7166043158b92f97a772b0723aaa1b2dacb2",
+      "bytes": 983,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q18-frame.json",
+      "sha256": "d73d324db01b3a73aca29cf795e1f5ee2b6e68564bc35769bdeb303be5f83d4f",
+      "bytes": 1210,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-j20-proof-width.json",
+      "sha256": "d6082cb13b0329060bbf47d746d540a835e9c19796a53ebecb0e949b734fe1df",
+      "bytes": 963,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-maintenance.json",
+      "sha256": "cd9b8a1428898f7efb2bdfe49830b15a40cd9fb2c5e4ef617e1369f6cdbad991",
+      "bytes": 1236,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-asset-role.json",
+      "sha256": "59db9febafcff06afa7c19f2f715e546720d8fd63130fd58dfe5acb326f1e907",
+      "bytes": 1037,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-equations.json",
+      "sha256": "8f19a2da3b32aa800a13d8e03e5d7b1130606819693791fe1b280fa2b32d310a",
+      "bytes": 1254,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-equation-metrics.json",
+      "sha256": "dd19d530cc489fbe0c3beb33fdae4622eb9a521cfc2d6eb1504b333728d71ec0",
+      "bytes": 1691,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-raster-dash.json",
+      "sha256": "932a8eb940c62160d777e15e840413b30e5d6dd6653a5f78af3db1321794ba74",
+      "bytes": 1045,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-hancom-surface.json",
+      "sha256": "5b986c137a2cb17a2133e078579df4bf4811104e84245f881f9dc5d6d8520e7a",
+      "bytes": 1362,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-j20-body-width.json",
+      "sha256": "5363a1583d4066c62f2bfe0f58e53335aeb7b577616237b1334793e5f352ef49",
+      "bytes": 863,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-native-transfer.json",
+      "sha256": "e00921810c87e2c98838a7daa33aa55f439b0c423f96a99def3b539783ce7307",
+      "bytes": 2968,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-base-spacing.json",
+      "sha256": "faaaa25b3d23efd8c427975929c81d9282479ba04ddb77974d226c31618507e4",
+      "bytes": 1212,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-native-editability.json",
+      "sha256": "d7d99a861742d518d18a0bc67696f754cbabaee6fe59adf674e0e1405a815ec7",
+      "bytes": 995,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-j21-box-port.json",
+      "sha256": "12bc3876b4fbe85b434fd8cc8a25134ea8a7925409166d0bf230be579914e6d6",
+      "bytes": 1043,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-geometry-topology.json",
+      "sha256": "4899878ececf905d61b88d16215e7f1049b4324e90a85076a2ce619893eb3ce3",
+      "bytes": 1140,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q17-frame.json",
+      "sha256": "e84856810a0ef3e956378cc594989f155b821cee368cf98fa2e263157071d652",
+      "bytes": 1194,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-equation-tokens.json",
+      "sha256": "08f3ab4896b76375cff4b6cdd9c787eb3f7317df2e9931f1360ac473bfa4f7f8",
+      "bytes": 1077,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-eval-boundary.json",
+      "sha256": "761dff51457fab967b4c5920da6170a33473b9d4636ebf8b94fc22c9e696049a",
+      "bytes": 967,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-j21-spacing.json",
+      "sha256": "b0d0030d302c4648fbc43ea0ea110897871193f5b88d397fff07c0dea7146e75",
+      "bytes": 977,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q18-transfer.json",
+      "sha256": "2d8593ca85d53beddcb747bc737d7d2060b920a28c392c2234e067147f030bcb",
+      "bytes": 1029,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q6-dash.json",
+      "sha256": "3a754e06e0f45924b08379977afc224269683abde58aa7260d00b576d5d1b859",
+      "bytes": 1199,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-underline.json",
+      "sha256": "6a20fb2e8c2ee6105dc5fb546d38f9fa147a3b9189227873f605e88179b50aa7",
+      "bytes": 964,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-underline.json",
+      "sha256": "5539aedf160d74b3254e579ac3e0f605589d88b55c12ddd219889c12747903b8",
+      "bytes": 1005,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q11-arrow.json",
+      "sha256": "20b74d4098d4d54f56d10fffdde5eb4649b0a6d75687dc7f3fa2d445c51d2152",
+      "bytes": 1113,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q21-AP.json",
+      "sha256": "fa06a94d2466e6de8d7d66513f39b51108d32be60926d6e9bf0367e2628c8495",
+      "bytes": 1171,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-native-owner.json",
+      "sha256": "fa412c2ce94a000494976ca95775e2fac0abd578fa20aea193aef0b7106a8c12",
+      "bytes": 999,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-equation-alignment.json",
+      "sha256": "50ec378f537722a793360f2ed561c3330b12234ebf37dee9026959adac578438",
+      "bytes": 1151,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-paid-recovery.json",
+      "sha256": "f5199b291f96d89ed8b4d69fa28a93e5c3a940959e73d0468b705388e65dd9fe",
+      "bytes": 1051,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-reference-layout.json",
+      "sha256": "43ce131b46d7f042cabdfc6573fc5c861a40b30b0c90d8cba9d3efb14bb158e3",
+      "bytes": 1337,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-provenance.json",
+      "sha256": "72b90a2fc26c7bc7c8ef646200dd04aa4fbea88db96619f0dce291f5ae196aab",
+      "bytes": 1109,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/R-source-order.json",
+      "sha256": "9ffcafb3021e82d35da5ef245cba6943b147a406085cfb209e258b42906ac67d",
+      "bytes": 944,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-source-order.json",
+      "sha256": "1284032861fb84949ba7fd890597acf92c58bd7d27e8c5e63ee7d03f0038e537",
+      "bytes": 849,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q9-angle.json",
+      "sha256": "31d6e5116ef45f9f2969026aa4793e6d4a0e3949f9f81543dae5a56d593dd7b1",
+      "bytes": 1227,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-native.json",
+      "sha256": "d2fe9444f15ac62ebbf7c3e65eec923731bacf6781bde39dbf86ce9424b25019",
+      "bytes": 1129,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/P-retrieval-audit.json",
+      "sha256": "a771930aae85c295605224c8a474526857258bef17e2e944cac428fa8b85c91c",
+      "bytes": 1643,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/records/C-d-q24-ticks.json",
+      "sha256": "0aac83e58d7b06500dfaf3f4ba82feaf17f2939eb58288080bc8e642a9884cd4",
+      "bytes": 1199,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/integrations.json",
+      "sha256": "01030592604c9b04923a4d8285930c15bfc50faa73014c9e822158c1222a46da",
+      "bytes": 3067,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/maintenance.json",
+      "sha256": "9800339b2f55fb36e3587623436fd5719022f2e1a94c7a762b2fc2635a9036ec",
+      "bytes": 1056,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/routes.json",
+      "sha256": "f0068029566720b70d1c9ac36831123b952e19b0df86681b2f6397c4d58c3dc8",
+      "bytes": 15548,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/releases/2026-10-22.5/layout-profiles.json",
+      "sha256": "6840a9545e169567853d20061d4ba6fc3a9059aedd7c65273f24227563291e42",
+      "bytes": 3535,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "packages/knowledge/current.json",
+      "sha256": "f0f045477b0f63d2960386361df5f4bd78295624e470096035013c0e58b819a9",
+      "bytes": 386,
+      "origin": "knowledge:2026-10-22.5"
+    },
+    {
+      "path": "context/history/jungdong/status.json",
+      "sha256": "c5f1b2321d0ecb84e74eeb7c88a03de033133b0e0b4f6ff81bbd2b779cb1e112",
+      "bytes": 5898,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/jungdong/handoff.json",
+      "sha256": "07bcfdba721f34f2a118480f99e3b16fbacddeb00625970e3c2695177d0f0a5f",
+      "bytes": 3579,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/jungdong/work-spec.r3.json",
+      "sha256": "0b8ffd375dc46078855c07d40b23792e73b399e0d4c21dfccd8c2496a9784ff1",
+      "bytes": 10049,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/jungdong/work-plan.r3.json",
+      "sha256": "e87f5d34f4c9d240012710c4ee35a502a547f0fcffe0043aa173567e84240aaf",
+      "bytes": 8709,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/jungdong/dependency-graph.r3.json",
+      "sha256": "1804eadbcd5785f337baf7fab8afff3fb27fd9665de23ad748d5622a27034e8c",
+      "bytes": 30213,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/jungdong/review-criteria.json",
+      "sha256": "91dfa7490cd30d638fd681e2af84cd67e4f99e9ba2b9629fbee19471e3da797a",
+      "bytes": 1749,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/jungdong/risk-register.json",
+      "sha256": "ac1df60e9653a6b6c2c8e9bc0dbc3af1f2c4af094dd9eea8870f8d8dfa897419",
+      "bytes": 3481,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/jungdong/reuse-policy.json",
+      "sha256": "e5e583847412248ee200a46a880f22c1c31f19802cf8c5f6ecadcfd68ef55baa",
+      "bytes": 1800,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/jungdong/acceptance/user-visual-review.actual.json",
+      "sha256": "39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128",
+      "bytes": 3073,
+      "origin": "operation:jungdong"
+    },
+    {
+      "path": "context/history/pipeline-evaluation/report.json",
+      "sha256": "760aaee8c77b5b5a81c1f4aba235b05ab33c0925ea6f8fc402eab9aeb26df14d",
+      "bytes": 18873,
+      "origin": "operation:pipeline-evaluation"
+    },
+    {
+      "path": "context/history/pipeline-evaluation/eval-coverage.inventory.actual.json",
+      "sha256": "89d5a805771fd868e283a430e770bfd10a1723974de7f2cdbeaffc2aeeb8fb88",
+      "bytes": 13341,
+      "origin": "operation:pipeline-evaluation"
+    },
+    {
+      "path": "context/history/pipeline-evaluation/rubric.proposed.json",
+      "sha256": "57046d170fd5c92b6ab42facfcec22f9802a05906ff2cb741d85a6631a8a0fd8",
+      "bytes": 8960,
+      "origin": "operation:pipeline-evaluation"
+    },
+    {
+      "path": "context/history/pipeline-evaluation/verification-policy.proposed.json",
+      "sha256": "632e1a7dc1aa5a5ca83171d27131a69e89b1ccb2928167a4081bd8108392241d",
+      "bytes": 4521,
+      "origin": "operation:pipeline-evaluation"
+    },
+    {
+      "path": "context/history/pipeline-evaluation/fresh-lead-20261023/START.json",
+      "sha256": "d644e9db37af8b4dcd0dfef112bb761576c3f2778401d6afbf2f2c384f92efe4",
+      "bytes": 8907,
+      "origin": "operation:pipeline-evaluation"
+    },
+    {
+      "path": "context/history/pipeline-evaluation/harness-local-owner-r7-review/status.actual.json",
+      "sha256": "43c115920af5f748ced0d7f84f49fe5677f1f48193a8c4e4dac3e8cd6f4fd041",
+      "bytes": 13297,
+      "origin": "operation:pipeline-evaluation"
+    },
+    {
+      "path": "context/history/restoration-foundation/program-definition.json",
+      "sha256": "25e819b2a5954dd23f1ce546a340a6334d06cea618c563b5675f902c230558af",
+      "bytes": 4831,
+      "origin": "operation:restoration-foundation"
+    },
+    {
+      "path": "context/history/restoration-foundation/problem-definition.json",
+      "sha256": "475d1bcb46515d67db2a997ac3aa3fecd1e08cba370076476e8efbf2a8b162fd",
+      "bytes": 113477,
+      "origin": "operation:restoration-foundation"
+    },
+    {
+      "path": "context/history/restoration-foundation/checkpoint.json",
+      "sha256": "9e483cdcb0722e6b16046fa3ead0b6e5f2dc9ad6174c0c4bf860ced5ef154a9b",
+      "bytes": 7424,
+      "origin": "operation:restoration-foundation"
+    },
+    {
+      "path": "context/history/restoration-foundation/execution-policy.json",
+      "sha256": "1512a0014b5b2d29ad553a8ad60b60499704ca0ea835547b3cc6eeadc70f0318",
+      "bytes": 7463,
+      "origin": "operation:restoration-foundation"
+    },
+    {
+      "path": "context/history/restoration-foundation/interview.json",
+      "sha256": "db8dd2abbe90025273c0f07f22e5ad3b893d6aad9b51512b2bc794823b39c14c",
+      "bytes": 10252,
+      "origin": "operation:restoration-foundation"
+    },
+    {
+      "path": "context/history/restoration-foundation/restoration-cases.json",
+      "sha256": "91fa1a794e4ce61f91ddcda7c4358cc46d3acc0898b16999bda54f82b8f26be0",
+      "bytes": 2144,
+      "origin": "operation:restoration-foundation"
+    }
+  ],
+  "counts": {
+    "importedFiles": 181,
+    "knowledgeRecords": 71,
+    "sourceReferences": 76,
+    "uniqueSnapshots": 75,
+    "historicalOperationDocuments": 21
+  },
+  "excluded": [
+    {
+      "path": "inventory.jsonl",
+      "reason": "19727 file metadata entries, not the curated semantic corpus; not bundled."
+    },
+    {
+      "path": "inventory-summary.json",
+      "reason": "Summary of omitted broad inventory."
+    },
+    {
+      "path": "native transcripts, memory, credentials, runtime databases",
+      "reason": "Outside problem-edit context scope."
+    },
+    {
+      "path": "source PDFs, native deliveries, full Hancom research corpus, historical node_modules and common-Harness implementations",
+      "reason": "Not bundled in this context consolidation; source records preserve historical locations and hashes."
+    }
+  ],
+  "coverage": "selected corpus only; no claim of all local context",
+  "originalSnapshots": "Exact imported bytes; local source paths inside historical records are provenance, not portable dependencies or current authority."
+}

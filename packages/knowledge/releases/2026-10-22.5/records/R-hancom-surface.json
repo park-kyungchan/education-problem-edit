@@ -1,0 +1,33 @@
+{
+  "kind": "rule",
+  "id": "R-hancom-surface",
+  "title": "Route Hancom features by control surface and exact evidence",
+  "stage": "routing",
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-hancom-capture"
+    },
+    {
+      "sourceId": "S-hancom-index"
+    },
+    {
+      "sourceId": "S-hancom-boundary"
+    }
+  ],
+  "when": "An agent needs any Hancom application or HWPX feature controlled by code.",
+  "do": [
+    "Use capability lookup by functional family, then api lookup by exact Action/ParameterSet/member.",
+    "Keep desktop IHwpObject, web HwpCtrl, HWPX file model and commercial SDK as separate surfaces.",
+    "Inspect action range/dummy hints, required explicit parameter sets and source page/version.",
+    "For a missing manual member, use source-backed read-only installed typelib discovery before concluding unsupported."
+  ],
+  "avoid": [],
+  "check": [
+    "Documentation, installed exposure, callability and native behavior are separate states.",
+    "All captured actions are routed or explicitly retained in other-documented-actions."
+  ],
+  "invalidates": [],
+  "limitation": "Official documented coverage is broad; no claim that every UI feature is automatable or execution-qualified. Parameter field extraction is best effort with exact full-page fallback."
+}

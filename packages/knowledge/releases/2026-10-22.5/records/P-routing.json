@@ -1,0 +1,44 @@
+{
+  "kind": "procedure",
+  "id": "P-routing",
+  "title": "Choose a known tool or bounded model contribution",
+  "stage": "routing",
+  "ruleIds": [
+    "R-research-reuse",
+    "R-paid-recovery"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-recovery20"
+    },
+    {
+      "sourceId": "S-jev-research20"
+    },
+    {
+      "sourceId": "S-hancom-research20"
+    }
+  ],
+  "inputs": [
+    "request category",
+    "source/implementation evidence",
+    "actual native capability state"
+  ],
+  "steps": [
+    "Query this knowledge space before broad filesystem/history research.",
+    "Use deterministic readers/renderers for schema, hashes, geometry, metrics and dependencies.",
+    "Use a native admitted perception/synthesis path only for unresolved semantic judgment.",
+    "Check exact model/transport evidence and retain failed/unknown effects."
+  ],
+  "outputs": [
+    "bounded route",
+    "implementation/source IDs",
+    "unresolved capability requirements"
+  ],
+  "implementationSourceIds": [
+    "S-recovery20"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

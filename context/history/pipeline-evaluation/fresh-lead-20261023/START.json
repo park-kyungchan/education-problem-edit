@@ -1,0 +1,85 @@
+{
+  "schema": "math-pipeline.fresh-lead-entrypoint.v1",
+  "classification": "Bounded successor-context handoff prepared by the current Lead; no new session, canonical authority or Work is created by this file.",
+  "purpose": "Continue the existing Local common-Harness adoption and full granular image-to-code evaluation effort with a fresh native Codex conversation.",
+  "transition": {
+    "recommendedMode": "fresh-conversation-with-no-daemon",
+    "previousSameSessionResumeRequirement": "Superseded as a mandatory procedure. It was a continuity preference, not a native identity invariant.",
+    "predecessorNativeSessionId": "01a16201-59ee-7480-9cbd-65e383867ab9",
+    "successorNativeSessionId": null,
+    "successorLaunched": false,
+    "requiredIdentity": "Observe and qualify the successor actual native session, process and Herdr pane. Do not copy predecessor identity or authority.",
+    "launch": ["codex-herdr", "-C", "/home/palantirkc", "Read /home/palantirkc/operations/math-pipeline-audit-20261022/fresh-lead-20261023/START.json and continue the existing Local Harness work as Lead. Use only the bounded reading order and verify your actual native caller first."],
+    "launcherFlags": ["--no-daemon", "--dangerously-bypass-approvals-and-sandbox"],
+    "sourceSemantics": {
+      "resume": "Continue the saved conversation; retains its history/context.",
+      "noDaemon": "Run without the shared background server; does not itself reset conversation context.",
+      "freshConversation": "Start without resuming/forking predecessor history; persistent instructions and explicitly read artifacts still contribute context."
+    },
+    "officialReference": "https://learn.chatgpt.com/docs/developer-commands?surface=cli"
+  },
+  "boundedReadingOrder": [
+    {"path": "/home/palantirkc/orchestrator/project.json", "scope": "Actual Local execution owner and immutable Ontology pin."},
+    {"path": "/home/palantirkc/orchestrator/current-work.json", "scope": "activeLocalRequest only; historical Hermes/VPS fields do not select this Work."},
+    {"path": "/home/palantirkc/operations/math-pipeline-audit-20261022/orchestration.policy.json", "scope": "Lead-only dialogue, bounded delegation, actual native ownership, twenty-minute routine polling, user-owned capacity resume."},
+    {"path": "/home/palantirkc/operations/math-pipeline-audit-20261022/harness-local-owner-r7-review/status.actual.json", "scope": "Final R7 source review disposition. Expand retained qualification only if invalidated or needed."},
+    {"path": "/home/palantirkc/operations/math-pipeline-audit-20261022/native-adoption-r7-ready/activation-successor.proposed.json", "scope": "Exact unexecuted two-file activation. Validate current caller and source before effects."}
+  ],
+  "settledScope": {
+    "executionOwner": "Local Herdr independent of VPS",
+    "nativeOwner": "Native Codex owns loop, tools, sessions, delegation, cancellation and compaction.",
+    "lead": "Own orchestration and all user dialogue. Delegate source-heavy execution/review to fresh bounded panes when needed; workers write compact English handoffs for Lead pull.",
+    "workBoundary": "Pipeline improvement is a separate Work; any later production consumer is a separate linked Work. A new session does not create or enroll another Work.",
+    "identityHierarchy": "Resolve existing Domain/Project; native-allocate Work/Task and each Work/Task Issue/Spec/Plan with typed relations. Execution panes own their actual Run/attempt; subLead collects.",
+    "designOrder": "Apply common Harness before adopting pipeline/rubric design. Continue interviews for genuinely unresolved requirements without asking the user to supply a representative failure.",
+    "evaluationScope": "All granular LLM/Jev contributions throughout image-to-code; preserve content, formula and geometry semantics. Evaluate the evaluator as well.",
+    "optimizationObjective": "Total active generation, verification, human review and repair time/cost; elapsed queue/capacity wait stays separate.",
+    "upperOntologyPin": "0.2.0",
+    "oldWorksAndPausedGoals": "Preserve; no new Goal or old Goal resume.",
+    "jevPolicy": "Only actual source-owned enrollment starts an enrolled Work; follow the inherited jev-first-work policy and sole palantirkc-jev-accounting authority. Preserve unknown liabilities; no paid replay or fallback sender."
+  },
+  "sourceStatus": {
+    "commonCandidate": "/home/palantirkc/worktrees/math-harness-native-20261022/agent-platform",
+    "nativeCandidate": "/home/palantirkc/worktrees/math-harness-native-20261022/codex-harness-engineering",
+    "freeze": "/home/palantirkc/operations/math-pipeline-audit-20261022/harness-local-owner-r7/lead-r7-freeze.actual.json",
+    "fullPatchSha256": "edad645864e916d3d7f3090e6d670cba20e74b3939e78669f986bc78629f020b",
+    "lastQualifiedCommonMain": "61d7865f623a8b2952041fde45b0d9225189b006",
+    "mainObservationIsCurrentReservation": false,
+    "sourceQualified": true,
+    "qualificationScope": "Final R7 integration with retained R5/R6 finite checks; final review has zero unresolved findings in that scope.",
+    "activated": false,
+    "nativeProductionVerified": false,
+    "canonicalWorkTaskRunAllocatedForThisEffort": false,
+    "candidateCodeCommittedOrPublished": false,
+    "installedSources": "Preserve dirty/pinned originals under projects; do not overwrite, silently rebase or requalify unrelated sources."
+  },
+  "nextOrderedActions": [
+    "Reobserve your actual successor native session/process/pane using the selected nativeJevActorIdentity function. A new conversation and launch flags alone do not prove qualification.",
+    "If qualified, read the exact R7 freeze and activation proposal, reobserve selected source/main/ref/control/scope revisions, and apply only the reviewed matching activation through the existing owner. Unknown outcomes remain held without replay.",
+    "Use fresh bounded adoption delegation to refresh the stale preparation packet. Register genuine Work/Task Issue/Spec/Plan identities through the existing native allocator. Root requires its own bounded orchestration binding when applicable; an executor Task does not enroll Root.",
+    "Observe and bind each actual executor independently. Qualify one deterministic original-PDF custody Task/Run, with the execution pane recording its own Run and attempt. Custody proves input identity/record linkage only.",
+    "Then continue problem definition and granular coverage/bottleneck interviews before adopting rubrics. Grade frozen outputs using existing common evaluation contracts; retain failures and independently fixed expected behavior."
+  ],
+  "reusableEvidence": {
+    "entrypoint": "/home/palantirkc/projects/math-editing-knowledge/START.json",
+    "usage": "Use bounded route/capability/api retrieval. Pin an explicit release for historical comparisons. Do not preload operation trees or predecessor transcript.",
+    "intakeReceipt": "/home/palantirkc/operations/math-pipeline-audit-20261022/knowledge-handoff-20261023/receipt.actual.json",
+    "deliveredRelease": "2026-10-22.4",
+    "lastObservedSelectedRelease": "2026-10-22.5",
+    "frozenDiagnosticTrialsRelease": "2026-10-22.2",
+    "evaluationInventory": "/home/palantirkc/operations/math-pipeline-audit-20261022/eval-coverage.inventory.actual.json",
+    "inventoryState": "Twenty areas; not an adopted rubric or canonical EvalRun. Prior rubric/verification-policy proposals remain unadopted.",
+    "retrievalFindings": "Candidate omissions and wrong source occurrences precede selector diagnosis. Actual Jev owner and consumer binding, returned/applied/superseded/used states, and output contract failures stay distinct.",
+    "productionEvidence": "Both Daechi layouts delivered and preserved. Reuse completed exact receipts without repeat rendering absent a new defect or invalidated evidence. Preserve Q16/Q17 source uncertainty.",
+    "layoutPolicy": "Layout and HWP/HWPX format are independent. Explicit choice wins; preserve an existing known profile; obtain a choice before new-document composition.",
+    "canonicalAcceptance": null
+  },
+  "pilot": {
+    "path": "/mnt/c/Users/packr/Downloads/중2 2026학년도 대치중 2학년 2학기 중간고사 (1).pdf",
+    "bytes": 3075783,
+    "sha256": "2bfac149055818326290f4444f87f256b5063aa22518d0b79d386cb1f92e1006"
+  },
+  "deferredDependency": "Before a later production consumer, repair the selected-external-artifact-dependent Task successor publication P2 and bind an actual qualified producer artifact revision/digest/milestone. Evidence paths or input custody do not satisfy that relation.",
+  "preserveHistoricalCheckpoint": "/home/palantirkc/operations/math-pipeline-audit-20261022/native-adoption-r7-ready/handoff.actual.json",
+  "historicalCheckpointUse": "Preserve source facts and pending effects; its mandatory same-session resume wording is superseded by this entrypoint."
+}

@@ -1,0 +1,104 @@
+{
+  "kind": "procedure",
+  "id": "P-native-transfer",
+  "title": "Transfer a complete selected question with explicit behavior states",
+  "stage": "native",
+  "ruleIds": [
+    "R-question-container",
+    "R-native-owner",
+    "R-proportionate-checks"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-guidanceF"
+    },
+    {
+      "sourceId": "S-copyF"
+    },
+    {
+      "sourceId": "S-transfer-discussion"
+    }
+  ],
+  "inputs": [
+    "whole-question table anchor",
+    "source package hash",
+    "native behavior requirement"
+  ],
+  "steps": [
+    "Select the outer question table through its anchor; verify FindCtrl returns tbl.",
+    "Reuse the observed GetTextFile(HWPML2X,saveblock) -> SetTextFile(block,HWPML2X,insertfile) scratch path for format-preserving string transfer.",
+    "Keep OS clipboard behavior separate. For an explicitly needed HWPX file route, consult the documented FileSaveBlock_S/InsertFile alternative and qualify only that missing behavior."
+  ],
+  "outputs": [
+    "selected-question membership",
+    "explicit observed/documented/not-exercised states"
+  ],
+  "implementationSourceIds": [
+    "S-authorF",
+    "S-copyF"
+  ],
+  "stopWhen": [
+    "Question/anchor selection is ambiguous or descendant membership is incomplete."
+  ],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment.",
+  "behaviors": [
+    {
+      "feature": "Q18 selected-block string transfer",
+      "state": "observed",
+      "sourceIds": [
+        "S-copyF",
+        "S-guidanceF"
+      ],
+      "facts": {
+        "format": "HWPML2X",
+        "get": "GetTextFile(\"HWPML2X\",\"saveblock\")",
+        "set": "SetTextFile(block,\"HWPML2X\",\"insertfile\")",
+        "equations": 17,
+        "pictures": 1,
+        "tablesTotal": 7,
+        "tableBreakdown": "question + proof frame + five blanks",
+        "q19Excluded": true
+      }
+    },
+    {
+      "feature": "OS clipboard Copy/Paste",
+      "state": "not-exercised",
+      "sourceIds": [
+        "S-copyF"
+      ],
+      "facts": {
+        "clipboardTouched": false
+      }
+    },
+    {
+      "feature": "GetTextFile/SetTextFile HWPX strings",
+      "state": "unsupported-in-cited-source",
+      "sourceIds": [
+        "S-transfer-discussion",
+        "S-guidanceF"
+      ],
+      "facts": {
+        "format": "HWPX",
+        "scope": "Cited native support statement; no inferred cross-product signature."
+      }
+    },
+    {
+      "feature": "HWPX selected-block file route",
+      "state": "documented",
+      "sourceIds": [
+        "S-transfer-discussion"
+      ],
+      "facts": {
+        "saveAction": "FileSaveBlock_S",
+        "saveSet": "HFileOpenSave",
+        "format": "HWPX",
+        "insertAction": "InsertFile",
+        "insertSet": "HInsertFile",
+        "exampleKeepSection": 1,
+        "executedByQ18Receipt": false
+      }
+    }
+  ]
+}

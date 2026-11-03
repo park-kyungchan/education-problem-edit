@@ -1,0 +1,92 @@
+[
+  {
+    "from": "routing",
+    "to": "source",
+    "relation": "feeds",
+    "reason": "routing output is a prerequisite of source"
+  },
+  {
+    "from": "source",
+    "to": "regions",
+    "relation": "feeds",
+    "reason": "source output is a prerequisite of regions"
+  },
+  {
+    "from": "regions",
+    "to": "transcription",
+    "relation": "feeds",
+    "reason": "regions output is a prerequisite of transcription"
+  },
+  {
+    "from": "transcription",
+    "to": "semantics",
+    "relation": "feeds",
+    "reason": "transcription output is a prerequisite of semantics"
+  },
+  {
+    "from": "semantics",
+    "to": "geometry",
+    "relation": "feeds",
+    "reason": "semantics output is a prerequisite of geometry"
+  },
+  {
+    "from": "geometry",
+    "to": "assets",
+    "relation": "feeds",
+    "reason": "geometry output is a prerequisite of assets"
+  },
+  {
+    "from": "transcription",
+    "to": "equations",
+    "relation": "feeds",
+    "reason": "transcription output is a prerequisite of equations"
+  },
+  {
+    "from": "transcription",
+    "to": "question-layout",
+    "relation": "feeds",
+    "reason": "transcription output is a prerequisite of question-layout"
+  },
+  {
+    "from": "assets",
+    "to": "question-layout",
+    "relation": "feeds",
+    "reason": "assets output is a prerequisite of question-layout"
+  },
+  {
+    "from": "equations",
+    "to": "question-layout",
+    "relation": "feeds",
+    "reason": "equations output is a prerequisite of question-layout"
+  },
+  {
+    "from": "question-layout",
+    "to": "page-layout",
+    "relation": "feeds",
+    "reason": "question-layout output is a prerequisite of page-layout"
+  },
+  {
+    "from": "page-layout",
+    "to": "package",
+    "relation": "feeds",
+    "reason": "page-layout output is a prerequisite of package"
+  },
+  {
+    "from": "package",
+    "to": "native",
+    "relation": "feeds",
+    "reason": "package output is a prerequisite of native"
+  },
+  {
+    "from": "native",
+    "to": "delivery",
+    "relation": "feeds",
+    "reason": "native output is a prerequisite of delivery"
+  },
+  {
+    "from": "delivery",
+    "to": "feedback",
+    "relation": "feeds",
+    "reason": "delivery output is a prerequisite of feedback"
+  }
+]

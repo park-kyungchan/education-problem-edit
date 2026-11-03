@@ -1,0 +1,42 @@
+{
+  "kind": "procedure",
+  "id": "P-provenance",
+  "title": "Recover printed objects and remove student additions",
+  "stage": "regions",
+  "ruleIds": [
+    "R-mark-provenance",
+    "R-visual-semantics",
+    "R-uncertainty"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD"
+    },
+    {
+      "sourceId": "S-scenes20"
+    }
+  ],
+  "inputs": [
+    "original question crop",
+    "typed primitive inventory"
+  ],
+  "steps": [
+    "List strokes/labels/arcs/fills before deciding cleanup.",
+    "Attach printed/student/ambiguous claim and semantic owner to each.",
+    "Render retained objects; preserve crop and ambiguity sidecar."
+  ],
+  "outputs": [
+    "mark ledger",
+    "retained/excluded/unresolved object map"
+  ],
+  "implementationSourceIds": [
+    "S-scenes20",
+    "S-figureD"
+  ],
+  "stopWhen": [
+    "Unsupported source interpretation would be silently converted to fact."
+  ],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

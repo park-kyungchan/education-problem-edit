@@ -1,0 +1,206 @@
+{
+  "schema": "jungdong.work-spec.v1",
+  "id": "WS-JD-HWPX-20261021",
+  "revision": 3,
+  "ontologyVersion": "0.2.0",
+  "domainId": "mathematics-document-editing",
+  "projectId": "math-problem-restoration",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "acceptanceDecision": null,
+  "status": "production-delivered-additive-explanation-authorized",
+  "purpose": "Recreate the Jungdong Grade8 2026 second-semester midterm mathematics source as a new editable HWPX so the user can visually compare it with the exact previous delivered output.",
+  "requestedBy": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/planning-brief.json",
+    "exists": true,
+    "sha256": "707f83716a5ee4a33ca0837156a71a20157b9784ec88f982f6d77038513d8add",
+    "bytes": 9693
+  },
+  "scope": {
+    "selected": "Full original 5-page examination; 16 multiple-choice and4 constructed-response problems.",
+    "totalProblems": 20,
+    "source": {
+      "id": "source-original-pdf",
+      "path": "/mnt/c/Users/packr/Desktop/문제편집/중2 2026학년도 중동중 2학년 2학기 중간고사.pdf",
+      "role": "sole-original-source",
+      "exists": true,
+      "bytes": 1875677,
+      "sha256": "82c365b790b30cec5c594d72f2b5b6fb6e6f98b504fd7182c28213e76969c9d4",
+      "expectedSha256": "82c365b790b30cec5c594d72f2b5b6fb6e6f98b504fd7182c28213e76969c9d4",
+      "expectedMatch": true,
+      "provenance": {
+        "record": "/home/palantirkc/operations/math-problem-editing-20261020/evidence/source-inspection.json",
+        "pageCountRecorded": 5,
+        "scanOnlyRecorded": true
+      }
+    },
+    "primaryBaseline": [
+      {
+        "id": "readable-comparison-hwpx",
+        "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/gpt-6.1-sol-ultra-20-problems-readable-comparison-r7.hwpx",
+        "role": "primary-prior-delivered-comparison",
+        "exists": true,
+        "bytes": 2682754,
+        "sha256": "c5fd4bcd7aa50ea28460b8ee20e58acefab5808901c5715ad1e4a14d082e8b5b",
+        "expectedSha256": "c5fd4bcd7aa50ea28460b8ee20e58acefab5808901c5715ad1e4a14d082e8b5b",
+        "expectedMatch": true,
+        "provenance": {
+          "receipt": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/parent-verification/remaining-delivery.json",
+          "variant": "readable-comparison"
+        }
+      },
+      {
+        "id": "readable-comparison-pdf",
+        "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/gpt-6.1-sol-ultra-20-problems-readable-comparison-r7.pdf",
+        "role": "primary-prior-delivered-comparison",
+        "exists": true,
+        "bytes": 1263414,
+        "sha256": "fb679541cafd541903e820f1be8dea34a94a4dd692c8a5fdd4365dda2f67fdae",
+        "expectedSha256": "fb679541cafd541903e820f1be8dea34a94a4dd692c8a5fdd4365dda2f67fdae",
+        "expectedMatch": true,
+        "provenance": {
+          "receipt": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/parent-verification/remaining-delivery.json",
+          "variant": "readable-comparison"
+        }
+      }
+    ],
+    "supplementalBaseline": [
+      {
+        "id": "q11-review-r6-hwpx",
+        "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/gpt-6.1-sol-ultra-20-problems-q11-updated-review-r6.hwpx",
+        "role": "supplemental-prior-delivered-detailed-review",
+        "exists": true,
+        "bytes": 2711985,
+        "sha256": "90ac33c81107fac480ce5c83845f4d001b06a4060267eb3583d47a1e25c36fac",
+        "expectedSha256": "90ac33c81107fac480ce5c83845f4d001b06a4060267eb3583d47a1e25c36fac",
+        "expectedMatch": true,
+        "provenance": {
+          "receipt": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/parent-verification/q11-review-delivery.json"
+        }
+      },
+      {
+        "id": "q11-review-r6-pdf",
+        "path": "/mnt/c/Users/packr/Desktop/문제편집/native-feedback-20261020/gpt-6.1-sol-ultra-20-problems-q11-updated-review-r6.pdf",
+        "role": "supplemental-prior-delivered-detailed-review",
+        "exists": true,
+        "bytes": 1363065,
+        "sha256": "3417ad747c9e40c99c0815b4d96d7a2c1ff143aab385bb8bd09d263ee9a1f582",
+        "expectedSha256": "3417ad747c9e40c99c0815b4d96d7a2c1ff143aab385bb8bd09d263ee9a1f582",
+        "expectedMatch": true,
+        "provenance": {
+          "receipt": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/parent-verification/q11-review-delivery.json"
+        }
+      }
+    ],
+    "optionalArgonComparison": false
+  },
+  "outputs": {
+    "required": [
+      "Versioned new editable readable-comparison HWPX",
+      "Actual Hancom PDF of that exact HWPX",
+      "Fresh typed source IR and figure regeneration code",
+      "Original/restored role manifests and source/uncertainty sidecar",
+      "Problem-mapped source/old/new visual review index and delivery receipt",
+      "Standalone Korean Jev/native-LLM/program explanation HTML with actual call accounting"
+    ],
+    "optional": [
+      "Detailed technical review variant only after separately selected scope change"
+    ],
+    "persistentLanguage": "English typed records/code; source Korean document strings; Korean approval packet."
+  },
+  "editableBoundary": "Native editable text/equations/tables/printed frames; figures are code-generated embedded PNG with source SVG/TypeScript retained. No claim of fully native editable diagram topology.",
+  "reusePolicyRef": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/reuse-policy.json",
+  "assumptions": [
+    {
+      "id": "A-JD-01",
+      "state": "proposed",
+      "text": "Full20 is the default scope because the comparable delivered r7 covers the full examination."
+    },
+    {
+      "id": "A-JD-02",
+      "state": "proposed",
+      "text": "Use r7 as primary baseline and r6 only for detailed provenance; Argon comparison is optional and not a model benchmark."
+    },
+    {
+      "id": "A-JD-03",
+      "state": "proposed",
+      "text": "Preserve original/restored comparison and remove technical review prose from the readable book; retain sidecar provenance."
+    },
+    {
+      "id": "A-JD-04",
+      "state": "proposed",
+      "text": "Fresh authors do not reuse prior content; general native-format/runtime patterns may be declared and adapted."
+    }
+  ],
+  "acceptance": {
+    "authority": "user",
+    "method": "Visual review of exact source/old/new artifacts and Hancom editability, using review-criteria.json.",
+    "automatedQualityBenchmark": false,
+    "confidenceGate": false,
+    "sourceAccuracyAcceptance": null,
+    "acceptanceDecision": null
+  },
+  "budget": {
+    "authority": "palantirkc-jev-accounting",
+    "storeIdentity": "/home/palantirkc/operations/herdr-jev-first-adoption-20261021/activation/accounting.sqlite",
+    "policyRevision": "57efe1e5eafd3b9184170c7fa43f7f4160f9148736093dc6b4f65f99e0f6b419",
+    "dailyCapMicroUsd": "10000000",
+    "timezone": "Asia/Seoul",
+    "scope": "Shared across eligible Works, actors and hosts; no per-Work reset or new allowance.",
+    "inheritedPilotCumulativeCapPreserved": true,
+    "supplement294Preserved": true,
+    "unknownLiabilitiesPreserved": true,
+    "admission": "Only the current source-owned native accounting owner may admit a paid decision; missing binding/certification or cap rejection holds dependent Jev effects.",
+    "rawProviderAllowed": false,
+    "unknownPaidReplayAllowed": false,
+    "nativeCodexCost": "Native Codex subscription/runtime costs are separate and are not fabricated into Jev debits."
+  },
+  "approval": {
+    "state": "approved",
+    "approvalFile": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/production-approval.actual.json",
+    "requiredBefore": "Every production Task, extraction/generation/rendering/assembly/COM/delivery/dispatch.",
+    "gateTaskId": "T-JD-20261021-01-APPROVAL"
+  },
+  "nativeAuthority": {
+    "loopToolsSessionsDelegationCompaction": "native Codex",
+    "workEnrollment": {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/native/work-start.actual.json",
+      "exists": true,
+      "sha256": "54829a422edade533a48f6514c8bde18f87efaa9fb291734d6d3d21b0f3f210f",
+      "bytes": 3353
+    },
+    "currentPlanningBoundary": {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/native/fixed-artifact-boundary.actual.json",
+      "exists": true,
+      "sha256": "4ae13bde7672d3045d3b76202900b18736dd89ba6d544a2a6e46a5640a51d193",
+      "bytes": 3353
+    },
+    "newWorkIdNotExample": true
+  },
+  "outOfScope": [
+    "Goal creation or old paused Goal lifecycle",
+    "VPS/SSH/MFA/remote work",
+    "Installations or native configuration/trust changes",
+    "Raw provider APIs, fallback sender/ledger/allowance",
+    "Old pilot/recovery replay or fulltext release",
+    "New answers, hidden proof reconstruction or unsupported source truth",
+    "Production dispatch or extra panes before approval",
+    "Git configuration/clone/commit/push/publication"
+  ],
+  "newAgentConstraint": {
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "high",
+    "source": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/user-instructions.actual.json",
+    "substitutionAllowed": false,
+    "appliesTo": "Every new native agent; existing planning turn settings are not mutated."
+  },
+  "predecessor": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/work-spec.json",
+    "revision": 2,
+    "sha256": "4ee693f12b3199df362bbfc92dba82c4f6ab084d94964ebffedff343874cfc78"
+  },
+  "addendum": {
+    "taskId": "T-JD-20261021-11-EXPLAIN",
+    "authorityRef": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/explanation-user-instruction.actual.json",
+    "scope": "Offline Korean causal explanation, actual Jev call accounting, and local HTML visualization after main production delivery; no producer/source contract change."
+  }
+}

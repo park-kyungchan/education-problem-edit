@@ -1,0 +1,41 @@
+{
+  "kind": "case",
+  "id": "C-d-q9-angle",
+  "title": "Daechi Q9: Printed angle pointer is missing and the AIB 114-degree label overlaps AB.",
+  "stage": "assets",
+  "exam": "daechi-20261022",
+  "question": 9,
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "9-"
+    },
+    {
+      "sourceId": "S-optimizationF"
+    },
+    {
+      "sourceId": "S-finalF"
+    }
+  ],
+  "symptom": "Printed angle pointer is missing and the AIB 114-degree label overlaps AB.",
+  "cause": null,
+  "expected": "Restore the leader/angle target and adjust label presentation away from AB.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-visual-semantics",
+    "R-label-anchor"
+  ],
+  "requiredChecks": [
+    "Pinned original/output region comparison.",
+    "Typed source-mark/semantic ownership coverage.",
+    "Only affected descendants invalidated."
+  ],
+  "limitation": "Source-specific user expectation and producer-reported v2 correction. This curator did not independently regrade the original image; causal attribution remains unproven.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

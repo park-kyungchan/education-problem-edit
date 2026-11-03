@@ -1,0 +1,92 @@
+{
+  "schema": "math-pipeline.incremental-verification.proposal.v1",
+  "status": "designed-not-implemented-or-timed",
+  "userPriority": "Reduce verification time as part of total active work time, with mandatory fidelity preserved.",
+  "captureOnceGradeMany": "Freeze one actual output occurrence and let all applicable graders read it. The shared runSuite can otherwise rerun a target per evaluator; use the existing captured-artifact path instead of repeated native executions. Native runtime remains the execution owner.",
+  "stages": [
+    {
+      "at": "Once per unchanged source",
+      "checks": "PDF identity, page/question mapping and original source extraction.",
+      "reuse": "Reuse against the exact source hash; never OCR the entire paper for an isolated local edit."
+    },
+    {
+      "at": "Each affected edit",
+      "checks": "Validate changed structured nodes, their transitive dependencies and affected previews.",
+      "reuse": "Use unchanged, qualified results; preserve their source and checker versions."
+    },
+    {
+      "at": "Only ambiguous/failed findings",
+      "checks": "One targeted original/restored crop review, with sufficient context to avoid misleading crops.",
+      "reuse": "Request a strong model or human judgment only for the unresolved fact; confidence alone never certifies correctness."
+    },
+    {
+      "at": "Checkpoint or shared renderer/font/template change",
+      "checks": "Run the relevant regression cases; invalidate every dependent result.",
+      "reuse": "Do not rerun the whole adversarial suite after an unrelated text edit."
+    },
+    {
+      "at": "Before HWPX and after its eventual creation",
+      "checks": "Before export, aggregate all 24 problem statuses and source coverage. Later perform the separate native HWPX equation/layout/package/PDF check once per exact final artifact.",
+      "reuse": "Pre-export success does not establish native HWPX behavior. Rerun changed artifact checks after any final serialization change."
+    }
+  ],
+  "exampleDependencyRules": [
+    {
+      "change": "Q12 point-label string only",
+      "rerun": [
+        "Changed source/text binding",
+        "Label placement and local preview",
+        "Geometry-coordinate invariant"
+      ],
+      "retain": [
+        "Unchanged unrelated question checks",
+        "Unchanged geometry derivation"
+      ],
+      "condition": "The dependency graph proves coordinates and semantic point identity unchanged."
+    },
+    {
+      "change": "Q14 vertex coordinates or constraints",
+      "rerun": [
+        "Affected geometric construction and dependent points",
+        "Source relationship checks",
+        "Affected preview and visual review"
+      ],
+      "retain": [
+        "Unrelated question outputs and unchanged source text"
+      ]
+    },
+    {
+      "change": "Shared font, math renderer or page template",
+      "rerun": [
+        "All affected previews/layout regressions and final coverage"
+      ],
+      "retain": [
+        "Only checks proven independent of that shared dependency"
+      ]
+    }
+  ],
+  "cacheKey": [
+    "Original PDF and crop hashes",
+    "Exact structured object and dependency hashes",
+    "Prompt/model/route/response-schema versions when used",
+    "Checker and expected-truth versions",
+    "Renderer, fonts, viewport and layout versions",
+    "Applicable scope, original decisions and current source qualification"
+  ],
+  "reuseRule": "Reuse only a passing result whose complete key and dependency closure remain current. A changed rubric, truth, source, prompt, font, scope or dependency invalidates the affected result. Unknowns remain unknown.",
+  "boundedReview": "Use one independent finding list and one local repair cycle first. Re-evaluate repaired findings plus affected regressions; stop for a specific unresolved fact instead of opening unbounded verification rounds.",
+  "timing": {
+    "measure": [
+      "verificationWallMs",
+      "verificationActiveMs",
+      "humanReviewActiveMs",
+      "checksExecuted",
+      "checksReused",
+      "unnecessaryFullRegenerationCount"
+    ],
+    "target": "Demonstrate lower measured total time without critical misses; no unmeasured percentage saving claimed.",
+    "setupCost": "Report verifier setup/evaluation overhead separately and include it in the first-paper total."
+  },
+  "nativeOwnership": "Native Codex retains tools, dispatch, sessions and cancellation. This file is a policy proposal, not an executor, enrollment or paid permit.",
+  "acceptanceDecision": null
+}

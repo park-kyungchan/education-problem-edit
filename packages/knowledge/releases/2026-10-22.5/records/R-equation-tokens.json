@@ -1,0 +1,37 @@
+{
+  "kind": "rule",
+  "id": "R-equation-tokens",
+  "title": "Use qualified token-aware EqEdit mappings",
+  "stage": "equations",
+  "evidenceClass": "observed-code",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-normalizer20",
+      "contains": "TOKENS ="
+    },
+    {
+      "sourceId": "S-normalverify20",
+      "pointer": "/verified"
+    }
+  ],
+  "when": "A raw EqEdit script uses perpendicular/congruence or geometry notation.",
+  "do": [
+    "Reuse normalization for standalone perp -> BOT and cong -> ==.",
+    "Preserve quoted literals, longer identifiers and arbitrary equals.",
+    "Reuse qualified rm identifiers, overbars and degree scripts only within their fixture scope."
+  ],
+  "avoid": [],
+  "check": [
+    "Exact script/control identity; native glyph result for a new command/version."
+  ],
+  "invalidates": [
+    "equations",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Do not global-replace every equals sign or assume an untested square glyph is correct."
+}

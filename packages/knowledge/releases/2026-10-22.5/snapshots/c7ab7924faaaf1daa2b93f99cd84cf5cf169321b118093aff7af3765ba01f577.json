@@ -1,0 +1,884 @@
+{
+  "schema": "daechi.hwp-template-verification.v1",
+  "inputsRehashedAndUnchanged": true,
+  "hwp": {
+    "path": "/mnt/c/Users/packr/Downloads/Daechi-HWP-layout-20261022/2026 2학기 중간 2학년 대치.hwp",
+    "sha256": "c01811e777271e23125e1bf79bd6559988a761aa384ee240c65c7391a9048d1a",
+    "size": 913408,
+    "format": "HWP binary compound file",
+    "compoundSignature": "D0CF11E0A1B11AE1",
+    "hwpDocumentFileSignatureFound": true,
+    "nativeSavedAndReopened": true,
+    "title": "2026 2학기 중간 2학년 대치"
+  },
+  "pdf": {
+    "path": "/mnt/c/Users/packr/Downloads/Daechi-HWP-layout-20261022/2026 2학기 중간 2학년 대치.pdf",
+    "sha256": "b90acad8ff20f5254a66eab1b965159a2003150347ca4d8b1bac64d737dfa262",
+    "pages": 12,
+    "exportedFromReopenedNativeHwp": true
+  },
+  "coverage": {
+    "questions": 24,
+    "choices": 120,
+    "equations": 260,
+    "pictures": 21,
+    "questionTables": 24,
+    "nestedFrameAndBlankTables": 7,
+    "removedObsoletePageTemplateTables": 6,
+    "mediaPayloadsByteIdentical": true,
+    "perQuestion": [
+      {
+        "question": 1,
+        "tableId": "907409714",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 10,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 2,
+        "tableId": "517603071",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 5,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 3,
+        "tableId": "541760601",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 11,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 4,
+        "tableId": "782138423",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 15,
+        "pictures": 0,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 5,
+        "tableId": "1982101459",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 18,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 6,
+        "tableId": "1750798986",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 14,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 7,
+        "tableId": "1232833276",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 11,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 8,
+        "tableId": "2132688934",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 9,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 9,
+        "tableId": "54496149",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 9,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 10,
+        "tableId": "2146776001",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 9,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 11,
+        "tableId": "1771489621",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 10,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 12,
+        "tableId": "298021768",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 10,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 13,
+        "tableId": "1076164488",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 14,
+        "pictures": 0,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 14,
+        "tableId": "1013998739",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 11,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 15,
+        "tableId": "1664495486",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 10,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 16,
+        "tableId": "506636079",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 7,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 17,
+        "tableId": "1364548298",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 1,
+        "pictures": 0,
+        "nestedTables": 1,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 18,
+        "tableId": "223434402",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 17,
+        "pictures": 1,
+        "nestedTables": 6,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 19,
+        "tableId": "1407097883",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 12,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 20,
+        "tableId": "750624462",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 9,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 21,
+        "tableId": "480451410",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 13,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 22,
+        "tableId": "932973087",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 15,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 23,
+        "tableId": "1116066310",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 9,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      },
+      {
+        "question": 24,
+        "tableId": "1947592450",
+        "textMathImageOrderPreserved": true,
+        "nativeEquationMetricsPreserved": true,
+        "equations": 11,
+        "pictures": 1,
+        "nestedTables": 0,
+        "choices": {
+          "①": 1,
+          "②": 1,
+          "③": 1,
+          "④": 1,
+          "⑤": 1
+        }
+      }
+    ]
+  },
+  "layout": {
+    "referencePageMarginsAndSingleColumnExact": true,
+    "questionWidthHwpUnits": 30000,
+    "bodyAndChoiceLineSpacingPercent": 160,
+    "interQuestionBlankParagraphs": 3,
+    "pageMap": [
+      {
+        "page": 1,
+        "questions": [
+          {
+            "question": 1,
+            "bbox": [
+              73.1652603149414,
+              139.78009033203125,
+              101.82008361816406,
+              159.15786743164062
+            ]
+          },
+          {
+            "question": 2,
+            "bbox": [
+              73.1652603149414,
+              426.467529296875,
+              290.5600280761719,
+              445.8353271484375
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 2,
+        "questions": [
+          {
+            "question": 3,
+            "bbox": [
+              73.1652603149414,
+              80.54417419433594,
+              101.82008361816406,
+              99.92195129394531
+            ]
+          },
+          {
+            "question": 4,
+            "bbox": [
+              73.1652603149414,
+              385.06463623046875,
+              318.81854248046875,
+              396.8224792480469
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 3,
+        "questions": [
+          {
+            "question": 5,
+            "bbox": [
+              73.1652603149414,
+              81.58707427978516,
+              178.00843811035156,
+              99.56148529052734
+            ]
+          },
+          {
+            "question": 6,
+            "bbox": [
+              73.1652603149414,
+              386.1294860839844,
+              269.40679931640625,
+              405.8340148925781
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 4,
+        "questions": [
+          {
+            "question": 7,
+            "bbox": [
+              73.1652603149414,
+              81.22213745117188,
+              268.7117004394531,
+              99.92195129394531
+            ]
+          },
+          {
+            "question": 8,
+            "bbox": [
+              73.1652603149414,
+              371.5314025878906,
+              229.53749084472656,
+              390.574462890625
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 5,
+        "questions": [
+          {
+            "question": 9,
+            "bbox": [
+              73.1652603149414,
+              87.73055267333984,
+              343.8561706542969,
+              99.79181671142578
+            ]
+          },
+          {
+            "question": 10,
+            "bbox": [
+              73.1652603149414,
+              386.4798278808594,
+              224.31719970703125,
+              397.0627746582031
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 6,
+        "questions": [
+          {
+            "question": 11,
+            "bbox": [
+              73.1652603149414,
+              87.73055267333984,
+              368.2450866699219,
+              99.79181671142578
+            ]
+          },
+          {
+            "question": 12,
+            "bbox": [
+              73.1652603149414,
+              389.12322998046875,
+              340.9736022949219,
+              399.7061767578125
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 7,
+        "questions": [
+          {
+            "question": 13,
+            "bbox": [
+              73.1652603149414,
+              87.44092559814453,
+              367.1153564453125,
+              97.87933349609375
+            ]
+          },
+          {
+            "question": 14,
+            "bbox": [
+              73.1652603149414,
+              248.42288208007812,
+              355.3901062011719,
+              259.0058288574219
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 8,
+        "questions": [
+          {
+            "question": 15,
+            "bbox": [
+              73.1652603149414,
+              87.4165267944336,
+              358.8736877441406,
+              97.99948120117188
+            ]
+          },
+          {
+            "question": 16,
+            "bbox": [
+              73.1652603149414,
+              379.58172607421875,
+              217.16307067871094,
+              398.6247863769531
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 9,
+        "questions": [
+          {
+            "question": 17,
+            "bbox": [
+              73.1652603149414,
+              87.90713500976562,
+              358.53680419921875,
+              97.87933349609375
+            ]
+          },
+          {
+            "question": 18,
+            "bbox": [
+              73.1652603149414,
+              285.5604553222656,
+              369.6382141113281,
+              295.53265380859375
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 10,
+        "questions": [
+          {
+            "question": 19,
+            "bbox": [
+              73.1652603149414,
+              80.2174072265625,
+              108.05877685546875,
+              99.92195129394531
+            ]
+          },
+          {
+            "question": 20,
+            "bbox": [
+              73.1652603149414,
+              388.69622802734375,
+              206.35903930664062,
+              407.3960266113281
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 11,
+        "questions": [
+          {
+            "question": 21,
+            "bbox": [
+              73.1652603149414,
+              81.58707427978516,
+              242.40347290039062,
+              99.56148529052734
+            ]
+          },
+          {
+            "question": 22,
+            "bbox": [
+              73.1652603149414,
+              394.194091796875,
+              355.1012878417969,
+              404.6324768066406
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      },
+      {
+        "page": 12,
+        "questions": [
+          {
+            "question": 23,
+            "bbox": [
+              73.1652603149414,
+              80.54417419433594,
+              257.8819580078125,
+              99.92195129394531
+            ]
+          },
+          {
+            "question": 24,
+            "bbox": [
+              73.1652603149414,
+              378.0690612792969,
+              371.84881591796875,
+              388.6520080566406
+            ]
+          }
+        ],
+        "choicesPerLabel": {
+          "①": 2,
+          "②": 2,
+          "③": 2,
+          "④": 2,
+          "⑤": 2
+        },
+        "nativePageRect": [
+          0.0,
+          0.0,
+          596.0,
+          843.0
+        ]
+      }
+    ],
+    "questionSplitAcrossPages": false
+  },
+  "visualInspection": {
+    "completed": true,
+    "allPageContactSheets": [
+      "output-contact-1.png",
+      "output-contact-2.png"
+    ],
+    "referenceContactSheets": [
+      "reference-contact-1.png",
+      "reference-contact-2.png"
+    ],
+    "focused": [
+      "focus-title-q1.png",
+      "focus-q5.png",
+      "focus-q10.png",
+      "focus-q13.png",
+      "focus-q17-q18.png"
+    ],
+    "findings": "No observed clipping, overlapping content or split choices. Corrected v3 Q1 dots, Q5 label A and Q10 shaded sector remain visible. Q17 example matrix and Q18 proof/blank frames remain native controls."
+  },
+  "limits": [
+    "Reference contains only 20 questions in a different order and allows questions/choices to split. Output preserves all 24 v3 questions in logical order and keeps each question together; it is an adapted template, not a page-coordinate facsimile.",
+    "Figures remain the exact v3 embedded PNG payloads, not native editable Hancom vector geometry. Body text, equations, tables and proof blanks remain native editable controls.",
+    "Previously uncertain source marks/wording are preserved; no new source semantic acceptance was performed."
+  ],
+  "newDependencies": false,
+  "externalPaidCalls": 0,
+  "acceptanceDecision": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "math-editing.restoration-cases.v1",
+  "status": "initial-observation-cases-not-a-transcription",
+  "cases": [
+    {
+      "id": "CASE-OVERLAP-MC02",
+      "problemContentId": "mc-02",
+      "componentRole": "diagram",
+      "location": { "sourceId": "source-pdf", "pageNumber": 1, "coordinateSpace": "embedded-image-pixels", "boundingBox": null, "description": "Question 2 diagram interior and nearby handwritten work" },
+      "sourceState": { "kind": "not-yet-transcribed", "observation": "Handwritten work crosses or occupies the printed diagram area. Individual original labels and strokes have not been adjudicated." },
+      "markOverlap": "crosses-content",
+      "targetRepresentation": "external-visual-source",
+      "resolution": null,
+      "nativeObjectReadback": "not-authored"
+    },
+    {
+      "id": "CASE-LOW-CONTRAST-MC11",
+      "problemContentId": "mc-11",
+      "componentRole": "mixed",
+      "location": { "sourceId": "source-pdf", "pageNumber": 2, "coordinateSpace": "embedded-image-pixels", "boundingBox": null, "description": "Question 11 prompt, diagram labels and choices" },
+      "sourceState": { "kind": "not-yet-transcribed", "observation": "Full-page review suggests reduced contrast and soft fine text. Exact ambiguous characters require native-resolution inspection." },
+      "markOverlap": "not-assessed",
+      "targetRepresentation": "mixed",
+      "resolution": null,
+      "nativeObjectReadback": "not-authored"
+    },
+    {
+      "id": "CASE-DARK-BLOCK-CR04",
+      "problemContentId": "cr-04",
+      "componentRole": "mixed",
+      "location": { "sourceId": "source-pdf", "pageNumber": 5, "coordinateSpace": "embedded-image-pixels", "boundingBox": null, "description": "Dark rectangle in the lower proof panel of constructed-response problem 4" },
+      "sourceState": { "kind": "not-yet-transcribed", "observation": "A solid dark area is visible; it may be intentional or introduced later. No hidden content is inferred." },
+      "markOverlap": "not-assessed",
+      "targetRepresentation": "mixed",
+      "resolution": null,
+      "nativeObjectReadback": "not-authored"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "jungdong.final-native-owner-handoff.v1",
+  "state": "completed-by-actual-user-direction",
+  "updatedAt": "2026-10-22T05:41:21.568Z",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "productionApproval": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/production-approval.actual.json",
+  "explanationApproval": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/explanation-approval.actual.json",
+  "currentIdentityRegistry": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/identity-registry.r3.json",
+  "currentDependencyGraph": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/dependency-graph.r3.json",
+  "delivery": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/final-readback.actual.json",
+  "destination": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery",
+  "hwpx": {
+    "path": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery/jungdong-new.hwpx",
+    "sha256": "895bc5628ac998337e96e66aec451eff8236db1afa1e561638f31cb9ac77f0de"
+  },
+  "pdf": {
+    "path": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery/jungdong-new.pdf",
+    "sha256": "1748e8799a9935b90802207df76da84dacd4395d094ede33cb304f0b7626e59f"
+  },
+  "comparisonHtml": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery/comparison.html",
+  "explanationHtml": {
+    "path": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/2026-10-21T07-49-37-702Z/delivery/jev-and-llm-explained.html",
+    "sha256": "cd06d1bcf6e0fd0407f8155f4068350694b21cf6f16b43dde404bb4952611e98"
+  },
+  "actualJevCallCount": 22,
+  "actualJevHttp200": 21,
+  "actualJevHttp400": 1,
+  "nativeLlmProviderCallCount": null,
+  "taskExecution": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/task-execution.actual.json",
+  "limitations": [
+    "MC11 dark angle value and interior O/I unresolved; optional two interior diagrams are review alternatives only.",
+    "CR03 angle-mark alternative and CR04 masked/proof/printed-label discrepancies are retained for human review.",
+    "Source-derived figures are images in HWPX; regeneration code is delivered separately as archival snapshots.",
+    "Jev image-region Box has no successful native apply through the current candidate-ID port.",
+    "One confirmed HTTP400 call retains unknown cost and its reservation bound.",
+    "Native GPT provider API call count is unavailable."
+  ],
+  "pending": [],
+  "communication": "Files retained for Root/user readback; no new prompt or notification sent.",
+  "paneDisposition": "Keep all existing native panes; turn ends after final user-facing delivery.",
+  "automaticContinuation": false,
+  "sourceAccuracyAcceptance": null,
+  "acceptanceDecision": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/acceptance/user-visual-review.actual.json",
+    "sha256": "39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128",
+    "decision": "complete-work-as-delivered",
+    "owner": "actual-user"
+  },
+  "currentCompletionRef": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/acceptance/user-visual-review.actual.json",
+    "sha256": "39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128",
+    "decision": "complete-work-as-delivered",
+    "owner": "actual-user"
+  }
+}

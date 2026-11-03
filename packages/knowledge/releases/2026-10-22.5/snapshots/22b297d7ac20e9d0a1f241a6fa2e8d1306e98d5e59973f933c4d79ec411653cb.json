@@ -1,0 +1,30 @@
+{
+  "schema": "math-editing.native-equations-verification.v1",
+  "observedAt": "2026-10-20T11:17:15.440457+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v test_patch_equations",
+  "exitCode": 0,
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testNames": [
+    "test_both_packages_exact_edit_whitelist_and_equation_control_identity",
+    "test_drifted_q11_rejected_without_outputs",
+    "test_idempotent_second_pass_and_existing_paths_refused",
+    "test_q11_only_confirmed_choice_changes_all_other_paragraphs_preserved",
+    "test_standalone_commands_preserve_literals_identifiers_and_equals"
+  ],
+  "testRun": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/native-equations/test-run.json",
+  "verified": [
+    "Exact SHA-256 of both frozen datasets before and after execution",
+    "ZIP member order and all unmodified member bytes",
+    "Only admitted XML spans changed in section0.xml",
+    "Existing equation IDs and all unrelated control attributes retained",
+    "GPT 214 to 215 native equations; Argon stays 243",
+    "Q11 source-bound choice3 only; OAI=23, O/I uncertainty and unknown C preserved",
+    "No pictures, tables, underlines, styles or comparison roles changed",
+    "Second pass is byte-identical; existing paths and source drift rejected",
+    "Standalone tokens only; quoted strings, longer identifiers, arbitrary equals, unrelated commands preserved"
+  ],
+  "nativeQualification": "Inherited Lead-owned probe PDF visually read back; BOT and == confirmed there",
+  "finalComposedNativeRender": "Pending Lead after A/B integration, outside this bounded lane",
+  "acceptanceDecision": null
+}

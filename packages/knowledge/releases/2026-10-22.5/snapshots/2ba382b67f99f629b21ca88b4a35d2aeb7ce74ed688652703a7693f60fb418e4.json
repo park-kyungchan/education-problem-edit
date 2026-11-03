@@ -1,0 +1,47 @@
+{
+  "schema": "daechi.hwp-template-handoff.v1",
+  "status": "completed-verified",
+  "completedAt": "2026-10-22T10:08:19.084Z",
+  "hwp": {
+    "path": "/mnt/c/Users/packr/Downloads/Daechi-HWP-layout-20261022/2026 2학기 중간 2학년 대치.hwp",
+    "sha256": "c01811e777271e23125e1bf79bd6559988a761aa384ee240c65c7391a9048d1a",
+    "size": 913408,
+    "format": "HWP binary compound file",
+    "compoundSignature": "D0CF11E0A1B11AE1",
+    "hwpDocumentFileSignatureFound": true,
+    "nativeSavedAndReopened": true,
+    "title": "2026 2학기 중간 2학년 대치"
+  },
+  "pdf": {
+    "path": "/mnt/c/Users/packr/Downloads/Daechi-HWP-layout-20261022/2026 2학기 중간 2학년 대치.pdf",
+    "sha256": "b90acad8ff20f5254a66eab1b965159a2003150347ca4d8b1bac64d737dfa262",
+    "pages": 12,
+    "exportedFromReopenedNativeHwp": true
+  },
+  "coverage": {
+    "questions": 24,
+    "choices": 120,
+    "nativeEquations": 260,
+    "pictures": 21,
+    "nativeTables": 31
+  },
+  "verification": "/home/palantirkc/operations/daechi-hwp-template-layout-20261022/verification.actual.json",
+  "reusableHandoff": "/home/palantirkc/operations/daechi-hwp-template-layout-20261022/template-layout-handoff.md",
+  "codeSha256": {
+    "inspect.ts": "8e4ca3e572f7e58dded91e7ab36c351d1a9b4ea2153a412d464beb6f05614e3a",
+    "native.ps1": "876be7ad311503ae3a25b77bd91d2829eede6b3c559834c1e735f4844c807b94",
+    "layout_adapter.py": "7f062a2c80acc1c59e483ac485b01dbc71d1415ea632ab92c311ad377dbd4e44",
+    "save.ts": "2f23be0fce685d3392ba68673ead191ef9c795c8b8c25c8369214de72c69cae5",
+    "verify.py": "3728cb78770d11daeb1e91bcb97866fccdfef56211be2ae855530a91047ca93e",
+    "template-layout-handoff.md": "dc908961335d049dde5feb26fa7e34e38227fa67cd497ca91dfa22535b3a4052"
+  },
+  "limits": [
+    "Reference contains only 20 questions in a different order and allows questions/choices to split. Output preserves all 24 v3 questions in logical order and keeps each question together; it is an adapted template, not a page-coordinate facsimile.",
+    "Figures remain the exact v3 embedded PNG payloads, not native editable Hancom vector geometry. Body text, equations, tables and proof blanks remain native editable controls.",
+    "Previously uncertain source marks/wording are preserved; no new source semantic acceptance was performed."
+  ],
+  "externalPaidCalls": 0,
+  "otherAgentsOrPanesCreated": false,
+  "parentDelivery": "pull-only; no session message",
+  "acceptanceDecision": null
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "rule",
+  "id": "R-layout-choice",
+  "title": "Preserve selectable layouts independently of file format",
+  "stage": "routing",
+  "evidenceClass": "user-requirement",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-layout-direction"
+    },
+    {
+      "sourceId": "S-hwp-procedure"
+    }
+  ],
+  "when": "Creating a problem document or changing its page presentation.",
+  "do": [
+    "Honor the explicit profile choice. Without a change request, preserve a known existing profile.",
+    "For a new document without a selected profile, offer exam-two-column and reference-single-column before composing.",
+    "Choose HWP/HWPX separately; preserve both historical deliveries.",
+    "Reuse semantic content, equation metrics, corrected figures, question envelopes and nested structures across profiles.",
+    "Treat Daechi page/question counts and minimum heights as instance observations only."
+  ],
+  "avoid": [],
+  "check": [
+    "A resolved profile and separately chosen format are recorded.",
+    "No existing profile was silently replaced and no instance count became a universal constraint."
+  ],
+  "invalidates": [
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Profiles are maintained local workflow data; conversion of every future exam and both file formats still requires its actual composition/save readback."
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "procedure",
+  "id": "P-transcription",
+  "title": "Build editable question content",
+  "stage": "transcription",
+  "ruleIds": [
+    "R-underline",
+    "R-native-editability",
+    "R-uncertainty"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-ir21"
+    },
+    {
+      "sourceId": "S-contentD"
+    }
+  ],
+  "inputs": [
+    "ordered question crops"
+  ],
+  "steps": [
+    "Create question -> block -> text/math/blank runs and choices.",
+    "Capture source underline spans and mathematical token structure.",
+    "Check numbering, options, frames and source-located unknowns."
+  ],
+  "outputs": [
+    "typed content tree",
+    "source span bindings"
+  ],
+  "implementationSourceIds": [
+    "S-ir21",
+    "S-contentD",
+    "S-compose21"
+  ],
+  "stopWhen": [],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

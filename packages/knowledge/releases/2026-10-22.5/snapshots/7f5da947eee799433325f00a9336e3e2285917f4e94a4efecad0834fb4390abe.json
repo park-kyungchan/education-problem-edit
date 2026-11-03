@@ -1,0 +1,30 @@
+{
+  "schema": "math-editing.native-layout-width-authority.v1",
+  "recordedAt": "2026-10-20T11:52:34.043009+00:00",
+  "source": "Current actual user/Lead followup authorizing the bounded proof equality width correction",
+  "moduleRevision": 4,
+  "reportedNativeEvidence": {
+    "dataset": "gpt-6.1-sol-ultra",
+    "nativePage": 49,
+    "glyphBboxXPoints": [
+      49.2,
+      139.696
+    ],
+    "followingKoreanStartXPoints": 130.8,
+    "overlapPoints": 8.896,
+    "observer": "Lead; not remeasured by this lane"
+  },
+  "controlIds": {
+    "gpt-6.1-sol-ultra": "1800000063",
+    "argon-high": "1800000076"
+  },
+  "script": "box rm {ABFE} = box rm {EFCD}",
+  "attribute": "hp:sz/@width",
+  "beforeHwp": 8100,
+  "afterHwp": 10000,
+  "heightUnchangedHwp": 1350,
+  "writeBoundary": "/home/palantirkc/operations/math-problem-editing-20261020/feedback-revision/native-layout/**",
+  "allOtherChangesAuthorized": false,
+  "nativeRenderOwner": "Lead",
+  "acceptanceDecision": null
+}

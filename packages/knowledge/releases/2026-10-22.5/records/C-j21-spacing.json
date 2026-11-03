@@ -1,0 +1,32 @@
+{
+  "kind": "case",
+  "id": "C-j21-spacing",
+  "title": "Historical Jungdong width heuristic adds padding",
+  "stage": "equations",
+  "exam": "jungdong-20261021",
+  "question": null,
+  "evidence": [
+    {
+      "sourceId": "S-compose21",
+      "contains": "width*1.18+240"
+    }
+  ],
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "symptom": "Inline math box uses 18% plus 240 HWP units, followed by a text-space run.",
+  "cause": "Observed blanket sizing heuristic; actual gap cause depends on each formula.",
+  "expected": "Measure current native metrics before tightening individual spacing components.",
+  "outcome": "unresolved",
+  "ruleIds": [
+    "R-equation-metrics"
+  ],
+  "requiredChecks": [
+    "Script/version-bound metric and following glyph separation."
+  ],
+  "limitation": "A completed narrowing pass was not established by this code.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "problem-edit.current-context.v1",
+  "scope": "Math exam restoration, problem editing and initial source/context transfer",
+  "nextSourcePdf": null,
+  "selectedOutput": { "layoutProfile": "reference-single-column", "format": "hwpx" },
+  "implementedAndChecked": ["portable layout selection", "selected knowledge retrieval and imported context integrity"],
+  "pending": ["supply a new source PDF", "resolve historical package dependencies", "qualify native Hancom runtime", "verify complete PDF to editable HWPX restoration in the target environment"],
+  "historicalStates": {
+    "jungdong": "Work completed by actual user direction; sourceAccuracyAcceptance remains null",
+    "pipelineEvaluation": "Source-qualified R7 integration; activation and live effects held in the imported record"
+  },
+  "knowledgeRelease": "2026-10-22.5",
+  "upperOntologyPin": "0.2.0",
+  "acceptanceDecision": null
+}

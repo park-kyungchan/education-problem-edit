@@ -1,0 +1,25 @@
+{
+  "schema": "daechi.feedback-measurements.v1",
+  "nativeMetricBatch": {
+    "equations": 201,
+    "wallMs": 12838,
+    "activeMs": null
+  },
+  "finalNativeRender": {
+    "wallMs": 12125,
+    "activeMs": null
+  },
+  "q18TransferAndEdit": {
+    "wallMs": 193244,
+    "activeMs": null,
+    "waitMs": null,
+    "note": "Wall interval includes a one-time exact-file native access dialog; this is not active transfer latency."
+  },
+  "newExternalPaidCalls": 0,
+  "apiIncrementalUsd": 0,
+  "nativeSubscriptionUsd": null,
+  "modelQualityExperimentExecuted": false,
+  "pairedEfficiencyExperimentExecuted": false,
+  "measuredQualityOrCostImprovement": null,
+  "acceptanceDecision": null
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "procedure",
+  "id": "P-layout-selection",
+  "title": "Resolve the requested presentation before composing",
+  "stage": "routing",
+  "ruleIds": [
+    "R-layout-choice"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-layout-direction"
+    }
+  ],
+  "inputs": [
+    "explicit user profile or known existing artifact profile",
+    "separate requested file format"
+  ],
+  "steps": [
+    "Run layout list when choices are needed.",
+    "Run layout resolve --profile <id> for an explicit choice or --existing <id> to preserve the known profile.",
+    "If resolve returns selection-required, offer both layouts and wait for the user choice before new-document composition.",
+    "Record profile ID, content revision, template parameters and format independently."
+  ],
+  "outputs": [
+    "selected layout or explicit selection-required state",
+    "format-independent composition request"
+  ],
+  "implementationSourceIds": [],
+  "stopWhen": [
+    "A new document has no selected profile."
+  ],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

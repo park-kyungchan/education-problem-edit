@@ -1,0 +1,2661 @@
+{
+  "schema": "daechi.feedback-dependencies.v1",
+  "ontologyVersion": "0.2.0",
+  "scope": "Task-local delivery sidecar, not new Work enrollment or a replacement shared ontology",
+  "bindingPrecision": "Manually authored artifact/semantic dependency sidecar pinned to actual code and outputs; not runtime instrumentation or a native scheduler registration",
+  "direction": "dependsOn lists prerequisites; parentId is containment only; feedback targets are diagnostic links, not execution dependencies",
+  "backwardPropagation": "Trace a finding back through typed dependencies to its source claim and producer, then invalidate affected descendants. No training gradients, automatic parameter update, measured causal savings, or native scheduler adoption is implied.",
+  "nodes": [
+    {
+      "id": "source.pdf",
+      "type": "source-document",
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/중2 2026학년도 대치중 2학년 2학기 중간고사 (1).pdf",
+        "sha256": "2bfac149055818326290f4444f87f256b5063aa22518d0b79d386cb1f92e1006"
+      },
+      "dependsOn": [],
+      "state": "observation"
+    },
+    {
+      "id": "metrics.native",
+      "type": "native-metrics",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/native-equation-metrics.actual.json",
+        "sha256": "4eb430f20be3df0f6e44760772e2f1da865ed3448c842c0f84e5d37002a70d07"
+      },
+      "dependsOn": [],
+      "state": "verification",
+      "note": "201 native measurements, version/font hash pinned; actual runtime EquationCreate is recorded separately."
+    },
+    {
+      "id": "layout.local",
+      "type": "question-layout",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/question-layout.json",
+        "sha256": "4acbedd38e059d684bcca9d7aa3c6f84f66a044412a4ca59bd2771d2d1f67196"
+      },
+      "dependsOn": [],
+      "state": "implementation"
+    },
+    {
+      "id": "layout.page",
+      "type": "page-template",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/page-template.json",
+        "sha256": "27948962e0881a65820bc1e3d437b3698e70e2bddc7f71bbc29b91aa064fd831"
+      },
+      "dependsOn": [],
+      "state": "implementation"
+    },
+    {
+      "id": "source.q1.context",
+      "type": "source-region",
+      "questionId": 1,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q2.context",
+      "type": "source-region",
+      "questionId": 2,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q3.context",
+      "type": "source-region",
+      "questionId": 3,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q4.context",
+      "type": "source-region",
+      "questionId": 4,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q5.context",
+      "type": "source-region",
+      "questionId": 5,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q6.context",
+      "type": "source-region",
+      "questionId": 6,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q7.context",
+      "type": "source-region",
+      "questionId": 7,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q8.context",
+      "type": "source-region",
+      "questionId": 8,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q9.context",
+      "type": "source-region",
+      "questionId": 9,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q10.context",
+      "type": "source-region",
+      "questionId": 10,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q11.context",
+      "type": "source-region",
+      "questionId": 11,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q12.context",
+      "type": "source-region",
+      "questionId": 12,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q13.context",
+      "type": "source-region",
+      "questionId": 13,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q14.context",
+      "type": "source-region",
+      "questionId": 14,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q15.context",
+      "type": "source-region",
+      "questionId": 15,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q16.context",
+      "type": "source-region",
+      "questionId": 16,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q17.context",
+      "type": "source-region",
+      "questionId": 17,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q18.context",
+      "type": "source-region",
+      "questionId": 18,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q19.context",
+      "type": "source-region",
+      "questionId": 19,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q20.context",
+      "type": "source-region",
+      "questionId": 20,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q21.context",
+      "type": "source-region",
+      "questionId": 21,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q22.context",
+      "type": "source-region",
+      "questionId": 22,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q23.context",
+      "type": "source-region",
+      "questionId": 23,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q24.context",
+      "type": "source-region",
+      "questionId": 24,
+      "parentId": "source.pdf",
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q6.feature",
+      "type": "source-region",
+      "questionId": 6,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q6.png",
+        "sha256": "1f13fe813bcd48255db924f7919a3da25138bcf76cbe892876fa4fb8c3ac25a2"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q8.feature",
+      "type": "source-region",
+      "questionId": 8,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q8.png",
+        "sha256": "e51130f4d70f256687726a2cdea4638f64bb3ac081c6bcce13f71e03b873b43f"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q9.feature",
+      "type": "source-region",
+      "questionId": 9,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q9.png",
+        "sha256": "8c96b5f7be7de899bddf4861ae3eacf2b2cbb350a51f4a1b1f560d76c3718b3d"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q10.feature",
+      "type": "source-region",
+      "questionId": 10,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q10.png",
+        "sha256": "29649fe4eb05111ea870ce9d407fedc7361c18fabdd638ed38147a7c0a0ce080"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q11.feature",
+      "type": "source-region",
+      "questionId": 11,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q11.png",
+        "sha256": "28fdd3a2b65d648f39ca33fc2ef9aee0ee97611c1d783e878d50d0a6335c5330"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q17.feature",
+      "type": "source-region",
+      "questionId": 17,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q17.png",
+        "sha256": "83d3f5f5f7de50ab8e956856bd90f731ccc57d06ba447e3cbe4969b027ef0183"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q18.feature",
+      "type": "source-region",
+      "questionId": 18,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q18.png",
+        "sha256": "ca4b0e88b0d673bc4de4f52dea609fac9fdc36574c6a1b7e752d288ffb740382"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q20.feature",
+      "type": "source-region",
+      "questionId": 20,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q20.png",
+        "sha256": "e2e4809d0d027a67db826d5af03f19afb7d89fd6b7cfce2dfc318d6da16aa8fa"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q21.feature",
+      "type": "source-region",
+      "questionId": 21,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q21.png",
+        "sha256": "bd010c2c502d8b317cb910cf213223bfd7219f7e49f30f721df1e0833b6a78ff"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "source.q24.feature",
+      "type": "source-region",
+      "questionId": 24,
+      "parentId": "source.pdf",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/source-q24.png",
+        "sha256": "dda63d41859b0e982d602a991dcdb1e6ca9dd8884dc4289b82234495a4a0a2f2"
+      },
+      "dependsOn": [
+        "source.pdf"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q2.dashed-dimensions",
+      "type": "source-claim",
+      "questionId": 2,
+      "parentId": "q2.content",
+      "dependsOn": [
+        "source.q2.context"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q6.dimensions",
+      "type": "source-claim",
+      "questionId": 6,
+      "parentId": "q6.content",
+      "dependsOn": [
+        "source.q6.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q8.pencil-angles",
+      "type": "source-claim",
+      "questionId": 8,
+      "parentId": "q8.content",
+      "dependsOn": [
+        "source.q8.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q9.114-leader",
+      "type": "source-claim",
+      "questionId": 9,
+      "parentId": "q9.content",
+      "dependsOn": [
+        "source.q9.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q10.b-sector",
+      "type": "source-claim",
+      "questionId": 10,
+      "parentId": "q10.content",
+      "dependsOn": [
+        "source.q10.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q11.26-leader",
+      "type": "source-claim",
+      "questionId": 11,
+      "parentId": "q11.content",
+      "dependsOn": [
+        "source.q11.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q17.aligned-options",
+      "type": "source-claim",
+      "questionId": 17,
+      "parentId": "q17.content",
+      "dependsOn": [
+        "source.q17.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q18.proof-frame",
+      "type": "source-claim",
+      "questionId": 18,
+      "parentId": "q18.content",
+      "dependsOn": [
+        "source.q18.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q20.15-leader",
+      "type": "source-claim",
+      "questionId": 20,
+      "parentId": "q20.content",
+      "dependsOn": [
+        "source.q20.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q21.AP",
+      "type": "source-claim",
+      "questionId": 21,
+      "parentId": "q21.content",
+      "dependsOn": [
+        "source.q21.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q24.equal-angles",
+      "type": "source-claim",
+      "questionId": 24,
+      "parentId": "q24.content",
+      "dependsOn": [
+        "source.q24.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q1.negative-underline",
+      "type": "source-claim",
+      "questionId": 1,
+      "parentId": "q1.content",
+      "dependsOn": [
+        "source.q1.context"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q4.negative-underline",
+      "type": "source-claim",
+      "questionId": 4,
+      "parentId": "q4.content",
+      "dependsOn": [
+        "source.q4.context"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q8.negative-underline",
+      "type": "source-claim",
+      "questionId": 8,
+      "parentId": "q8.content",
+      "dependsOn": [
+        "source.q8.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q13.negative-underline",
+      "type": "source-claim",
+      "questionId": 13,
+      "parentId": "q13.content",
+      "dependsOn": [
+        "source.q13.context"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q14.negative-underline",
+      "type": "source-claim",
+      "questionId": 14,
+      "parentId": "q14.content",
+      "dependsOn": [
+        "source.q14.context"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q18.negative-underline",
+      "type": "source-claim",
+      "questionId": 18,
+      "parentId": "q18.content",
+      "dependsOn": [
+        "source.q18.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q16.pencil-emphasis",
+      "type": "source-claim",
+      "questionId": 16,
+      "parentId": "q16.content",
+      "dependsOn": [
+        "source.q16.context"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "claim.q17.pencil-underline",
+      "type": "source-claim",
+      "questionId": 17,
+      "parentId": "q17.content",
+      "dependsOn": [
+        "source.q17.feature"
+      ],
+      "state": "observation"
+    },
+    {
+      "id": "q1.content",
+      "type": "question-content",
+      "questionId": 1,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/0"
+      },
+      "dependsOn": [
+        "source.q1.context",
+        "claim.q1.negative-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q1.svg",
+      "type": "diagram-source",
+      "questionId": 1,
+      "parentId": "q1.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q1.svg",
+        "sha256": "befc71cd32350a73b79f7ea92ed0403050988ee81e3db4fcbbbbf3d735e81bee"
+      },
+      "dependsOn": [
+        "source.q1.context",
+        "claim.q1.negative-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q1.png",
+      "type": "diagram-raster",
+      "questionId": 1,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q1.png",
+        "sha256": "c7fe2913d5302c7c30f436de52035a5ad904d982e846d30f62d56f9cd4b1be44"
+      },
+      "dependsOn": [
+        "q1.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q1.container",
+      "type": "question-container",
+      "questionId": 1,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=907409714]"
+      },
+      "dependsOn": [
+        "q1.content",
+        "layout.local",
+        "metrics.native",
+        "q1.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q2.content",
+      "type": "question-content",
+      "questionId": 2,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/1"
+      },
+      "dependsOn": [
+        "source.q2.context",
+        "claim.q2.dashed-dimensions"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q2.svg",
+      "type": "diagram-source",
+      "questionId": 2,
+      "parentId": "q2.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q2.svg",
+        "sha256": "f05e8882f8d3354063e02eae3747c0bdb070c61cff3cf82025c0581529e7b29b"
+      },
+      "dependsOn": [
+        "source.q2.context",
+        "claim.q2.dashed-dimensions",
+        "entity.q2.dashed-dimensions"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q2.png",
+      "type": "diagram-raster",
+      "questionId": 2,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q2.png",
+        "sha256": "7ae4247a019729dc434ff22aac7fc029d3a3d2655457df76f5add238a401abda"
+      },
+      "dependsOn": [
+        "q2.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q2.container",
+      "type": "question-container",
+      "questionId": 2,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=517603071]"
+      },
+      "dependsOn": [
+        "q2.content",
+        "layout.local",
+        "metrics.native",
+        "q2.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q3.content",
+      "type": "question-content",
+      "questionId": 3,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/2"
+      },
+      "dependsOn": [
+        "source.q3.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q3.svg",
+      "type": "diagram-source",
+      "questionId": 3,
+      "parentId": "q3.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q3.svg",
+        "sha256": "df21ef6dc9fe411a0bbc8c82173dcba936872bcec5e6b9d6ba6e017b4fd51065"
+      },
+      "dependsOn": [
+        "source.q3.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q3.png",
+      "type": "diagram-raster",
+      "questionId": 3,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q3.png",
+        "sha256": "362870003d4d6cc627dcd782b2ab44b355a19655b92e853383c759187580a0d0"
+      },
+      "dependsOn": [
+        "q3.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q3.container",
+      "type": "question-container",
+      "questionId": 3,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=541760601]"
+      },
+      "dependsOn": [
+        "q3.content",
+        "layout.local",
+        "metrics.native",
+        "q3.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q4.content",
+      "type": "question-content",
+      "questionId": 4,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/3"
+      },
+      "dependsOn": [
+        "source.q4.context",
+        "claim.q4.negative-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q4.container",
+      "type": "question-container",
+      "questionId": 4,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=782138423]"
+      },
+      "dependsOn": [
+        "q4.content",
+        "layout.local",
+        "metrics.native"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q5.content",
+      "type": "question-content",
+      "questionId": 5,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/4"
+      },
+      "dependsOn": [
+        "source.q5.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q5.svg",
+      "type": "diagram-source",
+      "questionId": 5,
+      "parentId": "q5.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q5.svg",
+        "sha256": "65372e1bcbc8ee68046a6bf5e51c150dd1382b648e79252cd21393af95a052dd"
+      },
+      "dependsOn": [
+        "source.q5.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q5.png",
+      "type": "diagram-raster",
+      "questionId": 5,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q5.png",
+        "sha256": "95784bc9c96437ee26c61a89017d47b41c2af41321b91d6f7df3c8059c9dd599"
+      },
+      "dependsOn": [
+        "q5.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q5.container",
+      "type": "question-container",
+      "questionId": 5,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1982101459]"
+      },
+      "dependsOn": [
+        "q5.content",
+        "layout.local",
+        "metrics.native",
+        "q5.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q6.content",
+      "type": "question-content",
+      "questionId": 6,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/5"
+      },
+      "dependsOn": [
+        "source.q6.context",
+        "claim.q6.dimensions"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q6.svg",
+      "type": "diagram-source",
+      "questionId": 6,
+      "parentId": "q6.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q6.svg",
+        "sha256": "1e7134ea5fb366850049d7b8beff6aa088e6167f43fd8c2ecf674fa7a67df789"
+      },
+      "dependsOn": [
+        "source.q6.context",
+        "claim.q6.dimensions",
+        "entity.q6.dimensions"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q6.png",
+      "type": "diagram-raster",
+      "questionId": 6,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q6.png",
+        "sha256": "02a6bfd9cc7cdc1b085976dc2c2c610a29036d005b53982fbc2ce6b24fbc34a6"
+      },
+      "dependsOn": [
+        "q6.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q6.container",
+      "type": "question-container",
+      "questionId": 6,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1750798986]"
+      },
+      "dependsOn": [
+        "q6.content",
+        "layout.local",
+        "metrics.native",
+        "q6.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q7.content",
+      "type": "question-content",
+      "questionId": 7,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/6"
+      },
+      "dependsOn": [
+        "source.q7.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q7.svg",
+      "type": "diagram-source",
+      "questionId": 7,
+      "parentId": "q7.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q7.svg",
+        "sha256": "2b454c5639541815e70e0cfa77c4089a73a29e31bfd4115986c61ce23cec4e22"
+      },
+      "dependsOn": [
+        "source.q7.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q7.png",
+      "type": "diagram-raster",
+      "questionId": 7,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q7.png",
+        "sha256": "790c69a42da622a6aa4015e44eeafd3395618d6a6e1a99182fda4c8cfe1daf7a"
+      },
+      "dependsOn": [
+        "q7.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q7.container",
+      "type": "question-container",
+      "questionId": 7,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1232833276]"
+      },
+      "dependsOn": [
+        "q7.content",
+        "layout.local",
+        "metrics.native",
+        "q7.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q8.content",
+      "type": "question-content",
+      "questionId": 8,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/7"
+      },
+      "dependsOn": [
+        "source.q8.context",
+        "claim.q8.pencil-angles",
+        "claim.q8.negative-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q8.svg",
+      "type": "diagram-source",
+      "questionId": 8,
+      "parentId": "q8.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q8.svg",
+        "sha256": "6364e4cfff1a066460cafbb2a6c0699637febbf0b7de6404655c082c6b3cc7aa"
+      },
+      "dependsOn": [
+        "source.q8.context",
+        "claim.q8.pencil-angles",
+        "claim.q8.negative-underline",
+        "entity.q8.pencil-angles"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q8.png",
+      "type": "diagram-raster",
+      "questionId": 8,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q8.png",
+        "sha256": "0a0ca6653fedb0f929f0c1048f5453c2ad82b80d6f0a1d28d23b2339d69ec33b"
+      },
+      "dependsOn": [
+        "q8.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q8.container",
+      "type": "question-container",
+      "questionId": 8,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=2132688934]"
+      },
+      "dependsOn": [
+        "q8.content",
+        "layout.local",
+        "metrics.native",
+        "q8.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q9.content",
+      "type": "question-content",
+      "questionId": 9,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/8"
+      },
+      "dependsOn": [
+        "source.q9.context",
+        "claim.q9.114-leader"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q9.svg",
+      "type": "diagram-source",
+      "questionId": 9,
+      "parentId": "q9.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q9.svg",
+        "sha256": "4c96b808384b0db87202ba2cf318d9c1ccef712640a75735acbb76bad5fe4f27"
+      },
+      "dependsOn": [
+        "source.q9.context",
+        "claim.q9.114-leader",
+        "entity.q9.114-leader"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q9.png",
+      "type": "diagram-raster",
+      "questionId": 9,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q9.png",
+        "sha256": "c2fa65764e0c00ca22313ecd1b0acd587c788643189f405aa2b01a5eef024c8c"
+      },
+      "dependsOn": [
+        "q9.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q9.container",
+      "type": "question-container",
+      "questionId": 9,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=54496149]"
+      },
+      "dependsOn": [
+        "q9.content",
+        "layout.local",
+        "metrics.native",
+        "q9.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q10.content",
+      "type": "question-content",
+      "questionId": 10,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/9"
+      },
+      "dependsOn": [
+        "source.q10.context",
+        "claim.q10.b-sector"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q10.svg",
+      "type": "diagram-source",
+      "questionId": 10,
+      "parentId": "q10.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q10.svg",
+        "sha256": "d296d512bb4a4ab87d4e58e3f8e2215aa13883ad80cf0e41654c12abc7bbc2fc"
+      },
+      "dependsOn": [
+        "source.q10.context",
+        "claim.q10.b-sector",
+        "entity.q10.b-sector"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q10.png",
+      "type": "diagram-raster",
+      "questionId": 10,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q10.png",
+        "sha256": "34591495f4eb270515dc63f7c72ecfca14bf0b359304edd4aec232d438d30103"
+      },
+      "dependsOn": [
+        "q10.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q10.container",
+      "type": "question-container",
+      "questionId": 10,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=2146776001]"
+      },
+      "dependsOn": [
+        "q10.content",
+        "layout.local",
+        "metrics.native",
+        "q10.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q11.content",
+      "type": "question-content",
+      "questionId": 11,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/10"
+      },
+      "dependsOn": [
+        "source.q11.context",
+        "claim.q11.26-leader"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q11.svg",
+      "type": "diagram-source",
+      "questionId": 11,
+      "parentId": "q11.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q11.svg",
+        "sha256": "0bf2adb60f0334d11380dbbb100556751211ccdc9ac7e26e9a364cfcc0a787f4"
+      },
+      "dependsOn": [
+        "source.q11.context",
+        "claim.q11.26-leader",
+        "entity.q11.26-leader"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q11.png",
+      "type": "diagram-raster",
+      "questionId": 11,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q11.png",
+        "sha256": "c4d427bb9bf6cdb5f2f4ad4189853f27b473c3a5d95b96ccbaf5d93ae3763adb"
+      },
+      "dependsOn": [
+        "q11.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q11.container",
+      "type": "question-container",
+      "questionId": 11,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1771489621]"
+      },
+      "dependsOn": [
+        "q11.content",
+        "layout.local",
+        "metrics.native",
+        "q11.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q12.content",
+      "type": "question-content",
+      "questionId": 12,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/11"
+      },
+      "dependsOn": [
+        "source.q12.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q12.svg",
+      "type": "diagram-source",
+      "questionId": 12,
+      "parentId": "q12.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q12.svg",
+        "sha256": "47c806400926f36377e112476e6d4f065a7d78d5dc933d41ad324785b661543f"
+      },
+      "dependsOn": [
+        "source.q12.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q12.png",
+      "type": "diagram-raster",
+      "questionId": 12,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q12.png",
+        "sha256": "dad6b51614664a0d8767d61aad8ceaa49472e350a05ee80d652306a982a6505d"
+      },
+      "dependsOn": [
+        "q12.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q12.container",
+      "type": "question-container",
+      "questionId": 12,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=298021768]"
+      },
+      "dependsOn": [
+        "q12.content",
+        "layout.local",
+        "metrics.native",
+        "q12.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q13.content",
+      "type": "question-content",
+      "questionId": 13,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/12"
+      },
+      "dependsOn": [
+        "source.q13.context",
+        "claim.q13.negative-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q13.container",
+      "type": "question-container",
+      "questionId": 13,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1076164488]"
+      },
+      "dependsOn": [
+        "q13.content",
+        "layout.local",
+        "metrics.native"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q14.content",
+      "type": "question-content",
+      "questionId": 14,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/13"
+      },
+      "dependsOn": [
+        "source.q14.context",
+        "claim.q14.negative-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q14.svg",
+      "type": "diagram-source",
+      "questionId": 14,
+      "parentId": "q14.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q14.svg",
+        "sha256": "849f284a91e8c879d7f2a1d73061c42db6cc22a1414f20c4efb8cad1e787a32c"
+      },
+      "dependsOn": [
+        "source.q14.context",
+        "claim.q14.negative-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q14.png",
+      "type": "diagram-raster",
+      "questionId": 14,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q14.png",
+        "sha256": "56e422a88c0b982cbbe011ea98edff74d0cad0322101bd2a2783e42c6e8bde93"
+      },
+      "dependsOn": [
+        "q14.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q14.container",
+      "type": "question-container",
+      "questionId": 14,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1013998739]"
+      },
+      "dependsOn": [
+        "q14.content",
+        "layout.local",
+        "metrics.native",
+        "q14.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q15.content",
+      "type": "question-content",
+      "questionId": 15,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/14"
+      },
+      "dependsOn": [
+        "source.q15.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q15.svg",
+      "type": "diagram-source",
+      "questionId": 15,
+      "parentId": "q15.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q15.svg",
+        "sha256": "78a8c69d7e4abc2043167de6d3719d00965ebce06b7aa12b55d0df3f90e886a0"
+      },
+      "dependsOn": [
+        "source.q15.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q15.png",
+      "type": "diagram-raster",
+      "questionId": 15,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q15.png",
+        "sha256": "3a9ec5cda950297165d772418094c67e4ae1e3dccd5e885472c69f2d981bb6bc"
+      },
+      "dependsOn": [
+        "q15.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q15.container",
+      "type": "question-container",
+      "questionId": 15,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1664495486]"
+      },
+      "dependsOn": [
+        "q15.content",
+        "layout.local",
+        "metrics.native",
+        "q15.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q16.content",
+      "type": "question-content",
+      "questionId": 16,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/15"
+      },
+      "dependsOn": [
+        "source.q16.context",
+        "claim.q16.pencil-emphasis"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q16.svg",
+      "type": "diagram-source",
+      "questionId": 16,
+      "parentId": "q16.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q16.svg",
+        "sha256": "957c6f4a4d160e18e1f953961572255c56591c328c6ca7e31562258c8439697f"
+      },
+      "dependsOn": [
+        "source.q16.context",
+        "claim.q16.pencil-emphasis"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q16.png",
+      "type": "diagram-raster",
+      "questionId": 16,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q16.png",
+        "sha256": "6a16a444c73752c3df4502e5b0889cbebf68048b0d825fa4359f0f75e7c1205b"
+      },
+      "dependsOn": [
+        "q16.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q16.container",
+      "type": "question-container",
+      "questionId": 16,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=506636079]"
+      },
+      "dependsOn": [
+        "q16.content",
+        "layout.local",
+        "metrics.native",
+        "q16.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q17.content",
+      "type": "question-content",
+      "questionId": 17,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/16"
+      },
+      "dependsOn": [
+        "source.q17.context",
+        "claim.q17.aligned-options",
+        "claim.q17.pencil-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q17.container",
+      "type": "question-container",
+      "questionId": 17,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1364548298]"
+      },
+      "dependsOn": [
+        "q17.content",
+        "layout.local",
+        "metrics.native"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q18.content",
+      "type": "question-content",
+      "questionId": 18,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/17"
+      },
+      "dependsOn": [
+        "source.q18.context",
+        "claim.q18.proof-frame",
+        "claim.q18.negative-underline"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q18.svg",
+      "type": "diagram-source",
+      "questionId": 18,
+      "parentId": "q18.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q18.svg",
+        "sha256": "061709c1304351237696494cee178625020e4f429370b85e119614575fb7f3bb"
+      },
+      "dependsOn": [
+        "source.q18.context",
+        "claim.q18.proof-frame",
+        "claim.q18.negative-underline",
+        "entity.q18.proof-frame"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q18.png",
+      "type": "diagram-raster",
+      "questionId": 18,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q18.png",
+        "sha256": "c757b000f686fb4b97b6b659499c686c537dea348d657a219bc829f41bc43907"
+      },
+      "dependsOn": [
+        "q18.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q18.container",
+      "type": "question-container",
+      "questionId": 18,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=223434402]"
+      },
+      "dependsOn": [
+        "q18.content",
+        "layout.local",
+        "metrics.native",
+        "q18.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q19.content",
+      "type": "question-content",
+      "questionId": 19,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/18"
+      },
+      "dependsOn": [
+        "source.q19.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q19.svg",
+      "type": "diagram-source",
+      "questionId": 19,
+      "parentId": "q19.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q19.svg",
+        "sha256": "86abd4a8dfeaf2aac454f5802fc25c58b6c7e14944da1497eac3cc7b5cf1b9b9"
+      },
+      "dependsOn": [
+        "source.q19.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q19.png",
+      "type": "diagram-raster",
+      "questionId": 19,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q19.png",
+        "sha256": "ba4be75a5cd63894d655ee520bbe36945a2efaa557a808d6319022fcfb309515"
+      },
+      "dependsOn": [
+        "q19.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q19.container",
+      "type": "question-container",
+      "questionId": 19,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1407097883]"
+      },
+      "dependsOn": [
+        "q19.content",
+        "layout.local",
+        "metrics.native",
+        "q19.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q20.content",
+      "type": "question-content",
+      "questionId": 20,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/19"
+      },
+      "dependsOn": [
+        "source.q20.context",
+        "claim.q20.15-leader"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q20.svg",
+      "type": "diagram-source",
+      "questionId": 20,
+      "parentId": "q20.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q20.svg",
+        "sha256": "bbad0556cb4c8304aa497a67232a99166cd9d05c284e1d7f810964eb6beab11f"
+      },
+      "dependsOn": [
+        "source.q20.context",
+        "claim.q20.15-leader",
+        "entity.q20.15-leader"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q20.png",
+      "type": "diagram-raster",
+      "questionId": 20,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q20.png",
+        "sha256": "b91f7cd80939d43f39c1b16ae851b2a17dc7af7d8120e5a3155f065cbdc9e13f"
+      },
+      "dependsOn": [
+        "q20.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q20.container",
+      "type": "question-container",
+      "questionId": 20,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=750624462]"
+      },
+      "dependsOn": [
+        "q20.content",
+        "layout.local",
+        "metrics.native",
+        "q20.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q21.content",
+      "type": "question-content",
+      "questionId": 21,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/20"
+      },
+      "dependsOn": [
+        "source.q21.context",
+        "claim.q21.AP"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q21.svg",
+      "type": "diagram-source",
+      "questionId": 21,
+      "parentId": "q21.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q21.svg",
+        "sha256": "180e30e9ab6368793f09938b7b7cf2dea8ee664679bb1497c4eba3e61fb5b15c"
+      },
+      "dependsOn": [
+        "source.q21.context",
+        "claim.q21.AP",
+        "entity.q21.AP"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q21.png",
+      "type": "diagram-raster",
+      "questionId": 21,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q21.png",
+        "sha256": "9f62e782ae3b2d21b9a8caff3c4fd8cd3c701323e35fdddd34ef2a705bf37531"
+      },
+      "dependsOn": [
+        "q21.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q21.container",
+      "type": "question-container",
+      "questionId": 21,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=480451410]"
+      },
+      "dependsOn": [
+        "q21.content",
+        "layout.local",
+        "metrics.native",
+        "q21.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q22.content",
+      "type": "question-content",
+      "questionId": 22,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/21"
+      },
+      "dependsOn": [
+        "source.q22.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q22.svg",
+      "type": "diagram-source",
+      "questionId": 22,
+      "parentId": "q22.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q22.svg",
+        "sha256": "28a5c2d62b1e0e0a32bcd3df81346a834e65b164ebf3f8fba7743b372c8039ec"
+      },
+      "dependsOn": [
+        "source.q22.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q22.png",
+      "type": "diagram-raster",
+      "questionId": 22,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q22.png",
+        "sha256": "e9a11d4048b1f5fc8d2aaead6d9128cb9cf0c480efd9906bd1b57887f78eac1a"
+      },
+      "dependsOn": [
+        "q22.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q22.container",
+      "type": "question-container",
+      "questionId": 22,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=932973087]"
+      },
+      "dependsOn": [
+        "q22.content",
+        "layout.local",
+        "metrics.native",
+        "q22.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q23.content",
+      "type": "question-content",
+      "questionId": 23,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/22"
+      },
+      "dependsOn": [
+        "source.q23.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q23.svg",
+      "type": "diagram-source",
+      "questionId": 23,
+      "parentId": "q23.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q23.svg",
+        "sha256": "2b8377a38db1be99c9ca452301e7311cfc36977c189494bfc9ea8690fb6b26fd"
+      },
+      "dependsOn": [
+        "source.q23.context"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q23.png",
+      "type": "diagram-raster",
+      "questionId": 23,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q23.png",
+        "sha256": "3bd21360c7ff3642935f65b02734d434c7f524d96f10f9d7268bfbbe00e727db"
+      },
+      "dependsOn": [
+        "q23.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q23.container",
+      "type": "question-container",
+      "questionId": 23,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1116066310]"
+      },
+      "dependsOn": [
+        "q23.content",
+        "layout.local",
+        "metrics.native",
+        "q23.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "q24.content",
+      "type": "question-content",
+      "questionId": 24,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.json",
+        "sha256": "c56d20786763fbcabcb3d8aa3997d5455a2c5aa77a05f46606b8ac45a972e0e1",
+        "pointer": "/problems/23"
+      },
+      "dependsOn": [
+        "source.q24.context",
+        "claim.q24.equal-angles"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q24.svg",
+      "type": "diagram-source",
+      "questionId": 24,
+      "parentId": "q24.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q24.svg",
+        "sha256": "a3e4cc6d92f7dc6fc94a4f21ecd9ad53a5537cb0f50e5e1152085cad807d5726"
+      },
+      "dependsOn": [
+        "source.q24.context",
+        "claim.q24.equal-angles",
+        "entity.q24.equal-angles"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q24.png",
+      "type": "diagram-raster",
+      "questionId": 24,
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures/q24.png",
+        "sha256": "c0fdaf1633598bb52d8af9a02787a693595f989c02568e4bcb20bdcc6a0df00a"
+      },
+      "dependsOn": [
+        "q24.svg",
+        "renderer.svg"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "q24.container",
+      "type": "question-container",
+      "questionId": 24,
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2",
+        "pointer": "Contents/section0.xml#tbl[id=1947592450]"
+      },
+      "dependsOn": [
+        "q24.content",
+        "layout.local",
+        "metrics.native",
+        "q24.png"
+      ],
+      "state": "implementation",
+      "note": "Contains all five options, native math, image and source frames. Page slot is an external placement constraint."
+    },
+    {
+      "id": "renderer.svg",
+      "type": "diagram-source",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/render_figures.py",
+        "sha256": "eb6ba71d943ba20dbd3075a08734882edd50b9a90a5a08ca07d7e87e5a440765"
+      },
+      "dependsOn": [],
+      "state": "implementation",
+      "note": "Installed librsvg/Cairo preserves dashes; MuPDF SVG trial did not."
+    },
+    {
+      "id": "artifact.hwpx",
+      "type": "document",
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+        "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2"
+      },
+      "dependsOn": [
+        "layout.page",
+        "q1.container",
+        "q2.container",
+        "q3.container",
+        "q4.container",
+        "q5.container",
+        "q6.container",
+        "q7.container",
+        "q8.container",
+        "q9.container",
+        "q10.container",
+        "q11.container",
+        "q12.container",
+        "q13.container",
+        "q14.container",
+        "q15.container",
+        "q16.container",
+        "q17.container",
+        "q18.container",
+        "q19.container",
+        "q20.container",
+        "q21.container",
+        "q22.container",
+        "q23.container",
+        "q24.container"
+      ],
+      "state": "implementation"
+    },
+    {
+      "id": "artifact.pdf",
+      "type": "native-preview",
+      "pin": {
+        "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.pdf",
+        "sha256": "c07d786b1cc30d2b8b994451cdf86013babc98ca7c52243621b7e03db4c2337b"
+      },
+      "dependsOn": [
+        "artifact.hwpx"
+      ],
+      "state": "verification"
+    },
+    {
+      "id": "check.final",
+      "type": "verification",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/verification.actual.json",
+        "sha256": "9420309c4392f16584a0309c6dba33d054d84530935172d1b5eb16d7bd49e2ec"
+      },
+      "dependsOn": [
+        "artifact.hwpx",
+        "artifact.pdf",
+        "metrics.native"
+      ],
+      "state": "verification"
+    },
+    {
+      "id": "entity.q2.dashed-dimensions",
+      "type": "diagram-entity",
+      "questionId": 2,
+      "parentId": "q2.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q2.dashed-dimensions"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q6.dimensions",
+      "type": "diagram-entity",
+      "questionId": 6,
+      "parentId": "q6.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q6.dimensions"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q8.pencil-angles",
+      "type": "diagram-entity",
+      "questionId": 8,
+      "parentId": "q8.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q8.pencil-angles"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q9.114-leader",
+      "type": "diagram-entity",
+      "questionId": 9,
+      "parentId": "q9.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q9.114-leader"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q10.b-sector",
+      "type": "diagram-entity",
+      "questionId": 10,
+      "parentId": "q10.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q10.b-sector"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q11.26-leader",
+      "type": "diagram-entity",
+      "questionId": 11,
+      "parentId": "q11.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q11.26-leader"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q17.aligned-options",
+      "type": "diagram-entity",
+      "questionId": 17,
+      "parentId": "q17.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/alignment.json",
+        "sha256": "bfc3e14352f3ea24ea6eaf436275261d767c9b3a703fddc6f6e2efba5cb6517e"
+      },
+      "dependsOn": [
+        "claim.q17.aligned-options"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q18.proof-frame",
+      "type": "diagram-entity",
+      "questionId": 18,
+      "parentId": "q18.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/author.py",
+        "sha256": "7cf9cae8f5bf8df0ebccf2d8a412330ebfdb256babe06affabdc1e981cb0c825"
+      },
+      "dependsOn": [
+        "claim.q18.proof-frame"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q20.15-leader",
+      "type": "diagram-entity",
+      "questionId": 20,
+      "parentId": "q20.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q20.15-leader"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q21.AP",
+      "type": "diagram-entity",
+      "questionId": 21,
+      "parentId": "q21.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q21.AP"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    },
+    {
+      "id": "entity.q24.equal-angles",
+      "type": "diagram-entity",
+      "questionId": 24,
+      "parentId": "q24.content",
+      "pin": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+        "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+      },
+      "dependsOn": [
+        "claim.q24.equal-angles"
+      ],
+      "state": "implementation",
+      "note": "semantic sidecar binding"
+    }
+  ],
+  "traces": [
+    {
+      "id": "feedback.entity.q2.dashed-dimensions",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        2
+      ],
+      "criterion": "Geometry and topology",
+      "sourceClaims": [
+        "claim.q2.dashed-dimensions"
+      ],
+      "targetNodes": [
+        "entity.q2.dashed-dimensions",
+        "q2.container"
+      ],
+      "actualRepair": "External dashed dimension curves label AB=2x-1 and AC=x+1.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q6.dimensions",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        6
+      ],
+      "criterion": "Geometry and topology",
+      "sourceClaims": [
+        "claim.q6.dimensions"
+      ],
+      "targetNodes": [
+        "entity.q6.dimensions",
+        "q6.container"
+      ],
+      "actualRepair": "External AC=15cm and BD=4cm dimension curves are dashed; the geometric AC and BD segments stay solid.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q8.pencil-angles",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        8
+      ],
+      "criterion": "Marks and ambiguity",
+      "sourceClaims": [
+        "claim.q8.pencil-angles"
+      ],
+      "targetNodes": [
+        "entity.q8.pencil-angles",
+        "q8.container"
+      ],
+      "actualRepair": "The added angle arcs at B and C are pencil marks and are excluded; printed DE/BC parallel indicators and incenter spokes remain.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q9.114-leader",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        9
+      ],
+      "criterion": "Geometry and topology",
+      "sourceClaims": [
+        "claim.q9.114-leader"
+      ],
+      "targetNodes": [
+        "entity.q9.114-leader",
+        "q9.container"
+      ],
+      "actualRepair": "The 114-degree leader is printed and points to angle AIB. Its text is outside AB and separated from the leader.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q10.b-sector",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        10
+      ],
+      "criterion": "Geometry and topology",
+      "sourceClaims": [
+        "claim.q10.b-sector"
+      ],
+      "targetNodes": [
+        "entity.q10.b-sector",
+        "q10.container"
+      ],
+      "actualRepair": "The shaded angle at B is printed and is restored beneath the vertex rays.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q11.26-leader",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        11
+      ],
+      "criterion": "Geometry and topology",
+      "sourceClaims": [
+        "claim.q11.26-leader"
+      ],
+      "targetNodes": [
+        "entity.q11.26-leader",
+        "q11.container"
+      ],
+      "actualRepair": "The printed 26-degree leader points to angle ACI.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q17.aligned-options",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        17
+      ],
+      "criterion": "Editable structure and edit scope",
+      "sourceClaims": [
+        "claim.q17.aligned-options"
+      ],
+      "targetNodes": [
+        "entity.q17.aligned-options",
+        "q17.container"
+      ],
+      "actualRepair": "All six 보기 labels and shapes preserve row/column parentage and are aligned in a native equation MATRIX.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q18.proof-frame",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        18
+      ],
+      "criterion": "Editable structure and edit scope",
+      "sourceClaims": [
+        "claim.q18.proof-frame"
+      ],
+      "targetNodes": [
+        "entity.q18.proof-frame",
+        "q18.container"
+      ],
+      "actualRepair": "The proof frame contains its diagram, ten ordered text/math paragraphs, and five native rectangular blanks.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q20.15-leader",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        20
+      ],
+      "criterion": "Geometry and topology",
+      "sourceClaims": [
+        "claim.q20.15-leader"
+      ],
+      "targetNodes": [
+        "entity.q20.15-leader",
+        "q20.container"
+      ],
+      "actualRepair": "The printed 15-degree leader targets angle ECD.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q21.AP",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        21
+      ],
+      "criterion": "Geometry and topology",
+      "sourceClaims": [
+        "claim.q21.AP"
+      ],
+      "targetNodes": [
+        "entity.q21.AP",
+        "q21.container"
+      ],
+      "actualRepair": "Segment AP is original and is restored without the nearby pencil construction strokes.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.entity.q24.equal-angles",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        24
+      ],
+      "criterion": "Geometry and topology",
+      "sourceClaims": [
+        "claim.q24.equal-angles"
+      ],
+      "targetNodes": [
+        "entity.q24.equal-angles",
+        "q24.container"
+      ],
+      "actualRepair": "Angles ECB and ECD have matching printed crossing ticks on their angle arcs.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.underlines",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        1,
+        4,
+        8,
+        13,
+        14,
+        18
+      ],
+      "criterion": "Printed text and mathematics",
+      "sourceClaims": [
+        "claim.q1.negative-underline",
+        "claim.q4.negative-underline",
+        "claim.q8.negative-underline",
+        "claim.q13.negative-underline",
+        "claim.q14.negative-underline",
+        "claim.q18.negative-underline"
+      ],
+      "targetNodes": [
+        "q1.content",
+        "q4.content",
+        "q8.content",
+        "q13.content",
+        "q14.content",
+        "q18.content"
+      ],
+      "actualRepair": "Explicit native underlined text runs; source-emphasis uncertainty retained for Q16/Q17.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [
+        "Q16/Q17 irregular additional source emphasis is not classified as confirmed print."
+      ],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.equation-bounds",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "criterion": "Spacing and visual consistency",
+      "sourceClaims": [],
+      "targetNodes": [
+        "metrics.native"
+      ],
+      "actualRepair": "Removed blanket 1.25 multiplier; exact native script/baseUnit width, height, baseline and 56-unit bearings reused.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [],
+      "evaluation": null,
+      "acceptanceDecision": null
+    },
+    {
+      "id": "feedback.question-copy",
+      "feedbackFile": {
+        "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+        "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+      },
+      "questionIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "criterion": "Editable structure and edit scope",
+      "sourceClaims": [],
+      "targetNodes": [
+        "q1.container",
+        "q2.container",
+        "q3.container",
+        "q4.container",
+        "q5.container",
+        "q6.container",
+        "q7.container",
+        "q8.container",
+        "q9.container",
+        "q10.container",
+        "q11.container",
+        "q12.container",
+        "q13.container",
+        "q14.container",
+        "q15.container",
+        "q16.container",
+        "q17.container",
+        "q18.container",
+        "q19.container",
+        "q20.container",
+        "q21.container",
+        "q22.container",
+        "q23.container",
+        "q24.container"
+      ],
+      "actualRepair": "24 borderless unfilled native 1x1 question tables; Q18 selected-block roundtrip retained all content.",
+      "repairState": "implemented-and-focused-checked",
+      "unresolved": [
+        "OS clipboard Copy/Paste was not invoked; native selected-block serialization/insertion was exercised."
+      ],
+      "evaluation": null,
+      "acceptanceDecision": null
+    }
+  ]
+}

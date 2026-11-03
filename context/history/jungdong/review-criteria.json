@@ -1,0 +1,41 @@
+{
+  "schema": "jungdong.user-visual-review-criteria.v1",
+  "ontologyVersion": "0.2.0",
+  "domainId": "mathematics-document-editing",
+  "projectId": "math-problem-restoration",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "acceptanceDecision": null,
+  "authority": "actual-user-visual-review",
+  "noAutomatedModelQualityGate": true,
+  "primaryComparison": "Exact delivered GPT readable comparison r7 vs new source-first readable comparison",
+  "dimensions": [
+    "Faithful printed text/options and native mathematical symbols",
+    "Editable body/equations/tables/printed frames in Hancom",
+    "Readable layout, widths, spacing and absence of clipping/overlap",
+    "Original/restored evidence retained with unambiguous roles",
+    "Geometry/labels/line styles and clearly disclosed approximation",
+    "Neutral blanks/masking and visible unresolved-source sidecar"
+  ],
+  "coverage": {
+    "allProblems": [
+      "MC01..MC16",
+      "CR01..CR04"
+    ],
+    "focusedCases": [
+      "MC08 uncertain angle arcs",
+      "MC11 interior O/I/spokes and schematic status",
+      "MC15 text/native controls without invented figures",
+      "CR02 native option frame",
+      "CR03/CR04 underlines, proof squares/blanks, AC/AD reading and masked region"
+    ]
+  },
+  "comparisonUnit": "Problem ID and source region; page count may differ and is not a score.",
+  "editableBoundary": "Body/equations/tables/frames are native editable objects. Diagram PNGs are image objects with delivered regeneration code; original scans are evidence images.",
+  "userOutcomeVocabulary": [
+    "accept",
+    "request-revision",
+    "decline"
+  ],
+  "sourceAccuracyAcceptance": null,
+  "qualityScoreThreshold": null
+}

@@ -1,0 +1,151 @@
+{
+  "schema": "daechi.feedback-delivery.v1",
+  "status": "improved-artifact-delivered-native-verified-handoff-ready",
+  "recordedAt": "2026-10-22T09:12:26.230Z",
+  "requestedModel": "gpt-6.1-sol",
+  "requestedEffort": "xhigh",
+  "execution": "single existing local native Codex pane; no child agents/panes",
+  "source": {
+    "path": "/mnt/c/Users/packr/Downloads/중2 2026학년도 대치중 2학년 2학기 중간고사 (1).pdf",
+    "sha256": "2bfac149055818326290f4444f87f256b5063aa22518d0b79d386cb1f92e1006"
+  },
+  "base": {
+    "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_복원.hwpx",
+    "sha256": "98cf12999579e263cf197af93f1840a4e74f7e381740a2ec5363f83026f99b7f"
+  },
+  "delivered": {
+    "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.hwpx",
+    "sha256": "879e6f055b95d24877ea6d97730d7a182ac1990b3668f46d352bcdd1c32172c2"
+  },
+  "pdf": {
+    "path": "/mnt/c/Users/packr/Downloads/대치중_2026_2학년_2학기_중간고사_개선_v2.pdf",
+    "sha256": "c07d786b1cc30d2b8b994451cdf86013babc98ca7c52243621b7e03db4c2337b"
+  },
+  "counts": {
+    "pages": 6,
+    "questions": 24,
+    "choices": 120,
+    "equations": 260,
+    "pictures": 21,
+    "questionContainers": 24,
+    "nativeTablesTotal": 37
+  },
+  "sourcePhysicalReadingOrder": [
+    1,
+    2,
+    4,
+    3,
+    5,
+    6
+  ],
+  "originalFeedback": {
+    "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/user-feedback.ko.txt",
+    "sha256": "24cb27c2d9f7c14652d6d64cbbd0f3d678075aa74d1031329df1181c6341a603"
+  },
+  "implementation": [
+    {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/content.ts",
+      "sha256": "f04d96a54b04969a9326c791811928b512f44dd4f8cd25e1f3a9bd19795ec749"
+    },
+    {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/figures.ts",
+      "sha256": "d3904bd02c16e2c1335e1194cdb6ed2f9a041d36ed85e06467447f77cebdecf5"
+    },
+    {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/author.py",
+      "sha256": "7cf9cae8f5bf8df0ebccf2d8a412330ebfdb256babe06affabdc1e981cb0c825"
+    },
+    {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/render_figures.py",
+      "sha256": "eb6ba71d943ba20dbd3075a08734882edd50b9a90a5a08ca07d7e87e5a440765"
+    },
+    {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/page-template.json",
+      "sha256": "27948962e0881a65820bc1e3d437b3698e70e2bddc7f71bbc29b91aa064fd831"
+    },
+    {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/question-layout.json",
+      "sha256": "4acbedd38e059d684bcca9d7aa3c6f84f66a044412a4ca59bd2771d2d1f67196"
+    },
+    {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/native-equation-metrics.actual.json",
+      "sha256": "4eb430f20be3df0f6e44760772e2f1da865ed3448c842c0f84e5d37002a70d07"
+    }
+  ],
+  "verification": {
+    "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/verification.actual.json",
+    "sha256": "9420309c4392f16584a0309c6dba33d054d84530935172d1b5eb16d7bd49e2ec"
+  },
+  "optimization": {
+    "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/optimization.proposed.json",
+    "sha256": "d9eccdf3d805461424073969c3c4a08cc28f53d0f1c3d4b07b410551407e12be"
+  },
+  "graph": {
+    "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/feedback-dependencies.actual.json",
+    "sha256": "dff1c8519f68a210d9a2e5c95d3e3eecd2e6e5730ad953ba352094d80c2be546"
+  },
+  "uncertainties": [
+    {
+      "id": "claim.q16.pencil-emphasis",
+      "questionId": 16,
+      "objectIds": [
+        "entity.q16.pencil-emphasis"
+      ],
+      "sourceRole": "uncertain",
+      "regionId": "source.q16.context",
+      "assertion": "Additional apparent emphasis around the area/different wording may be student strokes; it was not promoted to confirmed printed styling.",
+      "basis": [
+        "source-inspection"
+      ],
+      "disposition": "retain-uncertainty",
+      "uncertainty": "Source handwriting overlaps the stem; no clean original or item-specific adjudication was supplied. Core wording is preserved."
+    },
+    {
+      "id": "claim.q17.pencil-underline",
+      "questionId": 17,
+      "objectIds": [
+        "entity.q17.pencil-underline"
+      ],
+      "sourceRole": "uncertain",
+      "regionId": "source.q17.feature",
+      "assertion": "The irregular underline near the equal-diagonals phrase is not certified as printed styling and was not added to restored text.",
+      "basis": [
+        "source-inspection"
+      ],
+      "disposition": "retain-uncertainty",
+      "uncertainty": "Irregular line near the stem resembles pencil emphasis. The six 보기 entries themselves are legible."
+    }
+  ],
+  "limits": [
+    "No independent full source-truth certification.",
+    "Raster pictures are embedded; editable SVG scene source is supplied separately.",
+    "Native selected-block transfer is verified; OS clipboard operations were not exercised.",
+    "Figure layout is presentation geometry constrained by source incidence, not a certified exact-to-scale reconstruction."
+  ],
+  "newPaidCalls": 0,
+  "newPaidBudget": false,
+  "repositoryMutation": false,
+  "remoteEffects": false,
+  "concurrentOptimizationMutated": false,
+  "goalResumed": false,
+  "newWorkEnrollmentInferred": false,
+  "acceptanceDecision": null,
+  "documents": {
+    "optimizationHandoff": {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/optimization-handoff.md",
+      "sha256": "f70b2aee5f628539b7785f2a26ab89887221432e6fcdb2950d2ddaa78a10ccfe"
+    },
+    "typesettingGuidance": {
+      "path": "/home/palantirkc/operations/daechi-hwpx-20261022/feedback-20261022/typesetting-guidance.md",
+      "sha256": "5e0e668987d43dc0ce07c7f1f90dd42d860794318990d1632a5a1cefb9934e95"
+    }
+  },
+  "sourceBundle": {
+    "path": "/mnt/c/Users/packr/Downloads/Daechi-feedback-20261022/Daechi-feedback-authoring-source.zip",
+    "sha256": "4d0864050b8e627e2768381d9af0d8f76b6e41e05145dabff45e56078b5f01c9"
+  },
+  "supersededTrial": {
+    "path": "/mnt/c/Users/packr/Downloads/Daechi-feedback-20261022/drafts/대치중_2026_2학년_2학기_중간고사_개선_v1.hwpx",
+    "status": "non-final trial; line-style raster defect superseded by v2"
+  }
+}

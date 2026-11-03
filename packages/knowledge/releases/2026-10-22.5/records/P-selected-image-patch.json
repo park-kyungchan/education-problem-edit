@@ -1,0 +1,86 @@
+{
+  "kind": "procedure",
+  "id": "P-selected-image-patch",
+  "title": "Apply a bounded diagram payload update",
+  "stage": "package",
+  "ruleIds": [
+    "R-selected-image-patch",
+    "R-raster-style",
+    "R-visual-semantics",
+    "R-label-anchor"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-imagepatch-guide"
+    },
+    {
+      "sourceId": "S-imagepatch-code"
+    },
+    {
+      "sourceId": "S-imagepatch-entry"
+    },
+    {
+      "sourceId": "S-imagepatch-proof"
+    },
+    {
+      "sourceId": "S-imagepatch-job"
+    }
+  ],
+  "inputs": [
+    "exact input package hash",
+    "user image delta",
+    "question/picture/media binding",
+    "fixed-size replacement PNG",
+    "unchanged prior qualification"
+  ],
+  "steps": [
+    "Edit only selected scene objects: mark encoding, label presentation or sector fill/layer.",
+    "Rasterize selected IDs with the qualified backend.",
+    "Invoke the finite patch adapter with explicit old/new hashes and bindings.",
+    "Verify allowed media-only changes and affected native image output; preserve unchanged upstream evidence."
+  ],
+  "outputs": [
+    "versioned HWPX",
+    "binding/member diff",
+    "affected visual evidence",
+    "actual stage timing with unknown total savings"
+  ],
+  "implementationSourceIds": [
+    "S-imagepatch-entry",
+    "S-imagepatch-code"
+  ],
+  "stopWhen": [
+    "Pixel dimensions, embedding crop/size/transform or ownership changes.",
+    "Media is shared or input/replacement hashes drift."
+  ],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment.",
+  "behaviors": [
+    {
+      "feature": "Selected image dependency path",
+      "state": "observed",
+      "sourceIds": [
+        "S-imagepatch-guide",
+        "S-imagepatch-proof",
+        "S-imagepatch-receipt"
+      ],
+      "facts": {
+        "path": [
+          "feedback",
+          "source feature/code",
+          "selected SVG",
+          "selected PNG",
+          "bound BinData member",
+          "affected native image check"
+        ],
+        "preservedEvidence": [
+          "exact unchanged text/math/table/layout member identities"
+        ],
+        "packagePatchWallMs": 95.784,
+        "nativeOpenExportWallMs": 12406.263,
+        "pairedSavingsMeasured": false
+      }
+    }
+  ]
+}

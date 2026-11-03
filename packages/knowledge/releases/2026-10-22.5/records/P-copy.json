@@ -1,0 +1,43 @@
+{
+  "kind": "procedure",
+  "id": "P-copy",
+  "title": "Make whole questions copyable",
+  "stage": "question-layout",
+  "ruleIds": [
+    "R-question-container",
+    "R-native-editability",
+    "R-proportionate-checks"
+  ],
+  "evidence": [
+    {
+      "sourceId": "S-questionF"
+    },
+    {
+      "sourceId": "S-bindingsF"
+    }
+  ],
+  "inputs": [
+    "question content tree",
+    "image/math/frame bindings"
+  ],
+  "steps": [
+    "Put all descendants inside a borderless 1x1 native question table.",
+    "Map question ID to native table/control IDs; check descendant coverage.",
+    "For a required transfer behavior, use P-native-transfer and distinguish the observed HWPML2X selected-block route from unexercised OS clipboard Copy/Paste; qualify only newly required behavior."
+  ],
+  "outputs": [
+    "question table bindings",
+    "containment result",
+    "scope-specific transfer behavior result"
+  ],
+  "implementationSourceIds": [
+    "S-authorF",
+    "S-bindingsF"
+  ],
+  "stopWhen": [
+    "Only table count exists but clipboard preservation is being claimed."
+  ],
+  "evidenceClass": "derived-guidance",
+  "applicability": "conditional-reuse",
+  "limitation": "A reusable execution recipe; historical success does not certify a different source or current native environment."
+}

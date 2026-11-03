@@ -1,0 +1,41 @@
+{
+  "kind": "case",
+  "id": "C-d-q20-arrow",
+  "title": "Daechi Q20: An arrow requires restoration; feedback does not specify a complete semantic target.",
+  "stage": "assets",
+  "exam": "daechi-20261022",
+  "question": 20,
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "20-"
+    },
+    {
+      "sourceId": "S-optimizationF"
+    },
+    {
+      "sourceId": "S-finalF"
+    }
+  ],
+  "symptom": "An arrow requires restoration; feedback does not specify a complete semantic target.",
+  "cause": null,
+  "expected": "Inspect the pinned crop, classify arrow role and bind to its actual angle/segment; keep unresolved target explicit until inspected.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-visual-semantics",
+    "R-uncertainty"
+  ],
+  "requiredChecks": [
+    "Pinned original/output region comparison.",
+    "Typed source-mark/semantic ownership coverage.",
+    "Only affected descendants invalidated."
+  ],
+  "limitation": "Source-specific user expectation and producer-reported v2 correction. This curator did not independently regrade the original image; causal attribution remains unproven.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "case",
+  "id": "C-d-q21-AP",
+  "title": "Daechi Q21: Segment AP is printed original content.",
+  "stage": "regions",
+  "exam": "daechi-20261022",
+  "question": 21,
+  "evidenceClass": "historical-receipt",
+  "applicability": "historical-instance",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "21-"
+    },
+    {
+      "sourceId": "S-optimizationF"
+    },
+    {
+      "sourceId": "S-finalF"
+    }
+  ],
+  "symptom": "Segment AP is printed original content.",
+  "cause": null,
+  "expected": "Retain AP; use source/handwriting provenance evidence rather than appearance alone.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-mark-provenance",
+    "R-geometry-topology"
+  ],
+  "requiredChecks": [
+    "Pinned original/output region comparison.",
+    "Typed source-mark/semantic ownership coverage.",
+    "Only affected descendants invalidated."
+  ],
+  "limitation": "Source-specific user expectation and producer-reported v2 correction. This curator did not independently regrade the original image; causal attribution remains unproven.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

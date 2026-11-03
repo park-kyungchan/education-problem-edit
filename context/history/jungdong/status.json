@@ -1,0 +1,123 @@
+{
+  "schema": "jungdong.hwpx.planning-status.v1",
+  "state": "completed-by-actual-user-direction",
+  "updatedAt": "2026-10-22T05:41:21.568Z",
+  "phase": "closed",
+  "operationRoot": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021",
+  "owner": "jungdong-hwpx-planner",
+  "paneId": "w7:p33",
+  "nativeSessionId": "01a15cec-916b-70a0-aee7-8c4fa63cf571",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "xhigh",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "nativeEnrollmentId": "enrollment:38afe2f1-55cf-41ce-82ab-74f3cce750ad",
+  "authority": "approved-bounded-local-production",
+  "planningTaskState": "completed",
+  "wholeWorkState": "completed-by-actual-user",
+  "validation": {
+    "state": "passed",
+    "checkCount": 20,
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/validation-report.json"
+  },
+  "approvalArtifactManifest": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/approved-contract-manifest.r2.json",
+    "sha256": "b1e3ba6ba3d46101c20d9e25ea3a37ae16b5193824f54a2c0c776129f6f02c0d"
+  },
+  "taskCount": 12,
+  "taskSpecPlanFiles": 24,
+  "dagEdgeCount": 20,
+  "topologicalWaveCount": 10,
+  "nativePlanningDecisionApplications": 5,
+  "workNativeJevRequests": 22,
+  "workEffectiveMicroUsd": "8369",
+  "productionStarted": true,
+  "productionDispatchCount": 2,
+  "actualApprovalExists": true,
+  "explicitUserApprovalRequired": false,
+  "acceptanceDecision": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/acceptance/user-visual-review.actual.json",
+    "sha256": "39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128",
+    "decision": "complete-work-as-delivered",
+    "owner": "actual-user"
+  },
+  "pending": [],
+  "handoff": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/handoff.json",
+  "approvalPending": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approval-pending.json",
+  "communication": "Root pulls files only; no question, message or notification",
+  "paneDisposition": "keep-existing-pane-waiting-after-turn",
+  "nativeWorkLifecycle": "Owner Work records completed; native enrollment and session history retained. No Goal lifecycle change.",
+  "workSpec": {
+    "id": "WS-JD-HWPX-20261021",
+    "revision": 3,
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/work-spec.r3.json",
+    "status": "user-authorized-addendum"
+  },
+  "workPlan": {
+    "id": "WP-JD-HWPX-20261021",
+    "revision": 3,
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/work-plan.r3.json",
+    "status": "user-authorized-addendum"
+  },
+  "productionPreparationStarted": true,
+  "newAgentConstraint": {
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "high",
+    "source": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/user-instructions.actual.json",
+    "substitutionAllowed": false,
+    "appliesTo": "Every new native agent; existing planning turn settings are not mutated."
+  },
+  "currentTask": null,
+  "completedPreparation": [
+    "Actual approval captured",
+    "High-only new-agent requirement recorded",
+    "Original/baseline hashes re-observed",
+    "Source-only input/readiness records written"
+  ],
+  "panes": {
+    "lead": "w7:p33",
+    "workerA": "w7:p34",
+    "workerB": "w7:p36"
+  },
+  "actualNewAgentSettingsVerified": "gpt-6.1-sol/high",
+  "workerBState": "completed-idle-preserved",
+  "freshSourceProblemCount": 20,
+  "sourceAmbiguityCount": 12,
+  "sourceRegionCount": 47,
+  "figureCountRecordedByWorker": 20,
+  "frozenSourceIrSha256": "9bbae54aab3aeef18baf4c049bd3e88486a3671af95669b1cba7bcd4a7f02b89",
+  "printedFigureCount": 18,
+  "excludedHandwrittenFigureIds": [
+    "MC12-H1",
+    "MC15-H1"
+  ],
+  "nativeActorStarts": 2,
+  "productionTaskDispatches": 3,
+  "planningSnapshotWorkNativeJevRequests": 6,
+  "planningSnapshotWorkEffectiveMicroUsd": "1871",
+  "financialSnapshotScope": "Final Work-bound snapshot in production/explanation/jev-call-accounting.json; sole authority remains authoritative and other Works can change daily balance.",
+  "parallelWaveReadback": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/dispatch/parallel-wave.actual-readback.json",
+  "additionalRequestedDeliverable": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/explanation-request.actual.json",
+  "finalExplanationState": "completed-and-delivered",
+  "newHwpx": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/package/2026-10-21T07-46-27-213Z/jungdong-readable-comparison-r2.hwpx",
+    "sha256": "895bc5628ac998337e96e66aec451eff8236db1afa1e561638f31cb9ac77f0de",
+    "bytes": 1765964
+  },
+  "currentPackage": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/package/current.json",
+  "sourceTextProducerState": "completed",
+  "figureProducerState": "completed",
+  "delivery": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/delivery.actual.json",
+  "currentIdentityRegistry": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/identity-registry.r3.json",
+  "currentDependencyGraph": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/dependency-graph.r3.json",
+  "workSettledMicroUsd": "5416",
+  "workOpenBoundMicroUsd": "2953",
+  "finalReadback": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/final-readback.actual.json",
+  "currentCompletionRef": {
+    "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/acceptance/user-visual-review.actual.json",
+    "sha256": "39de94f8847db82890c27d716e30c3056da10991a2047e6bfcbf68d8688fb128",
+    "decision": "complete-work-as-delivered",
+    "owner": "actual-user"
+  },
+  "automaticContinuation": false,
+  "sourceAccuracyAcceptance": null
+}

@@ -1,0 +1,860 @@
+{
+  "schema": "jungdong.dependency-graph.v1",
+  "ontologyVersion": "0.2.0",
+  "domainId": "mathematics-document-editing",
+  "projectId": "math-problem-restoration",
+  "workId": "mathematics-document-editing/math-problem-restoration/jungdong-image-to-hwpx-20261021",
+  "acceptanceDecision": null,
+  "status": "actual-production-complete-additive-explanation-running",
+  "noProductionBeforeApproval": true,
+  "nodes": [
+    {
+      "taskId": "T-JD-20261021-00-PLAN",
+      "ownerRole": "jungdong-hwpx-planner",
+      "actualActorId": "native-codex:01a15cec-916b-70a0-aee7-8c4fa63cf571",
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "planning-brief",
+        "source-baseline-inventory"
+      ],
+      "outputArtifacts": [
+        "approval-packet",
+        "approval-artifact-manifest"
+      ],
+      "writeScopes": [
+        "planning records under operationRoot"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-01-APPROVAL",
+      "ownerRole": "user-via-Root",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "approval-packet",
+        "approval-artifact-manifest"
+      ],
+      "outputArtifacts": [
+        "production-approval"
+      ],
+      "writeScopes": [
+        "approvals/production-approval.actual.json"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-02-PREP",
+      "ownerRole": "future-native-lead",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "production-approval",
+        "source-baseline-inventory",
+        "reuse-policy"
+      ],
+      "outputArtifacts": [
+        "production-readiness",
+        "fresh-source-pin"
+      ],
+      "writeScopes": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/prep/**"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-03-EXTRACT",
+      "ownerRole": "future-native-source-owner",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "production-readiness",
+        "fresh-source-pin"
+      ],
+      "outputArtifacts": [
+        "fresh-source-ir",
+        "source-region-manifest",
+        "source-ambiguity-register"
+      ],
+      "writeScopes": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/**"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-04-TEXT-EQ",
+      "ownerRole": "future-native-text-owner",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "fresh-source-ir",
+        "source-ambiguity-register"
+      ],
+      "outputArtifacts": [
+        "native-text-model",
+        "equation-map",
+        "native-frame-model"
+      ],
+      "writeScopes": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/text/**"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-05-FIGURES",
+      "ownerRole": "future-native-figure-owner",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "fresh-source-ir",
+        "source-region-manifest",
+        "source-ambiguity-register"
+      ],
+      "outputArtifacts": [
+        "figure-scene-code",
+        "figure-assets",
+        "figure-role-manifest"
+      ],
+      "writeScopes": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/figures/**"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-06-ASSEMBLE",
+      "ownerRole": "future-native-composition-owner",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "native-text-model",
+        "equation-map",
+        "native-frame-model",
+        "figure-assets",
+        "figure-role-manifest",
+        "reuse-policy"
+      ],
+      "outputArtifacts": [
+        "new-hwpx",
+        "composition-manifest",
+        "uncertainty-sidecar"
+      ],
+      "writeScopes": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/package/**"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-07-SOURCE-STRUCTURE",
+      "ownerRole": "future-native-readback-owner",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "new-hwpx",
+        "composition-manifest",
+        "fresh-source-pin",
+        "fresh-source-ir",
+        "uncertainty-sidecar"
+      ],
+      "outputArtifacts": [
+        "source-structural-readback"
+      ],
+      "writeScopes": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/verify-source/**"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-08-NATIVE",
+      "ownerRole": "future-native-windows-owner",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "new-hwpx",
+        "source-structural-readback",
+        "production-approval"
+      ],
+      "outputArtifacts": [
+        "native-pdf",
+        "native-process-receipt",
+        "native-layout-readback",
+        "native-preview-assets"
+      ],
+      "writeScopes": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/native/**"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-09-REVIEW",
+      "ownerRole": "future-native-review-owner",
+      "actualActorId": null,
+      "state": "completed-operationally",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "new-hwpx",
+        "native-pdf",
+        "native-layout-readback",
+        "native-preview-assets",
+        "source-structural-readback",
+        "source-baseline-inventory",
+        "uncertainty-sidecar",
+        "fresh-source-ir",
+        "figure-scene-code"
+      ],
+      "outputArtifacts": [
+        "visual-review-index",
+        "comparison-gallery",
+        "delivery-receipt"
+      ],
+      "writeScopes": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/review/**",
+        "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/<new-run-id>/**"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-10-ACCEPT",
+      "ownerRole": "user-via-Root",
+      "actualActorId": null,
+      "state": "waiting-prerequisites",
+      "requiresUserApproval": true,
+      "inputArtifacts": [
+        "visual-review-index",
+        "comparison-gallery",
+        "delivery-receipt"
+      ],
+      "outputArtifacts": [
+        "human-acceptance-record"
+      ],
+      "writeScopes": [
+        "acceptance/user-visual-review.actual.json"
+      ]
+    },
+    {
+      "taskId": "T-JD-20261021-11-EXPLAIN",
+      "ownerRole": "existing-native-lead",
+      "actualActorId": "native-codex:01a15cec-916b-70a0-aee7-8c4fa63cf571",
+      "state": "executing",
+      "requiresUserApproval": false,
+      "inputArtifacts": [
+        "actual-production-delivery",
+        "actual-native-accounting",
+        "retained-native-receipts"
+      ],
+      "outputArtifacts": [
+        "offline-causal-explanation-html",
+        "actual-Jev-call-count"
+      ],
+      "writeScopes": [
+        "production/explanation/**",
+        "new-versioned-delivery/explanation files"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "E-JD-01",
+      "from": "T-JD-20261021-00-PLAN",
+      "to": "T-JD-20261021-01-APPROVAL",
+      "type": "approval-packet",
+      "artifacts": [
+        "approval-packet",
+        "approval-artifact-manifest"
+      ],
+      "reason": "Only the user can authorize production from the concrete packet.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-02",
+      "from": "T-JD-20261021-01-APPROVAL",
+      "to": "T-JD-20261021-02-PREP",
+      "type": "user-approval-gate",
+      "artifacts": [
+        "production-approval"
+      ],
+      "reason": "No production-side preparation without explicit approval.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-03",
+      "from": "T-JD-20261021-02-PREP",
+      "to": "T-JD-20261021-03-EXTRACT",
+      "type": "producer-before-consumer",
+      "artifacts": [
+        "production-readiness",
+        "fresh-source-pin"
+      ],
+      "reason": "Extraction requires approved, hash-pinned source-only inputs.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-04",
+      "from": "T-JD-20261021-03-EXTRACT",
+      "to": "T-JD-20261021-04-TEXT-EQ",
+      "type": "producer-before-consumer",
+      "artifacts": [
+        "fresh-source-ir",
+        "source-ambiguity-register"
+      ],
+      "reason": "Text/equations consume the frozen fresh IR.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-05",
+      "from": "T-JD-20261021-03-EXTRACT",
+      "to": "T-JD-20261021-05-FIGURES",
+      "type": "producer-before-consumer",
+      "artifacts": [
+        "fresh-source-ir",
+        "source-region-manifest",
+        "source-ambiguity-register"
+      ],
+      "reason": "Figures consume the same immutable IR and original region metadata.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-06",
+      "from": "T-JD-20261021-04-TEXT-EQ",
+      "to": "T-JD-20261021-06-ASSEMBLE",
+      "type": "join-input",
+      "artifacts": [
+        "native-text-model",
+        "equation-map",
+        "native-frame-model"
+      ],
+      "reason": "A single composer waits for the text lane.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-07",
+      "from": "T-JD-20261021-05-FIGURES",
+      "to": "T-JD-20261021-06-ASSEMBLE",
+      "type": "join-input",
+      "artifacts": [
+        "figure-assets",
+        "figure-role-manifest"
+      ],
+      "reason": "A single composer waits for the figure lane.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-08",
+      "from": "T-JD-20261021-06-ASSEMBLE",
+      "to": "T-JD-20261021-07-SOURCE-STRUCTURE",
+      "type": "producer-before-consumer",
+      "artifacts": [
+        "new-hwpx",
+        "composition-manifest",
+        "uncertainty-sidecar"
+      ],
+      "reason": "Exact package must exist before a separate source/package readback.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-09",
+      "from": "T-JD-20261021-07-SOURCE-STRUCTURE",
+      "to": "T-JD-20261021-08-NATIVE",
+      "type": "verification-prerequisite",
+      "artifacts": [
+        "source-structural-readback"
+      ],
+      "reason": "Native open/export is serialized after finite source/package checks.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-10",
+      "from": "T-JD-20261021-06-ASSEMBLE",
+      "to": "T-JD-20261021-08-NATIVE",
+      "type": "exact-artifact-input",
+      "artifacts": [
+        "new-hwpx"
+      ],
+      "reason": "Native export uses the same checked package hash.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-11",
+      "from": "T-JD-20261021-08-NATIVE",
+      "to": "T-JD-20261021-09-REVIEW",
+      "type": "producer-before-consumer",
+      "artifacts": [
+        "native-pdf",
+        "native-layout-readback",
+        "native-preview-assets"
+      ],
+      "reason": "Only actual native output is packaged for visual review.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-12",
+      "from": "T-JD-20261021-07-SOURCE-STRUCTURE",
+      "to": "T-JD-20261021-09-REVIEW",
+      "type": "evidence-input",
+      "artifacts": [
+        "source-structural-readback"
+      ],
+      "reason": "Review index preserves source/package residuals.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-13",
+      "from": "T-JD-20261021-09-REVIEW",
+      "to": "T-JD-20261021-10-ACCEPT",
+      "type": "human-review-gate",
+      "artifacts": [
+        "visual-review-index",
+        "comparison-gallery",
+        "delivery-receipt"
+      ],
+      "reason": "Actual user visual review is the final acceptance authority.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-14",
+      "from": "T-JD-20261021-02-PREP",
+      "to": "T-JD-20261021-07-SOURCE-STRUCTURE",
+      "type": "exact-artifact-input",
+      "artifacts": [
+        "fresh-source-pin"
+      ],
+      "reason": "Explicit producer/consumer input contract; native topological validation remains authoritative.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-15",
+      "from": "T-JD-20261021-03-EXTRACT",
+      "to": "T-JD-20261021-07-SOURCE-STRUCTURE",
+      "type": "exact-artifact-input",
+      "artifacts": [
+        "fresh-source-ir"
+      ],
+      "reason": "Explicit producer/consumer input contract; native topological validation remains authoritative.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-16",
+      "from": "T-JD-20261021-01-APPROVAL",
+      "to": "T-JD-20261021-08-NATIVE",
+      "type": "exact-artifact-input",
+      "artifacts": [
+        "production-approval"
+      ],
+      "reason": "Explicit producer/consumer input contract; native topological validation remains authoritative.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-17",
+      "from": "T-JD-20261021-06-ASSEMBLE",
+      "to": "T-JD-20261021-09-REVIEW",
+      "type": "exact-artifact-input",
+      "artifacts": [
+        "new-hwpx",
+        "uncertainty-sidecar"
+      ],
+      "reason": "Explicit producer/consumer input contract; native topological validation remains authoritative.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-18",
+      "from": "T-JD-20261021-03-EXTRACT",
+      "to": "T-JD-20261021-09-REVIEW",
+      "type": "exact-artifact-input",
+      "artifacts": [
+        "fresh-source-ir"
+      ],
+      "reason": "Explicit producer/consumer input contract; native topological validation remains authoritative.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-19",
+      "from": "T-JD-20261021-05-FIGURES",
+      "to": "T-JD-20261021-09-REVIEW",
+      "type": "exact-artifact-input",
+      "artifacts": [
+        "figure-scene-code"
+      ],
+      "reason": "Explicit producer/consumer input contract; native topological validation remains authoritative.",
+      "status": "proposed-no-production-dispatch"
+    },
+    {
+      "id": "E-JD-20",
+      "from": "T-JD-20261021-09-REVIEW",
+      "to": "T-JD-20261021-11-EXPLAIN",
+      "type": "delivery-before-explanation",
+      "artifacts": [
+        "actual-production-delivery"
+      ],
+      "reason": "The actual user explicitly requests this explanation after production completion.",
+      "status": "prerequisite-completed"
+    }
+  ],
+  "externalInputs": {
+    "planning-brief": {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/planning-brief.json",
+      "role": "actual-delegation-authority"
+    },
+    "source-baseline-inventory": {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/source-baseline-inventory.json",
+      "role": "observed-metadata-only"
+    },
+    "reuse-policy": {
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/reuse-policy.json",
+      "role": "proposed-approval-contract"
+    }
+  },
+  "artifactContracts": [
+    {
+      "id": "approval-packet",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approval-packet.md",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-00-PLAN",
+      "existsAtMaterialization": true,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "planning-output"
+    },
+    {
+      "id": "approval-artifact-manifest",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approval-artifact-manifest.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-00-PLAN",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "planning-output"
+    },
+    {
+      "id": "production-approval",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/production-approval.actual.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-01-APPROVAL",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "production-readiness",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/prep/readiness.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-02-PREP",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "fresh-source-pin",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/prep/source-pin.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-02-PREP",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "fresh-source-ir",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/problems.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-03-EXTRACT",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "source-region-manifest",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/regions.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-03-EXTRACT",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "source-ambiguity-register",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/ambiguities.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-03-EXTRACT",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "native-text-model",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/text/native-content.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-04-TEXT-EQ",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "equation-map",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/text/equations.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-04-TEXT-EQ",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "native-frame-model",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/text/frames.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-04-TEXT-EQ",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "figure-scene-code",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/figures/scenes.ts",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-05-FIGURES",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "figure-assets",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/figures/assets.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-05-FIGURES",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "figure-role-manifest",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/figures/roles.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-05-FIGURES",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "new-hwpx",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/package/<new-run-id>/jungdong-readable-comparison-r1.hwpx",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-06-ASSEMBLE",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "composition-manifest",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/package/<new-run-id>/composition.json",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-06-ASSEMBLE",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "uncertainty-sidecar",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/package/<new-run-id>/uncertainties.json",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-06-ASSEMBLE",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "source-structural-readback",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/verify-source/<new-run-id>/readback.json",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-07-SOURCE-STRUCTURE",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "native-pdf",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/native/<new-run-id>/jungdong-readable-comparison-r1.pdf",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-08-NATIVE",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "native-process-receipt",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/native/<new-run-id>/process-receipt.json",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-08-NATIVE",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "native-layout-readback",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/native/<new-run-id>/layout-readback.json",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-08-NATIVE",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "native-preview-assets",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/native/<new-run-id>/previews/index.json",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-08-NATIVE",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "visual-review-index",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/review/<new-run-id>/problem-index.json",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-09-REVIEW",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "comparison-gallery",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/review/<new-run-id>/index.html",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-09-REVIEW",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "delivery-receipt",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/review/<new-run-id>/delivery-receipt.json",
+      "pathState": "versioned-template-after-approval",
+      "producerTaskId": "T-JD-20261021-09-REVIEW",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    },
+    {
+      "id": "human-acceptance-record",
+      "path": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/acceptance/user-visual-review.actual.json",
+      "pathState": "exact-planned-path",
+      "producerTaskId": "T-JD-20261021-10-ACCEPT",
+      "existsAtMaterialization": false,
+      "schemaOwner": "Task Spec/Plan",
+      "readiness": "not-produced-held"
+    }
+  ],
+  "topologicalWaves": [
+    [
+      "T-JD-20261021-00-PLAN"
+    ],
+    [
+      "T-JD-20261021-01-APPROVAL"
+    ],
+    [
+      "T-JD-20261021-02-PREP"
+    ],
+    [
+      "T-JD-20261021-03-EXTRACT"
+    ],
+    [
+      "T-JD-20261021-04-TEXT-EQ",
+      "T-JD-20261021-05-FIGURES"
+    ],
+    [
+      "T-JD-20261021-06-ASSEMBLE"
+    ],
+    [
+      "T-JD-20261021-07-SOURCE-STRUCTURE"
+    ],
+    [
+      "T-JD-20261021-08-NATIVE"
+    ],
+    [
+      "T-JD-20261021-09-REVIEW"
+    ],
+    [
+      "T-JD-20261021-10-ACCEPT",
+      "T-JD-20261021-11-EXPLAIN"
+    ]
+  ],
+  "serialGates": [
+    "Explicit user approval before PREP and all production",
+    "Hash-frozen independent source IR before text and figures",
+    "Two-lane join before single-owner assembly",
+    "Source/package readback before exclusive Hancom COM",
+    "Actual native output before review/delivery",
+    "Actual user visual decision after exact delivered output"
+  ],
+  "parallelGroups": [
+    {
+      "tasks": [
+        "T-JD-20261021-04-TEXT-EQ",
+        "T-JD-20261021-05-FIGURES"
+      ],
+      "condition": "Explicit user production and bounded native dispatch approval plus frozen source IR. If no extra actors are approved, one native owner interleaves these independent tasks.",
+      "disjointWrites": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/text/**",
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/figures/**"
+      ],
+      "sharedInputsReadOnly": [
+        "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/**"
+      ],
+      "maxConcurrentProductionActors": 2,
+      "currentlyDispatched": false
+    }
+  ],
+  "sharedResourceSerialization": [
+    {
+      "id": "RES-JD-PLAN",
+      "resource": "Planning artifacts",
+      "owner": "jungdong-hwpx-planner",
+      "mode": "single-writer",
+      "scope": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021",
+      "rule": "Only planning files exist before approval."
+    },
+    {
+      "id": "RES-JD-IR",
+      "resource": "Frozen source IR",
+      "owner": "future-native-source-owner",
+      "mode": "single-writer-then-read-only",
+      "scope": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/source-ir/**",
+      "rule": "Text/figure lanes receive the same immutable hash; change invalidates both descendants."
+    },
+    {
+      "id": "RES-JD-PACKAGE",
+      "resource": "HWPX package/ZIP/XML",
+      "owner": "future-native-composition-owner",
+      "mode": "single-writer",
+      "scope": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/package/**",
+      "rule": "Parallel lanes do not patch shared package files."
+    },
+    {
+      "id": "RES-JD-HANCOM",
+      "resource": "Windows Hancom COM and export",
+      "owner": "future-native-windows-owner",
+      "mode": "exclusive-one-new-owned-instance",
+      "scope": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/production/native/**",
+      "rule": "Open/Visible/Quit only after new PID/window proof; preexisting processes remain untouched."
+    },
+    {
+      "id": "RES-JD-ACCOUNT",
+      "resource": "Shared native accounting admission",
+      "owner": "palantirkc-jev-accounting",
+      "mode": "source-owned-atomic-admission",
+      "scope": "/home/palantirkc/operations/herdr-jev-first-adoption-20261021/activation/accounting.sqlite",
+      "rule": "No alternative ledger, cap reset or raw sender; parallel workers inherit the one authority."
+    },
+    {
+      "id": "RES-JD-DELIVERY",
+      "resource": "Versioned Desktop destination",
+      "owner": "future-native-review-owner",
+      "mode": "single-writer-new-path",
+      "scope": "/mnt/c/Users/packr/Desktop/문제편집/jungdong-jev-new-20261021/<new-run-id>/**",
+      "rule": "No overwrite of old delivered artifacts; rehash destination."
+    }
+  ],
+  "blockedReadiness": "Every production task held by pending actual user approval; package/runtime prerequisites are rechecked after approval.",
+  "productionApprovalRecordedAt": "2026-10-21T06:40:28.708Z",
+  "newAgentConstraint": {
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "high",
+    "source": "/home/palantirkc/operations/jungdong-image-to-hwpx-jev-20261021/approvals/user-instructions.actual.json",
+    "substitutionAllowed": false,
+    "appliesTo": "Every new native agent; existing planning turn settings are not mutated."
+  },
+  "explanationDoesNotWaitForHumanAcceptance": true
+}

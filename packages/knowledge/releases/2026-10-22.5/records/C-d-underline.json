@@ -1,0 +1,38 @@
+{
+  "kind": "case",
+  "id": "C-d-underline",
+  "title": "Printed underlines must remain native underlines",
+  "stage": "transcription",
+  "exam": "daechi-20261022",
+  "question": null,
+  "evidenceClass": "user-requirement",
+  "applicability": "historical-instance",
+  "evidence": [
+    {
+      "sourceId": "S-feedbackD",
+      "contains": "밑줄처리"
+    },
+    {
+      "sourceId": "S-finalF"
+    },
+    {
+      "sourceId": "S-verifyF"
+    }
+  ],
+  "symptom": "Printed text underline must be preserved.",
+  "cause": null,
+  "expected": "Bind exact source spans to native character underline.",
+  "outcome": "reported-corrected",
+  "ruleIds": [
+    "R-underline"
+  ],
+  "requiredChecks": [
+    "Exact span and repeated-text behavior."
+  ],
+  "limitation": "Confirmed Q1/4/8/13/14/18 native underlines are reported; Q16/Q17 extra emphasis stays uncertain in S-observationsF.",
+  "metric": {
+    "usd": null,
+    "seconds": null,
+    "measuredSavings": null
+  }
+}

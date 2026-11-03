@@ -1,0 +1,40 @@
+{
+  "kind": "rule",
+  "id": "R-uncertainty",
+  "title": "Keep unknowns separate from authorized approximation",
+  "stage": "semantics",
+  "evidenceClass": "historical-receipt",
+  "applicability": "conditional-reuse",
+  "evidence": [
+    {
+      "sourceId": "S-q11approx20",
+      "pointer": "/retainedUncertainty"
+    },
+    {
+      "sourceId": "S-accept21",
+      "pointer": "/residualLimitations"
+    }
+  ],
+  "when": "A label, ray, masked proof or source mark cannot be read reliably.",
+  "do": [
+    "Record unknown value and exact source region.",
+    "Keep source observation, inference and user-authorized illustration as different claim variants."
+  ],
+  "avoid": [
+    "Do not solve the problem to invent a missing source label."
+  ],
+  "check": [
+    "No hidden value or answer appears as a recovered source fact."
+  ],
+  "invalidates": [
+    "geometry",
+    "assets",
+    "equations",
+    "question-layout",
+    "page-layout",
+    "package",
+    "native",
+    "delivery"
+  ],
+  "limitation": "Computed O/I in an authored triangle do not recover obscured original geometry."
+}
