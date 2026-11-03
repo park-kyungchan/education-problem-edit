@@ -1,0 +1,35 @@
+import {readFileSync,writeFileSync,mkdirSync,existsSync,statSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const root=import.meta.dir,read=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+const sha=(p:string)=>createHash('sha256').update(readFileSync(p)).digest('hex');
+const pin=(path:string)=>({path,sha256:sha(path),bytes:statSync(path).size});
+const textHandoff=root+'/production/text/handoff.json',figureHandoff=root+'/production/figures/handoff.json';
+const nativeBinding=read(root+'/native/T-JD-20261021-06-ASSEMBLE/assembly-frozen-producer-join-v1/result.json');
+if(nativeBinding.state!=='bound-and-decisions-consumed'||nativeBinding.actualSessionId!==process.env.CODEX_THREAD_ID)throw Error('ACTUAL_NATIVE_ASSEMBLY_BINDING_REQUIRED');
+if(!existsSync(textHandoff)||!existsSync(figureHandoff))throw Error('BOTH_FROZEN_HANDOFFS_REQUIRED');
+const freeze=read(root+'/production/source-ir/freeze.json');for(const p of freeze.artifacts)if(sha(p.path)!==p.sha256)throw Error('SOURCE_FREEZE_DRIFT:'+p.path);
+const text=read(root+'/production/text/native-content.json'),assets=read(root+'/production/figures/assets.json');
+if(text.problems.length!==20||assets.figures.length!==18||text.sourceIRSha256!==freeze.sourceIRSha256||assets.sourceIRSha256!==freeze.sourceIRSha256)throw Error('EXACT_NEW_PRODUCER_CONTRACT_REQUIRED');
+const handoffPinErrors:any[]=[];
+function readPins(value:any){if(Array.isArray(value)){for(const x of value)readPins(x);return;}if(!value||typeof value!=='object')return;if(typeof value.path==='string'&&/^[a-f0-9]{64}$/.test(value.sha256??'')){if(!existsSync(value.path)||sha(value.path)!==value.sha256)handoffPinErrors.push(value);}for(const v of Object.values(value))readPins(v);}
+readPins(read(textHandoff));readPins(read(figureHandoff));
+const core=new Set([root+'/production/text/native-content.json',root+'/production/text/equations.json',root+'/production/text/frames.json',root+'/production/figures/assets.json',root+'/production/figures/roles.json']);
+if(handoffPinErrors.some(e=>core.has(e.path)))throw Error('CORE_HANDOFF_PIN_DRIFT:'+JSON.stringify(handoffPinErrors));
+for(const f of assets.figures){if(sha(f.originalPath)!==f.originalSha256||sha(f.restoredPath)!==f.restoredSha256||sha(f.scenePath)!==f.sceneSha256)throw Error('FIGURE_PIN_DRIFT:'+f.figureId);}
+const runId=process.argv[2]??new Date().toISOString().replace(/[:.]/g,'-');
+if(!/^[A-Za-z0-9_-]+$/.test(runId))throw Error('EXACT_RUN_ID_REQUIRED');
+const out=root+'/production/package/'+runId;if(existsSync(out))throw Error('NO_OUTPUT_RUN_REPLAY');mkdirSync(out,{recursive:true});
+const inputPaths=[root+'/production/source-ir/problems.json',root+'/production/source-ir/regions.json',root+'/production/source-ir/ambiguities.json',root+'/production/source-ir/freeze.json',root+'/production/source-ir/document-metadata.json',textHandoff,figureHandoff,root+'/production/text/native-content.json',root+'/production/text/equations.json',root+'/production/text/frames.json',root+'/production/figures/assets.json',root+'/production/figures/roles.json',root+'/production/figures/uncertainties.json',root+'/production/merge-contract.json',root+'/production/prep/compose-adapter.py'];
+const job={schema:'jungdong.exact-composition-job.v1',runId,sourceSha256:freeze.sourcePdfSha256,sourceIrSha256:freeze.sourceIRSha256,nativeContentPath:root+'/production/text/native-content.json',nativeFramesPath:root+'/production/text/frames.json',figureAssetsPath:root+'/production/figures/assets.json',documentMetadataPath:root+'/production/source-ir/document-metadata.json',inputPins:inputPaths.map(pin),outputHwpx:out+'/jungdong-readable-comparison-r1.hwpx',reportPath:out+'/composition.json'};
+writeFileSync(out+'/job.json',JSON.stringify(job,null,2)+'\n');
+const args=['/LOCAL_HOME/operations/math-problem-editing-20261020/tooling/venv/bin/python',root+'/production/prep/compose-adapter.py',out+'/job.json'];
+const p=Bun.spawnSync(args,{stdout:'pipe',stderr:'pipe'});
+writeFileSync(out+'/command-result.json',JSON.stringify({args,exitCode:p.exitCode,stdout:p.stdout.toString(),stderr:p.stderr.toString(),at:new Date().toISOString()},null,2)+'\n');
+if(p.exitCode!==0)throw Error('COMPOSITION_FAILED_READ_RETAINED_COMMAND:'+out+'/command-result.json:'+p.stderr.toString().slice(-1800));
+for(const q of job.inputPins)if(sha(q.path)!==q.sha256)throw Error('PRODUCER_CHANGED_DURING_COMPOSITION:'+q.path);
+const composition=read(job.reportPath);
+writeFileSync(out+'/uncertainties.json',JSON.stringify({schema:'jungdong.composed-uncertainties.v1',source:read(root+'/production/source-ir/ambiguities.json'),figure:read(root+'/production/figures/uncertainties.json'),alternatives:assets.alternatives,excludedHandwriting:assets.excludedHandwritten,nativeTextGapState:read(root+'/production/text/status.json'),sourceAccuracyAcceptance:null,acceptanceDecision:null},null,2)+'\n');
+const result={schema:'jungdong.composition-handoff.v1',state:'composed-awaiting-separate-source-package-readback',runId,job:pin(out+'/job.json'),hwpx:pin(job.outputHwpx),composition:pin(job.reportPath),sidecar:pin(out+'/uncertainties.json'),nativeCounts:{equations:composition.equations.length,images:composition.imageRoles.length,frames:composition.frames.length,blanks:composition.blanks.length,underlines:composition.underlines.length},sourceIrSha256:freeze.sourceIRSha256,inputPins:job.inputPins,handoffAncillaryPinErrors:handoffPinErrors,oldDeliverablesMutated:false,nativeCOMExecuted:false,acceptanceDecision:null};
+writeFileSync(out+'/handoff.json',JSON.stringify(result,null,2)+'\n');writeFileSync(root+'/production/package/current.json',JSON.stringify(result,null,2)+'\n');
+const s=read(root+'/status.json');writeFileSync(root+'/status.json',JSON.stringify({...s,updatedAt:new Date().toISOString(),phase:'new-hwpx-composed-awaiting-separate-source-package-readback',currentTask:'T-JD-20261021-06-ASSEMBLE',newHwpx:result.hwpx,currentPackage:root+'/production/package/current.json',sourceTextProducerState:'completed',figureProducerState:'completed'},null,2)+'\n');
+console.log(JSON.stringify({state:result.state,runId,hwpx:result.hwpx,nativeCounts:result.nativeCounts,ancillaryPinErrors:handoffPinErrors.length}));

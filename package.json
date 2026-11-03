@@ -1,0 +1,9 @@
+{
+  "name": "problem-edit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "layout": "bun run src/cli.ts layout"
+  }
+}
