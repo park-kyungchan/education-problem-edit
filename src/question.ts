@@ -86,9 +86,20 @@ export const unitDependencies: Readonly<Record<UnitStageId, readonly UnitStageId
 
 const SHA256_RE = /^[a-f0-9]{64}$/;
 
-/** Normalize "3", "q3", "Q03", "3번", "문항 3", "문제 3" to "Q3". */
+/**
+ * Normalize Korean and alphanumeric question identifiers to canonical "Q<n>".
+ * - Multiple-choice / standard items ("3", "q3", "Q03", "3번", "문항 3", "문제 3", "객관식 3", "선택형 3") -> "Q3" (1..999).
+ * - Subjective / constructed-response items ("서답형 2", "서술형 2", "단답형 2", "주관식 2", "S2", "s02") -> "Q102" (100 + n for n in 1..99).
+ */
 export function parseQuestionId(raw: string): string {
-  const cleaned = raw.trim().replace(/^(?:문항|문제)\s*/u, "").replace(/번$/u, "").trim();
+  const trimmed = raw.trim().replace(/번$/u, "").trim();
+  const subjMatch = trimmed.match(/^(?:(?:서답형|서술형|단답형|주관식)\s*(?:문항\s*|문제\s*)?|[Ss])0*(\d{1,2})$/u);
+  if (subjMatch) {
+    const sn = Number(subjMatch[1]);
+    if (!Number.isInteger(sn) || sn < 1 || sn > 99) throw new Error(`Invalid question id: ${raw}`);
+    return `Q${100 + sn}`;
+  }
+  const cleaned = trimmed.replace(/^(?:객관식|선택형)?\s*(?:문항|문제)?\s*/u, "").trim();
   const match = cleaned.match(/^[Qq]?0*(\d{1,3})$/);
   if (!match) throw new Error(`Invalid question id: ${raw}`);
   const n = Number(match[1]);
@@ -101,12 +112,15 @@ function questionNumber(id: string): number {
 }
 
 /**
- * Parse a unit selection such as "Q3", "Q3,Q7", "Q3-Q5" or "all".
+ * Parse a unit selection such as "Q3", "Q3,Q7", "Q3-Q5", "서답형 2-서답형 4", "S2-S4" or "all".
  * `available` bounds "all" and ranges; without it a range is still expanded
  * but "all" is rejected because the exam inventory is unknown.
  */
 export function parseUnitSelection(raw: string, available?: readonly string[]): UnitSelection {
-  const text = raw.trim().replace(/(문항|문제)\s+(?=\d)/gu, "$1");
+  const text = raw
+    .trim()
+    .replace(/(객관식|선택형|서답형|서술형|단답형|주관식|문항|문제)\s+(?=(?:문항|문제|\d))/gu, "$1")
+    .replace(/(객관식|선택형|서답형|서술형|단답형|주관식)(?:문항|문제)\s*(?=\d)/gu, "$1");
   if (!text) throw new Error("Empty unit selection");
   const known = available ? [...new Set(available.map(parseQuestionId))] : undefined;
 

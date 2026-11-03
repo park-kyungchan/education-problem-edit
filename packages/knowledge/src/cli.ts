@@ -9,7 +9,7 @@ const args=process.argv.slice(2),command=args.shift()??'help';
 function option(name:string,fallback?:string){const i=args.indexOf(name);if(i<0)return fallback;const value=args[i+1];if(!value||value.startsWith('--'))throw new Error(`Missing value for ${name}`);args.splice(i,2);return value;}
 const releaseOption=option('--release');
 if(command==='help'){
-  console.log(json({commands:['route <request or intent-id> [--max-chars 12000]','layout list','layout resolve [--profile <id>] [--existing <id>] [--format hwp|hwpx]','show <record-id>','source <source-id>','trace <record-id>','impact <record-id or stage-id>','find <path-query> [--limit 12]','capability <query> [--surface desktop|web|format] [--limit 8]','api <ActionId|ParameterSetId|member> [--kind action|parameter|api]','validate','check-sources [source-id ...]','summary'],release:'Every command accepts --release YYYY-MM-DD.N; otherwise current.json selects the immutable release.'}));process.exit(0);
+  console.log(json({commands:['route <request or intent-id> [--max-chars 12000]','layout list','layout resolve [--profile <id>] [--existing <id>] [--format hwp|hwpx]','show <record-id>','source <source-id>','trace <record-id>','impact <record-id or stage-id>','find <path-query> [--limit 12] (requires external inventory.jsonl)','capability <query> [--surface desktop|web|format] [--limit 8] (requires external hancom corpus)','api <ActionId|ParameterSetId|member> [--kind action|parameter|api] (requires external hancom corpus)','validate','check-sources [source-id ...]','summary'],release:'Every command accepts --release YYYY-MM-DD.N; otherwise current.json selects the immutable release.'}));process.exit(0);
 }
 let release=releaseOption,expectedManifestSha:string|undefined;
 if(!release){if(!existsSync(resolve(root,'current.json')))throw new Error('No selected release. Supply --release YYYY-MM-DD.N.');const current=JSON.parse(readFileSync(resolve(root,'current.json'),'utf8'));release=current.release;expectedManifestSha=current.manifestSha256;}
@@ -62,14 +62,18 @@ case 'route':{
     omittedDetailIds:[] as string[],readNext:'show <id>; source <source-id>; trace <id>; impact <id>',
     size:{characters:0,tokenCount:null,tokenCountReason:'Characters are bounded; actual model token usage is measured only in native Run evidence.'}};
   const omitted=new Set(allIds.filter(id=>!detailIds.includes(id)));
+  let currentLength=0;
   for(let attempt=0;attempt<details.length+allIds.length+10;attempt++){
-    packet.omittedDetailIds=[...omitted];packet.size.characters=json(packet).length;
-    if(json(packet).length<=budget)break;
-    const removed=packet.details.pop();if(!removed)throw new Error(`Budget too small for route metadata; use at least ${json(packet).length} characters.`);
+    packet.omittedDetailIds=[...omitted];
+    currentLength=json(packet).length;
+    packet.size.characters=currentLength;
+    currentLength=json(packet).length;
+    packet.size.characters=currentLength;
+    if(currentLength<=budget)break;
+    const removed=packet.details.pop();if(!removed)throw new Error(`Budget too small for route metadata; use at least ${currentLength} characters.`);
     omitted.add(removed.id);
   }
-  for(let i=0;i<3;i++)packet.size.characters=json(packet).length;
-  if(json(packet).length>budget)throw new Error('Context packet exceeded requested character budget');
+  if(currentLength>budget)throw new Error('Context packet exceeded requested character budget');
   output(packet);break;
 }
 case 'trace':{
@@ -87,7 +91,9 @@ case 'impact':{
 case 'find':{
   const limit=Number(option('--limit','12'));if(!Number.isInteger(limit)||limit<1||limit>100)throw new Error('limit must be 1..100');
   const query=normalized(args.join(' '));if(!query)throw new Error('Supply a path query');
-  const rows=readFileSync(resolve(dir,'inventory.jsonl'),'utf8').trim().split('\n').filter(Boolean).map(line=>JSON.parse(line));
+  const invPath=resolve(dir,'inventory.jsonl');
+  if(!existsSync(invPath))throw new Error(`External inventory corpus (${invPath}) is not bundled in this repository checkout; use 'route', 'show', or 'summary'.`);
+  const rows=readFileSync(invPath,'utf8').trim().split('\n').filter(Boolean).map(line=>JSON.parse(line));
   const matches=rows.filter(row=>normalized(row.path).includes(query));
   output({release,semanticReview:'inventory-only',count:matches.length,results:matches.slice(0,limit),truncated:matches.length>limit});break;
 }
@@ -106,7 +112,9 @@ case 'capability':case 'api':{
   const budget=Number(option('--max-chars','8000'));
   const integration=load<any>('integrations.json');
   if(integration.hancom){
-    const actual=sha256(readFileSync(resolve(root,integration.hancom.corpus,'index/manifest.json')));
+    const corpusManifest=resolve(root,integration.hancom.corpus,'index/manifest.json');
+    if(!existsSync(corpusManifest))throw new Error(`External Hancom corpus (${corpusManifest}) is not bundled in this repository checkout; use 'route', 'show', or 'summary'.`);
+    const actual=sha256(readFileSync(corpusManifest));
     if(actual!==integration.hancom.manifestSha256)throw new Error('Hancom corpus changed since this release. Curate/build a successor release before using updated declarations.');
   }
   const {queryHancom}=await import('./hancom');

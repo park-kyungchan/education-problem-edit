@@ -30,7 +30,14 @@ test("question ids normalize Korean and bare forms", () => {
   expect(parseQuestionId("q03")).toBe("Q3");
   expect(parseQuestionId("문항 3")).toBe("Q3");
   expect(parseQuestionId("문제 7번")).toBe("Q7");
+  expect(parseQuestionId("객관식 3번")).toBe("Q3");
+  expect(parseQuestionId("서답형 2")).toBe("Q102");
+  expect(parseQuestionId("서술형 4번")).toBe("Q104");
+  expect(parseQuestionId("S2")).toBe("Q102");
+  expect(parseQuestionId("s03")).toBe("Q103");
+  expect(parseQuestionId("Q102")).toBe("Q102");
   expect(() => parseQuestionId("Q0")).toThrow();
+  expect(() => parseQuestionId("S0")).toThrow();
   expect(() => parseQuestionId("abc")).toThrow();
 });
 
@@ -38,6 +45,8 @@ test("unit selection: single, subset, range and bounded all", () => {
   expect(parseUnitSelection("Q3")).toEqual({ kind: "single", questionIds: ["Q3"] });
   expect(parseUnitSelection("Q7,Q3").questionIds).toEqual(["Q3", "Q7"]);
   expect(parseUnitSelection("Q3-Q5").questionIds).toEqual(["Q3", "Q4", "Q5"]);
+  expect(parseUnitSelection("S2-S4").questionIds).toEqual(["Q102", "Q103", "Q104"]);
+  expect(parseUnitSelection("객관식 2, 서답형 2, 서답형 4").questionIds).toEqual(["Q2", "Q102", "Q104"]);
   expect(parseUnitSelection("all", ["Q2", "Q1"]).questionIds).toEqual(["Q1", "Q2"]);
   expect(() => parseUnitSelection("all")).toThrow();
   expect(() => parseUnitSelection("Q9", ["Q1", "Q2"])).toThrow();
