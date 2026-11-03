@@ -24,7 +24,8 @@ export function compactLookup(original:any,budget:number){
     const encoded=JSON.stringify({...out,evidenceIndex:undefined});
     for(const id of Object.keys(out.evidenceIndex))if(!encoded.includes(JSON.stringify(id)))delete out.evidenceIndex[id];
   };
-  for(let i=0;size()>budget-100&&i<1000;i++){
+  let currentSize=size();
+  for(let i=0;currentSize>budget-100&&i<1000;i++){
     let removed=false;
     if(out.webHits?.length>1){omit('web-reference',out.webHits.pop().id);removed=true;}
     else if(out.pageHits?.length>1){omit('page',out.pageHits.pop().id);removed=true;}
@@ -37,8 +38,11 @@ export function compactLookup(original:any,budget:number){
     }
     if(!removed)throw new Error('Capability/API context exceeds this budget; use a more specific query or a larger --max-chars.');
     pruneEvidence();
+    currentSize=size();
   }
-  for(let i=0;i<3;i++)out.retrievalSize.characters=size();
-  if(size()>budget)throw new Error('Capability packet budget exceeded');
+  out.retrievalSize.characters=currentSize;
+  currentSize=size();
+  out.retrievalSize.characters=currentSize;
+  if(currentSize>budget)throw new Error('Capability packet budget exceeded');
   return out;
 }

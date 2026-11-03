@@ -1,6 +1,6 @@
 # Restore a new source exam
 
-Work is per question by default; see [question-unit-pipeline.md](question-unit-pipeline.md). Steps 1–2 stay exam-level. Steps 3–5 run once per selected question unit (`bun run unit …`); step 6 assembles only the selected, deliverable units.
+Work is per question by default; see [question-unit-pipeline.md](question-unit-pipeline.md). Domain rules for equation canonicalization, figure label typography (`rm` vs `it`), `matplotlib mathtext (cm)` rendering, CLI adapter slots, and adversarial evaluation live in [exam-restoration-framework.md](exam-restoration-framework.md) and [meta-rubric.md](meta-rubric.md). Steps 1–2 stay exam-level. Steps 3–5 run once per selected question unit (`bun run unit …`); step 6 assembles only the selected, deliverable units and verifies artifacts through an independent oracle (`python3 scripts/verify-exam-run.py`).
 
 1. Supply the original PDF, identify the exam and preserve its bytes and hash in a separate operation. Record physical and logical page order.
 2. Select the layout and output format independently. The current next-document selection is `reference-single-column` with `hwpx`.

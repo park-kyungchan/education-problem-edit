@@ -19,7 +19,7 @@ is already the native copy unit) and `R-selective-invalidation`.
 `src/question.ts` is the portable, I/O-free core. A unit manifest
 (`problem-edit.question-unit.v1`) binds:
 
-- `questionId` — normalized `Q<n>` (`3`, `문항 3`, `문제 7번` all parse);
+- `questionId` — normalized `Q<n>` (`3`, `문항 3`, `문제 7번`, `객관식 3` parse to `Q3`/`Q7`; subjective items `서답형 2`, `서술형 2`, `단답형 2`, `주관식 2`, `S2` map deterministically to the 100-offset band `Q102`);
 - `source` — `sourceSha256`, `physicalPage`, `logicalOrder` (kept separate
   per `R-source-order`) and an optional normalized crop;
 - `stages` — one record per stage with `state`

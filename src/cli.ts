@@ -16,7 +16,7 @@ import {
 } from "./question";
 
 const USAGE =
-  "Usage: layout list | layout resolve [--profile ID] [--existing ID] [--format hwp|hwpx] | unit parse <selection> [--available Q1,Q2] | unit new --source-sha <64hex> --question <id> --physical-page <n> [--logical-order <n>] | unit validate --file <manifest.json> | unit plan --file <manifest.json> | unit invalidate --file <manifest.json> --stage <stage> | unit assemble --file <a.json,b.json>";
+  "Usage: layout list | layout resolve [--profile ID] [--existing ID] [--format hwp|hwpx] | unit parse <selection> [--available Q1,Q2] | unit new --source-sha <64hex> --question <id> --physical-page <n> [--logical-order <n>] [--crop x1,y1,x2,y2] | unit validate --file <manifest.json> | unit plan --file <manifest.json> | unit invalidate --file <manifest.json> --stage <stage> | unit assemble --file <a.json,b.json>";
 
 function pairs(rest: string[], allowed: readonly string[]): Record<string, string> {
   const values: Record<string, string> = {};
