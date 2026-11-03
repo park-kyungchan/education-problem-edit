@@ -15,7 +15,18 @@ function sha(path: string): string {
   try { return createHash("sha256").update(readFileSync(path)).digest("hex"); }
   catch { throw new Error("review_artifact_read@src/review-cli.ts:14: artifact unreadable"); }
 }
-function pairs(args: string[], allowed: string[]): Record<string, string> {
+const commandFlags: Record<string, readonly string[]> = {
+  new: ["--operation", "--units", "--pilot"],
+  issue: ["--file", "--event"],
+  resolve: ["--file", "--event"],
+  check: ["--document", "--oracle"],
+  candidate: ["--file", "--units", "--kind", "--document", "--comparison", "--verification", "--document-url", "--comparison-url"],
+  decide: ["--file", "--event", "--units"],
+  plan: ["--file", "--units"],
+  release: ["--file", "--units"],
+};
+
+function pairs(args: string[], allowed: readonly string[]): Record<string, string> {
   const out: Record<string, string> = {};
   for (let i = 0; i < args.length; i += 2) {
     need(allowed.includes(args[i]) && !(args[i] in out) && args[i + 1] && !args[i + 1].startsWith("--"), "argument");
@@ -46,12 +57,16 @@ function verification(value: any): OracleOutput {
 
 export function runReviewCli(args: string[]): unknown {
   const cmd = args[0];
+  if (args.length === 0 || cmd === "help") {
+    need(args.length <= 1, "argument");
+    return { usage: "bun run review <command> <required flags>", commands: commandFlags };
+  }
+  need(Object.hasOwn(commandFlags, cmd), "usage");
+  const v = pairs(args.slice(1), commandFlags[cmd]);
   if (cmd === "new") {
-    const v = pairs(args.slice(1), ["--operation", "--units", "--pilot"]);
     return createReviewOperation(v["--operation"], loadUnits(v["--units"]), v["--pilot"].split(",").map(s => s.trim()));
   }
   if (cmd === "check") {
-    const v = pairs(args.slice(1), ["--document", "--oracle"]);
     const document = resolve(v["--document"]), oracle = resolve(v["--oracle"]);
     const before = sha(document), oracleBefore = sha(oracle);
     // The explicit local oracle is the only executed program; source text never supplies commands.
@@ -66,7 +81,6 @@ export function runReviewCli(args: string[]): unknown {
       oracle: { path: oracle, sha256: oracleBefore }, checks: checked.checks, native: checked.native };
   }
   if (cmd === "plan" || cmd === "release") {
-    const v = pairs(args.slice(1), ["--file", "--units"]);
     const op = decodeReviewOperation(json(v["--file"]));
     const plan = planReview(op, loadUnits(v["--units"]), observations(op));
     if (cmd === "release") {
@@ -77,18 +91,15 @@ export function runReviewCli(args: string[]): unknown {
     return plan;
   }
   if (cmd === "decide") {
-    const v = pairs(args.slice(1), ["--file", "--event", "--units"]);
     const op = decodeReviewOperation(json(v["--file"]));
     return recordReviewDecision(op, json(v["--event"]), loadUnits(v["--units"]), observations(op));
   }
   if (["issue", "resolve"].includes(cmd)) {
-    const v = pairs(args.slice(1), ["--file", "--event"]);
     const op = decodeReviewOperation(json(v["--file"])), event = json(v["--event"]);
     if (cmd === "issue") return addReviewIssue(op, event);
     return resolveReviewIssue(op, event);
   }
   if (cmd === "candidate") {
-    const v = pairs(args.slice(1), ["--file", "--units", "--kind", "--document", "--comparison", "--verification", "--document-url", "--comparison-url"]);
     const op = decodeReviewOperation(json(v["--file"]));
     const artifacts: ArtifactPin[] = (["document", "comparison", "verification"] as const).map(role => {
       const path = resolve(v[`--${role}`]);
@@ -103,5 +114,5 @@ export function runReviewCli(args: string[]): unknown {
     for (const a of artifacts) observed[a.path] = sha(a.path);
     return proposeReviewCandidate(op, v["--kind"] as ReviewKind, loadUnits(v["--units"]), artifacts, report.native.status, observed);
   }
-  throw new Error("review_usage@src/review-cli.ts:1: new|issue|resolve|check|candidate|decide|plan|release; see docs/hitl-review-contract.md");
+  throw new Error("review_usage@src/review-cli.ts:1: run bun run review help");
 }

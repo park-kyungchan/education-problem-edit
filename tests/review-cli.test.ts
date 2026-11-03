@@ -5,6 +5,19 @@ import { join, resolve } from "node:path";
 import { createUnitManifest } from "../src/question";
 
 const repo = resolve(import.meta.dir, "..");
+test("CLI help works without operation files and validates the advertised argument boundary", () => {
+  const run = (args: string[]) => Bun.spawnSync(["bun", "run", "src/cli.ts", "review", ...args], { cwd: repo, stdout: "pipe", stderr: "pipe" });
+  const help = run(["help"]);
+  expect(help.exitCode).toBe(0);
+  const usage = JSON.parse(new TextDecoder().decode(help.stdout));
+  expect(usage.commands.candidate).toContain("--verification");
+  expect(usage.commands.release).toEqual(["--file", "--units"]);
+  expect(JSON.parse(new TextDecoder().decode(run([]).stdout))).toEqual(usage);
+  expect(run(["help", "--unexpected"]).exitCode).toBe(1);
+  expect(new TextDecoder().decode(run(["toString"]).stderr)).toContain("review_usage");
+  expect(new TextDecoder().decode(run(["new", "--operation", "test"]).stderr)).toContain("missing_units");
+});
+
 test("CLI E2E: source units -> oracle -> pilot approval -> residual -> final approval -> changed bytes block", () => {
   const dir = mkdtempSync(join(process.env.PROBLEM_EDIT_TEST_TMP ?? tmpdir(), "review-e2e-"));
   try {
