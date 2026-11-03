@@ -17,6 +17,10 @@ This tracked document codifies the six meta-evaluation axes (`M1`–`M6`) and th
 
 ---
 
+## Current HITL evaluation extension
+
+For new operations, evaluate [hitl-review-contract.md](hitl-review-contract.md) alongside M1–M6. M2/M6 require chronological decisions reconciled to the latest instruction and exact candidate revision; M3 requires the entry route and executable `review release` boundary; M4 requires actual independent artifact inspection and unchanged candidate bytes. Review tests must exercise stale approval rejection, held meaning/source readings, autonomous evidenced minor presentation, user-authorized residuals, selective pilot invalidation and pilot/final approval. The six work boundaries are not six default user-approval gates: the user selected pilot/final approval on 2026-11-03. No calibrated numeric ambiguity threshold is claimed. Historical remediation examples below remain dated claims, not qualification of another operation or the current native environment.
+
 ## 2. Summary of Remediated Breaking Points (2026-11-03)
 
 1. **LaTeX Primary Route Enforcement (`Y-01`)**: Upgraded `draw_q3.py`, `draw_s2.py`, and `draw_s4.py` in `runs/yeoksam-grade3-20261103/images/` from `DejaVuSansMono-Oblique.ttf` to `matplotlib` `mathtext` (`mathtext.fontset = "cm"`) transparent RGBA fragments, achieving 100% compliance across all 4 convertible-label figures (`q3`, `q5`, `s2`, `s4`).

@@ -6,6 +6,7 @@ Start with [current.json](current.json). It describes the current request and pe
 | --- | --- |
 | What should the next PDF produce? | [Current selection](current.json), [workflow](../docs/workflow.md), [exam restoration framework](../docs/exam-restoration-framework.md) |
 | How are workflows and outputs evaluated? | [Meta-level rubric (M1–M6)](../docs/meta-rubric.md), `python3 scripts/verify-exam-run.py` |
+| When should the user be interviewed, and what permits delivery? | [HITL review contract](../docs/hitl-review-contract.md), `bun run review plan` / `release`; generation readiness and human acceptance are separate |
 | Where does code belong? | [Architecture](../docs/architecture.md) |
 | Which rules, procedures and cases apply? | [Knowledge routes](../packages/knowledge/releases/2026-10-22.5/routes.json), queried with `bun run knowledge route "request" --max-chars 6000` |
 | What supports a knowledge claim? | A record's source ID, [source metadata](../packages/knowledge/releases/2026-10-22.5/sources.json), and its exact imported snapshot |

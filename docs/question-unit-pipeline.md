@@ -105,3 +105,7 @@ remain the only verification gates claimed here. No PDF extraction,
 Hancom behavior or HWPX conversion is implemented or qualified by this
 module; those still need the target-environment work in
 [workflow.md](workflow.md).
+
+## Human review and delivery
+
+The v1 core above describes generation readiness, not human approval. New restoration operations also use [hitl-review-contract.md](hitl-review-contract.md) and `src/review.ts` / `bun run review …`. That layer checks registered uncertainties, exact candidate and artifact hashes, user-authorized residuals, and current pilot/final acceptance. `review release` is the delivery boundary; `unit assemble` remains a pure generation plan. No public v1 unit schema or parity fixture is changed.

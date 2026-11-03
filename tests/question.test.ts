@@ -10,6 +10,7 @@ import {
   planUnitWork,
   validateUnitManifest,
   type QuestionUnitManifest,
+  type UnitStageId,
 } from "../src/question";
 
 const SHA = "a".repeat(64);
@@ -101,7 +102,7 @@ test("frozen parity vectors match the portable core", () => {
   for (const v of parity.vectors) {
     if (v.fn === "parseQuestionId") expect(parseQuestionId(v.input)).toBe(v.expected as string);
     else if (v.fn === "parseUnitSelection") expect(parseUnitSelection(v.input).questionIds).toEqual(v.expected as string[]);
-    else if (v.fn === "downstreamOf") expect(downstreamOf(v.input as never)).toEqual(v.expected as string[]);
+    else if (v.fn === "downstreamOf") expect(downstreamOf(v.input as UnitStageId)).toEqual(v.expected as UnitStageId[]);
     else throw new Error(`Unknown parity fn: ${v.fn}`);
   }
 });

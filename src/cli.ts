@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { layouts, resolveLayout } from "./layout";
+import { runReviewCli } from "./review-cli";
 import {
   createUnitManifest,
   decodeUnitManifest,
@@ -44,6 +45,8 @@ try {
       const values = pairs(args.slice(2), ["--profile", "--existing", "--format"]);
       console.log(JSON.stringify(resolveLayout({ requested: values["--profile"], existing: values["--existing"], format: values["--format"] }), null, 2));
     } else throw new Error(USAGE);
+  } else if (args[0] === "review") {
+    console.log(JSON.stringify(runReviewCli(args.slice(1)), null, 2));
   } else if (args[0] === "unit") {
     const cmd = args[1];
     if (cmd === "parse") {

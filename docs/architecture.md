@@ -35,3 +35,5 @@ The frozen release and operation documents retain original bytes. Keep observed 
 The original machine's operation directories remain intact because their absolute paths and hashes are part of historical evidence. This repository is the development and context entrypoint for the transferred problem-edit work. It does not relocate the original native runtime, credentials, sessions or common-Harness implementations.
 
 Per-question work is owned by `src/question.ts` (pure contracts, planning, selective invalidation, assembly) behind `bun run unit …`; see `docs/question-unit-pipeline.md`. It is shaped for a future Rust port but this repository has no Rust crate or migration slice today.
+
+Human review is a separate executable boundary: `src/review.ts` owns the versioned operation/candidate/decision model and readiness, while `src/review-cli.ts` owns filesystem hashes and explicit independent-oracle execution. `bun run review release` requires current pilot/final acceptance. See [the review contract](hitl-review-contract.md) for source-meaning interviews, authorized residuals, trust limits and synthetic E2E coverage.
