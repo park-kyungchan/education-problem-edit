@@ -1,0 +1,12 @@
+{
+  "schema": "problem-edit.question-parity.v1",
+  "purpose": "Frozen input/output vectors for a future Rust port (crates/problem-edit-core). Expected values are authored from docs/question-unit-pipeline.md, not generated from the TypeScript candidate at port time.",
+  "vectors": [
+    { "fn": "parseQuestionId", "input": "문항 3", "expected": "Q3" },
+    { "fn": "parseQuestionId", "input": "문제 7번", "expected": "Q7" },
+    { "fn": "parseUnitSelection", "input": "Q3-Q5", "expected": ["Q3", "Q4", "Q5"] },
+    { "fn": "downstreamOf", "input": "transcription", "expected": ["semantics", "geometry", "assets", "equations", "question-layout"] },
+    { "fn": "downstreamOf", "input": "geometry", "expected": ["assets", "question-layout"] },
+    { "fn": "downstreamOf", "input": "question-layout", "expected": [] }
+  ]
+}

@@ -5,6 +5,7 @@
   "scripts": {
     "test": "bun test",
     "layout": "bun run src/cli.ts layout",
+    "unit": "bun run src/cli.ts unit",
     "knowledge": "bun run packages/knowledge/src/cli.ts",
     "check:context": "bun run scripts/check-context.ts"
   }

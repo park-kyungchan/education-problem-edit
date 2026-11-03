@@ -1,5 +1,7 @@
 # Restore a new source exam
 
+Work is per question by default; see [question-unit-pipeline.md](question-unit-pipeline.md). Steps 1–2 stay exam-level. Steps 3–5 run once per selected question unit (`bun run unit …`); step 6 assembles only the selected, deliverable units.
+
 1. Supply the original PDF, identify the exam and preserve its bytes and hash in a separate operation. Record physical and logical page order.
 2. Select the layout and output format independently. The current next-document selection is `reference-single-column` with `hwpx`.
 3. Route the request through the knowledge CLI. Read applicable rules and procedures, then their exact evidence only where needed.
