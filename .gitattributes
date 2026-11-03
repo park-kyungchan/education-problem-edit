@@ -1,0 +1,4 @@
+# Imported evidence must retain exact bytes across platforms.
+packages/knowledge/releases/** -text -whitespace
+packages/knowledge/current.json -text -whitespace
+context/history/** -text -whitespace
