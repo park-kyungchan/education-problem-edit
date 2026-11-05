@@ -7,6 +7,7 @@ import {prepareNativeBatch} from "../src/native-production";
 import {planNativeLayout} from "../src/native-layout";
 import {planSourceQuestion, type ProductionBlock} from "../src/production";
 import {runProductionCli} from "../src/production-cli";
+import {planProductionAudit} from "../src/production-audit";
 
 const hash = (data: string | Buffer) => createHash("sha256").update(data).digest("hex");
 function fixture(root: string, font?: string) {
@@ -55,6 +56,18 @@ test("all box rows/titles remain ordered native-table blocks, with no invented l
   } finally {rmSync(root,{recursive:true,force:true});}
 });
 
+test("compact audit routes only applicable mathematical scopes and binds exact source crop inputs",()=>{
+ const root=mkdtempSync(join(tmpdir(),"production-audit-"));
+ try{
+  const f=fixture(root);f.source.math[1].latex=String.raw`\sqrt{a^2+b^2}`;f.job.questions=[f.save('question.json',f.source)];
+  const p=planProductionAudit(prepareNativeBatch(f.job,root));
+  expect(p.counts).toMatchObject({questions:1,equationTemplates:3,equationOccurrences:5,limitApproaches:0});
+  expect(p.routes.map(r=>r.id).sort()).toEqual(['decorated-base-scope','radical-scope','scripts-and-arguments']);
+  expect(p.sources[0]).toMatchObject({questionId:'Q37',crop:'crop.png'});expect(p.inputDigest).toMatch(/^[a-f0-9]{64}$/);
+  expect(p.sourceReviewRequired).toContain('actual printed source');
+ }finally{rmSync(root,{recursive:true,force:true});}
+});
+
 test("canonical source derives redundant body text, retains an explicit zero score and still rejects conflicting supplied body",()=>{
   const root=mkdtempSync(join(tmpdir(),"production-body-"));
   try{
@@ -82,8 +95,29 @@ test("measured native layout sizes every box row dynamically and fails oversized
   const s={paperMm:[100,100],pageMarginsMm:{top:5,bottom:5},contentWidth:2000,font:{points:1},equationBaseUnit:100,lineSpacingPercent:100,paragraphAfter:0,blockGap:20,questionGap:20,box:{labelCellWidth:300,cellPadding:{left:10,right:10,top:5,bottom:5}}};
   const batch={settings:s,questions:[{questionId:"Q9",blocks:[{kind:"box",title:p("title",100),items:[{label:p("label",100),content:p("tall fraction",900)},{label:null,content:p("short",100)}]}]}]};
   const plan=planNativeLayout(structuredClone(batch));expect(plan.questions[0].blocks[0].rowHeights).toEqual([110,910,110]);
+  const spaced=structuredClone(batch);spaced.settings.lineSpacingPercent=150;
+  expect(planNativeLayout(spaced).questions[0].blocks[0].rowHeights).toEqual([160,1360,160]);
   const bad=structuredClone(batch);bad.questions[0].blocks[0].items[0].content.atoms[0].height=100000;
   expect(()=>planNativeLayout(bad)).toThrow("question_overflow:Q9");
+});
+
+test("equation measurements bind source, script identity, actual SVG evidence and safe dimensions",()=>{
+ const root=mkdtempSync(join(tmpdir(),"production-metrics-"));
+ try{
+  const f=fixture(root),svg=f.save("metric.svg",'<svg xmlns="http://www.w3.org/2000/svg"/>');
+  const metrics={schema:"problem-edit.equation-measurements.v1",sourceSha256:f.job.sourcePdf.sha256,baseUnit:1100,entries:[{scriptSha256:"a".repeat(64),width:200,height:300,baselineHwpUnits:150,svg}]};
+  const job:any={...f.job,equationMeasurements:f.save("metrics.json",metrics)};
+  expect(prepareNativeBatch(job,root).equationMeasurements.entries[0].height).toBe(300);
+  metrics.entries.push(metrics.entries[0]);job.equationMeasurements=f.save("metrics.json",metrics);expect(()=>prepareNativeBatch(job,root)).toThrow("duplicate_equation_measurement");
+  metrics.entries.pop();metrics.entries[0].baselineHwpUnits=400;job.equationMeasurements=f.save("metrics.json",metrics);expect(()=>prepareNativeBatch(job,root)).toThrow("equation_measurement_dimensions");
+  metrics.entries[0].baselineHwpUnits=150;job.equationMeasurements=f.save("metrics.json",metrics);writeFileSync(join(root,"metric.svg"),"changed");expect(()=>prepareNativeBatch(job,root)).toThrow("input_changed");
+ }finally{rmSync(root,{recursive:true,force:true});}
+});
+
+test("declared header/footer space participates in whole-question packing",()=>{
+ const q=(id:string)=>({questionId:id,blocks:[{kind:"paragraph",location:id,atoms:[{key:"a",width:1,height:700,breakBefore:true,breakAfter:true}]}]});
+ const settings={paperMm:[100,10],pageMarginsMm:{top:0,bottom:0,header:3,footer:3},font:{points:1},equationBaseUnit:100,lineSpacingPercent:100,paragraphAfter:0,questionGap:0,contentWidth:100};
+ const plan=planNativeLayout({settings,questions:[q("Q1"),q("Q2")]});expect(plan.plannedPages).toBe(2);expect(plan.questions[1].pageBreak).toBe(true);
 });
 
 test.skipIf(!process.env.PROBLEM_EDIT_NATIVE_PYTHON || !process.env.PROBLEM_EDIT_NATIVE_FONT)("native composer emits actual table cells and terminal-spaced equation occurrences; saved mutations and output replay are rejected",()=>{
@@ -99,17 +133,54 @@ test.skipIf(!process.env.PROBLEM_EDIT_NATIVE_PYTHON || !process.env.PROBLEM_EDIT
     const file=f.save("job.json",f.job);const out=join(root,"native-r1");
     const args=["compose","--file",join(root,file.path),"--root",root,"--python",process.env.PROBLEM_EDIT_NATIVE_PYTHON!,"--out",out];
     const result=runProductionCli(args) as any;expect(result.questions).toBe(1);expect(result.equationOccurrences).toBe(5);expect(result.nativeTables).toBe(3);expect(result.nativeHancomStatus).toBe("unknown");
-    const record=JSON.parse(readFileSync(join(out,"composition.json"),"utf8"));expect(record.equations.every((e:any)=>e.script.endsWith("~"))).toBe(true);
+    const record=JSON.parse(readFileSync(join(out,"composition.json"),"utf8"));expect(record.equations.every((e:any)=>e.script.endsWith("`"))).toBe(true);
     expect(record.images).toHaveLength(1);expect(record.equations.filter((e:any)=>e.script.includes("overline")).every((e:any)=>e.script.startsWith("{overline")&&e.script.includes("} ^"))).toBe(true);
     expect(record.tables.map((t:any)=>[t.kind,t.rows,t.columns])).toEqual([["statement-box",3,2],["box",1,1],["choices",1,4]]);
     expect(()=>runProductionCli(args)).toThrow("output_exists_use_new_version");
     const script=join(import.meta.dir,"native-production-check.py");
     const checked=Bun.spawnSync([process.env.PROBLEM_EDIT_NATIVE_PYTHON!,script,out],{stdout:"pipe",stderr:"pipe"});expect(checked.exitCode,checked.stderr.toString()).toBe(0);
+    const inspected=runProductionCli(['inspect','--file',out,'--root',root,'--python',process.env.PROBLEM_EDIT_NATIVE_PYTHON!]) as any;
+    expect(inspected.counts).toMatchObject({questions:1,equationOccurrences:5,nativeTables:3});expect(inspected.notCertified).toContain('Original PDF reading and all mathematical meaning');expect(inspected.native.status).toBe('unknown');
+    const limitSource:any=structuredClone(f.source);limitSource.math[0]={id:"choice-1",latex:String.raw`\lim_{z\to b^{-}}z^2`,limitApproaches:[{occurrence:1,variableLatex:"z",targetLatex:"b",direction:"left",signPlacement:"baseline",evidence:"Synthetic printed baseline direction sign."}]};
+    const limitJob:any={...f.job,questions:[f.save("limit-question.json",limitSource)]};const limitFile=f.save("limit-job.json",limitJob),limitOut=join(root,"native-limit-r1");
+    runProductionCli(["compose","--file",join(root,limitFile.path),"--root",root,"--python",process.env.PROBLEM_EDIT_NATIVE_PYTHON!,"--out",limitOut]);
+    const limitRecord=JSON.parse(readFileSync(join(limitOut,"composition.json"),"utf8"));expect(limitRecord.equations.filter((e:any)=>e.limitChecks.length).map((e:any)=>e.script)).toEqual(['lim _{z -> b -} z ^{2}`','lim _{z -> b -} z ^{2}`']);
+    expect((runProductionCli(['inspect','--file',limitOut,'--root',root,'--python',process.env.PROBLEM_EDIT_NATIVE_PYTHON!]) as any).counts.equationOccurrences).toBe(5);
+    const savedLimitCheck=Bun.spawnSync([process.env.PROBLEM_EDIT_NATIVE_PYTHON!,"-c",`import sys,json,hashlib,zipfile,xml.etree.ElementTree as E,importlib.util,tempfile
+from pathlib import Path
+spec=importlib.util.spec_from_file_location('saved',sys.argv[2]);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+r=Path(sys.argv[1]);record=json.loads((r/'composition.json').read_text());hp='{http://www.hancom.co.kr/hwpml/2011/paragraph}'
+with zipfile.ZipFile(r/'document.hwpx') as z:data={n:z.read(n) for n in z.namelist()}
+s=E.fromstring(data['Contents/section0.xml']);e=next(s.iter(hp+'equation'));e.find(hp+'script').text='lim _{z -> b ^{-}} z ^{2}'+chr(96);record['equations'][0]['script']=e.findtext(hp+'script');data['Contents/section0.xml']=E.tostring(s)
+with tempfile.TemporaryDirectory() as t:
+ p=Path(t)/'wrong.hwpx'
+ with zipfile.ZipFile(p,'w') as z:
+  for n,b in data.items():z.writestr(n,b)
+ record['documentSha256']=hashlib.sha256(p.read_bytes()).hexdigest()
+ try:m.inspect_saved(p,record)
+ except ValueError as err:assert 'limit_meaning_and_sign_position' in str(err),str(err)
+ else:raise AssertionError('self-consistent wrong superscript was accepted')
+`,limitOut,join(import.meta.dir,"../packages/native-production/inspect_saved.py")],{stdout:"pipe",stderr:"pipe"});expect(savedLimitCheck.exitCode,savedLimitCheck.stderr.toString()).toBe(0);
+    limitJob.equationOverrides=[{templateId:'Q37::body::choice-1',latex:limitSource.math[0].latex,script:'lim _{z -> b ^{-}} z ^{2}',reason:'Synthetic regression: source requests baseline.'}];const wrongLimitFile=f.save('wrong-limit-job.json',limitJob);
+    expect(()=>runProductionCli(['compose','--file',join(root,wrongLimitFile.path),'--root',root,'--python',process.env.PROBLEM_EDIT_NATIVE_PYTHON!,'--out',join(root,'wrong-limit')])).toThrow('limit_semantics_or_sign_placement');expect(existsSync(join(root,'wrong-limit'))).toBe(false);
     const q2=structuredClone(f.source);q2.questionId="Q8";q2.printedLabel="8";q2.source.logicalOrder=1;
-    const multi={...f.job,questions:[...f.job.questions,f.save("question2.json",q2)]};const file2=f.save("job2.json",multi);
+    q2.math.push({id:"piecewise",latex:String.raw`f(x)=\begin{cases}x&(x<0)\\-x&(x\geq0)\end{cases}`});
+    q2.paragraphs.push("Tall final line {{piecewise}}. "+"After the equation ".repeat(8));q2.body=q2.paragraphs.join("\n");q2.contentOrder.push({kind:"paragraph",index:1} as any);
+    const piecewiseScript="f ( x ) = cases {x & ( x < 0 ) # - x & ( x GEQ 0 )}`";
+    const metrics=f.save("synthetic-metrics.json",{schema:"problem-edit.equation-measurements.v1",sourceSha256:f.job.sourcePdf.sha256,baseUnit:1100,entries:[{scriptSha256:hash(piecewiseScript),width:10000,height:5000,baselineHwpUnits:2500,svg:f.save("synthetic-metric.svg",'<svg xmlns="http://www.w3.org/2000/svg"/>')}]});
+    const multi={...f.job,equationMeasurements:metrics,questions:[...f.job.questions,f.save("question2.json",q2)]};const file2=f.save("job2.json",multi);
     const result2=runProductionCli(["compose","--file",join(root,file2.path),"--root",root,"--python",process.env.PROBLEM_EDIT_NATIVE_PYTHON!,"--out",join(root,"native-multi-r1")]) as any;
-    expect(result2.questions).toBe(2);expect(result2.equationOccurrences).toBe(10);expect(result2.nativeTables).toBe(6);
+    expect(result2.questions).toBe(2);expect(result2.equationOccurrences).toBe(11);expect(result2.nativeTables).toBe(7);
     const multiRecord=JSON.parse(readFileSync(join(root,"native-multi-r1/composition.json"),"utf8"));expect(multiRecord.questions).toEqual(["Q8","Q37"]);
+    const containers=multiRecord.tables.filter((t:any)=>t.kind==="inline-equation-paragraph");expect(containers).toHaveLength(1);expect(containers[0].rows).toBeGreaterThan(1);expect(containers[0].columns).toBe(1);
+    const containerCheck=Bun.spawnSync([process.env.PROBLEM_EDIT_NATIVE_PYTHON!,"-c",`import sys,zipfile,xml.etree.ElementTree as E
+z=zipfile.ZipFile(sys.argv[1]);hp='{http://www.hancom.co.kr/hwpml/2011/paragraph}'
+s=E.fromstring(z.read('Contents/section0.xml'))
+t=next(t for t in s.iter(hp+'tbl') if 'Tall final line' in ''.join(e.text or '' for e in t.iter(hp+'t')))
+c=t.find(hp+'tr/'+hp+'tc');eq=next(c.iter(hp+'equation'))
+assert t.get('pageBreak')=='NONE' and int(c.find(hp+'cellSz').get('height'))>=int(eq.find(hp+'sz').get('height'))*1.45
+assert c.find(hp+'subList').get('vertAlign')=='TOP'
+`,join(root,"native-multi-r1/document.hwpx")],{stdout:"pipe",stderr:"pipe"});expect(containerCheck.exitCode,containerCheck.stderr.toString()).toBe(0);
     const badSettings:any=structuredClone(f.settings);badSettings.box.cellPadding.left=true;
     const badJob={...f.job,settings:f.save("bad-settings.json",badSettings)};const badFile=f.save("bad-job.json",badJob);
     expect(()=>runProductionCli(["compose","--file",join(root,badFile.path),"--root",root,"--python",process.env.PROBLEM_EDIT_NATIVE_PYTHON!,"--out",join(root,"invalid-margins")])).toThrow("box_padding");

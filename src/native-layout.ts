@@ -5,7 +5,7 @@ import type {FilePin} from "./native-production";
 export interface NativeLayoutSettings {
   profile: "reference-single-column";
   paperMm: [number, number];
-  pageMarginsMm: {left: number; right: number; top: number; bottom: number};
+  pageMarginsMm: {left: number; right: number; top: number; bottom: number; header?: number; footer?: number; gutter?: number};
   contentWidth: number;
   font: FilePin & {name: string; points: number};
   equationBaseUnit: number;
@@ -21,6 +21,8 @@ export interface NativeLayoutSettings {
   scoreSuffix: string;
   choiceLabelPrefix: string;
   choiceLabelSuffix: string;
+  choiceNumberStyle?: "decimal" | "circled";
+  scoreDecimalPlaces?: number;
   box: {labelCellWidth: number; cellPadding: {left: number; right: number; top: number; bottom: number}};
   choice: import("./production").ChoiceLayoutSettings;
 }
@@ -31,12 +33,12 @@ export function planNativeLayout(batch: any) {
   const paragraph = (p: any, width: number, spacing = s.lineSpacingPercent) => {
     try {
       p.lines = wrapMeasuredAtoms(p.atoms, width);
-      p.lineHeights = p.lines.map((line: string[]) => Math.max(Math.max(s.equationBaseUnit, s.font.points * 100) * spacing / 100, ...line.map(k => p.atoms.find((a: any) => a.key === k).height)) + s.paragraphAfter);
+      p.lineHeights = p.lines.map((line: string[]) => Math.max(s.equationBaseUnit, s.font.points * 100, ...line.map(k => p.atoms.find((a: any) => a.key === k).height)) * spacing / 100 + s.paragraphAfter);
       p.height = p.lineHeights.reduce((a: number, b: number) => a + b, 0);
     } catch (e) {throw Error(`${String(e)} [${p.location}]`);}
     return p.height;
   };
-  const available = Math.floor((s.paperMm[1] - s.pageMarginsMm.top - s.pageMarginsMm.bottom) * 7200 / 25.4);
+  const available = Math.floor((s.paperMm[1] - s.pageMarginsMm.top - s.pageMarginsMm.bottom - (s.pageMarginsMm.header??0) - (s.pageMarginsMm.footer??0)) * 7200 / 25.4);
   let page = 1, used = 0;
   for (const q of batch.questions) {
     let height = 0;

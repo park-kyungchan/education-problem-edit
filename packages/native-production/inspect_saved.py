@@ -24,8 +24,9 @@ def inspect_saved(document, expected=None):
         check("unique_equation_ids", len({e.get("id") for e in equations}) == len(equations))
         for e in equations:
             script = e.findtext(HP+"script") or ""
-            check("terminal_display_space_"+e.get("id"), script.endswith("~"))
+            check("terminal_display_space_"+e.get("id"), script.endswith("`"))
             tokens = re.findall(r'"(?:\\.|[^"\\])*"|[A-Za-z]+|[^\s]', script)
+            check("single_terminal_half_space_"+e.get("id"), len(tokens)>1 and tokens[-2] not in ("~","`"))
             for i, token in enumerate(tokens):
                 if token not in ("overline", "bar", "arch", "vec", "hat") or tokens[i+1:i+2] != ["{"]: continue
                 depth = 0
@@ -51,6 +52,20 @@ def inspect_saved(document, expected=None):
             check("occurrence_ids", len({e["occurrenceId"] for e in expected["equations"]}) == len(equations))
             for e, exp in zip(equations, expected["equations"]):
                 check("script_binding_"+exp["occurrenceId"], e.get("id") == exp["objectId"] and e.findtext(HP+"script") == exp["script"])
+                if "limitChecks" in exp:
+                    # Independently reopen actual saved group scopes; no authoring imports.
+                    tokens = re.findall(r'"(?:\\.|[^"\\])*"|[A-Za-z]+|[^\s]', e.findtext(HP+"script") or "")
+                    clauses = []
+                    for i, token in enumerate(tokens):
+                        if token != "lim": continue
+                        check("limit_subscript_"+exp["occurrenceId"]+"_"+str(i), tokens[i+1:i+3] == ["_","{"])
+                        depth = 1; end = i+3
+                        while end < len(tokens) and depth:
+                            depth += (tokens[end] == "{") - (tokens[end] == "}"); end += 1
+                        check("limit_balanced_"+exp["occurrenceId"]+"_"+str(i), depth == 0)
+                        clauses.append(tokens[i:end])
+                    wanted = [re.findall(r'"(?:\\.|[^"\\])*"|[A-Za-z]+|[^\s]', a["eqeditClause"]) for a in exp["limitChecks"]]
+                    check("limit_meaning_and_sign_position_"+exp["occurrenceId"],clauses == wanted)
             check("table_count", len(tables) == len(expected["tables"]))
             for t, exp in zip(tables, expected["tables"]):
                 check("table_binding_"+exp["objectId"], t.get("id") == exp["objectId"] and int(t.get("rowCnt")) == exp["rows"] and int(t.get("colCnt")) == exp["columns"])
