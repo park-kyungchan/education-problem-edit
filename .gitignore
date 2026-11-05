@@ -4,3 +4,4 @@ dist/
 .env.*
 *.log
 runs/
+__pycache__/
