@@ -8,6 +8,7 @@
     "layout": "bun run src/cli.ts layout",
     "unit": "bun run src/cli.ts unit",
     "review": "bun run src/cli.ts review",
+    "production": "bun run src/cli.ts production",
     "knowledge": "bun run packages/knowledge/src/cli.ts",
     "check:context": "bun run scripts/check-context.ts"
   },
