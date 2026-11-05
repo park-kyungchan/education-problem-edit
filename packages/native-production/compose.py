@@ -70,7 +70,37 @@ def finish_script(script):
         need(level >= 0, "unbalanced_equation")
     need(level == 0 and masked.count('"') % 2 == 0, "unbalanced_equation")
     script = group_decorated_bases(script).rstrip()
-    return script if script.endswith("~") else script + "~"
+    # Replace only trailing unquoted display-space tokens. Preserve internal full spaces.
+    while script.endswith(("~", "`")):
+        tokens = list(re.finditer(r'"(?:\\.|[^"\\])*"|[^\s]', script))
+        if not tokens or tokens[-1][0] not in ("~", "`"): break
+        script = script[:tokens[-1].start()].rstrip()
+    need(script, "empty_equation")
+    return script + "`"
+
+
+def limit_checks(template, script):
+    """Validate semantic approach clauses before measurement, including overrides."""
+    expected = []
+    for a in template.get("limitApproaches", []):
+        sign = "-" if a["direction"] == "left" else "+" if a["direction"] == "right" else ""
+        suffix = "^{"+sign+"}" if sign and a["signPlacement"] == "superscript" else sign
+        clause = latex_to_eqedit(r"\lim_{"+a["variableLatex"]+r"\to "+a["targetLatex"]+suffix+"}")
+        expected.append({**a, "eqeditClause": clause})
+    tokens = re.findall(r'"(?:\\.|[^"\\])*"|[A-Za-z]+|[^\s]', script)
+    actual = []
+    for i, token in enumerate(tokens):
+        if token != "lim": continue
+        need(tokens[i+1:i+3] == ["_", "{"], "limit_approach_scope")
+        depth = 0
+        for end in range(i+2, len(tokens)):
+            depth += (tokens[end] == "{") - (tokens[end] == "}")
+            if not depth:
+                actual.append(tokens[i:end+1]); break
+        else: need(False,"limit_approach_scope")
+    wanted = [re.findall(r'"(?:\\.|[^"\\])*"|[A-Za-z]+|[^\s]', a["eqeditClause"]) for a in expected]
+    need(actual == wanted, "limit_semantics_or_sign_placement")
+    return expected
 
 
 def check_output(batch, output):
@@ -88,20 +118,37 @@ def validate_settings(s):
     nonnegative = lambda x: isinstance(x, (int, float)) and not isinstance(x, bool) and math.isfinite(x) and x >= 0
     need(len(s["paperMm"]) == 2 and all(map(positive, s["paperMm"])), "paper")
     need(all(nonnegative(s["pageMarginsMm"][k]) for k in ("left", "right", "top", "bottom")), "page_margins")
+    need(all(nonnegative(s["pageMarginsMm"].get(k,0)) for k in ("header", "footer", "gutter")), "auxiliary_page_margins")
     for k in ("contentWidth", "equationBaseUnit", "lineSpacingPercent"):
         need(positive(s[k]), "setting_" + k)
     for k in ("contentWidth", "equationBaseUnit"):
         need(isinstance(s[k], int) and not isinstance(s[k], bool), "integer_" + k)
     for k in ("paragraphAfter", "blockGap", "questionGap", "measurementSafetyWidth", "inlineEquationMargin"):
         need(nonnegative(s[k]), "setting_" + k)
-    need(s["pageMarginsMm"]["top"] + s["pageMarginsMm"]["bottom"] < s["paperMm"][1], "page_height")
-    need(s["contentWidth"] <= round((s["paperMm"][0] - s["pageMarginsMm"]["left"] - s["pageMarginsMm"]["right"]) * 7200 / 25.4), "page_width")
+    need(sum(s["pageMarginsMm"].get(k,0) for k in ("top","bottom","header","footer")) < s["paperMm"][1], "page_height")
+    need(s["contentWidth"] <= round((s["paperMm"][0] - sum(s["pageMarginsMm"].get(k,0) for k in ("left","right","gutter"))) * 7200 / 25.4), "page_width")
     need(positive(s["font"]["points"]) and isinstance(s["font"]["name"], str) and s["font"]["name"], "font")
     need(all(isinstance(s[k], str) for k in ("questionLabelSuffix", "scorePrefix", "scoreSuffix", "choiceLabelPrefix", "choiceLabelSuffix")), "label_settings")
+    need(s.get("choiceNumberStyle", "decimal") in ("decimal", "circled"), "choice_number_style")
+    if "scoreDecimalPlaces" in s:
+        need(isinstance(s["scoreDecimalPlaces"], int) and not isinstance(s["scoreDecimalPlaces"], bool) and 0 <= s["scoreDecimalPlaces"] <= 20, "score_precision")
     need(isinstance(s["attachedPostpositions"], list) and all(isinstance(x, str) for x in s["attachedPostpositions"]), "postpositions")
     for kind in ("box", "choice"):
         need(isinstance(s[kind]["labelCellWidth"], int) and not isinstance(s[kind]["labelCellWidth"], bool) and s[kind]["labelCellWidth"] > 0, kind + "_label_width")
         need(all(isinstance(s[kind]["cellPadding"][k], int) and not isinstance(s[kind]["cellPadding"][k], bool) and s[kind]["cellPadding"][k] >= 0 for k in ("left", "right", "top", "bottom")), kind + "_padding")
+
+
+def choice_label(number, settings):
+    if settings.get("choiceNumberStyle", "decimal") == "circled":
+        need(isinstance(number, int) and 1 <= number <= 20, "unsupported_circled_ordinal")
+        number = chr(0x2460 + number - 1)
+    return settings["choiceLabelPrefix"] + str(number) + settings["choiceLabelSuffix"]
+
+
+def score_label(score, settings):
+    value = format(score, f'.{settings["scoreDecimalPlaces"]}f') if "scoreDecimalPlaces" in settings else str(score)
+    need(float(value) == score, "score_precision_changes_value")
+    return settings["scorePrefix"] + value + settings["scoreSuffix"]
 
 
 def measure(batch):
@@ -111,12 +158,22 @@ def measure(batch):
     validate_settings(s)
     font = ImageFont.truetype(s["font"]["path"], round(s["font"]["points"] * 100))
     templates = {}
+    measurements=batch.get("equationMeasurements")
+    if measurements: need(measurements["baseUnit"]==s["equationBaseUnit"],"measurement_base_unit")
+    metric_map={m["scriptSha256"]:m for m in measurements["entries"]} if measurements else {}
     for t in batch["templates"]:
         raw = t["override"]["script"] if "override" in t else latex_to_eqedit(t["converterLatex"])
         script = finish_script(raw)
+        approach_checks = limit_checks(t, script)
         width, height = estimate_equation_size(script, base_unit=s["equationBaseUnit"])
-        templates[t["id"]] = {**t, "script": script, "scriptBeforeTerminalSpacing": raw,
-                              "width": width, "height": height, "nativeHancomStatus": "unknown"}
+        metric=metric_map.get(hashlib.sha256(script.encode()).hexdigest())
+        baseline=None
+        if metric:
+            width=max(width,metric["width"]);height=max(height,metric["height"])
+            if "baselineHwpUnits" in metric:baseline=round(100*metric["baselineHwpUnits"]/height)
+        templates[t["id"]] = {**t, "script": script, "scriptBeforeTerminalSpacing": raw,"limitChecks":approach_checks,
+                              "width": width, "height": height, "baselinePercent":baseline,"measurement":metric,
+                              "requiresMeasurement":bool(re.search(r'\bcases\b',re.sub(r'"[^"\n]*"','',script))),"nativeHancomStatus": "unknown"}
     figures = {}
     for f in batch["figures"]:
         svg = ET.fromstring(Path(f["svg"]["path"]).read_bytes())
@@ -153,7 +210,7 @@ def measure(batch):
             loc = f'{q["questionId"]}/block-{bi}'
             if b["kind"] == "paragraph":
                 prefix = text(q["printedLabel"] + s["questionLabelSuffix"]) if b["index"] == 0 else []
-                suffix = text(s["scorePrefix"] + format(q["score"], "g") + s["scoreSuffix"]) if b["index"] == last and q["score"] is not None else []
+                suffix = text(score_label(q["score"], s)) if b["index"] == last and q["score"] is not None else []
                 blocks.append(paragraph(prefix + b["atoms"] + suffix, loc))
             elif b["kind"] in ("statement-box", "box"):
                 blocks.append({"kind": b["kind"], "id": b["id"], "location": loc,
@@ -165,7 +222,7 @@ def measure(batch):
             elif b["kind"] == "choices":
                 blocks.append({"kind": "choices", "location": loc,
                                "items": [{"number": i["number"],
-                                          "label": paragraph(text(s["choiceLabelPrefix"] + str(i["number"]) + s["choiceLabelSuffix"]), loc + f'/choice-{i["number"]}/label'),
+                                          "label": paragraph(text(choice_label(i["number"], s)), loc + f'/choice-{i["number"]}/label'),
                                           "content": paragraph(i["atoms"], loc + f'/choice-{i["number"]}/content')} for i in b["items"]]})
         questions.append({"questionId": q["questionId"], "blocks": blocks})
     return {**batch, "questions": questions, "equations": list(templates.values())}
@@ -178,7 +235,7 @@ def emit(plan, output):
     s = plan["settings"]
     validate_settings(s)
     doc = HwpxDocument.new()
-    doc.page.setup(width_mm=s["paperMm"][0], height_mm=s["paperMm"][1], margins_mm=s["pageMarginsMm"])
+    doc.page.setup(width_mm=s["paperMm"][0], height_mm=s["paperMm"][1], margins_mm=s["pageMarginsMm"],header_margin_mm=s["pageMarginsMm"].get("header",0),footer_margin_mm=s["pageMarginsMm"].get("footer",0),gutter_mm=s["pageMarginsMm"].get("gutter",0))
     header = doc._root.headers[0]
     styles, borders = {}, {}
     equations = {e["id"]: e for e in plan["equations"]}
@@ -209,14 +266,17 @@ def emit(plan, output):
                     p.add_run(a["text"], font=s["font"]["name"], size=s["font"]["points"])
                 else:
                     e = equations[a["templateId"]]
-                    need(e["script"].endswith("~"), "missing_terminal_space")
+                    need(e["script"].endswith("`"), "missing_terminal_space")
+                    need(not e["requiresMeasurement"] or (e["measurement"] and e["baselinePercent"] is not None),"cases_render_measurement_required")
                     o = doc.shapes.add_equation(e["script"], paragraph=p, base_unit=s["equationBaseUnit"], size=(e["width"], e["height"]))
-                    emissions.append({"occurrenceId": a["occurrenceId"], "templateId": a["templateId"], "objectId": o.element.get("id"), "script": e["script"]})
+                    o.element.find(HP+"pos").set("affectLSpacing","1")
+                    if e["baselinePercent"] is not None:o.element.set("baseLine",str(e["baselinePercent"]))
+                    emissions.append({"occurrenceId": a["occurrenceId"], "templateId": a["templateId"], "objectId": o.element.get("id"), "script": e["script"],"limitChecks":e.get("limitChecks",[])})
 
     def cell(table, row, col, width, height, pad, sides):
         c = table.cell(row, col)
         c.set_margins(**pad); c.set_size(width=width, height=math.ceil(height))
-        c.element.find(HP + "subList").set("vertAlign", "CENTER")
+        c.element.find(HP + "subList").set("vertAlign", "TOP")
         # Cache each outer-edge pattern. Internal row/label dividers stay invisible.
         key = tuple(sides)
         if key not in borders:
@@ -228,7 +288,16 @@ def emit(plan, output):
         start = len(doc.sections[0].element)
         for b in q["blocks"]:
             if b["kind"] == "paragraph":
-                lines(b)
+                # Cases in body prose need a measured, unsplit native container;
+                # text-em paragraph spacing alone does not reserve their full box.
+                if any(a["kind"]=="equation" and equations[a["templateId"]]["requiresMeasurement"] for a in b["atoms"]):
+                    t=paragraph().add_table(len(b["lines"]),1,width=s["contentWidth"],height=math.ceil(b["height"]))
+                    t.element.set("pageBreak","NONE");t.set_column_widths([s["contentWidth"]])
+                    for ri,keys in enumerate(b["lines"]):
+                        c=cell(t,ri,0,s["contentWidth"],b["lineHeights"][ri],{"left":0,"right":0,"top":0,"bottom":0},[])
+                        lines({**b,"lines":[keys]},c,first=c.paragraphs[0])
+                    tables.append({"kind":"inline-equation-paragraph","location":b["location"],"objectId":t.element.get("id"),"rows":len(b["lines"]),"columns":1})
+                else:lines(b)
             elif b["kind"] in ("box", "statement-box"):
                 rows = len(b["rowHeights"]); columns = 2 if b["labelWidth"] else 1
                 anchor = paragraph(); t = anchor.add_table(rows, columns, width=s["contentWidth"], height=math.ceil(b["height"]))
@@ -244,6 +313,7 @@ def emit(plan, output):
                         sides = (["left"] if ci == 0 else []) + (["right"] if merged or ci == columns-1 else []) + (["top"] if ri == 0 else []) + (["bottom"] if ri == rows-1 else [])
                         c = cell(t, ri, ci, s["contentWidth"] if merged else widths[ci], b["rowHeights"][ri], s["box"]["cellPadding"], sides)
                         spec = b["title"] if item is None else item["label"] if columns == 2 and not merged and ci == 0 else item["content"]
+                        if item is None or (columns==2 and not merged and ci==0):c.element.find(HP+"subList").set("vertAlign","CENTER")
                         lines(spec, c, alignment="CENTER" if item is None else "LEFT", first=c.paragraphs[0])
                 tables.append({"kind": b["kind"], "location": b["location"], "objectId": t.element.get("id"), "rows": rows, "columns": columns})
             elif b["kind"] == "choices":
@@ -256,6 +326,7 @@ def emit(plan, output):
                         item = next(i for i in b["items"] if i["number"] == number)
                         for j, (name, width) in enumerate([("label",grid["labelCellWidth"]),("content",grid["contentCellWidth"])]):
                             c = cell(t, 0, ci*2+j, width, row["height"], s["choice"]["cellPadding"], [])
+                            if name=="label":c.element.find(HP+"subList").set("vertAlign","CENTER")
                             lines(item[name], c, "choice", first=c.paragraphs[0])
                     tables.append({"kind": "choices", "location": b["location"], "objectId": t.element.get("id"), "rows": 1, "columns": cols})
             elif b["kind"] == "figure":
@@ -288,11 +359,12 @@ def emit(plan, output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--phase", required=True, choices=["measure", "emit"])
-    parser.add_argument("--out", required=True)
+    parser.add_argument("--out")
     args = parser.parse_args()
     try:
         value = json.load(sys.stdin)
-        check_output(value, args.out)
+        if args.out:check_output(value, args.out)
+        need(args.phase=="measure" or args.out,"output_required")
         print(json.dumps(measure(value) if args.phase == "measure" else emit(value, args.out), ensure_ascii=False))
     except Exception as exc:
         print(str(exc), file=sys.stderr)

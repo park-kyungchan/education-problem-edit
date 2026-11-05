@@ -13,6 +13,7 @@ export interface CompositionJob {
   settings: FilePin;
   figures: {id: string; png: FilePin; svg: FilePin; width: number}[];
   equationOverrides?: {templateId: string; latex: string; script: string; reason: string}[];
+  equationMeasurements?: FilePin;
 }
 
 function need(value: unknown, code: string): asserts value {
@@ -53,7 +54,7 @@ export function prepareNativeBatch(raw: any, runRoot: string) {
     if (a.kind !== "equation") return a;
     const templateId = `${q.questionId}::${role}::${a.itemId}`;
     if (!templateMap.has(templateId)) {
-      const t = {id: templateId, questionId: q.questionId, itemId: a.itemId, role, latex: a.latex, converterLatex: a.converterLatex};
+      const t = {id: templateId, questionId: q.questionId, itemId: a.itemId, role, latex: a.latex, converterLatex: a.converterLatex,limitApproaches:a.limitApproaches,limitPresentationAdaptations:a.limitPresentationAdaptations};
       templates.push(t); templateMap.set(templateId, t);
     }
     return {...a, templateId};
@@ -73,9 +74,20 @@ export function prepareNativeBatch(raw: any, runRoot: string) {
     need(t && o.latex === t.latex && typeof o.script === "string" && o.script.trim() && typeof o.reason === "string" && o.reason.trim(), "equation_override_binding");
     t.override = {script: o.script, reason: o.reason};
   }
+  let equationMeasurements: any = null;
+  if(raw.equationMeasurements){
+    equationMeasurements=JSON.parse(readFileSync(file(raw.equationMeasurements),"utf8"));
+    need(equationMeasurements?.schema==="problem-edit.equation-measurements.v1"&&equationMeasurements.sourceSha256===raw.sourcePdf.sha256&&Array.isArray(equationMeasurements.entries),"equation_measurements");
+    need(new Set(equationMeasurements.entries.map((m:any)=>m.scriptSha256)).size===equationMeasurements.entries.length,"duplicate_equation_measurement");
+    for(const m of equationMeasurements.entries){
+      need(/^[a-f0-9]{64}$/.test(m.scriptSha256)&&Number.isSafeInteger(m.width)&&m.width>0&&Number.isSafeInteger(m.height)&&m.height>0&&(m.baselineHwpUnits===undefined||(Number.isFinite(m.baselineHwpUnits)&&m.baselineHwpUnits>0&&m.baselineHwpUnits<m.height)),"equation_measurement_dimensions");
+      file(m.svg);
+      if(m.baselineSvg)file(m.baselineSvg);
+    }
+  }
   return {
     schema: "problem-edit.native-batch.v1", runRoot: root, sourceSha256: raw.sourcePdf.sha256,
-    packets, templates, figures, settings, inputPins: pins,
+    packets, templates, figures, settings, inputPins: pins, equationMeasurements,
     holds: packets.flatMap((q: any) => q.holds.map((issue: string) => ({questionId: q.questionId, issue}))),
     unitSeeds: packets.map((q: any) => createUnitManifest({sourceSha256: raw.sourcePdf.sha256, questionId: q.questionId, physicalPage: q.source.physicalPage, logicalOrder: q.source.logicalOrder, crop: q.source.xyxy})),
     humanAcceptance: "not-granted", nativeHancomStatus: "unknown",

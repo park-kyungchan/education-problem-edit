@@ -1,16 +1,18 @@
 /** Deterministic production admission and layout decisions. No model calls or file writes. */
+import {applyLimitContract, type LimitApproach} from "./limit-contract";
+export interface SourceMath {id:string;latex:string;limitApproaches?:LimitApproach[]}
 export interface SourceQuestion {
   schema: "problem-edit.source-question.v1" | "problem-edit.source-transcription.local.v1";
   questionId: string; printedLabel: string; section: "multiple-choice" | "constructed-response";
   source: { sha256: string; physicalPage: number; logicalOrder: number; cropPath: string; cropSha256: string; xyxy: number[] };
-  score: number | null; body?: string; math: {id: string; latex: string}[]; paragraphs: string[];
+  score: number | null; body?: string; math: SourceMath[]; paragraphs: string[];
   statementBox: null | {title: string | null; labelStyle: "parenthesized" | "consonant-with-period" | "literal"; items: {label: string; body: string}[]};
-  choices: ({number: number; kind: "math"; latex: string} | {number: number; kind: "text"; text: string})[];
+  choices: ({number: number; kind: "math"; latex: string; limitApproaches?:LimitApproach[]} | {number: number; kind: "text"; text: string})[];
   figureId: string | null; unresolved: string[];
   boxes?: {id: string; title: string | null; items: {label: string | null; body: string}[]}[];
   contentOrder: ({kind: "paragraph"; index: number} | {kind: "statement-box"} | {kind: "box"; id: string} | {kind: "figure"; id: string} | {kind: "choices"})[];
 }
-export type Atom = {kind: "text"; text: string} | {kind: "equation"; itemId: string; occurrenceId: string; latex: string; converterLatex:string; presentationAdaptations:{offset:number;from:string;to:string}[]};
+export type Atom = {kind: "text"; text: string} | {kind: "equation"; itemId: string; occurrenceId: string; latex: string; converterLatex:string; presentationAdaptations:{offset:number;from:string;to:string}[];limitApproaches:LimitApproach[];limitPresentationAdaptations:{offset:number;from:string;to:string}[]};
 export type ProductionBlock = {kind: "paragraph"; index: number; atoms: Atom[]} | {kind: "statement-box" | "box"; id: string; title: string | null; titleAtoms: Atom[]; nativeTableRequired: true; items: {label: string | null; atoms: Atom[]}[]} | {kind: "figure"; id: string} | {kind: "choices"; items: {number: number; atoms: Atom[]}[]};
 const obj=(v:unknown):v is Record<string,any>=>!!v&&typeof v==="object"&&!Array.isArray(v);
 const text=(v:unknown):v is string=>typeof v==="string"&&!!v.trim()&&v.isWellFormed();
@@ -62,19 +64,20 @@ export function adaptLatexPresentation(latex:string){
 }
 export function planSourceQuestion(raw:unknown,expectedSourceSha256:string){
  const q=admitSourceQuestion(raw,expectedSourceSha256),counts=new Map<string,number>();
+ const adapt=(e:{latex:string;limitApproaches?:LimitApproach[]})=>{const limit=applyLimitContract(e.latex,e.limitApproaches);return {...limit,...adaptLatexPresentation(limit.converterLatex)};};
  const atoms=(s:string):Atom[]=>s.split(/(\{\{[A-Za-z][A-Za-z0-9_-]*\}\})/g).filter(Boolean).map(p=>{
   if(!p.startsWith("{{"))return {kind:"text",text:p};
   const id=p.slice(2,-2),e=q.math.find(e=>e.id===id)!,n=(counts.get(id)??0)+1;counts.set(id,n);
-  return {kind:"equation",itemId:id,occurrenceId:`${q.questionId}--${id}--${n}`,latex:e.latex,...adaptLatexPresentation(e.latex)};
+  return {kind:"equation",itemId:id,occurrenceId:`${q.questionId}--${id}--${n}`,latex:e.latex,...adapt(e)};
  });
  const blocks:ProductionBlock[]=q.contentOrder.map(b=>{
   switch(b.kind){case "paragraph":return {...b,atoms:atoms(q.paragraphs[b.index])};
    case "statement-box":return {kind:b.kind,id:"statement-box",title:q.statementBox!.title,titleAtoms:q.statementBox!.title?atoms(q.statementBox!.title):[],nativeTableRequired:true,items:q.statementBox!.items.map(i=>({label:q.statementBox!.labelStyle==="parenthesized"?`(${i.label})`:q.statementBox!.labelStyle==="consonant-with-period"?`${i.label}.`:i.label,atoms:atoms(i.body)}))};
    case "box":{const box=q.boxes!.find(x=>x.id===b.id)!;return {kind:b.kind,id:box.id,title:box.title,titleAtoms:box.title?atoms(box.title):[],nativeTableRequired:true,items:box.items.map(i=>({label:i.label,atoms:atoms(i.body)}))};}
    case "figure":return b;
-   case "choices":return {kind:b.kind,items:q.choices.map(c=>({number:c.number,atoms:c.kind==="text"?[{kind:"text",text:c.text}]:[{kind:"equation",itemId:`choice-${c.number}`,occurrenceId:`${q.questionId}--choice:${c.number}--1`,latex:c.latex,...adaptLatexPresentation(c.latex)}]}))};}
+   case "choices":return {kind:b.kind,items:q.choices.map(c=>({number:c.number,atoms:c.kind==="text"?[{kind:"text",text:c.text}]:[{kind:"equation",itemId:`choice-${c.number}`,occurrenceId:`${q.questionId}--choice:${c.number}--1`,latex:c.latex,...adapt(c)}]}))};}
  });
- return {schema:"problem-edit.production-packet.v1",questionId:q.questionId,printedLabel:q.printedLabel,section:q.section,score:q.score,source:q.source,state:q.unresolved.length?"interview-required":"ready",holds:q.unresolved,blocks,layoutSettingsRequired:true,equationTerminalToken:"~",nativeHancomStatus:"unknown",answerKeyInferred:false};
+ return {schema:"problem-edit.production-packet.v1",questionId:q.questionId,printedLabel:q.printedLabel,section:q.section,score:q.score,source:q.source,state:q.unresolved.length?"interview-required":"ready",holds:q.unresolved,blocks,layoutSettingsRequired:true,equationTerminalToken:"`",nativeHancomStatus:"unknown",answerKeyInferred:false};
 }
 export interface MeasuredAtom {key:string; width:number; breakBefore:boolean; breakAfter:boolean;}
 /** Greedy whole-equation wrapping; the measurer supplies legal punctuation/word boundaries. */
